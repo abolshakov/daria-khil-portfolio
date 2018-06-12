@@ -1,0 +1,21 @@
+<div mat-dialog-content (click)="onContentClick()">
+  <img #image [src]="current.image" (load)="onImageLoad()" />
+</div>
+<div mat-dialog-actions>
+  <div #actions class="actions-content actions-content-pagination-controls-enabled">
+    <div *ngIf="previous || next" mat-ripple (click)="onPreviousClick()" [class.actions-content-pagination-disabled]="previous === undefined"
+      class="actions-content-pagination actions-content-pagination-before mat-elevation-z4 mat-ripple" aria-hidden="true">
+      <div class="actions-content-pagination-chevron"></div>
+    </div>
+    <div class="actions-content-label-container">
+      <div class="actions-content-label">
+        <a *ngIf="current.url" href="{{current.url}}" target="_blank">{{current.description}}</a>
+        <span *ngIf="!current.url">{{current.description}}</span>
+      </div>
+    </div>
+    <div *ngIf="previous || next" mat-ripple (click)="onNextClick()" [class.actions-content-pagination-disabled]="next === undefined"
+      class="actions-content-pagination actions-content-pagination-after mat-elevation-z4 mat-ripple" aria-hidden="true">
+      <div class="actions-content-pagination-chevron"></div>
+    </div>
+  </div>
+</div>

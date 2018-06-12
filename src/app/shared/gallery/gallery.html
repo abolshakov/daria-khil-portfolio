@@ -1,0 +1,9 @@
+<div class="gallery-content" fxLayout="row wrap" fxLayoutAlign="center">
+  <mat-card *ngFor="let item of galleryItems.getPreviewItems()" (click)="openDialog(item)">
+    <img mat-card-image src="{{item.image}}">
+    <mat-card-content>
+      <mat-card-title>{{item.title}}</mat-card-title>
+      <mat-card-subtitle>{{item.description}}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+</div>

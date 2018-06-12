@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.app {
+    min-height: 100vh;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0;
+    background-color: #e5e5e5;
+}
+
+.docs-primary-header {
+    text-align: center;
+}
+
+.docs-primary-header h1 {
+    font-weight: 400;
+    margin: 0;
+    padding: 24px;
+    font-size: 24px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 1280px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+header .mat-toolbar {
+    background: #303030;
+    color: #ffffff;
+}
+
+.docs-primary-header {
+    margin: 64px 0 24px 0;
+    background-color: #ffffff;
+}
+
+.main-content {
+    margin: 16px 24px 24px 24px;
+    max-width: 1280px;
+}
+
+.mat-toolbar-single-row.footer {
+    height: 48px;
+    background-color: #ffffff;
+    color: rgba(0,0,0,.54);
+}
+
+.footer-content {
+    max-width: 1280px;
+    font-size: 14px;
+}

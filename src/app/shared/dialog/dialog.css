@@ -1,0 +1,90 @@
+.mat-dialog-container {
+    padding: 2px 2px 0 2px;
+}
+
+div[mat-dialog-content] {
+    margin-bottom: -4px;
+}
+
+.actions-content {
+    display: flex;
+    overflow: hidden;
+}
+
+.actions-content-label {
+    height: 48px;
+    padding: 0 12px;
+    cursor: default;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    position: relative;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width:599px) {
+    .actions-content-label {
+        min-width: 72px
+    }
+}
+
+.actions-content-pagination {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    cursor: pointer;
+    z-index: 2
+}
+
+.actions-content-pagination-controls-enabled .actions-content-pagination {
+    display: flex
+}
+
+.actions-content-pagination-before, .actions-content-rtl .actions-content-pagination-after {
+    padding-left: 4px
+}
+
+.actions-content-pagination-before .actions-content-pagination-chevron, .actions-content-rtl .actions-content-pagination-after .actions-content-pagination-chevron {
+    transform: rotate(-135deg)
+}
+
+.actions-content-pagination-after, .actions-content-rtl .actions-content-pagination-before {
+    padding-right: 4px
+}
+
+.actions-content-pagination-after .actions-content-pagination-chevron, .actions-content-rtl .actions-content-pagination-before .actions-content-pagination-chevron {
+    transform: rotate(45deg)
+}
+
+.actions-content-pagination-chevron {
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: '';
+    height: 8px;
+    width: 8px
+}
+
+.actions-content-pagination-disabled {
+    box-shadow: none;
+    cursor: default
+}
+
+.actions-content-pagination-disabled .actions-content-pagination-chevron {
+    border-color: rgba(0, 0, 0, .38);
+}
+
+.actions-content-label-container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    z-index: 1
+}
