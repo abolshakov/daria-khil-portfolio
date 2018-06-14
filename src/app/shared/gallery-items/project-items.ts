@@ -222,17 +222,17 @@ export const PROJECT_ITEMS = [
     },
     // future-soldier
     {
-        image: 'future-soldier/future-soldier.jpg',
+        image: 'future-soldier/future-soldier.png',
         description: 'Future Soldier',
-        linked: 'future-soldier/wharacter-concept.jpg'
+        linked: 'future-soldier/wharacter-concept.png'
     },
     {
-        image: 'future-soldier/wharacter-concept.jpg',
+        image: 'future-soldier/wharacter-concept.png',
         description: 'Character concept',
-        linked: 'future-soldier/weapon-concept.jpg'
+        linked: 'future-soldier/weapon-concept.png'
     },
     {
-        image: 'future-soldier/weapon-concept.jpg',
+        image: 'future-soldier/weapon-concept.png',
         description: 'Weapon concept'
     },
     // warlock

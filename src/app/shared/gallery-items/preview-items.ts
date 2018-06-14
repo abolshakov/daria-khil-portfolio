@@ -39,7 +39,7 @@ export const PREVIEW_ITEMS = [
         image: 'illustrations.png',
         title: 'Illustrations',
         description: 'Just some illustrations',
-        linked: 'illustrations/hippie-dog.jpg'
+        linked: 'illustrations/hippie-dog.png'
     },
     {
         image: 'source-of-life.png',
@@ -57,7 +57,7 @@ export const PREVIEW_ITEMS = [
         image: 'mask-island-denizen.png',
         title: 'Mask Island Denizen',
         description: '8 sides of the character and his animations of run',
-        linked: 'mask-island-denizen/character.jpg'
+        linked: 'mask-island-denizen/character.png'
     },
     {
         image: 'center-circle.png',
@@ -81,7 +81,7 @@ export const PREVIEW_ITEMS = [
         image: 'future-soldier.png',
         title: 'Future Soldier',
         description: 'Soldier and weapon concept',
-        linked: 'future-soldier/future-soldier.jpg'
+        linked: 'future-soldier/future-soldier.png'
     },
     {
         image: 'warlock.png',
