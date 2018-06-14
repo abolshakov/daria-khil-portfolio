@@ -77,17 +77,17 @@ export const PROJECT_ITEMS = [
     },
     // illustrations
     {
-        image: 'illustrations/hippie-dog.jpg',
+        image: 'illustrations/hippie-dog.png',
         description: 'Hippie Dog',
         linked: 'illustrations/bogdan.png'
     },
     {
         image: 'illustrations/bogdan.png',
         description: 'Bogdan',
-        linked: 'illustrations/lil-elf-princess.jpg'
+        linked: 'illustrations/lil-elf-princess.png'
     },
     {
-        image: 'illustrations/lil-elf-princess.jpg',
+        image: 'illustrations/lil-elf-princess.png',
         description: 'Lil Elf Princess',
         linked: 'illustrations/lil-me.png'
     },
@@ -137,7 +137,7 @@ export const PROJECT_ITEMS = [
     },
     // mask-island-denizen
     {
-        image: 'mask-island-denizen/character.jpg',
+        image: 'mask-island-denizen/character.png',
         description: 'Character',
         linked: 'mask-island-denizen/8-sides-of-the-character.gif'
     },
@@ -224,10 +224,10 @@ export const PROJECT_ITEMS = [
     {
         image: 'future-soldier/future-soldier.png',
         description: 'Future Soldier',
-        linked: 'future-soldier/wharacter-concept.png'
+        linked: 'future-soldier/character-concept.png'
     },
     {
-        image: 'future-soldier/wharacter-concept.png',
+        image: 'future-soldier/character-concept.png',
         description: 'Character concept',
         linked: 'future-soldier/weapon-concept.png'
     },
@@ -309,5 +309,30 @@ export const PROJECT_ITEMS = [
     {
         image: 'crypto-soul/cryptosoul-io.png',
         description: 'cryptosoul.io'
+    },
+    // arts-of-characters
+    {
+        image: 'arts-of-characters/warlock-spirit.png',
+        description: '',
+        linked: 'arts-of-characters/witch-spirit.png'
+    },
+    {
+        image: 'arts-of-characters/witch-spirit.png',
+        description: '',
+        linked: 'arts-of-characters/bot-spirit.png'
+    },
+    {
+        image: 'arts-of-characters/bot-spirit.png',
+        description: '',
+        linked: 'arts-of-characters/warlock-witch-bot.png'
+    },
+    {
+        image: 'arts-of-characters/warlock-witch-bot.png',
+        description: ''
+    },
+    // witch-raid
+    {
+        image: 'witch-raid/witch-raid.png',
+        description: ''
     },
 ];

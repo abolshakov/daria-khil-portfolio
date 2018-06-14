@@ -113,4 +113,16 @@ export const PREVIEW_ITEMS = [
         description: 'Design of the site',
         linked: 'crypto-soul/cryptosoul-io.png'
     },
+    {
+        image: 'arts-of-characters.png',
+        title: '',
+        description: '',
+        linked: 'arts-of-characters/warlock-spirit.png'
+    },
+    {
+        image: 'witch-raid.png',
+        title: '',
+        description: '',
+        linked: 'witch-raid/witch-raid.png'
+    },
 ];
