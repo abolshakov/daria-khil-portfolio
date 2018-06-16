@@ -29,12 +29,6 @@ div[mat-dialog-content] {
     font-weight: 500;
 }
 
-@media (max-width:599px) {
-    .actions-content-label {
-        min-width: 72px
-    }
-}
-
 .actions-content-pagination {
     position: relative;
     display: none;

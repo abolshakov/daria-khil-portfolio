@@ -1,6 +1,6 @@
 import { Component, HostListener, Inject, NgModule, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA, MatRippleModule } from '@angular/material';
 
 import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
 
@@ -102,7 +102,7 @@ export class DialogComponent implements OnInit {
 
 @NgModule({
     exports: [DialogComponent],
-    imports: [CommonModule],
+    imports: [CommonModule, MatRippleModule],
     declarations: [DialogComponent]
 })
 export class DialogModule { }

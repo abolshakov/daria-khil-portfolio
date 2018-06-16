@@ -6,7 +6,8 @@ import {
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule } from '@angular/material';
+    MatInputModule,
+    MatRippleModule } from '@angular/material';
 import { FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FlexLayoutModule} from '@angular/flex-layout';
         MatToolbarModule,
         MatButtonModule,
         MatFormFieldModule,
-        MatInputModule],
+        MatInputModule,
+        MatRippleModule],
     exports: [
         FlexLayoutModule,
         MatCardModule,
@@ -27,6 +29,7 @@ import { FlexLayoutModule} from '@angular/flex-layout';
         MatToolbarModule,
         MatButtonModule,
         MatFormFieldModule,
-        MatInputModule],
+        MatInputModule,
+        MatRippleModule],
   })
   export class MaterialAndFlexModule { }

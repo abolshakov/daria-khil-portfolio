@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material';
 import { MaterialAndFlexModule } from '../material-and-flex.module';
@@ -12,7 +12,17 @@ import { DialogComponent } from '../dialog/dialog';
   styleUrls: ['./gallery.css']
 })
 export class GalleryComponent {
-  constructor(public galleryItems: GalleryItems, private dialog: MatDialog) { }
+  private readonly elevation: string = 'mat-elevation-z10';
+
+  constructor(public galleryItems: GalleryItems, private renderer2: Renderer2, private dialog: MatDialog) { }
+
+  public mouseenter(target): void {
+    this.renderer2.addClass(target, this.elevation);
+  }
+
+  public mouseleave(target): void {
+    this.renderer2.removeClass(target, this.elevation);
+  }
 
   openDialog(item: GalleryItem): void {
     const detailedItem = this.galleryItems.getNextProjectItem(item);
