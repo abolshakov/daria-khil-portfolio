@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryModule } from './shared/gallery/gallery';
 import { MaterialAndFlexModule } from './shared/material-and-flex.module';
 import { DialogModule, DialogComponent } from './shared/dialog/dialog';
-import { Dir } from '@angular/cdk/bidi';
 
 
 @NgModule({

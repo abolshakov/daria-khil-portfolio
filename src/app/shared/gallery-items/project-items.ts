@@ -313,26 +313,26 @@ export const PROJECT_ITEMS = [
     // arts-of-characters
     {
         image: 'arts-of-characters/warlock-spirit.png',
-        description: '',
+        description: 'Warlock spirit',
         linked: 'arts-of-characters/witch-spirit.png'
     },
     {
         image: 'arts-of-characters/witch-spirit.png',
-        description: '',
+        description: 'Witch spirit',
         linked: 'arts-of-characters/bot-spirit.png'
     },
     {
         image: 'arts-of-characters/bot-spirit.png',
-        description: '',
+        description: 'Bot spirit',
         linked: 'arts-of-characters/warlock-witch-bot.png'
     },
     {
         image: 'arts-of-characters/warlock-witch-bot.png',
-        description: ''
+        description: 'Arts of characters'
     },
     // witch-raid
     {
         image: 'witch-raid/witch-raid.png',
-        description: ''
+        description: 'Witch raid'
     },
 ];

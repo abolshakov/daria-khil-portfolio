@@ -2,10 +2,6 @@
     padding: 2px 2px 0 2px;
 }
 
-div[mat-dialog-content] {
-    margin-bottom: -4px;
-}
-
 .actions-content {
     display: flex;
     overflow: hidden;
@@ -81,4 +77,18 @@ div[mat-dialog-content] {
     flex-grow: 1;
     overflow: hidden;
     z-index: 1
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content .mat-progress-spinner {
+    position: absolute;
+}
+
+.image-content .mat-spinner circle {
+    stroke: #b7b7b7b7;
 }

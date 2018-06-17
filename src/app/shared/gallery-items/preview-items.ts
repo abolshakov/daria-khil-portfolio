@@ -115,14 +115,14 @@ export const PREVIEW_ITEMS = [
     },
     {
         image: 'arts-of-characters.png',
-        title: '',
-        description: '',
+        title: 'Arts of Characters',
+        description: '3 Arts for previews of game heroes',
         linked: 'arts-of-characters/warlock-spirit.png'
     },
     {
         image: 'witch-raid.png',
-        title: '',
-        description: '',
+        title: 'Witch Raid',
+        description: 'Art for a loading page',
         linked: 'witch-raid/witch-raid.png'
     },
 ];

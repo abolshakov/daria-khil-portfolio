@@ -3,12 +3,14 @@ import {
     MatCardModule,
     MatDialogModule,
     MatIconModule,
+    MatInputModule,
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule,
-    MatRippleModule } from '@angular/material';
-import { FlexLayoutModule} from '@angular/flex-layout';
+    MatRippleModule
+} from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
     imports: [
@@ -16,20 +18,22 @@ import { FlexLayoutModule} from '@angular/flex-layout';
         MatCardModule,
         MatDialogModule,
         MatIconModule,
+        MatInputModule,
         MatToolbarModule,
         MatButtonModule,
         MatFormFieldModule,
-        MatInputModule,
+        MatProgressSpinnerModule,
         MatRippleModule],
     exports: [
         FlexLayoutModule,
         MatCardModule,
         MatDialogModule,
         MatIconModule,
+        MatInputModule,
         MatToolbarModule,
         MatButtonModule,
         MatFormFieldModule,
-        MatInputModule,
+        MatProgressSpinnerModule,
         MatRippleModule],
-  })
-  export class MaterialAndFlexModule { }
+})
+export class MaterialAndFlexModule { }

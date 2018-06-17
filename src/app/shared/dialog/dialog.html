@@ -1,19 +1,21 @@
-<div mat-dialog-content (click)="onContentClick()">
-  <img #image [src]="current.image" (load)="onImageLoad()" />
+<div class="image-content" (click)="onContentClick()">
+  <mat-spinner #spinner [strokeWidth]="5"></mat-spinner>
+  <img #tempImage [src]="temporaryImage" aria-hidden="true" />
+  <img #image [src]="current.image" (load)="onImageLoad()" aria-hidden="true" />
 </div>
-<div mat-dialog-actions>
+<div>
   <div #actions class="actions-content actions-content-pagination-controls-enabled">
-    <div *ngIf="previous || next" mat-ripple [matRippleColor]="gray" (click)="onPreviousClick()" [class.actions-content-pagination-disabled]="previous === undefined"
+    <div *ngIf="previous || next" mat-ripple [matRippleColor]="gray" (click)="onPreviousClick()" [class.actions-content-pagination-disabled]="previousDisabled"
       class="actions-content-pagination actions-content-pagination-before mat-elevation-z4" aria-hidden="true">
       <div class="actions-content-pagination-chevron"></div>
     </div>
     <div class="actions-content-label-container">
       <div class="actions-content-label">
-        <a *ngIf="current.url" href="{{current.url}}" target="_blank">{{current.description}}</a>
-        <span *ngIf="!current.url">{{current.description}}</span>
+        <a *ngIf="current.url" href="{{current.url}}" target="_blank">{{description}}</a>
+        <span *ngIf="!current.url">{{description}}</span>
       </div>
     </div>
-    <div *ngIf="previous || next" mat-ripple [matRippleColor]="gray" (click)="onNextClick()" [class.actions-content-pagination-disabled]="next === undefined"
+    <div *ngIf="previous || next" mat-ripple [matRippleColor]="light-gray" (click)="onNextClick()" [class.actions-content-pagination-disabled]="nextDisabled"
       class="actions-content-pagination actions-content-pagination-after mat-elevation-z4" aria-hidden="true">
       <div class="actions-content-pagination-chevron"></div>
     </div>

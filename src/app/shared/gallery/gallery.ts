@@ -6,6 +6,11 @@ import { MaterialAndFlexModule } from '../material-and-flex.module';
 import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
 import { DialogComponent } from '../dialog/dialog';
 
+export interface DialogData {
+  item: GalleryItem;
+  tempImage: String;
+}
+
 @Component({
   selector: 'pfo-gallery',
   templateUrl: './gallery.html',
@@ -30,7 +35,12 @@ export class GalleryComponent {
     if (!detailedItem) {
       return;
     }
-    const dialogRef = this.dialog.open(DialogComponent, { data: detailedItem });
+    this.dialog.open(DialogComponent, {
+      data: {
+        item: detailedItem,
+        tempImage: item.image
+      }
+    });
   }
 }
 

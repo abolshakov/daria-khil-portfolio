@@ -21,6 +21,10 @@ body {
     font-size: 24px;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -54,7 +58,7 @@ header .mat-toolbar {
 .mat-toolbar-single-row.footer {
     height: 48px;
     background-color: #ffffff;
-    color: rgba(0,0,0,.54);
+    color: rgba(0, 0, 0, .54);
 }
 
 .footer-content {

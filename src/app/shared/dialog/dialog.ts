@@ -1,8 +1,10 @@
 import { Component, HostListener, Inject, NgModule, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDialogRef, MAT_DIALOG_DATA, MatRippleModule } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA, MatSpinner } from '@angular/material';
+import { MaterialAndFlexModule } from '../material-and-flex.module';
 
 import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
+import { DialogData } from '../gallery/gallery';
 
 @Component({
     selector: 'pfo-gallery-item-dialog',
@@ -11,8 +13,15 @@ import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
     encapsulation: ViewEncapsulation.None
 })
 export class DialogComponent implements OnInit {
+    @ViewChild('spinner') spinnerView: MatSpinner;
+    @ViewChild('tempImage') tempImageView;
     @ViewChild('image') imageView;
     @ViewChild('actions') actionsView;
+
+    public temporaryImage: String;
+    public description: String;
+    public previousDisabled: Boolean;
+    public nextDisabled: Boolean;
 
     public current: GalleryItem;
     public previous: GalleryItem;
@@ -20,13 +29,15 @@ export class DialogComponent implements OnInit {
 
     constructor(
         public dialogRef: MatDialogRef<DialogComponent>,
-        @Inject(MAT_DIALOG_DATA) public data: GalleryItem,
+        @Inject(MAT_DIALOG_DATA) public data: DialogData,
         private galleryItems: GalleryItems) {
-        this.current = data;
+        this.temporaryImage = data.tempImage;
+        this.current = data.item;
         this.next = galleryItems.getNextProjectItem(this.current);
     }
 
     ngOnInit(): void {
+        this.toggleSpinner(true);
         this.resizeImage();
     }
 
@@ -40,18 +51,24 @@ export class DialogComponent implements OnInit {
     }
 
     onPreviousClick(): void {
-        if (!this.previous) {
+        if (this.previousDisabled) {
             return;
         }
+        this.setTempImage();
+        this.toggleSpinner(true);
+
         this.next = this.current;
         this.current = this.previous;
         this.previous = this.galleryItems.getPreviousProjectItem(this.current);
     }
 
     onNextClick(): void {
-        if (!this.next) {
+        if (this.nextDisabled) {
             return;
         }
+        this.setTempImage();
+        this.toggleSpinner(true);
+
         this.previous = this.current;
         this.current = this.next;
         this.next = this.galleryItems.getNextProjectItem(this.current);
@@ -95,14 +112,30 @@ export class DialogComponent implements OnInit {
                 image.removeAttribute('height');
             }
 
-        const actions: HTMLElement = this.actionsView.nativeElement;
-        actions.style.width = image.width + 'px';
+        this.toggleSpinner(false);
+
+        this.actionsView.nativeElement.style.width = image.width + 'px';
+    }
+
+    private toggleSpinner(visible: boolean): void {
+        this.spinnerView._elementRef.nativeElement.hidden = !visible;
+        this.tempImageView.nativeElement.hidden = !visible;
+        this.imageView.nativeElement.hidden = visible;
+
+        this.description = visible ? 'Loading...' : this.current.description;
+        this.previousDisabled = visible ? true : this.previous === undefined;
+        this.nextDisabled = visible ? true : this.next === undefined;
+    }
+
+    private setTempImage(): void {
+        this.tempImageView.nativeElement.width = this.imageView.nativeElement.width;
+        this.temporaryImage = this.current.image;
     }
 }
 
 @NgModule({
     exports: [DialogComponent],
-    imports: [CommonModule, MatRippleModule],
+    imports: [CommonModule, MaterialAndFlexModule],
     declarations: [DialogComponent]
 })
 export class DialogModule { }
