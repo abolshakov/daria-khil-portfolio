@@ -39,7 +39,8 @@ export class GalleryComponent {
       data: {
         item: detailedItem,
         tempImage: item.image
-      }
+      },
+      autoFocus: false
     });
   }
 }

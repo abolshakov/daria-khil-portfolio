@@ -1,5 +1,7 @@
 .mat-dialog-container {
+    display: flow-root;
     padding: 2px 2px 0 2px;
+    position: relative;
 }
 
 .actions-content {
@@ -77,6 +79,22 @@
     flex-grow: 1;
     overflow: hidden;
     z-index: 1
+}
+
+.close {
+    display: flex;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.close .mat-mini-fab:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.close .mat-mini-fab.mat-accent {
+    background-color: #b9b9b945;
+    color: lightgray;
 }
 
 .image-content {

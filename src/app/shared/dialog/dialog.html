@@ -1,7 +1,13 @@
+<div class="close">
+    <button [mat-dialog-close] mat-mini-fab>
+      <mat-icon aria-label="Close the dialog">close</mat-icon>
+    </button>
+  </div>
 <div class="image-content" (click)="onContentClick()">
   <mat-spinner #spinner [strokeWidth]="5"></mat-spinner>
   <img #tempImage [src]="temporaryImage" aria-hidden="true" />
   <img #image [src]="current.image" (load)="onImageLoad()" aria-hidden="true" />
+  
 </div>
 <div>
   <div #actions class="actions-content actions-content-pagination-controls-enabled">
