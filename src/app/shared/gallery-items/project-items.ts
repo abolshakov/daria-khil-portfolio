@@ -308,6 +308,7 @@ export const PROJECT_ITEMS = [
     // crypto-soul
     {
         image: 'crypto-soul/cryptosoul-io.png',
+        url: 'https://cryptosoul.io',
         description: 'cryptosoul.io'
     },
     // arts-of-characters
@@ -334,5 +335,10 @@ export const PROJECT_ITEMS = [
     {
         image: 'witch-raid/witch-raid.png',
         description: 'Witch raid'
+    },
+    // the-outbreak
+    {
+        image: 'the-outbreak/the-outbreak.png',
+        description: 'The outbreak'
     },
 ];
