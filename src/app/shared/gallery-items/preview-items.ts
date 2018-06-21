@@ -1,9 +1,9 @@
 export const PREVIEW_ITEMS = [
     {
-        image: 'dr-folsbuben.png',
-        title: 'Dr Folsbuben',
-        description: 'An illustration to my fictional story',
-        linked: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.png'
+        image: 'canyon.png',
+        title: 'Canyon',
+        description: 'Stylized environment art',
+        linked: 'canyon/canyon.png'
     },
     {
         image: 'arts-of-characters.png',
@@ -16,6 +16,12 @@ export const PREVIEW_ITEMS = [
         title: 'Witch Raid',
         description: 'Art for a loading page',
         linked: 'witch-raid/witch-raid.png'
+    },
+    {
+        image: 'owl-rider.png',
+        title: 'Owl Rider',
+        description: 'Young elf riding a huge purple owl is going to attack!',
+        linked: 'owl-rider/owl-rider.png'
     },
     {
         image: 'source-of-life.png',
@@ -36,10 +42,10 @@ export const PREVIEW_ITEMS = [
         linked: 'the-outbreak/the-outbreak.png'
     },
     {
-        image: 'owl-rider.png',
-        title: 'Owl Rider',
-        description: 'Young elf riding a huge purple owl is going to attack!',
-        linked: 'owl-rider/owl-rider.png'
+        image: 'dr-folsbuben.png',
+        title: 'Dr Folsbuben',
+        description: 'An illustration to my fictional story',
+        linked: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.png'
     },
     {
         image: 'magic-lakes.png',

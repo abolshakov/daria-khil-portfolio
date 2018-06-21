@@ -1,4 +1,9 @@
 export const PROJECT_ITEMS = [
+    // canyon
+    {
+        image: 'canyon/canyon.png',
+        description: 'Stylized environment'
+    },
     // owl-rider
     {
         image: 'owl-rider/owl-rider.png',
