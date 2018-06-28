@@ -24,6 +24,11 @@ export const PREVIEW_ITEMS = [
         linked: 'owl-rider/owl-rider.png'
     },
     {
+        image: 'cave-king.png',
+        title: 'Cave King',        description: 'Treasure Cave of The King`s Spirit',
+        linked: 'cave-king/cave-king.png'
+    },
+    {
         image: 'source-of-life.png',
         title: 'The Source of Life',
         description: 'An art for main menu',
@@ -46,6 +51,18 @@ export const PREVIEW_ITEMS = [
         title: 'Dr Folsbuben',
         description: 'An illustration to my fictional story',
         linked: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.png'
+    },
+    {
+        image: 'characters.png',
+        title: 'Сharacters',
+        description: 'Сharacter designs and sketches',
+        linked: 'characters/shaman.png'
+    },
+    {
+        image: 'guardian.png',
+        title: 'Guardian',
+        description: 'Сharacter design',
+        linked: 'guardian/guardian-concept.png'
     },
     {
         image: 'magic-lakes.png',
