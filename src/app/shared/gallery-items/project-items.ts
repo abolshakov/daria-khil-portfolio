@@ -1,5 +1,40 @@
 export const PROJECT_ITEMS = [
-    // canyon
+  // cave-king
+  {
+    image: 'cave-king/cave-king.png',
+    description: 'Illustration'
+},
+// characters
+{
+    image: 'characters/shaman.png',
+    description: 'Shaman',
+    linked: 'characters/hunter.png'
+},
+{
+    image: 'characters/hunter.png',
+    description: 'Hunter',
+    linked: 'characters/sorceress-assassin.png'
+},
+{
+    image: 'characters/sorceress-assassin.png',
+    description: 'Sorceress and Assassin',
+},
+// guardian
+{
+    image: 'guardian/guardian-concept.png',
+    description: 'Character design',
+    linked: 'guardian/guardian-3d-concept.png'
+},
+{
+    image: 'guardian/guardian-3d-concept.png',
+    description: '3d concept',
+    linked: 'guardian/animation-concept.png'
+},
+{
+    image: 'guardian/animation-concept.png',
+    description: 'Animation sketches',
+},
+  // canyon
     {
         image: 'canyon/canyon.png',
         description: 'Stylized environment'
