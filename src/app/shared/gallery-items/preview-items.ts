@@ -25,7 +25,8 @@ export const PREVIEW_ITEMS = [
     },
     {
         image: 'cave-king.png',
-        title: 'Cave King',        description: 'Treasure Cave of The King`s Spirit',
+        title: 'Cave King',
+        description: 'Treasure Cave of The King`s Spirit',
         linked: 'cave-king/cave-king.png'
     },
     {
@@ -62,7 +63,7 @@ export const PREVIEW_ITEMS = [
         image: 'guardian.png',
         title: 'Guardian',
         description: 'Сharacter design',
-        linked: 'guardian/guardian-concept.png'
+        linked: 'guardian/guardian.png'
     },
     {
         image: 'magic-lakes.png',
