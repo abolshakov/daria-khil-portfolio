@@ -1,11 +1,5 @@
 export const PREVIEW_ITEMS = [
     {
-        image: 'canyon.png',
-        title: 'Canyon',
-        description: 'Stylized environment art',
-        linked: 'canyon/canyon.png'
-    },
-    {
         image: 'arts-of-characters.png',
         title: 'Arts of Characters',
         description: '3 Arts for previews of game heroes',
@@ -15,13 +9,13 @@ export const PREVIEW_ITEMS = [
         image: 'witch-raid.png',
         title: 'Witch Raid',
         description: 'Art for a loading page',
-        linked: 'witch-raid/witch-raid.png'
+        linked: 'witch-raid/witch-raid.jpg'
     },
     {
-        image: 'owl-rider.png',
-        title: 'Owl Rider',
-        description: 'Young elf riding a huge purple owl is going to attack!',
-        linked: 'owl-rider/owl-rider.png'
+        image: 'shaman.png',
+        title: 'Shaman',
+        description: 'Сharacter design',
+        linked: 'shaman/shaman.JPG'
     },
     {
         image: 'cave-king.png',
@@ -33,31 +27,37 @@ export const PREVIEW_ITEMS = [
         image: 'source-of-life.png',
         title: 'The Source of Life',
         description: 'An art for main menu',
-        linked: 'source-of-life/the-source-of-light-game-art.png'
+        linked: 'source-of-life/the-source-of-light.jpg'
     },
     {
-        image: 'warlock.png',
-        title: 'Warlock',
-        description: 'Character concept for 3d model, animation sketches and textures',
-        linked: 'warlock/warlock.png'
+        image: 'owl-rider.png',
+        title: 'Owl Rider',
+        description: 'Young elf riding a huge purple owl is going to attack!',
+        linked: 'owl-rider/owl-rider.jpg'
     },
     {
         image: 'the-outbreak.png',
         title: 'The Outbreak',
         description: 'Game cover for the Steam Store',
-        linked: 'the-outbreak/the-outbreak.png'
+        linked: 'the-outbreak/the-outbreak.jpg'
+    },
+    {
+        image: 'canyon.png',
+        title: 'Canyon',
+        description: 'Stylized environment art',
+        linked: 'canyon/canyon.jpg'
     },
     {
         image: 'dr-folsbuben.png',
         title: 'Dr Folsbuben',
         description: 'An illustration to my fictional story',
-        linked: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.png'
+        linked: 'dr-folsbuben/Dr Folsbuben_and_the_forest_denizens.jpg'
     },
     {
         image: 'characters.png',
         title: 'Сharacters',
         description: 'Сharacter designs and sketches',
-        linked: 'characters/shaman.png'
+        linked: 'characters/fire_spirit.jpg'
     },
     {
         image: 'guardian.png',
@@ -88,6 +88,12 @@ export const PREVIEW_ITEMS = [
         title: 'Crystal Elemental',
         description: 'Character concept',
         linked: 'crystal-elemental/crystal-elemental.png'
+    },
+    {
+        image: 'warlock.png',
+        title: 'Warlock',
+        description: 'Character concept for 3d model, animation sketches and textures',
+        linked: 'warlock/warlock.png'
     },
     {
         image: 'northern-stones.png',
