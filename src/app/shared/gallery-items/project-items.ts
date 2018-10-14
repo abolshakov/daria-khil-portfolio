@@ -1,52 +1,87 @@
 export const PROJECT_ITEMS = [
+    // shaman
+    {
+        image: 'shaman/shaman.jpg',
+        description: 'Shaman',
+        linked: 'shaman/shaman_concept.jpg'
+    },
+    {
+        image: 'shaman/shaman_concept.jpg',
+        description: 'Shaman Concept',
+        linked: 'shaman/shaman_sketch.png'
+    },
+    {
+        image: 'shaman/shaman_sketch.png',
+        description: 'Shaman Sketch',
+        linked: 'shaman/shaman_skills.jpg'
+    },
+    {
+        image: 'shaman/shaman_skills.jpg',
+        description: 'Shaman Skills'
+    },
     // cave-king
     {
-    image: 'cave-king/cave-king.png',
-    description: 'Illustration'
+        image: 'cave-king/cave-king.png',
+        description: 'Illustration'
     },
     // characters
     {
-    image: 'characters/shaman.png',
-    description: 'Shaman',
-    linked: 'characters/hunter.png'
+        image: 'characters/assassin.jpg',
+        description: 'Assassin',
+        linked: 'characters/crystal_lady.jpg'
     },
     {
-    image: 'characters/hunter.png',
-    description: 'Hunter',
-    linked: 'characters/sorceress-assassin.png'
+        image: 'characters/crystal_lady.jpg',
+        description: 'Crystal Lady',
+        linked: 'characters/fire_spirit.jpg'
     },
     {
-    image: 'characters/sorceress-assassin.png',
-    description: 'Sorceress and Assassin',
+        image: 'characters/fire_spirit.jpg',
+        description: 'Fire Spirit',
+        linked: 'characters/ghost_scythe.jpg'
+    },
+    {
+        image: 'characters/ghost_scythe.jpg',
+        description: 'Ghost Scythe',
+        linked: 'characters/ghost_scythe_concept.jpg'
+    },
+    {
+        image: 'characters/ghost_scythe_concept.jpg',
+        description: 'Ghost Scythe Concept',
+        linked: 'characters/sorceress_hunter.png'
+    },
+    {
+        image: 'characters/sorceress_hunter.png',
+        description: 'Sorceress Hunter'
     },
     // guardian
     {
-    image: 'guardian/guardian.png',
-    description: 'Guardian',
-    linked: 'guardian/guardian-concept.png'
+        image: 'guardian/guardian.png',
+        description: 'Guardian',
+        linked: 'guardian/guardian-concept.png'
     },
     {
-    image: 'guardian/guardian-concept.png',
-    description: 'Character design',
-    linked: 'guardian/guardian-3d-concept.png'
+        image: 'guardian/guardian-concept.png',
+        description: 'Character design',
+        linked: 'guardian/guardian-3d-concept.png'
     },
     {
-    image: 'guardian/guardian-3d-concept.png',
-    description: '3d concept',
-    linked: 'guardian/animation-concept.png'
+        image: 'guardian/guardian-3d-concept.png',
+        description: '3d concept',
+        linked: 'guardian/animation-concept.png'
     },
     {
-    image: 'guardian/animation-concept.png',
-    description: 'Animation sketches',
+        image: 'guardian/animation-concept.png',
+        description: 'Animation sketches',
     },
     // canyon
     {
-        image: 'canyon/canyon.png',
+        image: 'canyon/canyon.jpg',
         description: 'Stylized environment'
     },
     // owl-rider
     {
-        image: 'owl-rider/owl-rider.png',
+        image: 'owl-rider/owl-rider.jpg',
         description: 'Young elf riding a huge purple owl is going to attack!'
     },
     // crystal-elemental
@@ -112,7 +147,7 @@ export const PROJECT_ITEMS = [
     },
     // dr-folsbuben
     {
-        image: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.png',
+        image: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.jpg',
         description: 'An illustration to my fictional story'
     },
     // uther
@@ -152,7 +187,7 @@ export const PROJECT_ITEMS = [
     },
     // source-of-life
     {
-        image: 'source-of-life/the-source-of-light-game-art.png',
+        image: 'source-of-life/the-source-of-light.jpg',
         description: 'The source of light - game art'
     },
     // magic-lakes
@@ -378,12 +413,12 @@ export const PROJECT_ITEMS = [
     },
     // witch-raid
     {
-        image: 'witch-raid/witch-raid.png',
+        image: 'witch-raid/witch-raid.jpg',
         description: 'Witch raid'
     },
     // the-outbreak
     {
-        image: 'the-outbreak/the-outbreak.png',
+        image: 'the-outbreak/the-outbreak.jpg',
         description: 'The outbreak'
     },
 ];

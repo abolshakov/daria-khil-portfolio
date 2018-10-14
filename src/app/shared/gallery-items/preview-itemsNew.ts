@@ -2,7 +2,7 @@ export const PREVIEW_ITEMS = [
     {
         image: 'arts-of-characters.png',
         title: 'Arts of Characters',
-        description: '3 Arts for previews of game heroes',
+        description: 'Arts for previews of game heroes',
         linked: 'arts-of-characters/warlock-spirit.png'
     },
     {
@@ -57,7 +57,7 @@ export const PREVIEW_ITEMS = [
         image: 'characters.png',
         title: 'Сharacters',
         description: 'Сharacter designs and sketches',
-        linked: 'characters/assassin.jpg'
+        linked: 'characters/fire_spirit.jpg'
     },
     {
         image: 'guardian.png',

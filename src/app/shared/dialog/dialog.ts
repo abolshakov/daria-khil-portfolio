@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, NgModule, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, Inject, NgModule, OnInit, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA, MatSpinner } from '@angular/material';
 import { MaterialAndFlexModule } from '../material-and-flex.module';
@@ -6,136 +6,72 @@ import { MaterialAndFlexModule } from '../material-and-flex.module';
 import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
 import { DialogData } from '../gallery/gallery';
 
+import { ImageCardComponent } from '../image-card/image-card';
+
 @Component({
     selector: 'pfo-gallery-item-dialog',
     templateUrl: './dialog.html',
     styleUrls: ['./dialog.css'],
     encapsulation: ViewEncapsulation.None
 })
-export class DialogComponent implements OnInit {
-    @ViewChild('spinner') spinnerView: MatSpinner;
-    @ViewChild('tempImage') tempImageView;
-    @ViewChild('image') imageView;
-    @ViewChild('actions') actionsView;
+export class DialogComponent implements AfterViewInit {
+    // @ViewChild('spinner') spinnerView: MatSpinner;
+    @ViewChild('visibleArea') visibleArea;
 
-    public temporaryImage: String;
-    public description: String;
-    public previousDisabled: Boolean;
-    public nextDisabled: Boolean;
+    public rootItem: GalleryItem;
+    public items: GalleryItem[] = [];
+    public visibleWidth: number;
+    public visibleHeight: number;
 
-    public current: GalleryItem;
-    public previous: GalleryItem;
-    public next: GalleryItem;
-
-    constructor(
-        public dialogRef: MatDialogRef<DialogComponent>,
+    constructor(public dialogRef: MatDialogRef<DialogComponent>,
         @Inject(MAT_DIALOG_DATA) public data: DialogData,
         private galleryItems: GalleryItems) {
-        this.temporaryImage = data.tempImage;
-        this.current = data.item;
-        this.next = galleryItems.getNextProjectItem(this.current);
+        this.rootItem = data.item;
+        let current: GalleryItem = this.rootItem;
+        while (current = galleryItems.getNextProjectItem(current)) {
+            this.items.push(current);
+        }
     }
 
-    ngOnInit(): void {
-        this.toggleSpinner(true);
-        this.resizeImage();
+    ngAfterViewInit(): void {
+        // this.toggleSpinner(true);
+        this.dialogRef.updateSize('80%', '80%');
+        Promise.resolve(null).then(() =>
+            this.calculateSize(this.visibleArea.nativeElement));
     }
 
     @HostListener('window:resize')
     onResize() {
-        this.resizeImage();
+        this.calculateSize(this.visibleArea.nativeElement);
     }
 
-    onImageLoad(): void {
-        this.resizeImage();
+    private calculateSize(element: HTMLElement): void {
+        const style: CSSStyleDeclaration = window.getComputedStyle(element);
+        const horizontalPadding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+        const verticalPadding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+        this.visibleWidth = element.clientWidth - horizontalPadding;
+        this.visibleHeight = element.clientHeight - verticalPadding;
     }
 
-    onPreviousClick(): void {
-        if (this.previousDisabled) {
-            return;
-        }
-        this.setTempImage();
-        this.toggleSpinner(true);
+    // private toggleSpinner(visible: boolean): void {
+    //     this.show(this.spinnerView._elementRef.nativeElement, visible);
+    //     this.show(this.tempImageView.nativeElement, visible);
+    //     this.show(this.imageList.nativeElement, !visible);
+    // }
 
-        this.next = this.current;
-        this.current = this.previous;
-        this.previous = this.galleryItems.getPreviousProjectItem(this.current);
-    }
-
-    onNextClick(): void {
-        if (this.nextDisabled) {
-            return;
-        }
-        this.setTempImage();
-        this.toggleSpinner(true);
-
-        this.previous = this.current;
-        this.current = this.next;
-        this.next = this.galleryItems.getNextProjectItem(this.current);
-    }
-
-    onContentClick(): void {
-        if (!this.current.url) {
-            return;
-        }
-        const win = window.open(this.current.url, '_blank');
-        win.focus();
-    }
-
-    private resizeImage(): void {
-        const image: HTMLImageElement = this.imageView.nativeElement;
-
-        if (!image.complete) {
-            return;
-        }
-
-        const scaleFactor = 0.7;
-
-        const imageWidth: number = image.naturalWidth;
-        const imageHeight: number = image.naturalHeight;
-
-        const windowWidth: number = window.innerWidth * scaleFactor;
-        const windowHeight: number = window.innerHeight * scaleFactor;
-
-        const deltaWidth: number = (imageWidth - windowWidth) / imageWidth;
-        const deltaHeight: number = (imageHeight - windowHeight) / imageHeight;
-
-        if (deltaWidth > 0 && deltaWidth > deltaHeight) {
-            image.removeAttribute('height');
-            image.width = windowWidth;
-        } else
-            if (deltaHeight > 0 && deltaHeight >= deltaWidth) {
-                image.removeAttribute('width');
-                image.height = windowHeight;
-            } else {
-                image.removeAttribute('width');
-                image.removeAttribute('height');
-            }
-
-        this.toggleSpinner(false);
-
-        this.actionsView.nativeElement.style.width = image.width + 'px';
-    }
-
-    private toggleSpinner(visible: boolean): void {
-        this.spinnerView._elementRef.nativeElement.hidden = !visible;
-        this.tempImageView.nativeElement.hidden = !visible;
-        this.imageView.nativeElement.hidden = visible;
-
-        this.description = visible ? 'Loading...' : this.current.description;
-        this.previousDisabled = visible ? true : this.previous === undefined;
-        this.nextDisabled = visible ? true : this.next === undefined;
-    }
-
-    private setTempImage(): void {
-        this.tempImageView.nativeElement.width = this.imageView.nativeElement.width;
-        this.temporaryImage = this.current.image;
-    }
+    // private show(nativeElement: any, visible: boolean): void {
+    //     if (visible) {
+    //         nativeElement.removeAttribute('hidden');
+    //     } else {
+    //         nativeElement.hidden = true;
+    //     }
+    // }
 }
 
 @NgModule({
     exports: [DialogComponent],
     imports: [CommonModule, MaterialAndFlexModule],
-    declarations: [DialogComponent]
+    declarations: [DialogComponent,
+        ImageCardComponent]
 })
 export class DialogModule { }

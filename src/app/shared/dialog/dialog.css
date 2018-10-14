@@ -1,84 +1,39 @@
 .mat-dialog-container {
-    display: flow-root;
-    padding: 2px 2px 0 2px;
+    padding: 2px;
     position: relative;
 }
 
-.actions-content {
+.ng-star-inserted {
     display: flex;
-    overflow: hidden;
-}
-
-.actions-content-label {
-    height: 48px;
-    padding: 0 12px;
-    cursor: default;
-    box-sizing: border-box;
-    opacity: .6;
-    min-width: 160px;
-    text-align: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    white-space: normal;
-    position: relative;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.actions-content-pagination {
-    position: relative;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    min-width: 32px;
-    cursor: pointer;
-    z-index: 2
-}
-
-.actions-content-pagination-controls-enabled .actions-content-pagination {
-    display: flex
-}
-
-.actions-content-pagination-before, .actions-content-rtl .actions-content-pagination-after {
-    padding-left: 4px
-}
-
-.actions-content-pagination-before .actions-content-pagination-chevron, .actions-content-rtl .actions-content-pagination-after .actions-content-pagination-chevron {
-    transform: rotate(-135deg)
-}
-
-.actions-content-pagination-after, .actions-content-rtl .actions-content-pagination-before {
-    padding-right: 4px
-}
-
-.actions-content-pagination-after .actions-content-pagination-chevron, .actions-content-rtl .actions-content-pagination-before .actions-content-pagination-chevron {
-    transform: rotate(45deg)
-}
-
-.actions-content-pagination-chevron {
-    border-style: solid;
-    border-width: 2px 2px 0 0;
-    content: '';
-    height: 8px;
-    width: 8px
-}
-
-.actions-content-pagination-disabled {
-    box-shadow: none;
-    cursor: default
-}
-
-.actions-content-pagination-disabled .actions-content-pagination-chevron {
-    border-color: rgba(0, 0, 0, .38);
-}
-
-.actions-content-label-container {
-    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    overflow: hidden;
-    z-index: 1
+}
+
+.section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;    
+    padding-top: 16px;
+    text-align: center;    
+}
+
+.scrollable-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: auto;
+    min-height: 0;
+    padding: 0 16px;
+}
+
+.image-card {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 .close {
@@ -98,9 +53,9 @@
 }
 
 .image-content {
-    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .image-content .mat-progress-spinner {

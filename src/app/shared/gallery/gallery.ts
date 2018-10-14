@@ -30,15 +30,14 @@ export class GalleryComponent {
   }
 
   openDialog(item: GalleryItem): void {
-    const detailedItem = this.galleryItems.getNextProjectItem(item);
+    const nextItem = this.galleryItems.getNextProjectItem(item);
 
-    if (!detailedItem) {
+    if (!nextItem) {
       return;
     }
     this.dialog.open(DialogComponent, {
       data: {
-        item: detailedItem,
-        tempImage: item.image
+        item: item
       },
       autoFocus: false
     });
