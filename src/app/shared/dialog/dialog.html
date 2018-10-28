@@ -5,11 +5,11 @@
   </div> -->
 <div class="section">
   <div class="mat-card-title">
-    {{rootItem.title}}
+    {{previewItem.title}}
   </div>
   <div #visibleArea class="scrollable-content">
     <!-- <mat-spinner #spinner [strokeWidth]="5"></mat-spinner> -->
-    <pfo-image-card class="image-card" *ngFor="let item of items" [item]="item" [maxWidth]="visibleWidth" [maxHeight]="visibleHeight">
+    <pfo-image-card class="image-card" *ngFor="let item of previewItem.portfolioItems" [item]="item" [maxWidth]="visibleWidth" [maxHeight]="visibleHeight">
     </pfo-image-card>
   </div>
 </div>

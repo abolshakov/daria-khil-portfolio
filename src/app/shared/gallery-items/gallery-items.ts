@@ -1,52 +1,43 @@
 import { Injectable } from '@angular/core';
 
 import { PREVIEW_ITEMS } from './preview-items';
-import { PROJECT_ITEMS } from './project-items';
 
-export interface GalleryItem {
-    image: string;
+export interface PreviewItem {
     title?: string;
-    description: string;
+    image?: string;
+    description?: string;
+    portfolioItems?: PortfolioItem[];
+}
+
+export interface PortfolioItem {
+    image?: string;
+    description?: string;
     url?: string;
-    linked?: string;
 }
 
 @Injectable()
 export class GalleryItems {
-    private readonly previewPath = '../assets/images/preview/';
-    private readonly projectPath = '../assets/images/projects/';
-
-    private forwardLinkedList: Map<string, GalleryItem> = new Map<string, GalleryItem>();
-    private backwardLinkedList: Map<string, GalleryItem> = new Map<string, GalleryItem>();
+    private readonly imagesPath = '../assets/images/';
 
     constructor() {
-        for (const item of PREVIEW_ITEMS) {
-            item.image = this.previewPath + item.image;
-
-            if (item.linked) {
-                item.linked = this.projectPath + item.linked;
+        for (const previewItem of PREVIEW_ITEMS as PreviewItem[]) {
+            if (previewItem.image) {
+                previewItem.image = this.imagesPath + previewItem.image;
             }
-        }
-        for (const item of PROJECT_ITEMS) {
-            item.image = this.projectPath + item.image;
-            this.forwardLinkedList.set(item.image, item);
 
-            if (item.linked) {
-                item.linked = this.projectPath + item.linked;
-                this.backwardLinkedList.set(item.linked, item);
+            if (!previewItem.portfolioItems) {
+                continue;
+            }
+
+            for (const portfolioItem of previewItem.portfolioItems) {
+                if (portfolioItem.image) {
+                    portfolioItem.image = this.imagesPath + portfolioItem.image;
+                }
             }
         }
     }
 
-    getPreviewItems(): GalleryItem[] {
+    getPreviewItems(): PreviewItem[] {
         return PREVIEW_ITEMS;
-    }
-
-    getNextProjectItem(item: GalleryItem): GalleryItem {
-        return this.forwardLinkedList.get(item.linked);
-    }
-
-    getPreviousProjectItem(item: GalleryItem): GalleryItem {
-        return this.backwardLinkedList.get(item.image);
     }
 }

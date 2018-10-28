@@ -3,12 +3,11 @@ import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material';
 import { MaterialAndFlexModule } from '../material-and-flex.module';
 
-import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
+import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
 import { DialogComponent } from '../dialog/dialog';
 
 export interface DialogData {
-  item: GalleryItem;
-  tempImage: String;
+  item: PreviewItem;
 }
 
 @Component({
@@ -29,12 +28,7 @@ export class GalleryComponent {
     this.renderer2.removeClass(target, this.elevation);
   }
 
-  openDialog(item: GalleryItem): void {
-    const nextItem = this.galleryItems.getNextProjectItem(item);
-
-    if (!nextItem) {
-      return;
-    }
+  openDialog(item: PreviewItem): void {
     this.dialog.open(DialogComponent, {
       data: {
         item: item

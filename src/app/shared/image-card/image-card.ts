@@ -1,5 +1,5 @@
 import { Component, Input, ViewChild, OnChanges, SimpleChange } from '@angular/core';
-import { GalleryItem } from '../gallery-items/gallery-items';
+import { PortfolioItem } from '../gallery-items/gallery-items';
 
 interface Size {
     width: number;
@@ -13,7 +13,7 @@ interface Size {
 })
 export class ImageCardComponent implements OnChanges {
     @Input()
-    public item: GalleryItem;
+    public item: PortfolioItem;
     @Input()
     public maxWidth: number;
     @Input()

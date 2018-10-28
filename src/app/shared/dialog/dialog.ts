@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA, MatSpinner } from '@angular/material';
 import { MaterialAndFlexModule } from '../material-and-flex.module';
 
-import { GalleryItems, GalleryItem } from '../gallery-items/gallery-items';
+import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
 import { DialogData } from '../gallery/gallery';
 
 import { ImageCardComponent } from '../image-card/image-card';
@@ -18,19 +18,13 @@ export class DialogComponent implements AfterViewInit {
     // @ViewChild('spinner') spinnerView: MatSpinner;
     @ViewChild('visibleArea') visibleArea;
 
-    public rootItem: GalleryItem;
-    public items: GalleryItem[] = [];
+    public previewItem: PreviewItem;
     public visibleWidth: number;
     public visibleHeight: number;
 
     constructor(public dialogRef: MatDialogRef<DialogComponent>,
-        @Inject(MAT_DIALOG_DATA) public data: DialogData,
-        private galleryItems: GalleryItems) {
-        this.rootItem = data.item;
-        let current: GalleryItem = this.rootItem;
-        while (current = galleryItems.getNextProjectItem(current)) {
-            this.items.push(current);
-        }
+        @Inject(MAT_DIALOG_DATA) public data: DialogData) {
+        this.previewItem = data.item;
     }
 
     ngAfterViewInit(): void {
