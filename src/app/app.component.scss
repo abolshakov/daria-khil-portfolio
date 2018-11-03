@@ -1,0 +1,59 @@
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 1280px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+header .mat-toolbar {
+    height: 100px;
+    background: #333333;
+    color: #ffffff;
+}
+
+.docs-primary-header {
+    margin: 100px 0 24px 0;
+    color: #939393;    
+    background-color: #ffffff;
+    text-align: center;    
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.docs-primary-header h1 {
+    font-weight: 400;
+    margin: 0;
+    padding: 12px;
+    font-size: 28px;
+    font-family: 'Linotte-Light';
+}
+
+.main-content {
+    margin: 16px 24px 24px 24px;
+    max-width: 1280px;
+}
+
+.mat-toolbar-single-row.footer {
+    height: 48px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, .54);
+}
+
+footer .mat-toolbar {
+    border-top: 1px solid #e5e5e5;
+    color:#939393;
+    font-size: 16px;
+}
+
+.footer-content {
+    max-width: 1280px;    
+}

@@ -13,7 +13,7 @@ export interface DialogData {
 @Component({
   selector: 'pfo-gallery',
   templateUrl: './gallery.html',
-  styleUrls: ['./gallery.css']
+  styleUrls: ['./gallery.scss']
 })
 export class GalleryComponent {
   private readonly elevation: string = 'mat-elevation-z10';

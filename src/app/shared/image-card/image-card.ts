@@ -9,7 +9,7 @@ interface Size {
 @Component({
     selector: 'pfo-image-card',
     templateUrl: './image-card.html',
-    styleUrls: ['./image-card.css']
+    styleUrls: ['./image-card.scss']
 })
 export class ImageCardComponent implements OnChanges {
     @Input()

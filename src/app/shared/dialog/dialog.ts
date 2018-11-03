@@ -11,7 +11,7 @@ import { ImageCardComponent } from '../image-card/image-card';
 @Component({
     selector: 'pfo-gallery-item-dialog',
     templateUrl: './dialog.html',
-    styleUrls: ['./dialog.css'],
+    styleUrls: ['./dialog.scss'],
     encapsulation: ViewEncapsulation.None
 })
 export class DialogComponent implements AfterViewInit {
