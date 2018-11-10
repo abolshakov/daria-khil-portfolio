@@ -1,528 +1,479 @@
 export const PREVIEW_ITEMS = [
   {
-    title: 'Arts of Characters Updated',
-    image: 'arts-of-characters-updated.png',
-    description: 'Arts for previews of game heroes',
+    title: 'Snapparazzi Illustartinos',
+    image: 'snapparazzi-illustartinos.png',
+    description: 'Illustrations describing the idea of the crypto-project "Snapparazzi". Designed for the project\'s website.',
     portfolioItems: [
       {
-        image: 'arts-of-characters-updated/warlock-spirit.png',
-        description: 'Warlock spirit'
+        image: 'snapparazzi-illustartinos/snapparazzi-io.png',
+        description: 'snapparazzi.io',
+        url: 'http:/www.snapparazzi.io'
       },
       {
-        image: 'arts-of-characters-updated/witch-spirit.png',
-        description: 'Witch spirit'
+        image: 'snapparazzi-illustartinos/5b9b6eee-8093-4110-94d9-6365332ac968.png'
       },
       {
-        image: 'arts-of-characters-updated/bot-spirit.png',
-        description: 'Bot spirit'
+        image: 'snapparazzi-illustartinos/d24df4de-1db6-409a-b096-2e7af3598e70.png'
       },
       {
-        image: 'arts-of-characters-updated/warlock-witch-bot.png',
-        description: 'Arts of characters'
-      }
-    ]
-  },
-  {
-    title: 'Witch Raid',
-    image: 'witch-raid.png',
-    description: 'Art for a loading page',
-    portfolioItems: [
-      {
-        image: 'witch-raid/witch-raid.jpg',
-        description: 'Witch raid'
-      }
-    ]
-  },
-  {
-    title: 'Shaman',
-    image: 'shaman.png',
-    description: 'Сharacter design',
-    portfolioItems: [
-      {
-        image: 'shaman/shaman.jpg',
-        description: 'Shaman'
+        image: 'snapparazzi-illustartinos/2ba4656c-9216-469d-943d-99b2cacbf74b.png'
       },
       {
-        image: 'shaman/shaman_concept.jpg',
-        description: 'Shaman Concept'
+        image: 'snapparazzi-illustartinos/bdae55d6-3658-4d22-93a4-1056dd12d731.png'
       },
       {
-        image: 'shaman/shaman_sketch.png',
-        description: 'Shaman Sketch'
+        image: 'snapparazzi-illustartinos/b57666f2-335b-4392-b7d7-3f99a4fe96bc.png'
       },
       {
-        image: 'shaman/shaman_skills.jpg',
-        description: 'Shaman Skills'
+        image: 'snapparazzi-illustartinos/6c9f137a-0a61-4b27-b0be-bb6a62b8adcf.png'
+      },
+      {
+        image: 'snapparazzi-illustartinos/6cce95b3-841a-48a9-8d94-5aadf3b66d82.png'
+      },
+      {
+        image: 'snapparazzi-illustartinos/0556a62d-53c0-4725-91b2-e3a9cf825a27.png'
+      },
+      {
+        image: 'snapparazzi-illustartinos/58ecfb2b-1683-484a-b678-de0bfdd56ce1.png'
+      },
+      {
+        image: 'snapparazzi-illustartinos/efe043aa-d8d3-419b-b0f1-4d2e8db6eba9.png'
       }
     ]
   },
   {
-    title: 'Cave King',
-    image: 'cave-king.png',
-    description: 'Treasure Cave of The King`s Spirit',
+    title: 'CryptoSoul Web Design',
+    image: 'crypto-soul-web-design.jpg',
+    description: 'Web design, icons and posters for the crypto project and the game "CryptoSoul".',
     portfolioItems: [
       {
-        image: 'cave-king/cave-king.png',
-        description: 'Illustration'
+        image: 'crypto-soul/fe4f6001-9ba6-40b5-b998-23989b3ae005.png'
+      },
+      {
+        image: 'crypto-soul/62ff667e-36b1-4017-b4b4-013e8c0eace8.png',
+        description: '',
+        url: 'https://cryptosoul.io'
+      },
+      {
+        image: 'crypto-soul/1e567ff5-2fd0-4a3d-820d-417bccece964.jpg'
+      },
+      {
+        image: 'crypto-soul/cd8b9097-9840-4a77-9f9f-0c245e6ef069.jpg'
+      },
+      {
+        image: 'crypto-soul/fde65415-2bbe-4e2b-8617-38ba9371dfbb.jpg'
+      },
+      {
+        image: 'crypto-soul/aec6744a-b999-4fa4-99c6-cd9ddd4f417f.jpg'
+      },
+      {
+        image: 'crypto-soul/37be3088-4a30-466d-b694-35d57fb23478.jpg'
       }
     ]
   },
   {
-    title: 'The Source of Life',
-    image: 'source-of-life.png',
-    description: 'An art for main menu',
+    title: 'Codeur Animation',
+    image: 'codeur-animation.jpg',
+    description: 'Short animation created for Codeur.com about the growth of the most popular social networks.',
     portfolioItems: [
       {
-        image: 'source-of-life/the-source-of-light.jpg',
-        description: 'The source of light - game art'
+        image: 'codeur-animation/click-the-image-to-watch-the-video.jpg',
+        description: 'Click the image to watch the video.',
+        url: 'https://youtu.be/dyRsVWBxIXI'
+      },
+      {
+        image: 'codeur-animation/storyboards.jpg',
+        description: 'Storyboards'
+      },
+      {
+        image: 'codeur-animation/thanks-for-watching.jpg',
+        description: 'Thanks for watching!'
       }
     ]
   },
   {
-    title: 'Owl Rider',
-    image: 'owl-rider.png',
-    description: 'Young elf riding a huge purple owl is going to attack!',
+    title: 'Sticker Packs',
+    image: 'sticker-packs.png',
+    description: '4 packs of cute and funny stickers for iMessage.',
     portfolioItems: [
       {
-        image: 'owl-rider/owl-rider.jpg',
-        description: 'Young elf riding a huge purple owl is going to attack!'
-      }
-    ]
-  },
-  {
-    title: 'The Outbreak',
-    image: 'the-outbreak.png',
-    description: 'Game cover for the Steam Store',
-    portfolioItems: [
+        image: 'sticker-packs/329e3a0f-f977-498d-85c8-2301cd693296.png'
+      },
       {
-        image: 'the-outbreak/the-outbreak.jpg',
-        description: 'The outbreak'
-      }
-    ]
-  },
-  {
-    title: 'Canyon',
-    image: 'canyon.png',
-    description: 'Stylized environment art',
-    portfolioItems: [
+        image: 'sticker-packs/39bced5e-3096-474b-a30c-39d10b11f0ee.png'
+      },
       {
-        image: 'canyon/canyon.jpg',
-        description: 'Stylized environment'
+        image: 'sticker-packs/87e5224e-d33d-407d-97c8-e8116cee286d.png'
+      },
+      {
+        image: 'sticker-packs/0cfaeab5-7b2c-4340-8431-31eedd050012.png'
+      },
+      {
+        image: 'sticker-packs/f8c7f404-83bc-450b-8365-d018e5c6e1a4.png'
+      },
+      {
+        image: 'sticker-packs/4cbbdc4b-cea1-40e9-8d78-7ee6f8b6e589.png'
+      },
+      {
+        image: 'sticker-packs/0fbed8b1-e199-4a66-843f-a69ca9eaf6fe.png'
+      },
+      {
+        image: 'sticker-packs/583daa37-e6aa-4c64-bdcf-d52658bccc6d.png'
+      },
+      {
+        image: 'sticker-packs/8bb2f954-1fb1-4a17-9518-f5f8463a2312.png'
+      },
+      {
+        image: 'sticker-packs/b4b9e2f5-65e8-4af1-837a-f548ce1cffe2.png'
+      },
+      {
+        image: 'sticker-packs/85d0c74b-c228-4f3a-b075-70c8e95f753b.png'
+      },
+      {
+        image: 'sticker-packs/93a70969-c090-4dc1-8bd7-23df4d0f16b2.png'
+      },
+      {
+        image: 'sticker-packs/7eb0430d-8f6e-410f-aaf0-941335fe10f5.gif'
       }
     ]
   },
   {
     title: 'Dr Folsbuben',
     image: 'dr-folsbuben.png',
-    description: 'An illustration to my fictional story',
+    description: 'Illustration to the fictional story about Dr Folsbuben and his adventure.',
     portfolioItems: [
       {
-        image: 'dr-folsbuben/dr-folsbuben-and-the-forest-denizens.jpg',
-        description: 'An illustration to my fictional story'
+        image: 'dr-folsbuben/39ac319a-fd94-4bf5-be48-a6423e16cb95.png'
+      },
+      {
+        image: 'dr-folsbuben/d8944ab5-0fdb-4b0a-b49d-5983e0f1b66b.png',
+        description: ''
+      },
+      {
+        image: 'dr-folsbuben/da1b7e3c-03cd-42d3-b45c-b6f10f3322dc.png',
+        description: ''
+      },
+      {
+        image: 'dr-folsbuben/c5be4fad-50d5-45a3-840e-b01b6be44765.png'
+      },
+      {
+        image: 'dr-folsbuben/207974c3-3ab1-4b14-9937-55696e4b4362.png'
       }
     ]
   },
   {
-    title: 'Сharacters',
-    image: 'characters.png',
-    description: 'Сharacter designs and sketches',
+    title: 'CryptoSoul Arts',
+    image: 'crypto-soul-arts.png',
+    description: 'Promotional illustrations and arts for menu backgrounds created for the CryptoSoul Game.',
     portfolioItems: [
       {
-        image: 'characters/assassin.jpg',
-        description: 'Assassin'
+        image: 'crypto-soul-arts/witch-raid.png',
+        description: 'Witch raid'
       },
       {
-        image: 'characters/crystal_lady.jpg',
-        description: 'Crystal Lady'
+        image: 'crypto-soul-arts/canyon.png',
+        description: 'Canyon'
       },
       {
-        image: 'characters/fire_spirit.jpg',
-        description: 'Fire Spirit'
+        image: 'crypto-soul-arts/king-s-cave.png',
+        description: 'King\'s Cave'
       },
       {
-        image: 'characters/ghost_scythe.jpg',
-        description: 'Ghost Scythe'
+        image: 'crypto-soul-arts/outbreak.png',
+        description: 'Outbreak'
       },
       {
-        image: 'characters/ghost_scythe_concept.jpg',
-        description: 'Ghost Scythe Concept'
-      },
-      {
-        image: 'characters/sorceress_hunter.png',
-        description: 'Sorceress Hunter'
+        image: 'crypto-soul-arts/source-of-life.jpg',
+        description: 'Source of Life'
       }
     ]
   },
   {
-    title: 'Guardian',
-    image: 'guardian.png',
-    description: 'Сharacter design',
+    title: 'CryptoSoul Characters',
+    image: 'crypto-soul-characters.png',
+    description: 'Character designs, concepts, animation sketches and 3d textures for the CryptoSoul Game.',
     portfolioItems: [
       {
-        image: 'guardian/guardian.png',
-        description: 'Guardian'
+        image: 'crypto-soul-characters/character-illustration.jpg',
+        description: 'Character illustration'
       },
       {
-        image: 'guardian/guardian-concept.png',
-        description: 'Character design'
+        image: 'crypto-soul-characters/concept-for-3-d-modeling.jpg',
+        description: 'Concept for 3d modeling'
       },
       {
-        image: 'guardian/guardian-3d-concept.png',
-        description: '3d concept'
+        image: 'crypto-soul-characters/character-animation-sketches.png',
+        description: 'Character animation sketches'
       },
       {
-        image: 'guardian/animation-concept.png',
-        description: 'Animation sketches'
+        image: 'crypto-soul-characters/chaarcter-illustration.png',
+        description: 'Chaarcter illustration'
+      },
+      {
+        image: 'crypto-soul-characters/3c54195b-1800-4e6d-9eca-c5090553452f.png',
+        description: ''
+      },
+      {
+        image: 'crypto-soul-characters/textures-for-3-d-model.png',
+        description: 'Textures for 3d model'
+      },
+      {
+        image: 'crypto-soul-characters/concept-and-animation-sketches.png',
+        description: 'Concept and animation sketches'
+      },
+      {
+        image: 'crypto-soul-characters/character-illustration.png',
+        description: 'Character illustration'
+      },
+      {
+        image: 'crypto-soul-characters/38b722e5-467b-46a6-a461-435ff10a8746.png',
+        description: ''
+      },
+      {
+        image: 'crypto-soul-characters/73c7cdfc-bb89-4de8-a677-27c7b4dd4cac.png',
+        description: 'Textures for 3d model'
+      },
+      {
+        image: 'crypto-soul-characters/f4600169-f566-4d2e-b759-f249f693227f.png',
+        description: 'Concept and animation sketches'
+      },
+      {
+        image: 'crypto-soul-characters/62ae36be-9822-4a17-aaf3-105ffe23b347.png',
+        description: 'Character illustration'
+      },
+      {
+        image: 'crypto-soul-characters/bcd5210a-a06d-4df1-82b1-2107084e42f0.png',
+        description: ''
+      },
+      {
+        image: 'crypto-soul-characters/615c88fb-7682-4d8b-be97-a93c25f04836.png',
+        description: 'Textures for 3d model'
+      },
+      {
+        image: 'crypto-soul-characters/5fb8f1b7-76a2-4d3d-9c73-2160dbecdfe1.png',
+        description: 'Concept and animation sketches'
+      },
+      {
+        image: 'crypto-soul-characters/4c969f25-86b5-48c3-ad3e-6b4a3b0eaf93.png',
+        description: 'Character illustration'
+      },
+      {
+        image: 'crypto-soul-characters/concept-for-3-d-modeling.png',
+        description: 'Concept for 3d modeling'
+      },
+      {
+        image: 'crypto-soul-characters/199fe3e3-e621-4f7c-8c5f-96e635ad6b7a.png',
+        description: 'Character animation sketches'
       }
     ]
   },
   {
-    title: 'Magic Lakes',
-    image: 'magic-lakes.png',
-    description: 'Map texture and objects of the Magic Lakes region',
-    portfolioItems: [
-      {
-        image: 'magic-lakes/game-scene-screen-1.png',
-        description: 'Game scene screen 1'
-      },
-      {
-        image: 'magic-lakes/game-scene-screen-2.png',
-        description: 'Game scene screen 2'
-      },
-      {
-        image: 'magic-lakes/separate-objects-1.png',
-        description: 'Separate objects 1'
-      },
-      {
-        image: 'magic-lakes/separate-objects-2.png',
-        description: 'Separate objects 2'
-      },
-      {
-        image: 'magic-lakes/sketch.png',
-        description: 'Sketch'
-      }
-    ]
-  },
-  {
-    title: 'Future Soldier',
-    image: 'future-soldier.png',
-    description: 'Soldier and weapon concept',
-    portfolioItems: [
-      {
-        image: 'future-soldier/future-soldier.png',
-        description: 'Future Soldier'
-      },
-      {
-        image: 'future-soldier/character-concept.png',
-        description: 'Character concept'
-      },
-      {
-        image: 'future-soldier/weapon-concept.png',
-        description: 'Weapon concept'
-      }
-    ]
-  },
-  {
-    title: 'Sea Keeper',
-    image: 'sea-keeper.png',
-    description: 'Character concept',
-    portfolioItems: [
-      {
-        image: 'sea-keeper/sea-keeper.png',
-        description: 'Sea Keeper'
-      },
-      {
-        image: 'sea-keeper/character-concept.png',
-        description: 'Character concept'
-      }
-    ]
-  },
-  {
-    title: 'Crystal Elemental',
-    image: 'crystal-elemental.png',
-    description: 'Character concept',
-    portfolioItems: [
-      {
-        image: 'crystal-elemental/crystal-elemental.png',
-        description: 'Crystal Elemental'
-      },
-      {
-        image: 'crystal-elemental/character-concept.png',
-        description: 'Character concept'
-      },
-      {
-        image: 'crystal-elemental/final-sketch.png',
-        description: 'Final sketch'
-      },
-      {
-        image: 'crystal-elemental/sketches.png',
-        description: 'Sketches.'
-      }
-    ]
-  },
-  {
-    title: 'Warlock',
-    image: 'warlock.png',
-    description: 'Character concept for 3d model, animation sketches and textures',
-    portfolioItems: [
-      {
-        image: 'warlock/warlock.png',
-        description: 'Warlock'
-      },
-      {
-        image: 'warlock/3d-character-textures.png',
-        description: '3D character textures'
-      },
-      {
-        image: 'warlock/character-concept.png',
-        description: 'Character concept'
-      },
-      {
-        image: 'warlock/animation-sketches.png',
-        description: 'Animation sketches'
-      }
-    ]
-  },
-  {
-    title: 'Northern Stones',
-    image: 'northern-stones.png',
-    description: 'Map texture and objects of the Northern part of the world',
-    portfolioItems: [
-      {
-        image: 'northern-stones/game-scene-screen.png',
-        description: 'Game scene screen'
-      },
-      {
-        image: 'northern-stones/separate-objects.png',
-        description: 'Separate objects'
-      },
-      {
-        image: 'northern-stones/sketch.png',
-        description: 'Sketch'
-      }
-    ]
-  },
-  {
-    title: 'Blizzard Paladin',
+    title: 'Paladin',
     image: 'paladin.png',
-    description: 'Cute illustration of Blizzard\'s famous Paladin',
+    description: 'Blizzard Paladin speed painting fanart.',
     portfolioItems: [
       {
-        image: 'paladin/uther.png',
-        description: 'Cute illustration of Blizzard\'s famous Paladin'
+        image: 'paladin/a75ce5fe-5ea1-4de9-9af5-9e8865de1a8e.png'
+      },
+      {
+        image: 'paladin/327a2e29-d142-4740-b821-e9ff825af474.png'
       }
     ]
   },
   {
-    title: 'Centre Circle',
-    image: 'center-circle.png',
-    description: 'Map texture and objects of the Center part of the world',
+    title: 'CryptoSoul Map',
+    image: 'crypto-soul-map.png',
+    description: 'Map ground textures and objects for the game\'s world.',
     portfolioItems: [
       {
-        image: 'centre-circle/game-scene-screen-1.png',
-        description: 'Game scene screen 1'
+        image: 'crypto-soul-map/7726d28c-b446-4d3e-839c-62c38fd46f24.png',
+        description: ''
       },
       {
-        image: 'centre-circle/game-scene-screen-2.png',
-        description: 'Game scene screen 2'
+        image: 'crypto-soul-map/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png',
+        description: ''
       },
       {
-        image: 'centre-circle/game-scene-screen-3.png',
-        description: 'Game scene screen 3'
+        image: 'crypto-soul-map/1cf5e67f-d136-424d-a072-c9422c8f6127.png',
+        description: ''
       },
       {
-        image: 'centre-circle/separate-objects.png',
-        description: 'Separate objects'
+        image: 'crypto-soul-map/424a3aae-9335-433a-b251-64bc3b573bb6.png',
+        description: ''
       },
       {
-        image: 'centre-circle/sketch.png',
-        description: 'Sketch'
+        image: 'crypto-soul-map/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png',
+        description: ''
+      },
+      {
+        image: 'crypto-soul-map/fa07cfde-fff3-48ed-a019-4c35fc8a8123.png'
+      },
+      {
+        image: 'crypto-soul-map/7bfd329d-5dba-4112-81ed-1e9a9c1928cd.png'
+      },
+      {
+        image: 'crypto-soul-map/df111b91-ad4f-4970-a1ac-758797ae882a.png'
+      },
+      {
+        image: 'crypto-soul-map/415f68bc-e26f-4ae1-8364-4ebbf3e3387b.png'
+      },
+      {
+        image: 'crypto-soul-map/a816f77b-7de1-4c35-815c-67f6ef299c6a.png'
+      },
+      {
+        image: 'crypto-soul-map/bb70a6f1-5743-4365-9819-a0e736987efa.png'
+      },
+      {
+        image: 'crypto-soul-map/8b7d88f2-0e5b-4784-b796-d658cb03dcba.png'
       }
     ]
   },
   {
-    title: 'Temple Guardian',
-    image: 'temple-guardian.png',
-    description: 'Character concept',
+    title: 'Owl Rider',
+    image: 'owl-rider.png',
+    description: 'Personal illustration.',
     portfolioItems: [
       {
-        image: 'temple-guardian/temple-guardian.png',
-        description: 'Temple Guardian'
+        image: 'owl-rider/young-elf-riding-a-huge-purple-owl-is-going-to-attack.png',
+        description: 'Young elf riding a huge purple owl is going to attack!'
+      }
+    ]
+  },
+  {
+    title: 'Memoryator Animations',
+    image: 'memoryator-animations.png',
+    description: 'Sketches of character animations for the game called "Memoryator".',
+    portfolioItems: [
+      {
+        image: 'memoryator-animations/ce954c7f-97b1-4ea3-9e8d-4acbb8f159b3.png'
       },
       {
-        image: 'temple-guardian/process.gif',
+        image: 'memoryator-animations/887692db-7162-43fc-8b7d-12d5c7deb5da.jpg'
+      },
+      {
+        image: 'memoryator-animations/protagonist-animations-of-run.gif',
+        description: 'Protagonist animations of run'
+      },
+      {
+        image: 'memoryator-animations/protagonist-animations-of-actions.gif',
+        description: 'Protagonist animations of actions'
+      },
+      {
+        image: 'memoryator-animations/hare-animations.gif',
+        description: 'Hare animations'
+      },
+      {
+        image: 'memoryator-animations/wolf-animations.gif',
+        description: 'Wolf animations'
+      },
+      {
+        image: 'memoryator-animations/owl-animations.gif',
+        description: 'Owl animations'
+      },
+      {
+        image: 'memoryator-animations/owl-transformation.gif',
+        description: 'Owl transformation'
+      }
+    ]
+  },
+  {
+    title: 'Memoryator Painting',
+    image: 'memoryator-painting.png',
+    description: 'Oil painted illustration of the Memoryator game world (40x40 cm)',
+    portfolioItems: [
+      {
+        image: 'memoryator-painting/adcf4c1b-3365-4c6e-bf81-a7196e248095.png'
+      },
+      {
+        image: 'memoryator-painting/oil-canvas-40-x-40-cm.png',
+        description: 'Oil, canvas 40x40 cm'
+      },
+      {
+        image: 'memoryator-painting/process.png',
         description: 'Process'
       },
       {
-        image: 'temple-guardian/sketches.png',
-        description: 'Sketches'
+        image: 'memoryator-painting/detail.png',
+        description: 'Detail'
       }
     ]
   },
   {
-    title: 'Cyber Soul',
-    image: 'cyber-soul.png',
-    description: 'Character concept for 3d model, animation sketches and textures',
+    title: 'Through the Forest',
+    image: 'through-the-forest.png',
+    description: 'Tiny digital illustration in children\'s book style.',
     portfolioItems: [
       {
-        image: 'cyber-soul/cyber-soul.png',
-        description: 'Cyber Soul'
+        image: 'through-the-forest/387235ce-0b68-4518-bd80-f04ecee3836a.png'
       },
       {
-        image: 'cyber-soul/character-concept.png',
-        description: 'Character concept'
+        image: 'through-the-forest/9bef2ff0-b57c-42e9-b6e0-52b2c6d20d22.png'
       },
       {
-        image: 'cyber-soul/textures-for-3D-model.png',
-        description: 'Textures for 3D model'
+        image: 'through-the-forest/8333109a-8242-489d-8809-497a08eec472.png'
       },
       {
-        image: 'cyber-soul/sketches.png',
-        description: 'Sketches'
-      },
-      {
-        image: 'cyber-soul/animation-sketches.png',
-        description: 'Animation sketches'
+        image: 'through-the-forest/3f5ea139-56f4-46df-b208-4c6f2c40aa90.png'
       }
     ]
   },
   {
-    title: 'Codeur',
-    image: 'codeur.png',
-    description: 'Motion design',
+    title: 'Game Objects',
+    image: 'game-objects.png',
+    description: '2D objects for the Memoryator game\'s world.',
     portfolioItems: [
       {
-        image: 'codeur/animation-for-codeur-com.png',
-        description: 'Animation for Codeur.com',
-        url: 'https://youtu.be/dyRsVWBxIXI'
+        image: 'game-objects/c12fbf0e-1e0d-42b1-9aff-432c39a03faa.png'
       },
       {
-        image: 'codeur/storyboard-part-1.png',
-        description: 'Storyboard - part 1'
+        image: 'game-objects/4348dc14-6ad4-4c9d-89ba-f06a2c0cb3ca.png'
       },
       {
-        image: 'codeur/storyboard-part-2.png',
-        description: 'Storyboard - part 2'
+        image: 'game-objects/b68d8575-4968-430e-8712-e576144c3148.png'
+      },
+      {
+        image: 'game-objects/2265857b-56f3-41e8-a6b8-8c4ea0dc65c4.png'
+      },
+      {
+        image: 'game-objects/a2d4055b-30dd-4333-b563-30b427e359ab.png'
+      },
+      {
+        image: 'game-objects/7081151f-93ee-4034-8dc3-8b00b5c60892.png'
       }
     ]
   },
   {
-    title: 'CryptoSoul Web Design',
-    image: 'crypto-soul.png',
-    description: 'Design of the site',
+    title: 'Cute Illustrations',
+    image: 'cute-illustrations.png',
+    description: 'Just some personal nonprofit illustrations.',
     portfolioItems: [
       {
-        image: 'crypto-soul/cryptosoul-io.png',
-        description: 'cryptosoul.io',
-        url: 'https://cryptosoul.io'
-      }
-    ]
-  },
-  {
-    title: 'Mask Island Denizen',
-    image: 'mask-island-denizen.png',
-    description: '8 sides of the character and his animations of run',
-    portfolioItems: [
-      {
-        image: 'mask-island-denizen/character.png',
-        description: 'Character'
+        image: 'cute-illustrations/roller-skater.gif',
+        description: 'Roller skater'
       },
       {
-        image: 'mask-island-denizen/8-sides-of-the-character.gif',
-        description: '8 sides of the character'
+        image: 'cute-illustrations/uncake.png',
+        description: 'Uncake'
       },
       {
-        image: 'mask-island-denizen/8-sides-sketches.gif',
-        description: '8 sides sketches'
-      },
-      {
-        image: 'mask-island-denizen/back-run-animation.gif',
-        description: 'Back run animation'
-      },
-      {
-        image: 'mask-island-denizen/back-run-animation-sketch.gif',
-        description: 'Back run animation sketch'
-      },
-      {
-        image: 'mask-island-denizen/front-run-animation.gif',
-        description: 'Front run animation'
-      },
-      {
-        image: 'mask-island-denizen/front-run-animation-sketch.gif',
-        description: 'Front run animation sketch'
-      }
-    ]
-  },
-  {
-    title: 'Illustrations',
-    image: 'illustrations.png',
-    description: 'Just some illustrations',
-    portfolioItems: [
-      {
-        image: 'illustrations/hippie-dog.png',
-        description: 'Hippie Dog'
-      },
-      {
-        image: 'illustrations/bogdan.png',
-        description: 'Bogdan'
-      },
-      {
-        image: 'illustrations/lil-elf-princess.png',
+        image: 'cute-illustrations/lil-elf-princess.jpg',
         description: 'Lil Elf Princess'
       },
       {
-        image: 'illustrations/lil-me.png',
-        description: 'Lil me'
+        image: 'cute-illustrations/hippie-dog.jpg',
+        description: 'Hippie Dog'
       },
       {
-        image: 'illustrations/me.png',
+        image: 'cute-illustrations/me.png',
         description: 'Me'
       },
       {
-        image: 'illustrations/roller-skater.gif',
-        description: 'Roller skater'
-      }
-    ]
-  },
-  {
-    title: 'Sea Witch',
-    image: 'witch.png',
-    description: 'Character concept for 3d model, animation sketches and textures',
-    portfolioItems: [
-      {
-        image: 'witch/witch-soul.png',
-        description: 'Witch Soul'
+        image: 'cute-illustrations/lil-me.png',
+        description: 'Lil me'
       },
       {
-        image: 'witch/3d-character-textures.png',
-        description: '3D character textures'
-      },
-      {
-        image: 'witch/character-concept.png',
-        description: 'Character concept'
-      },
-      {
-        image: 'witch/sketches-for-animation.png',
-        description: 'Sketches for animation'
-      }
-    ]
-  },
-  {
-    title: 'River Crystals',
-    image: 'river-crystals.png',
-    description: 'Map texture and objects of the River Crystals region',
-    portfolioItems: [
-      {
-        image: 'river-crystals/game-scene-screen.png',
-        description: 'Game scene screen'
-      },
-      {
-        image: 'river-crystals/object.png',
-        description: 'Object'
-      },
-      {
-        image: 'river-crystals/sketch.png',
-        description: 'Sketch'
+        image: 'cute-illustrations/bogdan.png',
+        description: 'Bogdan'
       }
     ]
   }

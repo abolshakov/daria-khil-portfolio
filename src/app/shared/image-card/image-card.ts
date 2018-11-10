@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild, OnChanges, SimpleChange } from '@angular/core';
+import { Component, Input, ViewChild, OnChanges, OnInit, SimpleChange } from '@angular/core';
 import { PortfolioItem } from '../gallery-items/gallery-items';
 
 interface Size {
@@ -11,7 +11,7 @@ interface Size {
     templateUrl: './image-card.html',
     styleUrls: ['./image-card.scss']
 })
-export class ImageCardComponent implements OnChanges {
+export class ImageCardComponent implements OnInit, OnChanges {
     @Input()
     public item: PortfolioItem;
     @Input()
@@ -19,8 +19,17 @@ export class ImageCardComponent implements OnChanges {
     @Input()
     public maxHeight: number;
 
+    private cssClass: any;
+
     @ViewChild('image') imageView;
     @ViewChild('subtitle') subtitleView;
+
+    ngOnInit(): void{
+        this.cssClass = {
+            "image": true,
+            "clickable": this.item.url != null
+        }
+    }
 
     ngOnChanges(changes: { [propKey: string]: SimpleChange }): void {
         if (changes['maxWidth'] || changes['maxHeight']) {

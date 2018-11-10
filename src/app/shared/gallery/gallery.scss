@@ -14,7 +14,7 @@ mat-card {
 }
 
 .mat-card-content {
-  padding: 8px !important;
+  padding: 20px 24px !important;
   margin-bottom: 4px !important;
   color: #939393;
   font-size: 12px;
@@ -40,4 +40,5 @@ mat-card-content .mat-card-title {
 .mat-card-subtitle {
   color: #939393;
   font-size: 16px;
+  text-align: justify;
 }
