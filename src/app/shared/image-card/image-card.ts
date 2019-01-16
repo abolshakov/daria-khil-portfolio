@@ -19,7 +19,7 @@ export class ImageCardComponent implements OnInit, OnChanges {
     @Input()
     public maxHeight: number;
 
-    private cssClass: any;
+    public cssClass: any;
 
     @ViewChild('image') imageView;
     @ViewChild('subtitle') subtitleView;

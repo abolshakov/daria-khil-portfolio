@@ -476,5 +476,33 @@ export const PREVIEW_ITEMS = [
         description: 'Bogdan'
       }
     ]
+  },
+  {
+    title: 'Christmas 404 Page Animation',
+    image: 'christmas-404-page-animation.png',
+    description: 'A christmas-themed animated design of the Error 404 page.',
+    portfolioItems: [
+      {
+        image: 'christmas-404-page-animation/5be9c786-34da-41c6-bb83-335090478208.png'
+      },
+      {
+        image: 'christmas-404-page-animation/f68bc48e-b015-45f6-bc55-ad82c3bd115c.png'
+      },
+      {
+        image: 'christmas-404-page-animation/1c18d965-5f37-45ee-aecc-f93f2d9f685a.gif'
+      },
+      {
+        image: 'christmas-404-page-animation/ecd88d34-fdb7-4b46-a0a5-01db8e9d808f.png'
+      },
+      {
+        image: 'christmas-404-page-animation/b6fbb4d6-b09c-4618-8612-3bd77564c724.png'
+      },
+      {
+        image: 'christmas-404-page-animation/e087f212-31b8-416e-9d0f-b19ed0310d95.gif'
+      },
+      {
+        image: 'christmas-404-page-animation/bd834f74-7c26-4f7d-bbf3-ca7102d85c0b.png'
+      }
+    ]
   }
 ];
