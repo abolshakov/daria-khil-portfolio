@@ -42,6 +42,31 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
+    title: '404 Page Animation',
+    image: '404-page-animation.png',
+    description: 'A christmas-themed animated design of the Error 404 page.',
+    portfolioItems: [
+      {
+        image: '404-page-animation/5be9c786-34da-41c6-bb83-335090478208.png'
+      },
+      {
+        image: '404-page-animation/1c18d965-5f37-45ee-aecc-f93f2d9f685a.gif'
+      },
+      {
+        image: '404-page-animation/170feff2-dcf8-45c0-8d5f-06eadb57493d.png'
+      },
+      {
+        image: '404-page-animation/b6fbb4d6-b09c-4618-8612-3bd77564c724.png'
+      },
+      {
+        image: '404-page-animation/e087f212-31b8-416e-9d0f-b19ed0310d95.gif'
+      },
+      {
+        image: '404-page-animation/bd834f74-7c26-4f7d-bbf3-ca7102d85c0b.png'
+      }
+    ]
+  },
+  {
     title: 'CryptoSoul Web Design',
     image: 'crypto-soul-web-design.jpg',
     description: 'Web design, icons and posters for the crypto project and the game "CryptoSoul".',
@@ -88,52 +113,6 @@ export const PREVIEW_ITEMS = [
       {
         image: 'codeur-animation/thanks-for-watching.jpg',
         description: 'Thanks for watching!'
-      }
-    ]
-  },
-  {
-    title: 'Sticker Packs',
-    image: 'sticker-packs.png',
-    description: '4 packs of cute and funny stickers for iMessage.',
-    portfolioItems: [
-      {
-        image: 'sticker-packs/329e3a0f-f977-498d-85c8-2301cd693296.png'
-      },
-      {
-        image: 'sticker-packs/39bced5e-3096-474b-a30c-39d10b11f0ee.png'
-      },
-      {
-        image: 'sticker-packs/87e5224e-d33d-407d-97c8-e8116cee286d.png'
-      },
-      {
-        image: 'sticker-packs/0cfaeab5-7b2c-4340-8431-31eedd050012.png'
-      },
-      {
-        image: 'sticker-packs/f8c7f404-83bc-450b-8365-d018e5c6e1a4.png'
-      },
-      {
-        image: 'sticker-packs/4cbbdc4b-cea1-40e9-8d78-7ee6f8b6e589.png'
-      },
-      {
-        image: 'sticker-packs/0fbed8b1-e199-4a66-843f-a69ca9eaf6fe.png'
-      },
-      {
-        image: 'sticker-packs/583daa37-e6aa-4c64-bdcf-d52658bccc6d.png'
-      },
-      {
-        image: 'sticker-packs/8bb2f954-1fb1-4a17-9518-f5f8463a2312.png'
-      },
-      {
-        image: 'sticker-packs/b4b9e2f5-65e8-4af1-837a-f548ce1cffe2.png'
-      },
-      {
-        image: 'sticker-packs/85d0c74b-c228-4f3a-b075-70c8e95f753b.png'
-      },
-      {
-        image: 'sticker-packs/93a70969-c090-4dc1-8bd7-23df4d0f16b2.png'
-      },
-      {
-        image: 'sticker-packs/7eb0430d-8f6e-410f-aaf0-941335fe10f5.gif'
       }
     ]
   },
@@ -281,6 +260,179 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
+    title: 'Memoryator Animations',
+    image: 'memoryator-animations.png',
+    description: 'Sketches of character animations for the game called "Memoryator".',
+    portfolioItems: [
+      {
+        image: 'memoryator-animations/ce954c7f-97b1-4ea3-9e8d-4acbb8f159b3.png'
+      },
+      {
+        image: 'memoryator-animations/887692db-7162-43fc-8b7d-12d5c7deb5da.jpg'
+      },
+      {
+        image: 'memoryator-animations/protagonist-animations-of-run.gif',
+        description: 'Protagonist animations of run'
+      },
+      {
+        image: 'memoryator-animations/protagonist-animations-of-actions.gif',
+        description: 'Protagonist animations of actions'
+      },
+      {
+        image: 'memoryator-animations/hare-animations.gif',
+        description: 'Hare animations'
+      },
+      {
+        image: 'memoryator-animations/wolf-animations.gif',
+        description: 'Wolf animations'
+      },
+      {
+        image: 'memoryator-animations/owl-animations.gif',
+        description: 'Owl animations'
+      },
+      {
+        image: 'memoryator-animations/owl-transformation.gif',
+        description: 'Owl transformation'
+      }
+    ]
+  },
+  {
+    title: 'Game Objects',
+    image: 'game-objects.png',
+    description: '2D objects for the Memoryator game\'s world.',
+    portfolioItems: [
+      {
+        image: 'game-objects/c12fbf0e-1e0d-42b1-9aff-432c39a03faa.png'
+      },
+      {
+        image: 'game-objects/4348dc14-6ad4-4c9d-89ba-f06a2c0cb3ca.png'
+      },
+      {
+        image: 'game-objects/b68d8575-4968-430e-8712-e576144c3148.png'
+      },
+      {
+        image: 'game-objects/2265857b-56f3-41e8-a6b8-8c4ea0dc65c4.png'
+      },
+      {
+        image: 'game-objects/a2d4055b-30dd-4333-b563-30b427e359ab.png'
+      },
+      {
+        image: 'game-objects/7081151f-93ee-4034-8dc3-8b00b5c60892.png'
+      }
+    ]
+  },
+  {
+    title: 'Sticker Packs',
+    image: 'sticker-packs.png',
+    description: '4 packs of cute and funny stickers for iMessage.',
+    portfolioItems: [
+      {
+        image: 'sticker-packs/329e3a0f-f977-498d-85c8-2301cd693296.png'
+      },
+      {
+        image: 'sticker-packs/39bced5e-3096-474b-a30c-39d10b11f0ee.png'
+      },
+      {
+        image: 'sticker-packs/87e5224e-d33d-407d-97c8-e8116cee286d.png'
+      },
+      {
+        image: 'sticker-packs/0cfaeab5-7b2c-4340-8431-31eedd050012.png'
+      },
+      {
+        image: 'sticker-packs/f8c7f404-83bc-450b-8365-d018e5c6e1a4.png'
+      },
+      {
+        image: 'sticker-packs/4cbbdc4b-cea1-40e9-8d78-7ee6f8b6e589.png'
+      },
+      {
+        image: 'sticker-packs/0fbed8b1-e199-4a66-843f-a69ca9eaf6fe.png'
+      },
+      {
+        image: 'sticker-packs/583daa37-e6aa-4c64-bdcf-d52658bccc6d.png'
+      },
+      {
+        image: 'sticker-packs/8bb2f954-1fb1-4a17-9518-f5f8463a2312.png'
+      },
+      {
+        image: 'sticker-packs/b4b9e2f5-65e8-4af1-837a-f548ce1cffe2.png'
+      },
+      {
+        image: 'sticker-packs/85d0c74b-c228-4f3a-b075-70c8e95f753b.png'
+      },
+      {
+        image: 'sticker-packs/93a70969-c090-4dc1-8bd7-23df4d0f16b2.png'
+      },
+      {
+        image: 'sticker-packs/7eb0430d-8f6e-410f-aaf0-941335fe10f5.gif'
+      }
+    ]
+  },
+  {
+    title: 'Cute Illustrations',
+    image: 'cute-illustrations.png',
+    description: 'Just some personal nonprofit illustrations.',
+    portfolioItems: [
+      {
+        image: 'cute-illustrations/roller-skater.gif',
+        description: 'Roller skater'
+      },
+      {
+        image: 'cute-illustrations/uncake.png',
+        description: 'Uncake'
+      },
+      {
+        image: 'cute-illustrations/lil-elf-princess.jpg',
+        description: 'Lil Elf Princess'
+      },
+      {
+        image: 'cute-illustrations/hippie-dog.jpg',
+        description: 'Hippie Dog'
+      },
+      {
+        image: 'cute-illustrations/me.png',
+        description: 'Me'
+      },
+      {
+        image: 'cute-illustrations/lil-me.png',
+        description: 'Lil me'
+      },
+      {
+        image: 'cute-illustrations/bogdan.png',
+        description: 'Bogdan'
+      }
+    ]
+  },
+  {
+    title: 'Through the Forest',
+    image: 'through-the-forest.png',
+    description: 'Tiny digital illustration in children\'s book style.',
+    portfolioItems: [
+      {
+        image: 'through-the-forest/387235ce-0b68-4518-bd80-f04ecee3836a.png'
+      },
+      {
+        image: 'through-the-forest/9bef2ff0-b57c-42e9-b6e0-52b2c6d20d22.png'
+      },
+      {
+        image: 'through-the-forest/8333109a-8242-489d-8809-497a08eec472.png'
+      },
+      {
+        image: 'through-the-forest/3f5ea139-56f4-46df-b208-4c6f2c40aa90.png'
+      }
+    ]
+  },
+  {
+    title: 'Owl Rider',
+    image: 'owl-rider.png',
+    description: 'Personal illustration.',
+    portfolioItems: [
+      {
+        image: 'owl-rider/young-elf-riding-a-huge-purple-owl-is-going-to-attack.png',
+        description: 'Young elf riding a huge purple owl is going to attack!'
+      }
+    ]
+  },
+  {
     title: 'CryptoSoul Map',
     image: 'crypto-soul-map.png',
     description: 'Map ground textures and objects for the game\'s world.',
@@ -329,54 +481,6 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'Owl Rider',
-    image: 'owl-rider.png',
-    description: 'Personal illustration.',
-    portfolioItems: [
-      {
-        image: 'owl-rider/young-elf-riding-a-huge-purple-owl-is-going-to-attack.png',
-        description: 'Young elf riding a huge purple owl is going to attack!'
-      }
-    ]
-  },
-  {
-    title: 'Memoryator Animations',
-    image: 'memoryator-animations.png',
-    description: 'Sketches of character animations for the game called "Memoryator".',
-    portfolioItems: [
-      {
-        image: 'memoryator-animations/ce954c7f-97b1-4ea3-9e8d-4acbb8f159b3.png'
-      },
-      {
-        image: 'memoryator-animations/887692db-7162-43fc-8b7d-12d5c7deb5da.jpg'
-      },
-      {
-        image: 'memoryator-animations/protagonist-animations-of-run.gif',
-        description: 'Protagonist animations of run'
-      },
-      {
-        image: 'memoryator-animations/protagonist-animations-of-actions.gif',
-        description: 'Protagonist animations of actions'
-      },
-      {
-        image: 'memoryator-animations/hare-animations.gif',
-        description: 'Hare animations'
-      },
-      {
-        image: 'memoryator-animations/wolf-animations.gif',
-        description: 'Wolf animations'
-      },
-      {
-        image: 'memoryator-animations/owl-animations.gif',
-        description: 'Owl animations'
-      },
-      {
-        image: 'memoryator-animations/owl-transformation.gif',
-        description: 'Owl transformation'
-      }
-    ]
-  },
-  {
     title: 'Memoryator Painting',
     image: 'memoryator-painting.png',
     description: 'Oil painted illustration of the Memoryator game world (40x40 cm)',
@@ -395,113 +499,6 @@ export const PREVIEW_ITEMS = [
       {
         image: 'memoryator-painting/detail.png',
         description: 'Detail'
-      }
-    ]
-  },
-  {
-    title: 'Through the Forest',
-    image: 'through-the-forest.png',
-    description: 'Tiny digital illustration in children\'s book style.',
-    portfolioItems: [
-      {
-        image: 'through-the-forest/387235ce-0b68-4518-bd80-f04ecee3836a.png'
-      },
-      {
-        image: 'through-the-forest/9bef2ff0-b57c-42e9-b6e0-52b2c6d20d22.png'
-      },
-      {
-        image: 'through-the-forest/8333109a-8242-489d-8809-497a08eec472.png'
-      },
-      {
-        image: 'through-the-forest/3f5ea139-56f4-46df-b208-4c6f2c40aa90.png'
-      }
-    ]
-  },
-  {
-    title: 'Game Objects',
-    image: 'game-objects.png',
-    description: '2D objects for the Memoryator game\'s world.',
-    portfolioItems: [
-      {
-        image: 'game-objects/c12fbf0e-1e0d-42b1-9aff-432c39a03faa.png'
-      },
-      {
-        image: 'game-objects/4348dc14-6ad4-4c9d-89ba-f06a2c0cb3ca.png'
-      },
-      {
-        image: 'game-objects/b68d8575-4968-430e-8712-e576144c3148.png'
-      },
-      {
-        image: 'game-objects/2265857b-56f3-41e8-a6b8-8c4ea0dc65c4.png'
-      },
-      {
-        image: 'game-objects/a2d4055b-30dd-4333-b563-30b427e359ab.png'
-      },
-      {
-        image: 'game-objects/7081151f-93ee-4034-8dc3-8b00b5c60892.png'
-      }
-    ]
-  },
-  {
-    title: 'Cute Illustrations',
-    image: 'cute-illustrations.png',
-    description: 'Just some personal nonprofit illustrations.',
-    portfolioItems: [
-      {
-        image: 'cute-illustrations/roller-skater.gif',
-        description: 'Roller skater'
-      },
-      {
-        image: 'cute-illustrations/uncake.png',
-        description: 'Uncake'
-      },
-      {
-        image: 'cute-illustrations/lil-elf-princess.jpg',
-        description: 'Lil Elf Princess'
-      },
-      {
-        image: 'cute-illustrations/hippie-dog.jpg',
-        description: 'Hippie Dog'
-      },
-      {
-        image: 'cute-illustrations/me.png',
-        description: 'Me'
-      },
-      {
-        image: 'cute-illustrations/lil-me.png',
-        description: 'Lil me'
-      },
-      {
-        image: 'cute-illustrations/bogdan.png',
-        description: 'Bogdan'
-      }
-    ]
-  },
-  {
-    title: 'Christmas 404 Page Animation',
-    image: 'christmas-404-page-animation.png',
-    description: 'A christmas-themed animated design of the Error 404 page.',
-    portfolioItems: [
-      {
-        image: 'christmas-404-page-animation/5be9c786-34da-41c6-bb83-335090478208.png'
-      },
-      {
-        image: 'christmas-404-page-animation/f68bc48e-b015-45f6-bc55-ad82c3bd115c.png'
-      },
-      {
-        image: 'christmas-404-page-animation/1c18d965-5f37-45ee-aecc-f93f2d9f685a.gif'
-      },
-      {
-        image: 'christmas-404-page-animation/ecd88d34-fdb7-4b46-a0a5-01db8e9d808f.png'
-      },
-      {
-        image: 'christmas-404-page-animation/b6fbb4d6-b09c-4618-8612-3bd77564c724.png'
-      },
-      {
-        image: 'christmas-404-page-animation/e087f212-31b8-416e-9d0f-b19ed0310d95.gif'
-      },
-      {
-        image: 'christmas-404-page-animation/bd834f74-7c26-4f7d-bbf3-ca7102d85c0b.png'
       }
     ]
   }
