@@ -1,5 +1,63 @@
 export const PREVIEW_ITEMS = [
   {
+    title: 'Animated Video for Boost VR',
+    image: 'animated-video-for-boost-vr.jpg',
+    portfolioItems: [
+      {
+        image: 'animated-video-for-boost-vr/0fd7747c-e444-45ab-9168-f1b665b4d71d.jpg'
+      },
+      {
+        image: 'animated-video-for-boost-vr/f4726a05-d234-4d4e-8478-70a2a4a76ec0.jpg'
+      },
+      {
+        image: 'animated-video-for-boost-vr/c1b466d9-f26e-49a2-bf99-60e0ca3d5b61.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/fbf1368b-34b5-45b0-a1c0-645d7e66b700.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/ee75b06c-7775-4993-bb9a-5576cc2ebb1d.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/5e1049f9-7963-4969-986c-cb016ba39175.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/66bef319-45d8-4375-922b-ea9260925026.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/c25725ff-5d37-4072-b254-c109c2d9faf4.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/d9cadd67-6818-41f7-93e6-17a0fb32c6d4.jpg',
+        url: 'https://player.vimeo.com/video/330015242'
+      },
+      {
+        image: 'animated-video-for-boost-vr/77d1b386-865b-40c7-bbde-b7999942aa77.jpg'
+      },
+      {
+        image: 'animated-video-for-boost-vr/8a281a6c-0532-4847-8ea6-18f5b06c69c0.jpg'
+      },
+      {
+        image: 'animated-video-for-boost-vr/5256e2f8-778f-4697-b2eb-4d0bc76f9967.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/83299a86-4de1-4e0c-8ce6-1f045cae44ca.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/fb498f67-2fd9-43a7-9bf7-825bc85890f8.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/00298e30-9db1-4216-a8ee-f5cf7569b524.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/7b409ac0-aafc-42be-ac2f-77eeeff99c02.png'
+      },
+      {
+        image: 'animated-video-for-boost-vr/38fce16a-5aeb-4c58-8e52-3e922618e913.gif'
+      }
+    ]
+  },
+  {
     title: 'Snapparazzi Illustartinos',
     image: 'snapparazzi-illustartinos.png',
     description: 'Illustrations describing the idea of the crypto-project "Snapparazzi". Designed for the project\'s website.',
