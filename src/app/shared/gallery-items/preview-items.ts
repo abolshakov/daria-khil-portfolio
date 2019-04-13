@@ -51,7 +51,6 @@ export const PREVIEW_ITEMS = [
       },
       {
         image: 'crypto-soul/62ff667e-36b1-4017-b4b4-013e8c0eace8.png',
-        description: '',
         url: 'https://cryptosoul.io'
       },
       {
@@ -146,12 +145,10 @@ export const PREVIEW_ITEMS = [
         image: 'dr-folsbuben/39ac319a-fd94-4bf5-be48-a6423e16cb95.png'
       },
       {
-        image: 'dr-folsbuben/d8944ab5-0fdb-4b0a-b49d-5983e0f1b66b.png',
-        description: ''
+        image: 'dr-folsbuben/d8944ab5-0fdb-4b0a-b49d-5983e0f1b66b.png'
       },
       {
-        image: 'dr-folsbuben/da1b7e3c-03cd-42d3-b45c-b6f10f3322dc.png',
-        description: ''
+        image: 'dr-folsbuben/da1b7e3c-03cd-42d3-b45c-b6f10f3322dc.png'
       },
       {
         image: 'dr-folsbuben/c5be4fad-50d5-45a3-840e-b01b6be44765.png'
@@ -210,8 +207,7 @@ export const PREVIEW_ITEMS = [
         description: 'Chaarcter illustration'
       },
       {
-        image: 'crypto-soul-characters/3c54195b-1800-4e6d-9eca-c5090553452f.png',
-        description: ''
+        image: 'crypto-soul-characters/3c54195b-1800-4e6d-9eca-c5090553452f.png'
       },
       {
         image: 'crypto-soul-characters/textures-for-3-d-model.png',
@@ -226,8 +222,7 @@ export const PREVIEW_ITEMS = [
         description: 'Character illustration'
       },
       {
-        image: 'crypto-soul-characters/38b722e5-467b-46a6-a461-435ff10a8746.png',
-        description: ''
+        image: 'crypto-soul-characters/38b722e5-467b-46a6-a461-435ff10a8746.png'
       },
       {
         image: 'crypto-soul-characters/73c7cdfc-bb89-4de8-a677-27c7b4dd4cac.png',
@@ -242,8 +237,7 @@ export const PREVIEW_ITEMS = [
         description: 'Character illustration'
       },
       {
-        image: 'crypto-soul-characters/bcd5210a-a06d-4df1-82b1-2107084e42f0.png',
-        description: ''
+        image: 'crypto-soul-characters/bcd5210a-a06d-4df1-82b1-2107084e42f0.png'
       },
       {
         image: 'crypto-soul-characters/615c88fb-7682-4d8b-be97-a93c25f04836.png',
@@ -286,24 +280,19 @@ export const PREVIEW_ITEMS = [
     description: 'Map ground textures and objects for the game\'s world.',
     portfolioItems: [
       {
-        image: 'crypto-soul-map/7726d28c-b446-4d3e-839c-62c38fd46f24.png',
-        description: ''
+        image: 'crypto-soul-map/7726d28c-b446-4d3e-839c-62c38fd46f24.png'
       },
       {
-        image: 'crypto-soul-map/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png',
-        description: ''
+        image: 'crypto-soul-map/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png'
       },
       {
-        image: 'crypto-soul-map/1cf5e67f-d136-424d-a072-c9422c8f6127.png',
-        description: ''
+        image: 'crypto-soul-map/1cf5e67f-d136-424d-a072-c9422c8f6127.png'
       },
       {
-        image: 'crypto-soul-map/424a3aae-9335-433a-b251-64bc3b573bb6.png',
-        description: ''
+        image: 'crypto-soul-map/424a3aae-9335-433a-b251-64bc3b573bb6.png'
       },
       {
-        image: 'crypto-soul-map/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png',
-        description: ''
+        image: 'crypto-soul-map/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png'
       },
       {
         image: 'crypto-soul-map/fa07cfde-fff3-48ed-a019-4c35fc8a8123.png'
