@@ -54,7 +54,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "port": 8080,
+            "port": 4201,
             "browserTarget": "daria-khil-portfolio:build"
           },
           "configurations": {
