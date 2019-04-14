@@ -5,7 +5,7 @@ import {
     OnInit,
     SimpleChange,
     ViewChild
-    } from '@angular/core';
+} from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
 import { PortfolioItem } from '../gallery-items/gallery-items';
@@ -27,7 +27,7 @@ export class ImageCardComponent implements OnInit, OnChanges {
 
     public get videoHtml(): any {
         return this.item.video
-            ? this.video.embed(this.item.video, { attr: { width: this.maxWidth, height: this.maxWidth / (16 / 9) } })
+            ? this.video.embed(this.item.video, { attr: { width: this.maxWidth, height: Math.min(this.maxWidth / (16 / 9), this.maxHeight) } })
             : null;
     }
 

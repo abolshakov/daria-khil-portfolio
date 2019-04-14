@@ -4,8 +4,7 @@ export const PREVIEW_ITEMS = [
     image: 'animated-video-for-boost-vr.jpg',
     portfolioItems: [
       {
-        image: 'animated-video-for-boost-vr/0fd7747c-e444-45ab-9168-f1b665b4d71d.jpg',
-        video: 'https://vimeo.com/330015242'
+        image: 'animated-video-for-boost-vr/0fd7747c-e444-45ab-9168-f1b665b4d71d.jpg'
       },
       {
         image: 'animated-video-for-boost-vr/f4726a05-d234-4d4e-8478-70a2a4a76ec0.jpg'
@@ -30,7 +29,7 @@ export const PREVIEW_ITEMS = [
       },
       {
         image: 'animated-video-for-boost-vr/d9cadd67-6818-41f7-93e6-17a0fb32c6d4.jpg',
-        url: 'https://player.vimeo.com/video/330015242'
+        video: 'https://vimeo.com/330015242'
       },
       {
         image: 'animated-video-for-boost-vr/77d1b386-865b-40c7-bbde-b7999942aa77.jpg'
