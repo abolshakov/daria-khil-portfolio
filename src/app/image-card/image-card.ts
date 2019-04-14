@@ -1,10 +1,14 @@
-import { Component, Input, ViewChild, OnChanges, OnInit, SimpleChange } from '@angular/core';
+import {
+    Component,
+    Input,
+    OnChanges,
+    OnInit,
+    SimpleChange,
+    ViewChild
+    } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
 import { PortfolioItem } from '../gallery-items/gallery-items';
-
-interface Size {
-    width: number;
-    height: number;
-}
 
 @Component({
     selector: 'pfo-image-card',
@@ -21,10 +25,18 @@ export class ImageCardComponent implements OnInit, OnChanges {
 
     public cssClass: any;
 
-    @ViewChild('image') imageView;
-    @ViewChild('subtitle') subtitleView;
+    public get videoHtml(): any {
+        return this.item.video
+            ? this.video.embed(this.item.video, { attr: { width: this.maxWidth, height: this.maxWidth / (16 / 9) } })
+            : null;
+    }
 
-    ngOnInit(): void{
+    @ViewChild('image') imageView: { nativeElement: HTMLImageElement; };
+    @ViewChild('subtitle') subtitleView: { nativeElement: HTMLElement; };
+
+    constructor(private sanitizer: DomSanitizer, private video: EmbedVideoService) { }
+
+    ngOnInit(): void {
         this.cssClass = {
             "image": true,
             "clickable": this.item.url != null
@@ -32,7 +44,7 @@ export class ImageCardComponent implements OnInit, OnChanges {
     }
 
     ngOnChanges(changes: { [propKey: string]: SimpleChange }): void {
-        if (changes['maxWidth'] || changes['maxHeight']) {
+        if (this.imageView && (changes['maxWidth'] || changes['maxHeight'])) {
             this.resizeImage(this.imageView.nativeElement);
         }
     }

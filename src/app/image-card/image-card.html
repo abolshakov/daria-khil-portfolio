@@ -1,0 +1,10 @@
+<ng-container *ngIf="item.video; then embedVideo; else embedImage"></ng-container>
+<ng-template #embedVideo>
+    <div [innerHtml]="videoHtml"></div>
+</ng-template>
+<ng-template #embedImage>
+    <img #image src="{{item.image}}" (load)="onImageLoad()" (click)="onContentClick()" [ngClass]="cssClass"/>
+</ng-template>
+<div #subtitle class="mat-card-subtitle">
+    <p>{{item.description}}</p>
+</div>

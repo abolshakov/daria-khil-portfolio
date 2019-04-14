@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import { PREVIEW_ITEMS } from './preview-items';
 
 export interface PreviewItem {
@@ -13,6 +12,7 @@ export interface PortfolioItem {
     image?: string;
     description?: string;
     url?: string;
+    video?: string;
 }
 
 @Injectable()

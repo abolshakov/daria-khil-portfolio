@@ -1,9 +1,9 @@
 import { Component, HostListener, Inject, NgModule, OnInit, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDialogRef, MAT_DIALOG_DATA, MatSpinner } from '@angular/material';
-import { MaterialAndFlexModule } from '../material-and-flex.module';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
 
-import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
+import { PreviewItem } from '../gallery-items/gallery-items';
 import { DialogData } from '../gallery/gallery';
 
 import { ImageCardComponent } from '../image-card/image-card';
@@ -16,7 +16,7 @@ import { ImageCardComponent } from '../image-card/image-card';
 })
 export class DialogComponent implements AfterViewInit {
     // @ViewChild('spinner') spinnerView: MatSpinner;
-    @ViewChild('visibleArea') visibleArea;
+    @ViewChild('visibleArea') visibleArea: { nativeElement: HTMLElement; };
 
     public previewItem: PreviewItem;
     public visibleWidth: number;

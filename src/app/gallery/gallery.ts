@@ -1,10 +1,15 @@
-import { Component, NgModule, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDialog } from '@angular/material';
-import { MaterialAndFlexModule } from '../material-and-flex.module';
-
-import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
+import {
+  Component,
+  NgModule,
+  Renderer2,
+  ViewChild
+  } from '@angular/core';
 import { DialogComponent } from '../dialog/dialog';
+import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
+import { MatDialog } from '@angular/material';
+import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
+
 
 export interface DialogData {
   item: PreviewItem;

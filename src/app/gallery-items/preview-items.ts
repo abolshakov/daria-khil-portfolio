@@ -4,7 +4,8 @@ export const PREVIEW_ITEMS = [
     image: 'animated-video-for-boost-vr.jpg',
     portfolioItems: [
       {
-        image: 'animated-video-for-boost-vr/0fd7747c-e444-45ab-9168-f1b665b4d71d.jpg'
+        image: 'animated-video-for-boost-vr/0fd7747c-e444-45ab-9168-f1b665b4d71d.jpg',
+        video: 'https://vimeo.com/330015242'
       },
       {
         image: 'animated-video-for-boost-vr/f4726a05-d234-4d4e-8478-70a2a4a76ec0.jpg'
