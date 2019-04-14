@@ -28,7 +28,6 @@ export const PREVIEW_ITEMS = [
         image: 'animated-video-for-boost-vr/c25725ff-5d37-4072-b254-c109c2d9faf4.gif'
       },
       {
-        image: 'animated-video-for-boost-vr/d9cadd67-6818-41f7-93e6-17a0fb32c6d4.jpg',
         video: 'https://vimeo.com/330015242'
       },
       {
