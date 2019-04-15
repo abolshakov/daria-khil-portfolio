@@ -2,9 +2,10 @@ export const PREVIEW_ITEMS = [
   {
     title: 'Animated Video for Boost VR',
     image: 'animated-video-for-boost-vr.jpg',
+    description: 'This animated video was created as a stylized presentation for the Boost VR studio.',
     portfolioItems: [
       {
-        image: 'animated-video-for-boost-vr/0fd7747c-e444-45ab-9168-f1b665b4d71d.jpg'
+        video: 'https://vimeo.com/330015242'
       },
       {
         image: 'animated-video-for-boost-vr/f4726a05-d234-4d4e-8478-70a2a4a76ec0.jpg'
@@ -28,28 +29,25 @@ export const PREVIEW_ITEMS = [
         image: 'animated-video-for-boost-vr/c25725ff-5d37-4072-b254-c109c2d9faf4.gif'
       },
       {
-        video: 'https://vimeo.com/330015242'
+        image: 'animated-video-for-boost-vr/8f6f7b3c-deb3-444c-9374-06eef637a4fd.png'
+      },
+      {
+        image: 'animated-video-for-boost-vr/f25491bf-bb39-4035-bbc2-92af60cdf0a2.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/dfd57a5e-047d-4fa5-b9e0-be5267b0b6c6.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/2f10e044-f8f9-42c8-9f58-2afb8da386a9.gif'
+      },
+      {
+        image: 'animated-video-for-boost-vr/4b20138a-16d5-4e5f-946a-c7f3251ac2d7.gif'
       },
       {
         image: 'animated-video-for-boost-vr/77d1b386-865b-40c7-bbde-b7999942aa77.jpg'
       },
       {
         image: 'animated-video-for-boost-vr/8a281a6c-0532-4847-8ea6-18f5b06c69c0.jpg'
-      },
-      {
-        image: 'animated-video-for-boost-vr/5256e2f8-778f-4697-b2eb-4d0bc76f9967.gif'
-      },
-      {
-        image: 'animated-video-for-boost-vr/83299a86-4de1-4e0c-8ce6-1f045cae44ca.gif'
-      },
-      {
-        image: 'animated-video-for-boost-vr/fb498f67-2fd9-43a7-9bf7-825bc85890f8.gif'
-      },
-      {
-        image: 'animated-video-for-boost-vr/00298e30-9db1-4216-a8ee-f5cf7569b524.gif'
-      },
-      {
-        image: 'animated-video-for-boost-vr/7b409ac0-aafc-42be-ac2f-77eeeff99c02.png'
       },
       {
         image: 'animated-video-for-boost-vr/38fce16a-5aeb-4c58-8e52-3e922618e913.gif'
@@ -99,6 +97,40 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
+    title: 'Dogg.Dog Website Illustrations',
+    image: 'dogg-dog-website-illustrations.jpg',
+    description: 'Illustrations for the Dogg.Dog project website.',
+    portfolioItems: [
+      {
+        image: 'dogg-dog-website-illustrations/9d69b00a-1b85-4e85-8688-a5574c0091ca.jpg'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/965f6a2d-32c1-477f-a988-4cdc21221616.jpg'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/03ced391-00c8-4680-8dde-f7c2f3871cb3.jpg'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/ea19071f-811c-4c4f-870f-8f9f469f3599.jpg'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/8147aa41-c772-4028-a526-4af5d1abb650.jpg'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/8c5318b9-3dee-4333-aab4-c4f77777ca16.png'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/cbf1eae8-9f6a-42a4-8489-f77a74e7d66e.png'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/0c8f130b-d624-4883-9ef9-303851e9141a.png'
+      },
+      {
+        image: 'dogg-dog-website-illustrations/f8dbd898-50ec-4a7f-9097-25539ef190fe.jpg'
+      }
+    ]
+  },
+  {
     title: '404 Page Animation',
     image: '404-page-animation.png',
     description: 'A christmas-themed animated design of the Error 404 page.',
@@ -120,6 +152,31 @@ export const PREVIEW_ITEMS = [
       },
       {
         image: '404-page-animation/bd834f74-7c26-4f7d-bbf3-ca7102d85c0b.png'
+      }
+    ]
+  },
+  {
+    title: 'Cartoon characters',
+    image: 'cartoon-characters.jpg',
+    description: 'Concepts of characters for children cartoon series.',
+    portfolioItems: [
+      {
+        image: 'cartoon-characters/714a4301-02d7-49ed-9d6d-e268f37b6b62.jpg'
+      },
+      {
+        image: 'cartoon-characters/8c5ac8e5-db16-48a4-93a5-9954afff2a4a.png'
+      },
+      {
+        image: 'cartoon-characters/959e7bf7-e5ab-4db4-9ba5-f96d8b2a8e85.jpg'
+      },
+      {
+        image: 'cartoon-characters/d814494d-6603-494a-9ba4-53cb3b18b71f.png'
+      },
+      {
+        image: 'cartoon-characters/bf1db87e-50eb-4451-9dd5-4a5cf01574d6.jpg'
+      },
+      {
+        image: 'cartoon-characters/8edb2754-192c-441a-a7fd-9c32135562df.png'
       }
     ]
   },
@@ -158,17 +215,92 @@ export const PREVIEW_ITEMS = [
     description: 'Short animation created for Codeur.com about the growth of the most popular social networks.',
     portfolioItems: [
       {
-        image: 'codeur-animation/click-the-image-to-watch-the-video.jpg',
-        description: 'Click the image to watch the video.',
-        url: 'https://youtu.be/dyRsVWBxIXI'
+        image: 'codeur-animation/6c394342-1394-49a5-b793-70c4a0651ea5.jpg'
+      },
+      {
+        video: 'https://vimeo.com/266870205'
       },
       {
         image: 'codeur-animation/storyboards.jpg',
         description: 'Storyboards'
       },
       {
-        image: 'codeur-animation/thanks-for-watching.jpg',
-        description: 'Thanks for watching!'
+        image: 'codeur-animation/1388d92e-ae30-40b5-b8a7-e3f4bc165392.jpg'
+      }
+    ]
+  },
+  {
+    title: 'Telegram Animation',
+    image: 'telegram-animation.png',
+    description: 'A short animation that was created as an entry for the Telegram\'s competition and became one of its winners.',
+    portfolioItems: [
+      {
+        image: 'telegram-animation/5bfae4f7-48aa-4c7c-b6ff-b62cc1aeb0a7.png'
+      },
+      {
+        image: 'telegram-animation/0631c0ad-8474-4a76-a620-456595e23117.gif'
+      },
+      {
+        image: 'telegram-animation/f03ea162-7ddb-40bd-b95f-491c247afcff.png'
+      },
+      {
+        video: 'https://vimeo.com/328141388'
+      },
+      {
+        image: 'telegram-animation/5fcf6a9b-daf6-482e-81c2-c1c9a497aab0.png'
+      },
+      {
+        image: 'telegram-animation/6db9ad09-2e57-41aa-a2cc-7826bcf1d32d.gif'
+      }
+    ]
+  },
+  {
+    title: 'City Restoration Animation',
+    image: 'city-restoration-animation.jpg',
+    description: 'An animated video made as a presentation and announcement of the restoration starting in the Chelyabinsk City.',
+    portfolioItems: [
+      {
+        image: 'city-restoration-animation/843e6e81-efc7-4479-95c6-43de20b5c992.png'
+      },
+      {
+        video: 'https://vimeo.com/319157235'
+      },
+      {
+        image: 'city-restoration-animation/0b15709f-5a46-439d-aaa3-3222a5df458e.png'
+      },
+      {
+        image: 'city-restoration-animation/329c83b1-cd8f-4c58-a64d-77c437ff813b.png'
+      },
+      {
+        image: 'city-restoration-animation/66db63b5-81c4-4829-be6c-367621cfc395.png'
+      }
+    ]
+  },
+  {
+    title: 'SCO & BRICS Explainer Video',
+    image: 'sco-brics-explainer-video.png',
+    description: 'An animated presentation of a business centre project.',
+    portfolioItems: [
+      {
+        image: 'sco-brics-explainer-video/0d2a3ae9-7725-404a-a38e-00a9c0a5f372.png'
+      },
+      {
+        image: 'sco-brics-explainer-video/d30c3862-6839-4bb5-a671-68a03a61d2cc.png'
+      },
+      {
+        video: 'https://vimeo.com/315950896'
+      },
+      {
+        image: 'sco-brics-explainer-video/f60b02c1-72f9-4b8b-891a-6d4705db7a8d.png'
+      },
+      {
+        image: 'sco-brics-explainer-video/8ac9304f-6adc-49f3-a1b7-b8307d7ba455.png'
+      },
+      {
+        image: 'sco-brics-explainer-video/ab35a088-94de-48a9-aea0-d202eb3f69c5.png'
+      },
+      {
+        image: 'sco-brics-explainer-video/91821b9b-6d5b-41a0-b060-b0c9ddaf4e85.png'
       }
     ]
   },
@@ -419,6 +551,22 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
+    title: 'Poster for Inventiv IT',
+    image: 'poster-for-inventiv-it.jpg',
+    description: 'This poster was created on the occasion of the 10th anniversary of the Inventiv IT company.',
+    portfolioItems: [
+      {
+        image: 'poster-for-inventiv-it/591556ea-c607-489a-95b3-5fa13fbb8cfc.png'
+      },
+      {
+        image: 'poster-for-inventiv-it/357594bc-a275-43d9-a5e9-56f794863e33.png'
+      },
+      {
+        image: 'poster-for-inventiv-it/e6ab5ccd-6135-4ff7-ac3a-ca4b355af6e2.png'
+      }
+    ]
+  },
+  {
     title: 'Cute Illustrations',
     image: 'cute-illustrations.png',
     description: 'Just some personal nonprofit illustrations.',
@@ -545,6 +693,24 @@ export const PREVIEW_ITEMS = [
       {
         image: 'memoryator-painting/detail.png',
         description: 'Detail'
+      }
+    ]
+  },
+  {
+    title: 'Christmas Family Illustration',
+    image: 'christmas-family-illustration.jpg',
+    portfolioItems: [
+      {
+        image: 'christmas-family-illustration/4e16d902-72f8-4500-81a6-af8e3923f8c9.jpg'
+      },
+      {
+        image: 'christmas-family-illustration/5e4f55d1-2454-48e5-ac7b-48c634e5946f.jpg'
+      },
+      {
+        image: 'christmas-family-illustration/304db3a5-7c70-4e91-a95c-c855755f3ed2.jpg'
+      },
+      {
+        image: 'christmas-family-illustration/bc9e740d-c27e-4dab-a233-ff2b1affc27a.jpg'
       }
     ]
   }
