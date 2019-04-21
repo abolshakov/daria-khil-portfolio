@@ -5,6 +5,6 @@
 <ng-template #embedImage>
     <img #image src="{{item.image}}" (load)="onImageLoad()" (click)="onContentClick()" [ngClass]="cssClass"/>
 </ng-template>
-<div #subtitle class="mat-card-subtitle">
+<div *ngIf="item.description" #subtitle class="mat-card-subtitle">
     <p>{{item.description}}</p>
 </div>

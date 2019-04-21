@@ -112,7 +112,7 @@ export const PREVIEW_ITEMS = [
         description: 'Illustrations for a website and an application of Dogg.Dog project.'
       },
       {
-        description: 'It’s going to provide the best way to participate  in dog’s shows. You can create accounts for all your dogs, register them in shows, manage their results and much more. The app is useful for dog owners, breeders, show judges, organizers and even club owners.'
+        description: 'It’s going to provide the best way to participate in dog’s shows. You can create accounts for all your dogs, register them in shows, manage their results and much more. The app is useful for dog owners, breeders, show judges, organizers and even club owners.'
       },
       {
         image: 'website-illustrations-for-dogg-dog/icons-for-the-types-of-the-website-members.jpg',

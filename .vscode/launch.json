@@ -19,14 +19,6 @@
             "url": "http://localhost:4201",
             "sourceMaps": true,
             "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "name": "Launch Fire Fox against localhost",
-            "url": "http://localhost:8080",
-            "sourceMaps": true,
-            "webRoot": "${workspaceFolder}"
         }
     ]
 }

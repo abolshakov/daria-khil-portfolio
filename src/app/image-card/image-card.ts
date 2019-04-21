@@ -5,10 +5,18 @@ import {
     OnInit,
     SimpleChange,
     ViewChild
-    } from '@angular/core';
+} from '@angular/core';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
 import { PortfolioItem } from '../gallery-items/gallery-items';
-import { ImgSrcDirective } from '@angular/flex-layout';
+
+interface Margins {
+    top: number;
+    rigth: number;
+    bottom: number;
+    left: number;
+    vertical: number;
+    horizontal: number;
+}
 
 @Component({
     selector: 'pfo-image-card',
@@ -16,31 +24,51 @@ import { ImgSrcDirective } from '@angular/flex-layout';
     styleUrls: ['./image-card.scss']
 })
 export class ImageCardComponent implements OnInit, OnChanges {
-    @Input()
-    public item: PortfolioItem;
-    @Input()
-    public maxWidth: number;
-    @Input()
-    public maxHeight: number;
+    private _margins: Margins;
+
+    private get itemMargins(): Margins {
+        if (!this._margins) {
+            const margins = !this.item.margin
+                ? [0, 0, 0, 0]
+                : this.item.margin.split(' ').map(s => Number(s));
+            this._margins = {
+                top: margins[0],
+                rigth: margins[1],
+                bottom: margins[2],
+                left: margins[3],
+                vertical: margins[0] + margins[2],
+                horizontal: margins[1] + margins[3]
+            };
+        }
+        return this._margins;
+    }
+    @Input() public item: PortfolioItem;
+    @Input() public maxWidth: number;
+    @Input() public maxHeight: number;
+
+    @ViewChild('image') public imageView: { nativeElement: HTMLImageElement; };
+    @ViewChild('subtitle') public subtitleView: { nativeElement: HTMLElement; };
 
     public cssClass: any;
 
     public get videoHtml(): any {
         return this.item.video
-            ? this.video.embed(this.item.video, { attr: { width: this.maxWidth, height: Math.min(this.maxWidth / (16 / 9), this.maxHeight) } })
+            ? this.video.embed(this.item.video, {
+                attr: {
+                    width: this.maxWidth - this.itemMargins.horizontal,
+                    height: Math.min(this.maxWidth / (16 / 9), this.maxHeight) - this.itemMargins.vertical
+                }
+            })
             : null;
     }
-
-    @ViewChild('image') imageView: { nativeElement: HTMLImageElement; };
-    @ViewChild('subtitle') subtitleView: { nativeElement: HTMLElement; };
 
     constructor(private video: EmbedVideoService) { }
 
     ngOnInit(): void {
         this.cssClass = {
-            "image": true,
-            "clickable": this.item.url != null
-        }
+            'image': true,
+            'clickable': this.item.url != null
+        };
     }
 
     ngOnChanges(changes: { [propKey: string]: SimpleChange }): void {
@@ -63,8 +91,8 @@ export class ImageCardComponent implements OnInit, OnChanges {
 
         const subtitleHeight = this.getSubtitleHeight();
 
-        const contentWidth: number = this.maxWidth;
-        const contentHeight: number = this.maxHeight - subtitleHeight;
+        const contentWidth: number = this.maxWidth - this.itemMargins.horizontal;
+        const contentHeight: number = this.maxHeight - subtitleHeight - this.itemMargins.vertical;
 
         const deltaWidth: number = (imageWidth - contentWidth) / imageWidth;
         const deltaHeight: number = (imageHeight - contentHeight) / imageHeight;
@@ -80,9 +108,14 @@ export class ImageCardComponent implements OnInit, OnChanges {
                 image.removeAttribute('width');
                 image.removeAttribute('height');
             }
+        const m = this.itemMargins;
+        image.setAttribute('margin', [m.top, m.rigth, m.bottom, m.left].join('px ') + 'px');
     }
 
     private getSubtitleHeight(): number {
+        if (!this.subtitleView) {
+            return 0;
+        }
         const element: HTMLElement = this.subtitleView.nativeElement;
         const style: CSSStyleDeclaration = window.getComputedStyle(element);
         const verticalMargin = parseFloat(style.marginTop) + parseFloat(style.marginBottom);

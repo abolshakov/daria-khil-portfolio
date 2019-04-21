@@ -10,6 +10,7 @@ export interface PreviewItem {
 
 export interface PortfolioItem {
     image?: string;
+    margin?: string;
     description?: string;
     url?: string;
     video?: string;
