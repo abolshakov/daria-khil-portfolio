@@ -5,10 +5,10 @@ import {
     OnInit,
     SimpleChange,
     ViewChild
-} from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+    } from '@angular/core';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
 import { PortfolioItem } from '../gallery-items/gallery-items';
+import { ImgSrcDirective } from '@angular/flex-layout';
 
 @Component({
     selector: 'pfo-image-card',
@@ -34,7 +34,7 @@ export class ImageCardComponent implements OnInit, OnChanges {
     @ViewChild('image') imageView: { nativeElement: HTMLImageElement; };
     @ViewChild('subtitle') subtitleView: { nativeElement: HTMLElement; };
 
-    constructor(private sanitizer: DomSanitizer, private video: EmbedVideoService) { }
+    constructor(private video: EmbedVideoService) { }
 
     ngOnInit(): void {
         this.cssClass = {

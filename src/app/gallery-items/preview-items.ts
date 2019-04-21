@@ -8,7 +8,7 @@ export const PREVIEW_ITEMS = [
         video: 'https://vimeo.com/330015242'
       },
       {
-        image: 'animated-video-for-boost-vr/f4726a05-d234-4d4e-8478-70a2a4a76ec0.jpg'
+        image: 'animated-video-for-boost-vr/9398dab4-6503-49e0-af5a-6d087d99753b.jpg'
       },
       {
         image: 'animated-video-for-boost-vr/c1b466d9-f26e-49a2-bf99-60e0ca3d5b61.gif'
@@ -29,7 +29,7 @@ export const PREVIEW_ITEMS = [
         image: 'animated-video-for-boost-vr/c25725ff-5d37-4072-b254-c109c2d9faf4.gif'
       },
       {
-        image: 'animated-video-for-boost-vr/8f6f7b3c-deb3-444c-9374-06eef637a4fd.png'
+        image: 'animated-video-for-boost-vr/9249b326-19cb-46cd-ac7e-bc32749ad615.png'
       },
       {
         image: 'animated-video-for-boost-vr/f25491bf-bb39-4035-bbc2-92af60cdf0a2.gif'
@@ -44,13 +44,19 @@ export const PREVIEW_ITEMS = [
         image: 'animated-video-for-boost-vr/4b20138a-16d5-4e5f-946a-c7f3251ac2d7.gif'
       },
       {
-        image: 'animated-video-for-boost-vr/77d1b386-865b-40c7-bbde-b7999942aa77.jpg'
+        image: 'animated-video-for-boost-vr/6263e94b-dc58-4af5-8168-c1c22ed5fa25.png'
       },
       {
-        image: 'animated-video-for-boost-vr/8a281a6c-0532-4847-8ea6-18f5b06c69c0.jpg'
+        image: 'animated-video-for-boost-vr/05cd5ca9-1fd0-44ae-adda-ca7e504c40b0.png'
       },
       {
-        image: 'animated-video-for-boost-vr/38fce16a-5aeb-4c58-8e52-3e922618e913.gif'
+        image: 'animated-video-for-boost-vr/544e78fa-e538-47f8-9baa-f876047edeef.png'
+      },
+      {
+        image: 'animated-video-for-boost-vr/bfc218e3-fdfb-4254-9102-33a0512e02d0.png'
+      },
+      {
+        image: 'animated-video-for-boost-vr/cd30ed43-4682-4441-bca3-0a4f96175eea.gif'
       }
     ]
   },
@@ -97,36 +103,55 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'Dogg.Dog Website Illustrations',
-    image: 'dogg-dog-website-illustrations.jpg',
+    title: 'Website Illustrations for Dogg.Dog',
+    image: 'website-illustrations-for-dogg-dog.jpg',
     description: 'Illustrations for the Dogg.Dog project website.',
     portfolioItems: [
       {
-        image: 'dogg-dog-website-illustrations/9d69b00a-1b85-4e85-8688-a5574c0091ca.jpg'
+        image: 'website-illustrations-for-dogg-dog/illustrations-for-a-website-and-an-application-of-dogg-dog-project.jpg',
+        description: 'Illustrations for a website and an application of Dogg.Dog project.'
       },
       {
-        image: 'dogg-dog-website-illustrations/965f6a2d-32c1-477f-a988-4cdc21221616.jpg'
+        description: 'It’s going to provide the best way to participate  in dog’s shows. You can create accounts for all your dogs, register them in shows, manage their results and much more. The app is useful for dog owners, breeders, show judges, organizers and even club owners.'
       },
       {
-        image: 'dogg-dog-website-illustrations/03ced391-00c8-4680-8dde-f7c2f3871cb3.jpg'
+        image: 'website-illustrations-for-dogg-dog/icons-for-the-types-of-the-website-members.jpg',
+        description: 'Icons for the types of the website members.'
       },
       {
-        image: 'dogg-dog-website-illustrations/ea19071f-811c-4c4f-870f-8f9f469f3599.jpg'
+        image: 'website-illustrations-for-dogg-dog/404-page-illustration.jpg',
+        description: '404 page illustration.'
       },
       {
-        image: 'dogg-dog-website-illustrations/8147aa41-c772-4028-a526-4af5d1abb650.jpg'
+        image: 'website-illustrations-for-dogg-dog/illustration-for-the-page-of-the-recommendations-on-preparing-for-the-show.jpg',
+        description: 'Illustration for the page of the recommendations on preparing for the show.'
       },
       {
-        image: 'dogg-dog-website-illustrations/8c5318b9-3dee-4333-aab4-c4f77777ca16.png'
+        image: 'website-illustrations-for-dogg-dog/access-denied-page.jpg',
+        description: 'Access denied page.'
       },
       {
-        image: 'dogg-dog-website-illustrations/cbf1eae8-9f6a-42a4-8489-f77a74e7d66e.png'
+        image: 'website-illustrations-for-dogg-dog/a-dog-owner-using-the-application.jpg',
+        description: 'A dog owner, using the application.'
       },
       {
-        image: 'dogg-dog-website-illustrations/0c8f130b-d624-4883-9ef9-303851e9141a.png'
+        image: 'website-illustrations-for-dogg-dog/a-dog-show-judge-and-his-profile.jpg',
+        description: 'A dog show judge and his profile.'
       },
       {
-        image: 'dogg-dog-website-illustrations/f8dbd898-50ec-4a7f-9097-25539ef190fe.jpg'
+        image: 'website-illustrations-for-dogg-dog/app-features-for-a-club-manager.jpg',
+        description: 'App features for a club manager.'
+      },
+      {
+        image: 'website-illustrations-for-dogg-dog/a-dog-breeder-and-his-connections-via-the-app.jpg',
+        description: 'A dog breeder and his connections via the app.'
+      },
+      {
+        image: 'website-illustrations-for-dogg-dog/home-page-illustration.jpg',
+        description: 'Home page illustration.'
+      },
+      {
+        image: 'website-illustrations-for-dogg-dog/cfa28344-0cdf-49e9-8753-cc732a7b7838.jpg'
       }
     ]
   },
@@ -145,7 +170,10 @@ export const PREVIEW_ITEMS = [
         image: '404-page-animation/170feff2-dcf8-45c0-8d5f-06eadb57493d.png'
       },
       {
-        image: '404-page-animation/b6fbb4d6-b09c-4618-8612-3bd77564c724.png'
+        image: '404-page-animation/c58168df-7289-4a87-860c-2e0555908aeb.png'
+      },
+      {
+        image: '404-page-animation/a3637669-a971-44f2-a08c-05bae6273eca.png'
       },
       {
         image: '404-page-animation/e087f212-31b8-416e-9d0f-b19ed0310d95.gif'
@@ -156,7 +184,7 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'Cartoon characters',
+    title: 'Cartoon Characters',
     image: 'cartoon-characters.jpg',
     description: 'Concepts of characters for children cartoon series.',
     portfolioItems: [
@@ -164,68 +192,83 @@ export const PREVIEW_ITEMS = [
         image: 'cartoon-characters/714a4301-02d7-49ed-9d6d-e268f37b6b62.jpg'
       },
       {
-        image: 'cartoon-characters/8c5ac8e5-db16-48a4-93a5-9954afff2a4a.png'
+        image: 'cartoon-characters/9daa242a-56ee-4ef1-8c7c-0c2d4d7f101b.png'
+      },
+      {
+        image: 'cartoon-characters/1553ff67-1d47-4e07-a9ef-8700739a83f1.png'
       },
       {
         image: 'cartoon-characters/959e7bf7-e5ab-4db4-9ba5-f96d8b2a8e85.jpg'
       },
       {
-        image: 'cartoon-characters/d814494d-6603-494a-9ba4-53cb3b18b71f.png'
+        image: 'cartoon-characters/e0651d90-5f27-40aa-8fd9-e3aaec00cbb0.png'
+      },
+      {
+        image: 'cartoon-characters/71fc02e8-8206-4e54-b15e-6ffdfa5b0f1e.png'
       },
       {
         image: 'cartoon-characters/bf1db87e-50eb-4451-9dd5-4a5cf01574d6.jpg'
       },
       {
-        image: 'cartoon-characters/8edb2754-192c-441a-a7fd-9c32135562df.png'
+        image: 'cartoon-characters/70fcbafc-656b-4d4d-81d9-4e307412f935.png'
+      },
+      {
+        image: 'cartoon-characters/84ff206a-e7b3-4fdd-9dbc-bf9ef5589f1d.png'
       }
     ]
   },
   {
-    title: 'CryptoSoul Web Design',
-    image: 'crypto-soul-web-design.jpg',
-    description: 'Web design, icons and posters for the crypto project and the game "CryptoSoul".',
+    title: 'Rabbit Hole Animation',
+    image: 'rabbit-hole-animation.jpg',
+    description: 'A little white rabbit enclosed in this looped gif animation to run forever through teleporting rabbit holes...',
     portfolioItems: [
       {
-        image: 'crypto-soul/fe4f6001-9ba6-40b5-b998-23989b3ae005.png'
+        image: 'rabbit-hole-animation/c71ea46c-9c90-4c44-9892-53264ab6df55.png'
       },
       {
-        image: 'crypto-soul/62ff667e-36b1-4017-b4b4-013e8c0eace8.png',
+        description: 'A little white rabbit enclosed in this looped gif animation to run forever through teleporting rabbit holes...',
+        video: 'https://vimeo.com/330706541'
+      },
+      {
+        image: 'rabbit-hole-animation/768246ca-80e2-429f-b1e8-52d19cd56c5c.gif'
+      },
+      {
+        image: 'rabbit-hole-animation/6b841e33-2c56-46b2-82a2-917595a2ac55.png'
+      },
+      {
+        image: 'rabbit-hole-animation/d1298faf-8d32-4e3c-a524-076c6af61e36.jpg'
+      },
+      {
+        image: 'rabbit-hole-animation/341baea9-846a-4876-9147-d1e6a62b7b7e.png'
+      }
+    ]
+  },
+  {
+    title: 'Illustrations and Web Design for CryptoSoul',
+    image: 'illustrations-and-web-design-for-crypto-soul.jpg',
+    description: 'Web design, illustrations, icons and posters for the crypto project and the game "CryptoSoul".',
+    portfolioItems: [
+      {
+        image: 'illustrations-and-web-design-for-crypto-soul/fe4f6001-9ba6-40b5-b998-23989b3ae005.png'
+      },
+      {
+        image: 'illustrations-and-web-design-for-crypto-soul/62ff667e-36b1-4017-b4b4-013e8c0eace8.png',
         url: 'https://cryptosoul.io'
       },
       {
-        image: 'crypto-soul/1e567ff5-2fd0-4a3d-820d-417bccece964.jpg'
+        image: 'illustrations-and-web-design-for-crypto-soul/1e567ff5-2fd0-4a3d-820d-417bccece964.jpg'
       },
       {
-        image: 'crypto-soul/cd8b9097-9840-4a77-9f9f-0c245e6ef069.jpg'
+        image: 'illustrations-and-web-design-for-crypto-soul/cd8b9097-9840-4a77-9f9f-0c245e6ef069.jpg'
       },
       {
-        image: 'crypto-soul/fde65415-2bbe-4e2b-8617-38ba9371dfbb.jpg'
+        image: 'illustrations-and-web-design-for-crypto-soul/fde65415-2bbe-4e2b-8617-38ba9371dfbb.jpg'
       },
       {
-        image: 'crypto-soul/aec6744a-b999-4fa4-99c6-cd9ddd4f417f.jpg'
+        image: 'illustrations-and-web-design-for-crypto-soul/aec6744a-b999-4fa4-99c6-cd9ddd4f417f.jpg'
       },
       {
-        image: 'crypto-soul/37be3088-4a30-466d-b694-35d57fb23478.jpg'
-      }
-    ]
-  },
-  {
-    title: 'Codeur Animation',
-    image: 'codeur-animation.jpg',
-    description: 'Short animation created for Codeur.com about the growth of the most popular social networks.',
-    portfolioItems: [
-      {
-        image: 'codeur-animation/6c394342-1394-49a5-b793-70c4a0651ea5.jpg'
-      },
-      {
-        video: 'https://vimeo.com/266870205'
-      },
-      {
-        image: 'codeur-animation/storyboards.jpg',
-        description: 'Storyboards'
-      },
-      {
-        image: 'codeur-animation/1388d92e-ae30-40b5-b8a7-e3f4bc165392.jpg'
+        image: 'illustrations-and-web-design-for-crypto-soul/37be3088-4a30-466d-b694-35d57fb23478.jpg'
       }
     ]
   },
@@ -251,6 +294,26 @@ export const PREVIEW_ITEMS = [
       },
       {
         image: 'telegram-animation/6db9ad09-2e57-41aa-a2cc-7826bcf1d32d.gif'
+      }
+    ]
+  },
+  {
+    title: 'Animation for Codeur',
+    image: 'animation-for-codeur.jpg',
+    description: 'Short animation created for Codeur.com about the growth of the most popular social networks.',
+    portfolioItems: [
+      {
+        image: 'animation-for-codeur/6c394342-1394-49a5-b793-70c4a0651ea5.jpg'
+      },
+      {
+        video: 'https://vimeo.com/266870205'
+      },
+      {
+        image: 'animation-for-codeur/storyboards.jpg',
+        description: 'Storyboards'
+      },
+      {
+        image: 'animation-for-codeur/1388d92e-ae30-40b5-b8a7-e3f4bc165392.jpg'
       }
     ]
   },
@@ -282,47 +345,41 @@ export const PREVIEW_ITEMS = [
     description: 'An animated presentation of a business centre project.',
     portfolioItems: [
       {
-        image: 'sco-brics-explainer-video/0d2a3ae9-7725-404a-a38e-00a9c0a5f372.png'
-      },
-      {
-        image: 'sco-brics-explainer-video/d30c3862-6839-4bb5-a671-68a03a61d2cc.png'
+        image: 'sco-brics-explainer-video/9b516770-6a9d-4b49-850c-4621bd6b345d.jpg'
       },
       {
         video: 'https://vimeo.com/315950896'
       },
       {
-        image: 'sco-brics-explainer-video/f60b02c1-72f9-4b8b-891a-6d4705db7a8d.png'
+        image: 'sco-brics-explainer-video/33292c19-3d7c-44fd-9030-8ec7278cbd18.jpg'
       },
       {
-        image: 'sco-brics-explainer-video/8ac9304f-6adc-49f3-a1b7-b8307d7ba455.png'
+        image: 'sco-brics-explainer-video/a510fa8e-81bb-43e1-96e7-29e615db559f.jpg'
       },
       {
-        image: 'sco-brics-explainer-video/ab35a088-94de-48a9-aea0-d202eb3f69c5.png'
-      },
-      {
-        image: 'sco-brics-explainer-video/91821b9b-6d5b-41a0-b060-b0c9ddaf4e85.png'
+        image: 'sco-brics-explainer-video/0f4fadf6-7e5a-4c7a-9480-084996be4896.jpg'
       }
     ]
   },
   {
-    title: 'Dr Folsbuben',
-    image: 'dr-folsbuben.png',
-    description: 'Illustration to the fictional story about Dr Folsbuben and his adventure.',
+    title: 'Dr Folsbuben Illustration',
+    image: 'dr-folsbuben-illustration.png',
+    description: 'Doctor Folsbuben with his droid mates in the alternate reality forest surrounded by its denizens: peaceful and maybe not quite...',
     portfolioItems: [
       {
-        image: 'dr-folsbuben/39ac319a-fd94-4bf5-be48-a6423e16cb95.png'
+        image: 'dr-folsbuben-illustration/39ac319a-fd94-4bf5-be48-a6423e16cb95.png'
       },
       {
-        image: 'dr-folsbuben/d8944ab5-0fdb-4b0a-b49d-5983e0f1b66b.png'
+        image: 'dr-folsbuben-illustration/d8944ab5-0fdb-4b0a-b49d-5983e0f1b66b.png'
       },
       {
-        image: 'dr-folsbuben/da1b7e3c-03cd-42d3-b45c-b6f10f3322dc.png'
+        image: 'dr-folsbuben-illustration/da1b7e3c-03cd-42d3-b45c-b6f10f3322dc.png'
       },
       {
-        image: 'dr-folsbuben/c5be4fad-50d5-45a3-840e-b01b6be44765.png'
+        image: 'dr-folsbuben-illustration/c5be4fad-50d5-45a3-840e-b01b6be44765.png'
       },
       {
-        image: 'dr-folsbuben/207974c3-3ab1-4b14-9937-55696e4b4362.png'
+        image: 'dr-folsbuben-illustration/207974c3-3ab1-4b14-9937-55696e4b4362.png'
       }
     ]
   },
@@ -451,7 +508,7 @@ export const PREVIEW_ITEMS = [
         image: 'memoryator-animations/ce954c7f-97b1-4ea3-9e8d-4acbb8f159b3.png'
       },
       {
-        image: 'memoryator-animations/887692db-7162-43fc-8b7d-12d5c7deb5da.jpg'
+        image: 'memoryator-animations/aa0a0ed1-320d-45c9-bd3a-ccacabf4e5a5.jpg'
       },
       {
         image: 'memoryator-animations/protagonist-animations-of-run.gif',
@@ -485,22 +542,22 @@ export const PREVIEW_ITEMS = [
     description: '2D objects for the Memoryator game\'s world.',
     portfolioItems: [
       {
-        image: 'game-objects/c12fbf0e-1e0d-42b1-9aff-432c39a03faa.png'
+        image: 'game-objects/ba53c354-7f99-4a87-8c95-18d4ddd4b764.png'
       },
       {
-        image: 'game-objects/4348dc14-6ad4-4c9d-89ba-f06a2c0cb3ca.png'
+        image: 'game-objects/b07f9f1d-53b0-472a-9c76-aae215acfe29.png'
       },
       {
-        image: 'game-objects/b68d8575-4968-430e-8712-e576144c3148.png'
+        image: 'game-objects/9ea5521f-4cf1-442a-b703-d66cd374caf0.png'
       },
       {
-        image: 'game-objects/2265857b-56f3-41e8-a6b8-8c4ea0dc65c4.png'
+        image: 'game-objects/b8a30c0d-c05a-45c8-aa1c-f4c5870bdddf.png'
       },
       {
-        image: 'game-objects/a2d4055b-30dd-4333-b563-30b427e359ab.png'
+        image: 'game-objects/22c41499-60e8-49a9-a5c9-f57c61a79631.png'
       },
       {
-        image: 'game-objects/7081151f-93ee-4034-8dc3-8b00b5c60892.png'
+        image: 'game-objects/d4eeebfb-58b7-459e-89ac-a42856bb246a.png'
       }
     ]
   },
@@ -556,13 +613,19 @@ export const PREVIEW_ITEMS = [
     description: 'This poster was created on the occasion of the 10th anniversary of the Inventiv IT company.',
     portfolioItems: [
       {
-        image: 'poster-for-inventiv-it/591556ea-c607-489a-95b3-5fa13fbb8cfc.png'
+        image: 'poster-for-inventiv-it/325a0c5f-24e4-4718-8596-40ab873a506c.jpg'
       },
       {
-        image: 'poster-for-inventiv-it/357594bc-a275-43d9-a5e9-56f794863e33.png'
+        image: 'poster-for-inventiv-it/e6020200-1967-42b5-af33-a968812a2fdd.jpg'
       },
       {
-        image: 'poster-for-inventiv-it/e6ab5ccd-6135-4ff7-ac3a-ca4b355af6e2.png'
+        image: 'poster-for-inventiv-it/df4552fa-5a5b-4114-b37a-1b97c87745bb.jpg'
+      },
+      {
+        image: 'poster-for-inventiv-it/6b2b41d3-002d-43b2-a378-d5db5983c4d9.jpg'
+      },
+      {
+        image: 'poster-for-inventiv-it/d1c858d6-1419-420c-a158-fc3d45a645e2.jpg'
       }
     ]
   },
@@ -576,8 +639,8 @@ export const PREVIEW_ITEMS = [
         description: 'Roller skater'
       },
       {
-        image: 'cute-illustrations/uncake.png',
-        description: 'Uncake'
+        image: 'cute-illustrations/a-tiny-cute-illustration-of-a-little-broccoli-who-believe-that-you-can-be-whoever-you-want.png',
+        description: 'A tiny cute illustration of a little broccoli, who believe that you can be whoever you want :)'
       },
       {
         image: 'cute-illustrations/lil-elf-princess.jpg',
@@ -621,77 +684,77 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'Owl Rider',
-    image: 'owl-rider.png',
-    description: 'Personal illustration.',
+    title: 'Owl Rider Illustration',
+    image: 'owl-rider-illustration.png',
+    description: 'Adventures are waiting ahead! Why not face them riding a huge owl with magical books around and mighty sword in a hand?',
     portfolioItems: [
       {
-        image: 'owl-rider/young-elf-riding-a-huge-purple-owl-is-going-to-attack.png',
+        image: 'owl-rider-illustration/young-elf-riding-a-huge-purple-owl-is-going-to-attack.jpg',
         description: 'Young elf riding a huge purple owl is going to attack!'
       }
     ]
   },
   {
-    title: 'CryptoSoul Map',
-    image: 'crypto-soul-map.png',
+    title: '2D Game Objects',
+    image: '2-d-game-objects.png',
     description: 'Map ground textures and objects for the game\'s world.',
     portfolioItems: [
       {
-        image: 'crypto-soul-map/7726d28c-b446-4d3e-839c-62c38fd46f24.png'
+        image: '2-d-game-objects/7726d28c-b446-4d3e-839c-62c38fd46f24.png'
       },
       {
-        image: 'crypto-soul-map/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png'
+        image: '2-d-game-objects/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png'
       },
       {
-        image: 'crypto-soul-map/1cf5e67f-d136-424d-a072-c9422c8f6127.png'
+        image: '2-d-game-objects/1cf5e67f-d136-424d-a072-c9422c8f6127.png'
       },
       {
-        image: 'crypto-soul-map/424a3aae-9335-433a-b251-64bc3b573bb6.png'
+        image: '2-d-game-objects/424a3aae-9335-433a-b251-64bc3b573bb6.png'
       },
       {
-        image: 'crypto-soul-map/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png'
+        image: '2-d-game-objects/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png'
       },
       {
-        image: 'crypto-soul-map/fa07cfde-fff3-48ed-a019-4c35fc8a8123.png'
+        image: '2-d-game-objects/fa07cfde-fff3-48ed-a019-4c35fc8a8123.png'
       },
       {
-        image: 'crypto-soul-map/7bfd329d-5dba-4112-81ed-1e9a9c1928cd.png'
+        image: '2-d-game-objects/7bfd329d-5dba-4112-81ed-1e9a9c1928cd.png'
       },
       {
-        image: 'crypto-soul-map/df111b91-ad4f-4970-a1ac-758797ae882a.png'
+        image: '2-d-game-objects/df111b91-ad4f-4970-a1ac-758797ae882a.png'
       },
       {
-        image: 'crypto-soul-map/415f68bc-e26f-4ae1-8364-4ebbf3e3387b.png'
+        image: '2-d-game-objects/415f68bc-e26f-4ae1-8364-4ebbf3e3387b.png'
       },
       {
-        image: 'crypto-soul-map/a816f77b-7de1-4c35-815c-67f6ef299c6a.png'
+        image: '2-d-game-objects/a816f77b-7de1-4c35-815c-67f6ef299c6a.png'
       },
       {
-        image: 'crypto-soul-map/bb70a6f1-5743-4365-9819-a0e736987efa.png'
+        image: '2-d-game-objects/bb70a6f1-5743-4365-9819-a0e736987efa.png'
       },
       {
-        image: 'crypto-soul-map/8b7d88f2-0e5b-4784-b796-d658cb03dcba.png'
+        image: '2-d-game-objects/8b7d88f2-0e5b-4784-b796-d658cb03dcba.png'
       }
     ]
   },
   {
-    title: 'Memoryator Painting',
-    image: 'memoryator-painting.png',
+    title: 'Oil Painting for Memoryator',
+    image: 'oil-painting-for-memoryator.png',
     description: 'Oil painted illustration of the Memoryator game world (40x40 cm)',
     portfolioItems: [
       {
-        image: 'memoryator-painting/adcf4c1b-3365-4c6e-bf81-a7196e248095.png'
+        image: 'oil-painting-for-memoryator/adcf4c1b-3365-4c6e-bf81-a7196e248095.png'
       },
       {
-        image: 'memoryator-painting/oil-canvas-40-x-40-cm.png',
+        image: 'oil-painting-for-memoryator/oil-canvas-40-x-40-cm.png',
         description: 'Oil, canvas 40x40 cm'
       },
       {
-        image: 'memoryator-painting/process.png',
+        image: 'oil-painting-for-memoryator/process.png',
         description: 'Process'
       },
       {
-        image: 'memoryator-painting/detail.png',
+        image: 'oil-painting-for-memoryator/detail.png',
         description: 'Detail'
       }
     ]
@@ -699,18 +762,19 @@ export const PREVIEW_ITEMS = [
   {
     title: 'Christmas Family Illustration',
     image: 'christmas-family-illustration.jpg',
+    description: 'Family members in a cute cartoonish style with Christmas mood.',
     portfolioItems: [
       {
-        image: 'christmas-family-illustration/4e16d902-72f8-4500-81a6-af8e3923f8c9.jpg'
+        image: 'christmas-family-illustration/9c5c5e47-676e-411f-97af-6b324cb0ad21.jpg'
       },
       {
-        image: 'christmas-family-illustration/5e4f55d1-2454-48e5-ac7b-48c634e5946f.jpg'
+        image: 'christmas-family-illustration/f36ddae2-96aa-499c-b07e-76d8153d1884.jpg'
       },
       {
-        image: 'christmas-family-illustration/304db3a5-7c70-4e91-a95c-c855755f3ed2.jpg'
+        image: 'christmas-family-illustration/3d45c569-a716-4210-ae20-1ff48f16fa05.jpg'
       },
       {
-        image: 'christmas-family-illustration/bc9e740d-c27e-4dab-a233-ff2b1affc27a.jpg'
+        image: 'christmas-family-illustration/fdbe8ddf-578a-47f5-a4bd-234ffd93d4e3.jpg'
       }
     ]
   }

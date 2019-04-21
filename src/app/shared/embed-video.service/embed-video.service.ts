@@ -16,6 +16,7 @@ export class EmbedVideoService {
 
         id = this.detectVimeo(url);
         if (id) {
+            options.query = { loop: 1, color: 'ffffff', title: 0, byline: 0, portrait: 0, ...options.query }
             return this.embed_vimeo(id, options);
         }
 
