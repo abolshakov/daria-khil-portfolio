@@ -109,7 +109,7 @@ export class ImageCardComponent implements OnInit, OnChanges {
                 image.removeAttribute('height');
             }
         const m = this.itemMargins;
-        image.setAttribute('margin', [m.top, m.rigth, m.bottom, m.left].join('px ') + 'px');
+        image.style.margin = [m.top, m.rigth, m.bottom, m.left].join('px ') + 'px';
     }
 
     private getSubtitleHeight(): number {
