@@ -3,8 +3,10 @@
     <div [innerHtml]="videoHtml"></div>
 </ng-template>
 <ng-template #embedImage>
-    <img #image src="{{item.image}}" (load)="onImageLoad()" (click)="onContentClick()" [ngClass]="cssClass"/>
+    <img #image src="{{item.image}}" (load)="onImageLoad()" (click)="onContentClick()" [ngClass]="cssClass" />
 </ng-template>
 <div *ngIf="item.description" #subtitle class="mat-card-subtitle">
-    <p>{{item.description}}</p>
+    <p>
+        <ng-container *ngFor="let line of descriptionLines">{{line}}<br></ng-container>
+    </p>
 </div>

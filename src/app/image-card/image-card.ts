@@ -51,6 +51,12 @@ export class ImageCardComponent implements OnInit, OnChanges {
 
     public cssClass: any;
 
+    public get descriptionLines(): string[] {
+        return this.item.description
+            ? this.item.description.split(' \n')
+            : [];
+    }
+
     public get videoHtml(): any {
         return this.item.video
             ? this.video.embed(this.item.video, {
@@ -69,6 +75,9 @@ export class ImageCardComponent implements OnInit, OnChanges {
             'image': true,
             'clickable': this.item.url != null
         };
+        if (this.item.description) {
+            this.item.description.replace('\n', '</br>');
+        }
     }
 
     ngOnChanges(changes: { [propKey: string]: SimpleChange }): void {
