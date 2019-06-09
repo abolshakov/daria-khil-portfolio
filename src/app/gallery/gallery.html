@@ -1,4 +1,4 @@
-<div class="gallery-content" fxLayout="row wrap" fxLayoutAlign="center">
+<div fxLayout="row wrap" fxLayoutAlign="center">
   <mat-card *ngFor="let item of galleryItems.getPreviewItems()" (click)="openDialog(item)" (mouseenter)='mouseenter($event.target)'
     (mouseleave)="mouseleave($event.target)">
     <img mat-card-image src="{{item.image}}" aria-hidden="true">

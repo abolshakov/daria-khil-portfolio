@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { DialogComponent } from './dialog/dialog';
 import { DialogModule } from './dialog/dialog.module';
 import { GalleryModule } from './gallery/gallery';
+import { HttpClientModule } from '@angular/common/http';
 import { MaterialAndFlexModule } from './shared/material-and-flex.module';
 import { NgModule } from '@angular/core';
 
@@ -12,10 +13,11 @@ import { NgModule } from '@angular/core';
     AppComponent
   ],
   imports: [
-    BrowserModule,
     BrowserAnimationsModule,
-    GalleryModule,
+    BrowserModule,
     DialogModule,
+    GalleryModule,
+    HttpClientModule,
     MaterialAndFlexModule
   ],
   entryComponents: [DialogComponent],
