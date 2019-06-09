@@ -1,2 +1,2 @@
 cd ..
-ng serve -o
+ng serve -o --aot --prod --host 0.0.0.0 --disableHostCheck true

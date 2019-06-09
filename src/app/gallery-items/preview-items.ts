@@ -1,35 +1,55 @@
 export const PREVIEW_ITEMS = [
   {
+    title: 'Showreel 2019',
+    image: 'showreel-2019.jpg',
+    description: 'A collection of animation clippings for 2018-2019 years.',
+    portfolioItems: [
+      {
+        margin: '15 0 0 15',
+        video: 'https://vimeo.com/338517704'
+      }
+    ]
+  },
+  {
     title: 'Animated Video for Boost VR',
     image: 'animated-video-for-boost-vr.jpg',
     description: 'This animated video was created as a stylized presentation for the Boost VR studio.',
     portfolioItems: [
       {
+        margin: '50 0 0 50',
         video: 'https://vimeo.com/330015242'
       },
       {
-        image: 'animated-video-for-boost-vr/9398dab4-6503-49e0-af5a-6d087d99753b.jpg'
+        image: 'animated-video-for-boost-vr/9398dab4-6503-49e0-af5a-6d087d99753b.jpg',
+        margin: '20 0 20 0'
       },
       {
-        image: 'animated-video-for-boost-vr/c1b466d9-f26e-49a2-bf99-60e0ca3d5b61.gif'
+        image: 'animated-video-for-boost-vr/c1b466d9-f26e-49a2-bf99-60e0ca3d5b61.gif',
+        margin: '5 5 5 5'
       },
       {
-        image: 'animated-video-for-boost-vr/fbf1368b-34b5-45b0-a1c0-645d7e66b700.gif'
+        image: 'animated-video-for-boost-vr/fbf1368b-34b5-45b0-a1c0-645d7e66b700.gif',
+        margin: '5 5 5 5'
       },
       {
-        image: 'animated-video-for-boost-vr/ee75b06c-7775-4993-bb9a-5576cc2ebb1d.gif'
+        image: 'animated-video-for-boost-vr/ee75b06c-7775-4993-bb9a-5576cc2ebb1d.gif',
+        margin: '5 5 5 5'
       },
       {
-        image: 'animated-video-for-boost-vr/5e1049f9-7963-4969-986c-cb016ba39175.gif'
+        image: 'animated-video-for-boost-vr/5e1049f9-7963-4969-986c-cb016ba39175.gif',
+        margin: '5 5 5 5'
       },
       {
-        image: 'animated-video-for-boost-vr/66bef319-45d8-4375-922b-ea9260925026.gif'
+        image: 'animated-video-for-boost-vr/66bef319-45d8-4375-922b-ea9260925026.gif',
+        margin: '5 5 5 5'
       },
       {
-        image: 'animated-video-for-boost-vr/c25725ff-5d37-4072-b254-c109c2d9faf4.gif'
+        image: 'animated-video-for-boost-vr/c25725ff-5d37-4072-b254-c109c2d9faf4.gif',
+        margin: '5 5 5 5'
       },
       {
-        image: 'animated-video-for-boost-vr/9249b326-19cb-46cd-ac7e-bc32749ad615.png'
+        image: 'animated-video-for-boost-vr/9249b326-19cb-46cd-ac7e-bc32749ad615.png',
+        margin: '20 0 20 0'
       },
       {
         image: 'animated-video-for-boost-vr/f25491bf-bb39-4035-bbc2-92af60cdf0a2.gif'
@@ -41,7 +61,8 @@ export const PREVIEW_ITEMS = [
         image: 'animated-video-for-boost-vr/2f10e044-f8f9-42c8-9f58-2afb8da386a9.gif'
       },
       {
-        image: 'animated-video-for-boost-vr/4b20138a-16d5-4e5f-946a-c7f3251ac2d7.gif'
+        image: 'animated-video-for-boost-vr/4b20138a-16d5-4e5f-946a-c7f3251ac2d7.gif',
+        margin: '0 0 50 0'
       },
       {
         image: 'animated-video-for-boost-vr/6263e94b-dc58-4af5-8168-c1c22ed5fa25.png'
@@ -56,102 +77,108 @@ export const PREVIEW_ITEMS = [
         image: 'animated-video-for-boost-vr/bfc218e3-fdfb-4254-9102-33a0512e02d0.png'
       },
       {
-        image: 'animated-video-for-boost-vr/cd30ed43-4682-4441-bca3-0a4f96175eea.gif'
+        image: 'animated-video-for-boost-vr/cd30ed43-4682-4441-bca3-0a4f96175eea.gif',
+        margin: '20 0 20 0'
       }
     ]
   },
   {
-    title: 'Snapparazzi Illustartinos',
-    image: 'snapparazzi-illustartinos.png',
+    title: 'Illustartions for Snapparazzi',
+    image: 'illustartions-for-snapparazzi.png',
     description: 'Illustrations describing the idea of the crypto-project "Snapparazzi". Designed for the project\'s website.',
     portfolioItems: [
       {
-        image: 'snapparazzi-illustartinos/snapparazzi-io.png',
+        image: 'illustartions-for-snapparazzi/snapparazzi-io.png',
         description: 'snapparazzi.io',
         url: 'http:/www.snapparazzi.io'
       },
       {
-        image: 'snapparazzi-illustartinos/5b9b6eee-8093-4110-94d9-6365332ac968.png'
+        image: 'illustartions-for-snapparazzi/5b9b6eee-8093-4110-94d9-6365332ac968.png'
       },
       {
-        image: 'snapparazzi-illustartinos/d24df4de-1db6-409a-b096-2e7af3598e70.png'
+        image: 'illustartions-for-snapparazzi/d24df4de-1db6-409a-b096-2e7af3598e70.png'
       },
       {
-        image: 'snapparazzi-illustartinos/2ba4656c-9216-469d-943d-99b2cacbf74b.png'
+        image: 'illustartions-for-snapparazzi/2ba4656c-9216-469d-943d-99b2cacbf74b.png'
       },
       {
-        image: 'snapparazzi-illustartinos/bdae55d6-3658-4d22-93a4-1056dd12d731.png'
+        image: 'illustartions-for-snapparazzi/bdae55d6-3658-4d22-93a4-1056dd12d731.png'
       },
       {
-        image: 'snapparazzi-illustartinos/b57666f2-335b-4392-b7d7-3f99a4fe96bc.png'
+        image: 'illustartions-for-snapparazzi/b57666f2-335b-4392-b7d7-3f99a4fe96bc.png'
       },
       {
-        image: 'snapparazzi-illustartinos/6c9f137a-0a61-4b27-b0be-bb6a62b8adcf.png'
+        image: 'illustartions-for-snapparazzi/6c9f137a-0a61-4b27-b0be-bb6a62b8adcf.png'
       },
       {
-        image: 'snapparazzi-illustartinos/6cce95b3-841a-48a9-8d94-5aadf3b66d82.png'
+        image: 'illustartions-for-snapparazzi/6cce95b3-841a-48a9-8d94-5aadf3b66d82.png'
       },
       {
-        image: 'snapparazzi-illustartinos/0556a62d-53c0-4725-91b2-e3a9cf825a27.png'
+        image: 'illustartions-for-snapparazzi/0556a62d-53c0-4725-91b2-e3a9cf825a27.png'
       },
       {
-        image: 'snapparazzi-illustartinos/58ecfb2b-1683-484a-b678-de0bfdd56ce1.png'
+        image: 'illustartions-for-snapparazzi/58ecfb2b-1683-484a-b678-de0bfdd56ce1.png'
       },
       {
-        image: 'snapparazzi-illustartinos/efe043aa-d8d3-419b-b0f1-4d2e8db6eba9.png'
+        image: 'illustartions-for-snapparazzi/efe043aa-d8d3-419b-b0f1-4d2e8db6eba9.png'
       }
     ]
   },
   {
-    title: 'Website Illustrations for Dogg.Dog',
-    image: 'website-illustrations-for-dogg-dog.jpg',
-    description: 'Illustrations for the Dogg.Dog project website.',
+    title: 'Illustrations for Dogg.Dog',
+    image: 'illustrations-for-dogg-dog.jpg',
+    description: 'Illustrations for the Dogg.Dog project website and application.',
     portfolioItems: [
       {
-        image: 'website-illustrations-for-dogg-dog/illustrations-for-a-website-and-an-application-of-dogg-dog-project.jpg',
-        description: 'Illustrations for a website and an application of Dogg.Dog project.'
+        image: 'illustrations-for-dogg-dog/illustrations-for-a-website-and-an-application-of-dogg-dog-project.jpg',
+        margin: '20 0 20 0',
+        description: 'Illustrations for a website and an application of Dogg.Dog project. \n \nIt’s going to provide the best way to participate in dog’s shows. \nYou can create accounts for all your dogs, register them in shows, manage their results and much more. \nThe app is useful for dog owners, breeders, show judges, organizers and even club owners.'
       },
       {
-        description: 'It’s going to provide the best way to participate in dog’s shows. You can create accounts for all your dogs, register them in shows, manage their results and much more. The app is useful for dog owners, breeders, show judges, organizers and even club owners.'
-      },
-      {
-        image: 'website-illustrations-for-dogg-dog/icons-for-the-types-of-the-website-members.jpg',
+        image: 'illustrations-for-dogg-dog/icons-for-the-types-of-the-website-members.jpg',
+        margin: '20 0 20 0',
         description: 'Icons for the types of the website members.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/404-page-illustration.jpg',
+        image: 'illustrations-for-dogg-dog/404-page-illustration.jpg',
+        margin: '20 0 20 0',
         description: '404 page illustration.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/illustration-for-the-page-of-the-recommendations-on-preparing-for-the-show.jpg',
+        image: 'illustrations-for-dogg-dog/illustration-for-the-page-of-the-recommendations-on-preparing-for-the-show.jpg',
         description: 'Illustration for the page of the recommendations on preparing for the show.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/access-denied-page.jpg',
+        image: 'illustrations-for-dogg-dog/access-denied-page.jpg',
         description: 'Access denied page.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/a-dog-owner-using-the-application.jpg',
+        image: 'illustrations-for-dogg-dog/a-dog-owner-using-the-application.jpg',
+        margin: '20 0 20 0',
         description: 'A dog owner, using the application.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/a-dog-show-judge-and-his-profile.jpg',
+        image: 'illustrations-for-dogg-dog/a-dog-show-judge-and-his-profile.jpg',
+        margin: '20 0 20 0',
         description: 'A dog show judge and his profile.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/app-features-for-a-club-manager.jpg',
+        image: 'illustrations-for-dogg-dog/app-features-for-a-club-manager.jpg',
+        margin: '20 0 20 0',
         description: 'App features for a club manager.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/a-dog-breeder-and-his-connections-via-the-app.jpg',
+        image: 'illustrations-for-dogg-dog/a-dog-breeder-and-his-connections-via-the-app.jpg',
+        margin: '20 0 20 0',
         description: 'A dog breeder and his connections via the app.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/home-page-illustration.jpg',
+        image: 'illustrations-for-dogg-dog/home-page-illustration.jpg',
+        margin: '20 0 20 0',
         description: 'Home page illustration.'
       },
       {
-        image: 'website-illustrations-for-dogg-dog/cfa28344-0cdf-49e9-8753-cc732a7b7838.jpg'
+        image: 'illustrations-for-dogg-dog/cfa28344-0cdf-49e9-8753-cc732a7b7838.jpg'
       }
     ]
   },
@@ -370,7 +397,7 @@ export const PREVIEW_ITEMS = [
         image: 'dr-folsbuben-illustration/39ac319a-fd94-4bf5-be48-a6423e16cb95.png'
       },
       {
-        image: 'dr-folsbuben-illustration/d8944ab5-0fdb-4b0a-b49d-5983e0f1b66b.png'
+        image: 'dr-folsbuben-illustration/d6228d54-b5e7-4df9-81b2-626aac5fb4ae.jpg'
       },
       {
         image: 'dr-folsbuben-illustration/da1b7e3c-03cd-42d3-b45c-b6f10f3322dc.png'
@@ -700,40 +727,52 @@ export const PREVIEW_ITEMS = [
     description: 'Map ground textures and objects for the game\'s world.',
     portfolioItems: [
       {
-        image: '2-d-game-objects/7726d28c-b446-4d3e-839c-62c38fd46f24.png'
+        image: '2-d-game-objects/7726d28c-b446-4d3e-839c-62c38fd46f24.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png'
+        image: '2-d-game-objects/8e3ab82d-5a90-4598-8cdc-9b943b717ef4.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/1cf5e67f-d136-424d-a072-c9422c8f6127.png'
+        image: '2-d-game-objects/1cf5e67f-d136-424d-a072-c9422c8f6127.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/424a3aae-9335-433a-b251-64bc3b573bb6.png'
+        image: '2-d-game-objects/424a3aae-9335-433a-b251-64bc3b573bb6.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png'
+        image: '2-d-game-objects/e1652dc4-c074-4e54-9de9-4a1c637ce3c2.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/fa07cfde-fff3-48ed-a019-4c35fc8a8123.png'
+        image: '2-d-game-objects/fa07cfde-fff3-48ed-a019-4c35fc8a8123.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/7bfd329d-5dba-4112-81ed-1e9a9c1928cd.png'
+        image: '2-d-game-objects/7bfd329d-5dba-4112-81ed-1e9a9c1928cd.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/df111b91-ad4f-4970-a1ac-758797ae882a.png'
+        image: '2-d-game-objects/df111b91-ad4f-4970-a1ac-758797ae882a.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/415f68bc-e26f-4ae1-8364-4ebbf3e3387b.png'
+        image: '2-d-game-objects/415f68bc-e26f-4ae1-8364-4ebbf3e3387b.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/a816f77b-7de1-4c35-815c-67f6ef299c6a.png'
+        image: '2-d-game-objects/a816f77b-7de1-4c35-815c-67f6ef299c6a.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/bb70a6f1-5743-4365-9819-a0e736987efa.png'
+        image: '2-d-game-objects/bb70a6f1-5743-4365-9819-a0e736987efa.png',
+        margin: '20 0 20 0'
       },
       {
-        image: '2-d-game-objects/8b7d88f2-0e5b-4784-b796-d658cb03dcba.png'
+        image: '2-d-game-objects/8b7d88f2-0e5b-4784-b796-d658cb03dcba.png',
+        margin: '20 0 20 0'
       }
     ]
   },
