@@ -1,0 +1,5 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="navigation">    
+    <ng-container *ngFor="let item of items | async">
+        <pfo-navigation-item [item]="item"></pfo-navigation-item>
+    </ng-container>
+</div>

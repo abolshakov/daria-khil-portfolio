@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+$browser-context: 14;
+$config: mat-typography-config();
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return ceil($pixels / $context * 1000) / 1000 * 1rem;
+}

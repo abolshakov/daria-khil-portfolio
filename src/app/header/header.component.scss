@@ -1,0 +1,71 @@
+@import "~@angular/material/theming";
+@import "../../styles/em-calc";
+@import "../../styles/layout.variables";
+
+.header {
+    position: relative;
+    background-color: white;
+    // max-height: 50vh;
+}
+
+.top-padding {
+    height: em(36);
+}
+
+.logo {
+    margin: em(3) 0;
+    text-align: center;
+    height: em(140);
+    img {
+        width: em(140);
+        height: em(140);
+    }
+}
+
+.title {
+    margin: em(15) 0;
+    font-weight: 300;
+    font-size: em(60);
+    height: em(45);
+    line-height: em(48);
+    text-align: center;
+    color: #8b85dd;
+}
+
+.nav {
+    display: block;
+    max-width: em(map-get($layout, max-width));
+    margin: em(20) em(24);
+}
+
+.nav-elevated {
+    @include mat-elevation-transition;
+    @include mat-elevation(6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+.decor {
+    width: 100%;
+    height: em(140);
+    overflow: hidden;
+}
+
+.pattern {
+    width: 100%;
+    margin-top: em(-280);
+    height: em(420);
+    background-image: url("/assets/images/app/pattern_witchery.png");
+}
+
+.content-title {
+    padding: em(24) 0 em(24);
+    color: #a5a5a5;
+    font-size: em(20);
+    text-align: center;
+    border-bottom: #d1d1d1 em(0.5) solid;
+}

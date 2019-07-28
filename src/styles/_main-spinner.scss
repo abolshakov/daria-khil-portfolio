@@ -1,0 +1,40 @@
+@import './main-spinner.variables';
+
+$size: map-get($main-spinner, size);
+$halfSize: $size/2;
+
+.main-spinner {
+  &.inline{
+    display: inline-block;
+    position: inherit;
+  }
+  width: $size;
+  height: $size;
+  background-color: map-get($main-spinner, color);
+  position: map-get($main-spinner, position);
+  left: calc(#{50%} + #{$halfSize});
+  top: calc(#{50%} + #{$halfSize});
+
+  margin-left: -$size;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(em(120)) }
+  50% { -webkit-transform: perspective(em(120)) rotateY(180deg) }
+  100% { -webkit-transform: perspective(em(120)) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(em(120)) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(em(120)) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(em(120)) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(em(120)) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(em(120)) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(em(120)) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}

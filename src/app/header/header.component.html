@@ -1,0 +1,17 @@
+<header class="header" fxLayout="column" fxLayoutAlign="start" #header>
+  <div fxFlex="0 1 100%" class="top-padding">&nbsp;</div>
+  <div fxFlex="0 1 100%" class="logo"><img src="/assets/images/app/my_pic.png" /></div>
+  <div fxFlex="0 1 100%" #title>
+    <div class="title">Daria Khil</div>
+  </div>
+  <div fxFlex="0 1 100%" [ngClass]="{'nav-elevated':navigationDocked}">
+    <pfo-navigation class="nav"></pfo-navigation>
+  </div>
+  <div fxFlex="0 1 100%" *ngIf="navigationDocked">
+    <pfo-navigation class="nav"></pfo-navigation>
+  </div>
+  <div fxFlex="0 1 100%" class="decor" #decor>
+    <div class="pattern" #pattern></div>
+  </div>
+  <div fxFlex="0 1 100%" class="content-title">My projects</div>
+</header>

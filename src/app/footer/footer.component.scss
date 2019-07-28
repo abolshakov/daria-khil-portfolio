@@ -1,0 +1,24 @@
+@import '../../styles/em-calc';
+
+.mat-toolbar-single-row.footer {
+    height: em(48);
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer .mat-toolbar {
+    border-top: em(1) solid #e5e5e5;
+    color: #939393;
+    font-size: em(16);
+}
+
+.footer-content {
+    max-width: em(1920);
+}
+
+.contacts {
+    a {
+        display: flex;
+        color: #aaaaaa;
+    }
+}

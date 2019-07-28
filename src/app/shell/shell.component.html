@@ -1,0 +1,14 @@
+<div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing" *ngIf="overlay.visible">
+    <div class="main-spinner"></div>
+</div>
+<section class="app" fxLayout="column" fxLayoutAlign="start stratch">
+    <pfo-header></pfo-header>
+    <main>
+        <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxFlex class="main-content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </main>
+    <pfo-footer></pfo-footer>
+</section>

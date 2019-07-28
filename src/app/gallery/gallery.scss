@@ -1,11 +1,13 @@
+@import '../../styles/em-calc';
+
 mat-card {
-  width: 358px !important;
-  height: 458px !important;
+  width: em(358) !important;
+  height: em(458) !important;
   padding: 0 !important;
-  border: 1px solid #e5e5e5;
-  border-radius:  6px;
+  border: em(1) solid #e5e5e5;
+  border-radius:  em(6);
   background-color: #ffffff;
-  margin: 16px;   
+  margin: em(16);   
   cursor: pointer;
 }
 
@@ -14,10 +16,10 @@ mat-card {
 }
 
 .mat-card-content {
-  padding: 20px 24px !important;
-  margin-bottom: 4px !important;
+  padding: em(20) em(24) !important;
+  margin-bottom: em(4) !important;
   color: #939393;
-  font-size: 12px;
+  font-size: em(12);
 }
 
 .mat-card-image {
@@ -26,19 +28,19 @@ mat-card {
 }
 
 mat-card-content .mat-card-title {
-  font-size: 24px;
+  font-size: em(24);
   color: #595959;
 }
 
 .divider {
   display: block;
-  height: 1px;
+  height: em(1);
   background-color:#e5e5e5;
-  margin-bottom: 10px;
+  margin-bottom: em(10);
 }
 
 .mat-card-subtitle {
   color: #939393;
-  font-size: 16px;
+  font-size: em(16);
   text-align: justify;
 }

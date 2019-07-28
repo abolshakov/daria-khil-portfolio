@@ -1,0 +1,7 @@
+@import 'em-calc';
+$main-spinner: () !default;
+$main-spinner: map-merge((
+  size: em(20),
+  color: #D0021B,
+  position: absolute
+), $main-spinner);

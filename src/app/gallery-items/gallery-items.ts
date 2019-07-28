@@ -18,7 +18,7 @@ export interface PortfolioItem {
 
 @Injectable()
 export class GalleryItems {
-    private readonly imagesPath = '../assets/images/';
+    private readonly imagesPath = '../assets/images/portfolio/';
 
     constructor() {
         for (const previewItem of PREVIEW_ITEMS as PreviewItem[]) {

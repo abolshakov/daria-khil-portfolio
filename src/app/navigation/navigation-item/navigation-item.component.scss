@@ -1,0 +1,37 @@
+@import '../../../styles/em-calc';
+
+$navigation-item:( 
+    height:em(37), 
+    font-size: em(20), 
+    border-radius: em(24),
+    default-text-color: #7f7f7f,
+    selected-primary-color: #8b85dd, 
+);
+
+:host {
+    // height: map-get($navigation-item, height);
+    user-select: none;
+    font-size: map-get($navigation-item, font-size);
+    font-weight: 500;
+    line-height: map-get($navigation-item, font-size);
+    .navigation-item {
+        padding: em(8) em(24);
+        border-radius: map-get($navigation-item, border-radius);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        &:focus {
+            outline: 0;
+        }
+        .title {
+            color: map-get($navigation-item, default-text-color);
+        }
+        &.selected {
+            .title {
+                color: map-get($navigation-item, selected-primary-color);
+            }
+        }
+    }
+}

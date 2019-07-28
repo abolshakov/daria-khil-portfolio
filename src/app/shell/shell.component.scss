@@ -1,0 +1,16 @@
+@import "../../styles/main-spinner";
+@import "../../styles/em-calc";
+@import "../../styles/layout.variables";
+
+.app-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.main-content {
+    margin: em(16) em(24) em(24) em(24);
+    max-width: em(map-get($layout, max-width));
+}
