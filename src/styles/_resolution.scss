@@ -11,12 +11,12 @@ $vp-xxxlarge: 5000px;
 
 // Media Queries
 $mq-xsmall: "only screen and (max-width: #{$vp-xsmall})";
-$mq-small: "only screen and  (max-width: #{$vp-small})";
-$mq-medium: "only screen and  (max-width: #{$vp-medium})";
-$mq-large: "only screen and   (max-width: #{$vp-large})";
-$mq-xlarge: "only screen and   (max-width: #{$vp-xlarge})";
-$mq-xxlarge: "only screen and  (max-width: #{$vp-xxlarge})";
-$mq-xxxlarge: "only screen and  (max-width: #{$vp-xxxlarge})";
+$mq-small: "only screen and (max-width: #{$vp-small})";
+$mq-medium: "only screen and (max-width: #{$vp-medium})";
+$mq-large: "only screen and (max-width: #{$vp-large})";
+$mq-xlarge: "only screen and (max-width: #{$vp-xlarge})";
+$mq-xxlarge: "only screen and (max-width: #{$vp-xxlarge})";
+$mq-xxxlarge: "only screen and (max-width: #{$vp-xxxlarge})";
 $mq-ularge: "only screen and (min-width: #{$vp-xxxlarge})";
 
 $base-font-size: $browser-context;
