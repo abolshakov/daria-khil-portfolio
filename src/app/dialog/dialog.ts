@@ -5,7 +5,7 @@ import {
     Inject,
     ViewChild,
     ViewEncapsulation
-    } from '@angular/core';
+} from '@angular/core';
 import { DialogData } from '../gallery/gallery';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 import { PreviewItem } from '../gallery-items/gallery-items';
@@ -17,7 +17,7 @@ import { PreviewItem } from '../gallery-items/gallery-items';
     encapsulation: ViewEncapsulation.None
 })
 export class DialogComponent implements AfterViewInit {
-    @ViewChild('visibleArea') visibleArea: { nativeElement: HTMLElement; };
+    @ViewChild('visibleArea', { static: true }) visibleArea: { nativeElement: HTMLElement; };
 
     public previewItem: PreviewItem;
     public visibleWidth: number;

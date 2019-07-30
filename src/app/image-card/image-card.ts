@@ -46,8 +46,8 @@ export class ImageCardComponent implements OnInit, OnChanges {
     @Input() public maxWidth: number;
     @Input() public maxHeight: number;
 
-    @ViewChild('image') public imageView: { nativeElement: HTMLImageElement; };
-    @ViewChild('subtitle') public subtitleView: { nativeElement: HTMLElement; };
+    @ViewChild('image', { static: true }) public imageView: { nativeElement: HTMLImageElement; };
+    @ViewChild('subtitle', { static: true }) public subtitleView: { nativeElement: HTMLElement; };
 
     public cssClass: any;
 

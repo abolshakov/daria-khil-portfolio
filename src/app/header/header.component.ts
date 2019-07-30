@@ -26,10 +26,10 @@ import { Unsubscribable } from '../shared/unsubscribable';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent extends Unsubscribable implements AfterViewInit, OnDestroy {
-  @ViewChild('header') header: ElementRef<HTMLElement>;
-  @ViewChild('title') title: ElementRef<HTMLElement>;
-  @ViewChild('decor') decor: ElementRef<HTMLElement>;
-  @ViewChild('pattern') pattern: ElementRef<HTMLElement>;
+  @ViewChild('header', { static: true }) header: ElementRef<HTMLElement>;
+  @ViewChild('title', { static: true }) title: ElementRef<HTMLElement>;
+  @ViewChild('decor', { static: true }) decor: ElementRef<HTMLElement>;
+  @ViewChild('pattern', { static: true }) pattern: ElementRef<HTMLElement>;
 
   private sensor: ResizeSensor;
   private player: AnimationPlayer;
