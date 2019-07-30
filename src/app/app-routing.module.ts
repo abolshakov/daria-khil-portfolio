@@ -1,3 +1,5 @@
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery';
 import { NavigationArea } from './navigation/shared/navigation-area.enum';
 import {
@@ -16,9 +18,9 @@ const routes: Routes = [
     path: '',
     component: ShellComponent,
     children: [
-      {
-        path: 'home', component: GalleryComponent
-      }
+      { path: 'home', component: GalleryComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent }
     ]
   },
 
