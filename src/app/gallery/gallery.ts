@@ -1,9 +1,11 @@
-import { CommonModule } from '@angular/common';
-import { Component, NgModule, Renderer2 } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
 import { DialogComponent } from '../dialog/dialog';
 import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
 import { MatDialog } from '@angular/material';
-import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
+import { of } from 'rxjs';
+import { switchMap, takeUntil } from 'rxjs/operators';
+import { Unsubscribable } from '../shared/unsubscribable';
 
 export interface DialogData {
   item: PreviewItem;
@@ -14,17 +16,25 @@ export interface DialogData {
   templateUrl: './gallery.html',
   styleUrls: ['./gallery.scss']
 })
-export class GalleryComponent {
-  private readonly elevation: string = 'mat-elevation-z10';
+export class GalleryComponent extends Unsubscribable {
 
-  constructor(public galleryItems: GalleryItems, private renderer2: Renderer2, private dialog: MatDialog) { }
-
-  public mouseenter(target): void {
-    this.renderer2.addClass(target, this.elevation);
+  public get previewItems() {
+    return this.route.data
+      .pipe(
+        takeUntil(this.unsubscribe),
+        switchMap(data => of(data.filter
+          ? this.items.previewItems.filter(x => x.category === data.filter)
+          : this.items.previewItems
+        ))
+      );
   }
 
-  public mouseleave(target): void {
-    this.renderer2.removeClass(target, this.elevation);
+  constructor(
+    private dialog: MatDialog,
+    private items: GalleryItems,
+    private route: ActivatedRoute
+  ) {
+    super();
   }
 
   openDialog(item: PreviewItem): void {
@@ -36,11 +46,3 @@ export class GalleryComponent {
     });
   }
 }
-
-@NgModule({
-  exports: [GalleryComponent],
-  declarations: [GalleryComponent],
-  imports: [CommonModule, MaterialAndFlexModule],
-  providers: [GalleryItems]
-})
-export class GalleryModule { }

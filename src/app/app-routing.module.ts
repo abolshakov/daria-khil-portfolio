@@ -1,5 +1,6 @@
 import { AboutComponent } from './about/about.component';
 import { AboutModule } from './about/about.module';
+import { Category } from './gallery-items/category.enum';
 import { ContactComponent } from './contact/contact.component';
 import { ContactModule } from './contact/contact.module';
 import { filter } from 'rxjs/operators';
@@ -11,7 +12,7 @@ import {
   Router,
   RouterModule,
   Routes
-} from '@angular/router';
+  } from '@angular/router';
 import { NavigationRegistryService } from './navigation/shared/navigation-registry.service';
 import { NgModule } from '@angular/core';
 import { ShellComponent } from './shell/shell.component';
@@ -23,6 +24,9 @@ const routes: Routes = [
     component: ShellComponent,
     children: [
       { path: 'home', component: GalleryComponent },
+      { path: 'concept', component: GalleryComponent, data: { filter: Category.concept } },
+      { path: 'illustration', component: GalleryComponent, data: { filter: Category.illustation } },
+      { path: 'animation', component: GalleryComponent, data: { filter: Category.animation } },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent }
     ]
