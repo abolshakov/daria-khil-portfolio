@@ -5,6 +5,7 @@ export interface PreviewItem {
     title?: string;
     image?: string;
     description?: string;
+    category?: string;
     portfolioItems?: PortfolioItem[];
 }
 
@@ -19,6 +20,10 @@ export interface PortfolioItem {
 @Injectable()
 export class GalleryItems {
     private readonly imagesPath = '../assets/images/portfolio/';
+
+    get previewItems(): PreviewItem[] {
+        return PREVIEW_ITEMS;
+    }
 
     constructor() {
         for (const previewItem of PREVIEW_ITEMS as PreviewItem[]) {
@@ -36,9 +41,5 @@ export class GalleryItems {
                 }
             }
         }
-    }
-
-    getPreviewItems(): PreviewItem[] {
-        return PREVIEW_ITEMS;
     }
 }

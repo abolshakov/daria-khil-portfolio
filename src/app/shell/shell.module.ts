@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { FooterModule } from '../footer/footer.module';
-import { GalleryModule } from '../gallery/gallery';
+import { GalleryModule } from '../gallery/gallery.moule';
 import { HeaderModule } from '../header/header.module';
 import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
 import { NgModule } from '@angular/core';

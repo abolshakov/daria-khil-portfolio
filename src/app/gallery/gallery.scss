@@ -1,46 +1,37 @@
-@import '../../styles/em-calc';
+@import "~@angular/material/theming";
+@import "../../styles/em-calc";
 
 mat-card {
-  width: em(358) !important;
-  height: em(458) !important;
-  padding: 0 !important;
-  border: em(1) solid #e5e5e5;
-  border-radius:  em(6);
-  background-color: #ffffff;
-  margin: em(16);   
-  cursor: pointer;
-}
+    width: em(358) !important;
+    height: em(458) !important;
+    max-width: em(358);
+    padding: 0 !important;
+    margin: em(16);
+    cursor: pointer;
 
-.mat-card:not([class*='mat-elevation-z']){
-  box-shadow: none;  
+    &:hover {
+        @include mat-elevation-transition;
+        @include mat-elevation(10);
+    }
 }
 
 .mat-card-content {
-  padding: em(20) em(24) !important;
-  margin-bottom: em(4) !important;
-  color: #939393;
-  font-size: em(12);
+    padding: em(20) em(24) !important;
+    margin-bottom: em(4) !important;
 }
 
 .mat-card-image {
-  width: 100% !important;
-  margin: 0 !important;
-}
-
-mat-card-content .mat-card-title {
-  font-size: em(24);
-  color: #595959;
+    width: 100% !important;
+    margin: 0 !important;
 }
 
 .divider {
-  display: block;
-  height: em(1);
-  background-color:#e5e5e5;
-  margin-bottom: em(10);
+    display: block;
+    height: em(1);
+    background-color: #e5e5e5;
+    margin-bottom: em(10);
 }
 
 .mat-card-subtitle {
-  color: #939393;
-  font-size: em(16);
-  text-align: justify;
+    text-align: justify;
 }

@@ -2,10 +2,9 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
-  HostListener,
-  OnInit,
+  OnDestroy,
   ViewChild,
-  OnDestroy
+  EventEmitter
 } from '@angular/core';
 import {
   animate,
@@ -17,6 +16,7 @@ import {
 } from '@angular/animations';
 import { filter, map, takeUntil } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
+import { NavigationRegistryService } from '../navigation/shared/navigation-registry.service';
 import { ResizeSensor } from 'css-element-queries';
 import { Unsubscribable } from '../shared/unsubscribable';
 
@@ -26,20 +26,25 @@ import { Unsubscribable } from '../shared/unsubscribable';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent extends Unsubscribable implements AfterViewInit, OnDestroy {
-  @ViewChild('header') header: ElementRef<HTMLElement>;
-  @ViewChild('title') title: ElementRef<HTMLElement>;
-  @ViewChild('decor') decor: ElementRef<HTMLElement>;
-  @ViewChild('pattern') pattern: ElementRef<HTMLElement>;
+  @ViewChild('header', { static: false }) header: ElementRef<HTMLElement>;
+  @ViewChild('title', { static: false }) titleRef: ElementRef<HTMLElement>;
+  @ViewChild('decor', { static: false }) decorRef: ElementRef<HTMLElement>;
+  @ViewChild('pattern', { static: false }) patternRef: ElementRef<HTMLElement>;
 
   private sensor: ResizeSensor;
   private player: AnimationPlayer;
   private docked: boolean;
 
+
   public get navigationDocked(): boolean {
     return this.docked;
   }
 
-  constructor(private builder: AnimationBuilder) {
+  public get contentTitle(): string {
+    return this.navigation.CurrentItem.description;
+  }
+
+  constructor(private builder: AnimationBuilder, private navigation: NavigationRegistryService) {
     super();
   }
 
@@ -60,7 +65,7 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   }
 
   private buildFactory(): AnimationFactory {
-    const margin = this.pattern.nativeElement.clientHeight - this.decor.nativeElement.clientHeight;
+    const margin = this.patternRef.nativeElement.clientHeight - this.decorRef.nativeElement.clientHeight;
 
     return this.builder.build([
       query('.pattern', [
@@ -76,7 +81,7 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   }
 
   private dockNavigation() {
-    this.docked = this.title.nativeElement.getBoundingClientRect().bottom < 0;
+    this.docked = this.titleRef.nativeElement.getBoundingClientRect().bottom < 0;
   }
 
   public ngOnDestroy() {

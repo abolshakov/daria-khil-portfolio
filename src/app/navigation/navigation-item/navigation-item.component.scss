@@ -1,11 +1,11 @@
-@import '../../../styles/em-calc';
+@import "../../../styles/em-calc";
 
-$navigation-item:( 
-    height:em(37), 
-    font-size: em(20), 
+$navigation-item: (
+    height: em(37),
+    font-size: em(20),
     border-radius: em(24),
     default-text-color: #7f7f7f,
-    selected-primary-color: #8b85dd, 
+    selected-primary-color: #8b85dd
 );
 
 :host {
