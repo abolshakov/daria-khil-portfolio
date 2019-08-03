@@ -17,7 +17,7 @@ import { PreviewItem } from '../gallery-items/gallery-items';
     encapsulation: ViewEncapsulation.None
 })
 export class DialogComponent implements AfterViewInit {
-    @ViewChild('visibleArea', { static: true }) visibleArea: { nativeElement: HTMLElement; };
+    @ViewChild('visibleArea', { static: false }) visibleArea: { nativeElement: HTMLElement; };
 
     public previewItem: PreviewItem;
     public visibleWidth: number;

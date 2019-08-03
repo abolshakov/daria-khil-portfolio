@@ -28,7 +28,7 @@ export class NavigationRegistryService {
   }
 
   public get NavigationItems(): NavigationItem[] {
-    return this._items.map(x => new NavigationItem(x.id, x.route, x.area, x.title, x.description, x.selected));
+    return this._items;
   }
 
   public get CurrentItem(): NavigationItem {

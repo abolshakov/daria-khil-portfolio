@@ -1,9 +1,8 @@
-@import "./resolution";
 
 $layout: () !default;
 $layout: map-merge(
     (
-        max-width: $vp-medium
+        max-width: 1920px
     ),
     $layout
 );

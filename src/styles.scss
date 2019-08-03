@@ -1,12 +1,15 @@
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 @import "styles/resolution";
+@import "styles/em-calc";
 
 @font-face {
-    font-family: 'Linotte-Light';
-    src: url('/assets/fonts/Linotte Light.otf');
+    font-family: "Linotte-Light";
+    src: url("/assets/fonts/Linotte Light.otf");
 }
 
-$custom-typography: mat-typography-config($font-family:'Linotte-Light');
+$custom-typography: mat-typography-config(
+    $font-family: "Linotte-Light"
+);
 @include mat-core($custom-typography);
 
 $custom-primary: mat-palette($mat-blue);
@@ -22,9 +25,57 @@ body {
     margin: 0;
     background-color: #f2f2f2;
     cursor: default;
-    font-family: 'Linotte-Light';
+    font-family: "Linotte-Light";
+}
+
+p {
+    display: block;
+    margin-block-start: em(12);
+    margin-block-end: em(12);
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 [hidden] {
     display: none !important;
+}
+
+.mat-card {
+    border: em(1) solid #e5e5e5;
+    border-radius: em(6) !important;
+    background-color: #ffffff;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+    box-shadow: none;
+}
+
+mat-card-content .mat-card-title {
+    font-size: em(24);
+    color: #a5a5a5;
+}
+
+.mat-card-content {
+    color: #939393;
+    font-size: em(14);
+}
+
+.mat-card-subtitle {
+    color: #b2b2b2;
+    font-size: em(18);
+}
+
+.mat-button,
+.mat-stroked-button {
+    font-size: em(18);
+    color: #b2b2b2;
+    padding: 0 em(16) !important;
+    line-height: em(40) !important;
+    border-radius: em(6) !important;
+}
+
+mat-icon.mat-icon {
+    height: em(24);
+    width: em(24);
+    line-height: em(24);
 }

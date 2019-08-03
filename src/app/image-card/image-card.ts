@@ -1,11 +1,12 @@
 import {
     Component,
+    ElementRef,
     Input,
     OnChanges,
     OnInit,
     SimpleChange,
     ViewChild
-} from '@angular/core';
+    } from '@angular/core';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
 import { PortfolioItem } from '../gallery-items/gallery-items';
 
@@ -46,8 +47,8 @@ export class ImageCardComponent implements OnInit, OnChanges {
     @Input() public maxWidth: number;
     @Input() public maxHeight: number;
 
-    @ViewChild('image', { static: true }) public imageView: { nativeElement: HTMLImageElement; };
-    @ViewChild('subtitle', { static: true }) public subtitleView: { nativeElement: HTMLElement; };
+    @ViewChild('image', { static: false }) public imageView: ElementRef<HTMLImageElement>;
+    @ViewChild('subtitle', { static: false }) public subtitleView: ElementRef<HTMLImageElement>;
 
     public cssClass: any;
 

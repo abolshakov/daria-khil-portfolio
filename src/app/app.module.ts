@@ -9,14 +9,10 @@ import { MaterialAndFlexModule } from './shared/material-and-flex.module';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ShellModule } from './shell/shell.module';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AboutComponent,
-    ContactComponent
+    AppComponent
   ],
   imports: [
     AppRoutingModule,
