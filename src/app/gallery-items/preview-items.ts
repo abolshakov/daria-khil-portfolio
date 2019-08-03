@@ -83,6 +83,61 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
+    title: 'Environments',
+    image: 'environments.jpg',
+    description: 'Background, environment illustrations and sketches',
+    portfolioItems: [
+      {
+        image: 'environments/mash-up-world-environment-concept-2.jpg',
+        description: 'Mash-Up World Environment concept #1'
+      },
+      {
+        image: 'environments/mash-up-world-environment-concept-1.jpg',
+        description: 'Mash-Up World Environment concept #2'
+      },
+      {
+        image: 'environments/birch-grove-biome-concept-art.jpg',
+        description: 'Birch grove biome concept art'
+      },
+      {
+        image: 'environments/tree-hut-concept.jpg',
+        description: 'Tree hut concept'
+      },
+      {
+        image: 'environments/dark-wood-biome-concept-art.jpg',
+        description: 'Dark wood biome concept art'
+      },
+      {
+        image: 'environments/environment-concept-of-the-dark-wood-biome.jpg',
+        description: 'Environment concept of the dark wood biome'
+      },
+      {
+        image: 'environments/sketch-of-the-dark-forest-location.png',
+        description: 'Sketch of the dark forest location'
+      },
+      {
+        image: 'environments/flower-valley-biome-concept-art.jpg',
+        description: 'Flower valley biome concept art'
+      },
+      {
+        image: 'environments/swampy-trees-biome-concept-art.jpg',
+        description: 'Swampy trees biome concept art'
+      },
+      {
+        image: 'environments/quick-sketch-1-of-the-mash-up-world-s-part.jpg',
+        description: 'Quick sketch #1 of the Mash Up World\'s part'
+      },
+      {
+        image: 'environments/quick-sketch-2-of-the-mash-up-world-s-part.jpg',
+        description: 'Quick sketch #2 of the Mash Up World\'s part'
+      },
+      {
+        image: 'environments/an-illustration-of-a-house-by-the-rainy-river.jpg',
+        description: 'An illustration of a house by the Rainy river'
+      }
+    ]
+  },
+  {
     title: 'Illustartions for Snapparazzi',
     image: 'illustartions-for-snapparazzi.png',
     description: 'Illustrations describing the idea of the crypto-project "Snapparazzi". Designed for the project\'s website.',
@@ -163,6 +218,10 @@ export const PREVIEW_ITEMS = [
         description: 'A dog show judge and his profile.'
       },
       {
+        image: 'illustrations-for-dogg-dog/icons-set-for-the-mobile-application.gif',
+        description: 'Icons set for the mobile application'
+      },
+      {
         image: 'illustrations-for-dogg-dog/app-features-for-a-club-manager.jpg',
         margin: '20 0 20 0',
         description: 'App features for a club manager.'
@@ -173,9 +232,25 @@ export const PREVIEW_ITEMS = [
         description: 'A dog breeder and his connections via the app.'
       },
       {
+        image: 'illustrations-for-dogg-dog/icons-for-the-adding-new-dog-page.gif',
+        description: 'Icons for the "Adding new dog" page'
+      },
+      {
         image: 'illustrations-for-dogg-dog/home-page-illustration.jpg',
         margin: '20 0 20 0',
         description: 'Home page illustration.'
+      },
+      {
+        image: 'illustrations-for-dogg-dog/7a1dbd91-c602-48ba-a4dd-09f37b3c57f2.jpg',
+        description: '"Phone confirmation" page illustration'
+      },
+      {
+        image: 'illustrations-for-dogg-dog/833a9b25-d5d9-4546-9a96-6e22abf12d9e.jpg',
+        description: '"E-mail confimation" page illustration'
+      },
+      {
+        image: 'illustrations-for-dogg-dog/de1e5e73-8619-4f0b-ac40-118fd584fcf7.jpg',
+        description: '"Magic link sent via email" page illustration'
       },
       {
         image: 'illustrations-for-dogg-dog/cfa28344-0cdf-49e9-8753-cc732a7b7838.jpg'
@@ -211,62 +286,80 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'Cartoon Characters',
-    image: 'cartoon-characters.jpg',
+    title: 'Characters Designs',
+    image: 'characters-designs.jpg',
     description: 'Concepts of characters for children cartoon series.',
     portfolioItems: [
       {
-        image: 'cartoon-characters/714a4301-02d7-49ed-9d6d-e268f37b6b62.jpg'
+        image: 'characters-designs/714a4301-02d7-49ed-9d6d-e268f37b6b62.jpg'
       },
       {
-        image: 'cartoon-characters/9daa242a-56ee-4ef1-8c7c-0c2d4d7f101b.png'
+        image: 'characters-designs/9daa242a-56ee-4ef1-8c7c-0c2d4d7f101b.png'
       },
       {
-        image: 'cartoon-characters/1553ff67-1d47-4e07-a9ef-8700739a83f1.png'
+        image: 'characters-designs/1553ff67-1d47-4e07-a9ef-8700739a83f1.png'
       },
       {
-        image: 'cartoon-characters/959e7bf7-e5ab-4db4-9ba5-f96d8b2a8e85.jpg'
+        image: 'characters-designs/959e7bf7-e5ab-4db4-9ba5-f96d8b2a8e85.jpg'
       },
       {
-        image: 'cartoon-characters/e0651d90-5f27-40aa-8fd9-e3aaec00cbb0.png'
+        image: 'characters-designs/e0651d90-5f27-40aa-8fd9-e3aaec00cbb0.png'
       },
       {
-        image: 'cartoon-characters/71fc02e8-8206-4e54-b15e-6ffdfa5b0f1e.png'
+        image: 'characters-designs/71fc02e8-8206-4e54-b15e-6ffdfa5b0f1e.png'
       },
       {
-        image: 'cartoon-characters/bf1db87e-50eb-4451-9dd5-4a5cf01574d6.jpg'
+        image: 'characters-designs/bf1db87e-50eb-4451-9dd5-4a5cf01574d6.jpg'
       },
       {
-        image: 'cartoon-characters/70fcbafc-656b-4d4d-81d9-4e307412f935.png'
+        image: 'characters-designs/70fcbafc-656b-4d4d-81d9-4e307412f935.png'
       },
       {
-        image: 'cartoon-characters/84ff206a-e7b3-4fdd-9dbc-bf9ef5589f1d.png'
+        image: 'characters-designs/84ff206a-e7b3-4fdd-9dbc-bf9ef5589f1d.png'
       }
     ]
   },
   {
-    title: 'Rabbit Hole Animation',
-    image: 'rabbit-hole-animation.jpg',
-    description: 'A little white rabbit enclosed in this looped gif animation to run forever through teleporting rabbit holes...',
+    title: 'Character Animations',
+    image: 'character-animations.jpg',
+    description: 'Simple frame by frame, vector and puppet character animations',
     portfolioItems: [
       {
-        image: 'rabbit-hole-animation/c71ea46c-9c90-4c44-9892-53264ab6df55.png'
+        image: 'character-animations/c71ea46c-9c90-4c44-9892-53264ab6df55.png'
       },
       {
         description: 'A little white rabbit enclosed in this looped gif animation to run forever through teleporting rabbit holes...',
         video: 'https://vimeo.com/330706541'
       },
       {
-        image: 'rabbit-hole-animation/768246ca-80e2-429f-b1e8-52d19cd56c5c.gif'
+        image: 'character-animations/7fe96939-1268-4533-92e2-08f802ac1b4d.gif'
       },
       {
-        image: 'rabbit-hole-animation/6b841e33-2c56-46b2-82a2-917595a2ac55.png'
+        image: 'character-animations/7a1f7838-c4a8-4e14-8fdc-6a1a3b62f96e.gif'
       },
       {
-        image: 'rabbit-hole-animation/d1298faf-8d32-4e3c-a524-076c6af61e36.jpg'
+        image: 'character-animations/72a24bd9-7edb-485a-9236-1f7e48e719e4.gif'
       },
       {
-        image: 'rabbit-hole-animation/341baea9-846a-4876-9147-d1e6a62b7b7e.png'
+        image: 'character-animations/6caf072e-95ef-40bb-b888-cbedcbff6248.gif'
+      },
+      {
+        image: 'character-animations/934a244f-6a51-483f-877a-b6f4a7e4f1ab.jpg'
+      },
+      {
+        image: 'character-animations/4704875e-7d47-4532-87e6-13b6712542c8.gif'
+      },
+      {
+        image: 'character-animations/ae68b7e7-ba74-49d9-b90c-d8a8f3bfaca7.gif'
+      },
+      {
+        image: 'character-animations/5a547d15-5c3e-4c83-af10-bd310ffdb7ab.gif'
+      },
+      {
+        image: 'character-animations/8380bc3f-7df4-4899-9dbe-1b9467e49b10.gif'
+      },
+      {
+        image: 'character-animations/c6c83816-d053-4e2a-85fc-8cfb93e913ed.gif'
       }
     ]
   },
@@ -321,6 +414,79 @@ export const PREVIEW_ITEMS = [
       },
       {
         image: 'telegram-animation/6db9ad09-2e57-41aa-a2cc-7826bcf1d32d.gif'
+      }
+    ]
+  },
+  {
+    title: 'Memoryator Character Animations',
+    image: 'memoryator-character-animations.png',
+    description: 'Sketches of character animations for the game called "Memoryator".',
+    portfolioItems: [
+      {
+        image: 'memoryator-character-animations/e999903a-9bc4-4440-ace7-47eeeb29cb17.jpg'
+      },
+      {
+        image: 'memoryator-character-animations/aa0a0ed1-320d-45c9-bd3a-ccacabf4e5a5.jpg'
+      },
+      {
+        image: 'memoryator-character-animations/1-st-level-nightmare-hit-animation.gif',
+        description: '1st level Nightmare hit animation'
+      },
+      {
+        image: 'memoryator-character-animations/1-st-level-nightmare-idle-animation.gif',
+        description: '1st level Nightmare idle animation'
+      },
+      {
+        image: 'memoryator-character-animations/1-st-level-nightmare-run-animation.gif',
+        description: '1st level Nightmare run animation'
+      },
+      {
+        image: 'memoryator-character-animations/2-nd-level-nightmare-hit-animation.gif',
+        description: '2nd level Nightmare hit animation'
+      },
+      {
+        image: 'memoryator-character-animations/2-nd-level-nightmare-idle-animation.gif',
+        description: '2nd level Nightmare idle animation'
+      },
+      {
+        image: 'memoryator-character-animations/2-nd-level-nightmare-run-animation.gif',
+        description: '2nd level Nightmare run animation'
+      },
+      {
+        image: 'memoryator-character-animations/3-rd-level-nightmare-clap-animation.gif',
+        description: '3rd level Nightmare clap animation'
+      },
+      {
+        image: 'memoryator-character-animations/3-rd-level-nightmare-idle-animation.gif',
+        description: '3rd level Nightmare idle animation'
+      },
+      {
+        image: 'memoryator-character-animations/3-rd-level-nightmare-hit-animation.gif',
+        description: '3rd level Nightmare hit animation'
+      },
+      {
+        image: 'memoryator-character-animations/protagonist-animations-of-run.gif',
+        description: 'Protagonist animations of run'
+      },
+      {
+        image: 'memoryator-character-animations/protagonist-animations-of-actions.gif',
+        description: 'Protagonist animations of actions'
+      },
+      {
+        image: 'memoryator-character-animations/hare-animations.gif',
+        description: 'Hare animations'
+      },
+      {
+        image: 'memoryator-character-animations/wolf-animations.gif',
+        description: 'Wolf animations'
+      },
+      {
+        image: 'memoryator-character-animations/owl-animations.gif',
+        description: 'Owl animations'
+      },
+      {
+        image: 'memoryator-character-animations/owl-transformation.gif',
+        description: 'Owl transformation'
       }
     ]
   },
@@ -411,155 +577,134 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'CryptoSoul Arts',
-    image: 'crypto-soul-arts.png',
+    title: 'CryptoSoul Digital Paintings',
+    image: 'crypto-soul-digital-paintings.png',
     description: 'Promotional illustrations and arts for menu backgrounds created for the CryptoSoul Game.',
     portfolioItems: [
       {
-        image: 'crypto-soul-arts/witch-raid.png',
+        image: 'crypto-soul-digital-paintings/witch-raid.png',
         description: 'Witch raid'
       },
       {
-        image: 'crypto-soul-arts/canyon.png',
+        image: 'crypto-soul-digital-paintings/canyon.png',
         description: 'Canyon'
       },
       {
-        image: 'crypto-soul-arts/king-s-cave.png',
+        image: 'crypto-soul-digital-paintings/king-s-cave.png',
         description: 'King\'s Cave'
       },
       {
-        image: 'crypto-soul-arts/outbreak.png',
+        image: 'crypto-soul-digital-paintings/outbreak.png',
         description: 'Outbreak'
       },
       {
-        image: 'crypto-soul-arts/source-of-life.jpg',
+        image: 'crypto-soul-digital-paintings/source-of-life.jpg',
         description: 'Source of Life'
       }
     ]
   },
   {
-    title: 'CryptoSoul Characters',
-    image: 'crypto-soul-characters.png',
+    title: 'CryptoSoul Character Designs',
+    image: 'crypto-soul-character-designs.png',
     description: 'Character designs, concepts, animation sketches and 3d textures for the CryptoSoul Game.',
     portfolioItems: [
       {
-        image: 'crypto-soul-characters/character-illustration.jpg',
+        image: 'crypto-soul-character-designs/character-illustration.jpg',
         description: 'Character illustration'
       },
       {
-        image: 'crypto-soul-characters/concept-for-3-d-modeling.jpg',
+        image: 'crypto-soul-character-designs/concept-for-3-d-modeling.jpg',
         description: 'Concept for 3d modeling'
       },
       {
-        image: 'crypto-soul-characters/character-animation-sketches.png',
+        image: 'crypto-soul-character-designs/character-animation-sketches.png',
         description: 'Character animation sketches'
       },
       {
-        image: 'crypto-soul-characters/chaarcter-illustration.png',
+        image: 'crypto-soul-character-designs/chaarcter-illustration.png',
         description: 'Chaarcter illustration'
       },
       {
-        image: 'crypto-soul-characters/3c54195b-1800-4e6d-9eca-c5090553452f.png'
+        image: 'crypto-soul-character-designs/3c54195b-1800-4e6d-9eca-c5090553452f.png'
       },
       {
-        image: 'crypto-soul-characters/textures-for-3-d-model.png',
+        image: 'crypto-soul-character-designs/textures-for-3-d-model.png',
         description: 'Textures for 3d model'
       },
       {
-        image: 'crypto-soul-characters/concept-and-animation-sketches.png',
+        image: 'crypto-soul-character-designs/concept-and-animation-sketches.png',
         description: 'Concept and animation sketches'
       },
       {
-        image: 'crypto-soul-characters/character-illustration.png',
+        image: 'crypto-soul-character-designs/character-illustration.png',
         description: 'Character illustration'
       },
       {
-        image: 'crypto-soul-characters/38b722e5-467b-46a6-a461-435ff10a8746.png'
+        image: 'crypto-soul-character-designs/38b722e5-467b-46a6-a461-435ff10a8746.png'
       },
       {
-        image: 'crypto-soul-characters/73c7cdfc-bb89-4de8-a677-27c7b4dd4cac.png',
+        image: 'crypto-soul-character-designs/73c7cdfc-bb89-4de8-a677-27c7b4dd4cac.png',
         description: 'Textures for 3d model'
       },
       {
-        image: 'crypto-soul-characters/f4600169-f566-4d2e-b759-f249f693227f.png',
+        image: 'crypto-soul-character-designs/f4600169-f566-4d2e-b759-f249f693227f.png',
         description: 'Concept and animation sketches'
       },
       {
-        image: 'crypto-soul-characters/62ae36be-9822-4a17-aaf3-105ffe23b347.png',
+        image: 'crypto-soul-character-designs/62ae36be-9822-4a17-aaf3-105ffe23b347.png',
         description: 'Character illustration'
       },
       {
-        image: 'crypto-soul-characters/bcd5210a-a06d-4df1-82b1-2107084e42f0.png'
+        image: 'crypto-soul-character-designs/bcd5210a-a06d-4df1-82b1-2107084e42f0.png'
       },
       {
-        image: 'crypto-soul-characters/615c88fb-7682-4d8b-be97-a93c25f04836.png',
+        image: 'crypto-soul-character-designs/615c88fb-7682-4d8b-be97-a93c25f04836.png',
         description: 'Textures for 3d model'
       },
       {
-        image: 'crypto-soul-characters/5fb8f1b7-76a2-4d3d-9c73-2160dbecdfe1.png',
+        image: 'crypto-soul-character-designs/5fb8f1b7-76a2-4d3d-9c73-2160dbecdfe1.png',
         description: 'Concept and animation sketches'
       },
       {
-        image: 'crypto-soul-characters/4c969f25-86b5-48c3-ad3e-6b4a3b0eaf93.png',
+        image: 'crypto-soul-character-designs/4c969f25-86b5-48c3-ad3e-6b4a3b0eaf93.png',
         description: 'Character illustration'
       },
       {
-        image: 'crypto-soul-characters/concept-for-3-d-modeling.png',
+        image: 'crypto-soul-character-designs/concept-for-3-d-modeling.png',
         description: 'Concept for 3d modeling'
       },
       {
-        image: 'crypto-soul-characters/199fe3e3-e621-4f7c-8c5f-96e635ad6b7a.png',
+        image: 'crypto-soul-character-designs/199fe3e3-e621-4f7c-8c5f-96e635ad6b7a.png',
         description: 'Character animation sketches'
       }
     ]
   },
   {
-    title: 'Paladin',
-    image: 'paladin.png',
-    description: 'Blizzard Paladin speed painting fanart.',
+    title: 'Fanarts',
+    image: 'fanarts.png',
+    description: 'Some fanarts to my beloved movies and games.',
     portfolioItems: [
       {
-        image: 'paladin/a75ce5fe-5ea1-4de9-9af5-9e8865de1a8e.png'
+        image: 'fanarts/a75ce5fe-5ea1-4de9-9af5-9e8865de1a8e.png'
       },
       {
-        image: 'paladin/327a2e29-d142-4740-b821-e9ff825af474.png'
-      }
-    ]
-  },
-  {
-    title: 'Memoryator Animations',
-    image: 'memoryator-animations.png',
-    description: 'Sketches of character animations for the game called "Memoryator".',
-    portfolioItems: [
-      {
-        image: 'memoryator-animations/ce954c7f-97b1-4ea3-9e8d-4acbb8f159b3.png'
+        image: 'fanarts/327a2e29-d142-4740-b821-e9ff825af474.png'
       },
       {
-        image: 'memoryator-animations/aa0a0ed1-320d-45c9-bd3a-ccacabf4e5a5.jpg'
+        image: 'fanarts/a-bug-s-life-animated-movie-fanart.jpg',
+        description: 'A bug\'s life animated movie fanart'
       },
       {
-        image: 'memoryator-animations/protagonist-animations-of-run.gif',
-        description: 'Protagonist animations of run'
+        image: 'fanarts/b53a100d-6647-4634-8972-b95d2adca7f4.jpg'
       },
       {
-        image: 'memoryator-animations/protagonist-animations-of-actions.gif',
-        description: 'Protagonist animations of actions'
+        image: 'fanarts/e3096724-596a-4148-b43e-131a180a36d3.jpg'
       },
       {
-        image: 'memoryator-animations/hare-animations.gif',
-        description: 'Hare animations'
+        image: 'fanarts/da0b9980-d21e-49d9-b7af-3f2ce4c95ff5.jpg'
       },
       {
-        image: 'memoryator-animations/wolf-animations.gif',
-        description: 'Wolf animations'
-      },
-      {
-        image: 'memoryator-animations/owl-animations.gif',
-        description: 'Owl animations'
-      },
-      {
-        image: 'memoryator-animations/owl-transformation.gif',
-        description: 'Owl transformation'
+        image: 'fanarts/2b524111-32ca-4adb-9aa9-3728c8c83670.jpg'
       }
     ]
   },
@@ -568,6 +713,9 @@ export const PREVIEW_ITEMS = [
     image: 'game-objects.png',
     description: '2D objects for the Memoryator game\'s world.',
     portfolioItems: [
+      {
+        image: 'game-objects/a3b524ff-ae7c-4f85-a93c-da60c536b726.jpg'
+      },
       {
         image: 'game-objects/ba53c354-7f99-4a87-8c95-18d4ddd4b764.png'
       },
@@ -657,37 +805,61 @@ export const PREVIEW_ITEMS = [
     ]
   },
   {
-    title: 'Cute Illustrations',
-    image: 'cute-illustrations.png',
-    description: 'Just some personal nonprofit illustrations.',
+    title: 'Character Sketches',
+    image: 'character-sketches.png',
+    description: 'Some personal character sketches and illustrations.',
     portfolioItems: [
       {
-        image: 'cute-illustrations/roller-skater.gif',
-        description: 'Roller skater'
-      },
-      {
-        image: 'cute-illustrations/a-tiny-cute-illustration-of-a-little-broccoli-who-believe-that-you-can-be-whoever-you-want.png',
+        image: 'character-sketches/a-tiny-cute-illustration-of-a-little-broccoli-who-believe-that-you-can-be-whoever-you-want.png',
         description: 'A tiny cute illustration of a little broccoli, who believe that you can be whoever you want :)'
       },
       {
-        image: 'cute-illustrations/lil-elf-princess.jpg',
+        image: 'character-sketches/lil-elf-princess.jpg',
         description: 'Lil Elf Princess'
       },
       {
-        image: 'cute-illustrations/hippie-dog.jpg',
+        image: 'character-sketches/hippie-dog.jpg',
         description: 'Hippie Dog'
       },
       {
-        image: 'cute-illustrations/me.png',
+        image: 'character-sketches/me.png',
         description: 'Me'
       },
       {
-        image: 'cute-illustrations/lil-me.png',
+        image: 'character-sketches/lil-me.png',
         description: 'Lil me'
       },
       {
-        image: 'cute-illustrations/bogdan.png',
+        image: 'character-sketches/bogdan.png',
         description: 'Bogdan'
+      },
+      {
+        image: 'character-sketches/alice-and-white-rabbit.jpg',
+        description: 'Alice and White Rabbit'
+      },
+      {
+        image: 'character-sketches/granny-bomber.jpg',
+        description: 'Granny Bomber'
+      },
+      {
+        image: 'character-sketches/old-man-warrior.jpg',
+        description: 'Old man warrior'
+      },
+      {
+        image: 'character-sketches/mermaid.jpg',
+        description: 'Mermaid'
+      },
+      {
+        image: 'character-sketches/inspiration.jpg',
+        description: 'Inspiration!'
+      },
+      {
+        image: 'character-sketches/parrot-sketch.png',
+        description: 'Parrot sketch'
+      },
+      {
+        image: 'character-sketches/50ac00da-79cf-4ba5-9fab-31c12d9bb13e.JPG',
+        description: '"Conservatoire" Vegetables-characters'
       }
     ]
   },
