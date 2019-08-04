@@ -3,6 +3,7 @@ export const PREVIEW_ITEMS = [
     title: 'Showreel 2019',
     image: 'showreel-2019.jpg',
     description: 'A collection of animation clippings for 2018-2019 years.',
+    category: 'Animation',
     portfolioItems: [
       {
         margin: '15 0 0 15',
@@ -14,6 +15,7 @@ export const PREVIEW_ITEMS = [
     title: 'Animated Video for Boost VR',
     image: 'animated-video-for-boost-vr.jpg',
     description: 'This animated video was created as a stylized presentation for the Boost VR studio.',
+    category: 'Animation',
     portfolioItems: [
       {
         margin: '50 0 0 50',
@@ -86,6 +88,7 @@ export const PREVIEW_ITEMS = [
     title: 'Environments',
     image: 'environments.jpg',
     description: 'Background, environment illustrations and sketches',
+    category: 'Concept',
     portfolioItems: [
       {
         image: 'environments/mash-up-world-environment-concept-2.jpg',
@@ -141,6 +144,7 @@ export const PREVIEW_ITEMS = [
     title: 'Illustartions for Snapparazzi',
     image: 'illustartions-for-snapparazzi.png',
     description: 'Illustrations describing the idea of the crypto-project "Snapparazzi". Designed for the project\'s website.',
+    category: 'Illustration',
     portfolioItems: [
       {
         image: 'illustartions-for-snapparazzi/snapparazzi-io.png',
@@ -183,6 +187,7 @@ export const PREVIEW_ITEMS = [
     title: 'Illustrations for Dogg.Dog',
     image: 'illustrations-for-dogg-dog.jpg',
     description: 'Illustrations for the Dogg.Dog project website and application.',
+    category: 'Illustration',
     portfolioItems: [
       {
         image: 'illustrations-for-dogg-dog/illustrations-for-a-website-and-an-application-of-dogg-dog-project.jpg',
@@ -261,6 +266,7 @@ export const PREVIEW_ITEMS = [
     title: '404 Page Animation',
     image: '404-page-animation.png',
     description: 'A christmas-themed animated design of the Error 404 page.',
+    category: 'Animation',
     portfolioItems: [
       {
         image: '404-page-animation/5be9c786-34da-41c6-bb83-335090478208.png'
@@ -289,6 +295,7 @@ export const PREVIEW_ITEMS = [
     title: 'Characters Designs',
     image: 'characters-designs.jpg',
     description: 'Concepts of characters for children cartoon series.',
+    category: 'Concept',
     portfolioItems: [
       {
         image: 'characters-designs/714a4301-02d7-49ed-9d6d-e268f37b6b62.jpg'
@@ -323,6 +330,7 @@ export const PREVIEW_ITEMS = [
     title: 'Character Animations',
     image: 'character-animations.jpg',
     description: 'Simple frame by frame, vector and puppet character animations',
+    category: 'Animation',
     portfolioItems: [
       {
         image: 'character-animations/c71ea46c-9c90-4c44-9892-53264ab6df55.png'
