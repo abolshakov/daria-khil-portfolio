@@ -1,3 +1,38 @@
-<p>
-  contact works!
-</p>
+<mat-card fxLayout="row" fxLayout.lt-sm="column-reverse" fxFlex="nogrow" fxLayoutAlign="center center">
+  <mat-card-content fxFlex="1 1 auto" fxLayout="column" fxLayoutAlign="start center" fxFlexAlign="start">
+    <mat-card-title fxFlex="1 1 auto">Get in touch!</mat-card-title>
+    <mat-divider fxFlex="1 1 auto"></mat-divider>
+    <mat-card-subtitle fxFlex="1 1 auto">
+      <p>
+        E-mail me at <span class="email">hundred.dots@gmail.com</span>, or use this simple form below.
+        Also, I’d love to meet you on
+        <a target="_blank" rel="noopener noreferrer" href="{{instagram}}">Instagram</a>
+        and
+        <a target="_blank" rel="noopener noreferrer" href="{{behance}}">Behance</a>!
+      </p>
+      <div class="form" [formGroup]="form" fxLayout="row wrap" fxLayoutAlign="space-between start">
+        <mat-form-field fxFlex="48%" fxFlex.lt-sm="100%" appearance="outline">
+          <input type="text" matInput placeholder="Name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field fxFlex="48%" fxFlex.lt-sm="100%" appearance="outline">
+          <input type="email" matInput placeholder="E-mail" formControlName="email">
+        </mat-form-field>
+        <mat-form-field fxFlex="100%" appearance="outline">
+          <input type="text" matInput placeholder="Subject" formControlName="subject">
+        </mat-form-field>
+        <mat-form-field fxFlex="100%" appearance="outline">
+          <textarea autosize rows="4" matInput placeholder="Message" formControlName="message"></textarea>
+        </mat-form-field>
+        <div *ngIf="hasErrors" class="alert">
+          <i>Please fill in the required fields.</i>
+        </div>
+      </div>
+    </mat-card-subtitle>
+    <button mat-stroked-button fxFlex="1 1 auto" #submit>Send</button>
+  </mat-card-content>
+  <div fxFlex="0 0 auto" class="image-bottom-margin" fxShow.lt-sm fxHide></div>
+  <div fxFlex="0 0 auto" class="image-left-margin" fxHide.lt-sm fxShow></div>
+  <video fxFlex="0 0 auto" autoplay loop muted playsinline>
+    <source src="/assets/videos/app/contact.mp4" type="video/mp4" aria-hidden="true">
+  </video>
+</mat-card>

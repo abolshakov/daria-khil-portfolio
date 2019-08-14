@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  overlayDuration: 1000
+  popupDuration: 3000
 };
 
 /*

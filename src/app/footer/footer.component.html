@@ -6,19 +6,18 @@
           <div fxHide.xs="true">
             <span>Copyright &copy; 2018 Daria Khil</span>
           </div>
-          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="16px" class="contacts">
-            <span>hundred.dots@gmail.com</span>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:hundred.dots@gmail.com">
-              <mat-icon svgIcon="mail"></mat-icon>
-            </a>              
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daria_Khil">
-              <mat-icon svgIcon="instagram"></mat-icon>
+          <div fxLayout="row" fxLayoutAlign="center center" class="contacts">
+            <span [routerLink]="'/about'">
+              <mat-icon svgIcon="mail" matRipple></mat-icon>
+            </span>
+            <a target="_blank" rel="noopener noreferrer" href="{{instagram}}">
+              <mat-icon svgIcon="instagram" matRipple></mat-icon>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://join.skype.com/invite/njfXwpbvjhwi">
-              <mat-icon svgIcon="skype"></mat-icon>
+            <a target="_blank" rel="noopener noreferrer" href="{{skype}}">
+              <mat-icon svgIcon="skype" matRipple></mat-icon>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/daria-khil">
-              <mat-icon svgIcon="behance"></mat-icon>
+            <a target="_blank" rel="noopener noreferrer" href="{{behance}}">
+              <mat-icon svgIcon="behance" matRipple></mat-icon>
             </a>
           </div>
         </div>

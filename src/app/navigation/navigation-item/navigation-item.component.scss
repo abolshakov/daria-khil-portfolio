@@ -9,7 +9,6 @@ $navigation-item: (
 );
 
 :host {
-    // height: map-get($navigation-item, height);
     user-select: none;
     font-size: map-get($navigation-item, font-size);
     font-weight: 500;
@@ -26,6 +25,9 @@ $navigation-item: (
             outline: 0;
         }
         .title {
+            &:hover {
+                color: map-get($navigation-item, selected-primary-color);
+            }
             color: map-get($navigation-item, default-text-color);
         }
         &.selected {

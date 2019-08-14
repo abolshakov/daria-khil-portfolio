@@ -1,0 +1,35 @@
+@import "../../styles/em-calc";
+
+.mat-expansion-panel {
+    box-shadow: none;
+}
+
+.mat-expansion-panel-header {
+    padding: 0;
+    &:hover {
+        background: transparent !important;
+    }
+}
+
+.mat-expansion-panel-header-title {
+    place-content: center;
+    margin: 0;
+}
+
+.mat-expansion-panel-header {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    max-height: em(35.4);
+    font-size: em(20);
+    font-weight: 500;
+    line-height: em(20);
+    border-radius:em(24);
+   
+    .mat-expansion-panel-header-title {
+        color: #7f7f7f;
+    }   
+}
+
+::ng-deep .mat-expansion-panel-body {
+    padding: 0 !important;
+}

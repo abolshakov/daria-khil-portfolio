@@ -63,6 +63,7 @@ mat-card-content .mat-card-title {
 .mat-card-subtitle {
     color: #b2b2b2;
     font-size: em(18);
+    line-height: em(24);
 }
 
 .mat-button,
@@ -72,10 +73,87 @@ mat-card-content .mat-card-title {
     padding: 0 em(16) !important;
     line-height: em(40) !important;
     border-radius: em(6) !important;
+
+    &:hover {
+        .mat-button-focus-overlay {
+            opacity: 0 !important;
+        }
+        border-color: #8b85dd;
+    }
 }
 
 mat-icon.mat-icon {
-    height: em(24);
-    width: em(24);
-    line-height: em(24);
+    height: em(32);
+    width: em(32);
+    line-height: em(32);
+    border-radius: em(16);
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: em(16);
+}
+
+.mat-form-field-appearance-outline {
+    .mat-form-field-outline {
+        color: #e5e5e5;
+        top: 0 !important;
+    }
+
+    .mat-form-field-outline-thick {
+        color: #8b85dd;
+    }
+
+    &.mat-focused {
+        .mat-form-field-outline-thick {
+            color: #8b85dd;
+        }
+    }
+
+    &.mat-form-field-invalid.mat-form-field-invalid {
+        .mat-form-field-outline-thick {
+            color: #dd8585;
+        }
+    }
+
+    .mat-form-field-outline-start {
+        border-width: em(1) !important;
+        border-radius: em(6) 0 0 em(6) !important;
+    }
+    .mat-form-field-outline-end {
+        border-width: em(1) !important;
+        border-radius: 0 em(6) em(6) 0 !important;
+    }
+    .mat-form-field-outline-gap {
+        border-width: em(1) !important;
+    }
+
+    .mat-form-field-infix {
+        padding: em(14) 0;
+        border-top: none;
+    }
+}
+
+.mat-input-element {
+    caret-color: #939393 !important;
+}
+
+.alert {
+    color: #dd8585;
+}
+
+snack-bar-container.mat-snack-bar-container {
+    border-radius: em(6);
+    margin: em(24) auto;
+    min-width: 33vw;
+    max-width: 90vw;
+    padding: em(14) em(16);
+    min-height: em(48);
+    color: #ffffff;
+    background-color: #5f5f5fdc;
+}
+
+.mat-snack-bar-handset snack-bar-container.mat-snack-bar-container {
+    width: auto;
+    max-width: 90vw;
+    margin: em(24) auto;
 }

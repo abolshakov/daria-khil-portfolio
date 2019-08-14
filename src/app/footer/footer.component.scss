@@ -1,4 +1,4 @@
-@import '../../styles/em-calc';
+@import "../../styles/em-calc";
 @import "../../styles/layout.variables";
 
 .mat-toolbar-single-row.footer {
@@ -20,5 +20,18 @@ footer .mat-toolbar {
     a {
         display: flex;
         color: #aaaaaa;
+        margin-left: em(24);
+    }
+    span {
+        display: flex;
+        user-select: none;
+        outline: 0;
+        cursor: pointer;
+    }
+}
+
+mat-icon.mat-icon {
+    &:hover {
+        color: #8b85dd;
     }
 }

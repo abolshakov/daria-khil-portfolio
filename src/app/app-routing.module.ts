@@ -1,10 +1,8 @@
-import { AboutComponent } from './about/about.component';
-import { AboutModule } from './about/about.module';
 import { Category } from './gallery-items/category.enum';
-import { ContactComponent } from './contact/contact.component';
-import { ContactModule } from './contact/contact.module';
 import { filter } from 'rxjs/operators';
 import { GalleryComponent } from './gallery/gallery';
+import { KeepInTouchComponent } from './keep-in-touch/keep-in-touch.component';
+import { KeepInTouchModule } from './keep-in-touch/keep-in-touch.module';
 import { MatRippleModule } from '@angular/material';
 import { NavigationArea } from './navigation/shared/navigation-area.enum';
 import {
@@ -27,8 +25,7 @@ const routes: Routes = [
       { path: 'concept', component: GalleryComponent, data: { filter: Category.concept } },
       { path: 'illustration', component: GalleryComponent, data: { filter: Category.illustation } },
       { path: 'animation', component: GalleryComponent, data: { filter: Category.animation } },
-      { path: 'about', component: AboutComponent },
-      { path: 'contact', component: ContactComponent }
+      { path: 'contact', component: KeepInTouchComponent }
     ]
   },
 
@@ -38,8 +35,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    AboutModule,
-    ContactModule,
+    KeepInTouchModule,
     MatRippleModule,
     RouterModule.forRoot(
       routes
@@ -56,8 +52,7 @@ export class AppRoutingModule {
     navigationRegistry.register(2, '/concept', NavigationArea.Concept, 'Concept art', 'My visual deveolpment');
     navigationRegistry.register(3, '/illustration', NavigationArea.Illustration, 'Illustration', 'My illustrations');
     navigationRegistry.register(4, '/animation', NavigationArea.Animation, 'Animation', 'My animations');
-    navigationRegistry.register(5, '/about', NavigationArea.Animation, 'About', 'About me');
-    navigationRegistry.register(6, '/contact', NavigationArea.Contact, 'Contact', 'Contact me');
+    navigationRegistry.register(5, '/contact', NavigationArea.Contact, 'Contact', 'Contact me');
 
     this.router.events
       .pipe(filter(e => e instanceof NavigationEnd))

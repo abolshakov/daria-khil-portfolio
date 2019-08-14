@@ -1,0 +1,50 @@
+@import "../../styles/em-calc";
+
+.form {
+    margin: em(24) 0 em(-8) 0;
+}
+
+mat-card video {
+    width: em(152);
+    height: em(277);
+}
+
+.image-left-margin {
+    width: em(80);
+}
+
+.image-bottom-margin {
+    height: em(32);
+}
+
+.mat-card {
+    margin: em(24);
+    padding: em(40) em(72);
+}
+
+.mat-card .mat-divider-horizontal {
+    position: relative;
+    margin: em(4) 0 em(16) 0;
+}
+
+mat-card-content {
+    max-width: em(480);
+}
+
+textarea.mat-input-element {
+    resize: none;
+    overflow: hidden;
+}
+
+.email {
+    color: #a5a5a5;
+}
+
+a {
+    color: #8b85dd;
+    text-decoration: none;
+}
+
+.alert {
+    margin: em(-8) 0 em(8) 0;
+}

@@ -4,6 +4,5 @@ export enum NavigationArea {
     Concept = 2,
     Illustration = 3,
     Animation = 4,
-    About = 5,
-    Contact = 6
+    Contact = 5
 }

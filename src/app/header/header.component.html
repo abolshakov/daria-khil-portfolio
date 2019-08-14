@@ -4,11 +4,13 @@
   <div fxFlex="0 1 100%" #title>
     <div class="title">Daria Khil</div>
   </div>
-  <div fxFlex="0 1 100%" fxLayout="row" fxLayoutAlign="center" [ngClass]="{'nav-elevated':navigationDocked}">
-    <pfo-navigation class="nav"></pfo-navigation>
+  <div fxFlex="0 1 100%" fxLayout="row" fxLayoutAlign="center" [ngClass]="{'nav-elevated':navigationDocked}" #nav>
+    <div #navbody>
+      <pfo-navigation class="nav"></pfo-navigation>
+    </div>
   </div>
-  <div fxFlex="0 1 100%" fxLayout="row" fxLayoutAlign="center" *ngIf="navigationDocked">
-    <pfo-navigation class="nav"></pfo-navigation>
+  <div fxFlex="0 1 100%" fxLayout="row" fxLayoutAlign="center">
+    <div #navholder></div>
   </div>
   <div fxFlex="0 1 100%" class="decor" #decor>
     <div class="pattern" #pattern></div>

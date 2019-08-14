@@ -1,0 +1,26 @@
+@import "../../styles/em-calc";
+
+.alert-container {
+    min-width: em(360);
+    .alert-message {
+        font-size: em(18);
+    }
+}
+
+.material-icons {
+    font-size: em(32);
+    margin-right: em(20);
+}
+
+.mat-button {
+    padding: 0 em(10);
+    min-width: auto;
+    margin-left: em(10);
+    font-weight: bold;
+    font-size: em(20);
+}
+
+.alert-message {
+    max-width: em(480);
+    min-width: em(320);
+}

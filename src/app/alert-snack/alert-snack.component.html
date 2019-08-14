@@ -1,0 +1,9 @@
+<div class="alert-container" fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-icon fxFlex *ngIf="data?.icon" color="{{data?.color}}">{{ data?.icon }}</mat-icon>
+    <div fxLayout="column" class="alert-message">
+        <span *ngFor="let line of data?.message">{{ line}}</span>
+    </div>
+    <button class="no-hover-effect" mat-button *ngIf="data?.action" color="{{data?.color}}" (click)="dismiss()">
+        {{data?.action}}
+    </button>
+</div>

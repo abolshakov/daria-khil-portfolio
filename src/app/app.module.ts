@@ -6,6 +6,7 @@ import { DialogComponent } from './dialog/dialog';
 import { DialogModule } from './dialog/dialog.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialAndFlexModule } from './shared/material-and-flex.module';
+import { MatSnackBarModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ShellModule } from './shell/shell.module';
@@ -21,6 +22,7 @@ import { ShellModule } from './shell/shell.module';
     DialogModule,
     HttpClientModule,
     MaterialAndFlexModule,
+    MatSnackBarModule,
     RouterModule,
     ShellModule
   ],

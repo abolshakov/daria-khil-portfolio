@@ -1,3 +1,5 @@
+import { AlertSnackComponent } from '../alert-snack/alert-snack.component';
+import { AlertSnackModule } from '../alert-snack/alert-snack.module';
 import { CommonModule } from '@angular/common';
 import { FooterModule } from '../footer/footer.module';
 import { GalleryModule } from '../gallery/gallery.moule';
@@ -9,6 +11,7 @@ import { ShellComponent } from './shell.component';
 
 @NgModule({
   imports: [
+    AlertSnackModule,
     CommonModule,
     GalleryModule,
     HeaderModule,
@@ -17,6 +20,7 @@ import { ShellComponent } from './shell.component';
     RouterModule
   ],
   declarations: [ShellComponent],
+  entryComponents: [AlertSnackComponent],
   exports: [ShellComponent]
 })
 export class ShellModule { }

@@ -3,8 +3,8 @@ import {
   Component,
   ElementRef,
   OnDestroy,
-  ViewChild,
-  EventEmitter
+  Renderer2,
+  ViewChild
 } from '@angular/core';
 import {
   animate,
@@ -26,12 +26,15 @@ import { Unsubscribable } from '../shared/unsubscribable';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent extends Unsubscribable implements AfterViewInit, OnDestroy {
-  @ViewChild('header', { static: false }) header: ElementRef<HTMLElement>;
+  @ViewChild('header', { static: false }) headerRef: ElementRef<HTMLElement>;
   @ViewChild('title', { static: false }) titleRef: ElementRef<HTMLElement>;
+  @ViewChild('nav', { static: false }) navRef: ElementRef<HTMLElement>;
+  @ViewChild('navbody', { static: false }) navBodyRef: ElementRef<HTMLElement>;
+  @ViewChild('navholder', { static: false }) navHolderRef: ElementRef<HTMLElement>;
   @ViewChild('decor', { static: false }) decorRef: ElementRef<HTMLElement>;
   @ViewChild('pattern', { static: false }) patternRef: ElementRef<HTMLElement>;
 
-  private sensor: ResizeSensor;
+  private navSensor: ResizeSensor;
   private player: AnimationPlayer;
   private docked: boolean;
 
@@ -44,24 +47,32 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
     return this.navigation.CurrentItem.description;
   }
 
-  constructor(private builder: AnimationBuilder, private navigation: NavigationRegistryService) {
+  constructor(
+    private builder: AnimationBuilder,
+    private navigation: NavigationRegistryService,
+    private renderer: Renderer2
+  ) {
     super();
   }
 
-  ngAfterViewInit() {
-    this.sensor = new ResizeSensor(this.header.nativeElement, () => this.dockNavigation());
-    this.player = this.buildFactory().create(this.header.nativeElement);
+  public ngAfterViewInit() {
+    this.navSensor = new ResizeSensor(this.navBodyRef.nativeElement, () => this.dockNavigation());
+    this.player = this.buildFactory().create(this.headerRef.nativeElement);
 
     fromEvent(window, 'scroll')
       .pipe(
         takeUntil(this.unsubscribe),
         map(() => window.pageYOffset),
-        filter(y => y <= this.header.nativeElement.clientHeight),
+        filter(y => y <= this.headerRef.nativeElement.clientHeight),
       )
       .subscribe(y => {
-        this.play(y / this.header.nativeElement.clientHeight);
+        this.play(y / this.headerRef.nativeElement.clientHeight);
         this.dockNavigation();
       });
+  }
+
+  public ngOnDestroy() {
+    this.navSensor.detach();
   }
 
   private buildFactory(): AnimationFactory {
@@ -82,10 +93,8 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
 
   private dockNavigation() {
     this.docked = this.titleRef.nativeElement.getBoundingClientRect().bottom < 0;
-  }
-
-  public ngOnDestroy() {
-    this.sensor.detach();
+    this.renderer.setStyle(this.navHolderRef.nativeElement, 'height', this.navRef.nativeElement.getBoundingClientRect().height + 'px');
+    this.renderer.setStyle(this.navHolderRef.nativeElement, 'display', this.docked ? 'block' : 'none');
   }
 }
 
