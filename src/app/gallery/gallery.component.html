@@ -1,5 +1,5 @@
 <div fxLayout="row wrap" fxLayoutAlign="center">
-  <mat-card fxFlex="1 1 auto" *ngFor="let item of previewItems | async" (click)="openDialog(item)">
+  <mat-card fxFlex="1 1 auto" *ngFor="let item of portfolioItems | async" (click)="openDialog(item)">
     <img mat-card-image src="{{item.image}}" aria-hidden="true">
     <mat-card-content>
       <mat-card-title>{{item.title}}</mat-card-title>

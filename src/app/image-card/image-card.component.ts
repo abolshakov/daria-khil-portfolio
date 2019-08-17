@@ -8,7 +8,7 @@ import {
     ViewChild
     } from '@angular/core';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
-import { PortfolioItem } from '../gallery-items/gallery-items';
+import { ProjectItem } from '../shared/gallery/gallery.service';
 
 interface Margins {
     top: number;
@@ -21,8 +21,8 @@ interface Margins {
 
 @Component({
     selector: 'pfo-image-card',
-    templateUrl: './image-card.html',
-    styleUrls: ['./image-card.scss']
+    templateUrl: './image-card.component.html',
+    styleUrls: ['./image-card.component.scss']
 })
 export class ImageCardComponent implements OnInit, OnChanges {
     private _margins: Margins;
@@ -43,7 +43,7 @@ export class ImageCardComponent implements OnInit, OnChanges {
         }
         return this._margins;
     }
-    @Input() public item: PortfolioItem;
+    @Input() public item: ProjectItem;
     @Input() public maxWidth: number;
     @Input() public maxHeight: number;
 

@@ -1,10 +1,10 @@
-export const PREVIEW_ITEMS = [
+export const PORTFOLIO = [
   {
     title: 'Showreel 2019',
     image: 'showreel-2019.jpg',
     description: 'A collection of animation clippings for 2018-2019 years.',
     category: 'Animation',
-    portfolioItems: [
+    projectItems: [
       {
         margin: '15 0 0 15',
         video: 'https://vimeo.com/338517704'
@@ -16,7 +16,7 @@ export const PREVIEW_ITEMS = [
     image: 'animated-video-for-boost-vr.jpg',
     description: 'This animated video was created as a stylized presentation for the Boost VR studio.',
     category: 'Animation',
-    portfolioItems: [
+    projectItems: [
       {
         margin: '50 0 0 50',
         video: 'https://vimeo.com/330015242'
@@ -89,7 +89,7 @@ export const PREVIEW_ITEMS = [
     image: 'environments.jpg',
     description: 'Background, environment illustrations and sketches',
     category: 'Concept',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'environments/mash-up-world-environment-concept-2.jpg',
         description: 'Mash-Up World Environment concept #1'
@@ -145,7 +145,7 @@ export const PREVIEW_ITEMS = [
     image: 'illustartions-for-snapparazzi.png',
     description: 'Illustrations describing the idea of the crypto-project "Snapparazzi". Designed for the project\'s website.',
     category: 'Illustration',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'illustartions-for-snapparazzi/snapparazzi-io.png',
         description: 'snapparazzi.io',
@@ -188,7 +188,7 @@ export const PREVIEW_ITEMS = [
     image: 'illustrations-for-dogg-dog.jpg',
     description: 'Illustrations for the Dogg.Dog project website and application.',
     category: 'Illustration',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'illustrations-for-dogg-dog/illustrations-for-a-website-and-an-application-of-dogg-dog-project.jpg',
         margin: '20 0 20 0',
@@ -267,7 +267,7 @@ export const PREVIEW_ITEMS = [
     image: '404-page-animation.png',
     description: 'A christmas-themed animated design of the Error 404 page.',
     category: 'Animation',
-    portfolioItems: [
+    projectItems: [
       {
         image: '404-page-animation/5be9c786-34da-41c6-bb83-335090478208.png'
       },
@@ -296,7 +296,7 @@ export const PREVIEW_ITEMS = [
     image: 'characters-designs.jpg',
     description: 'Concepts of characters for children cartoon series.',
     category: 'Concept',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'characters-designs/714a4301-02d7-49ed-9d6d-e268f37b6b62.jpg'
       },
@@ -331,7 +331,7 @@ export const PREVIEW_ITEMS = [
     image: 'character-animations.jpg',
     description: 'Simple frame by frame, vector and puppet character animations',
     category: 'Animation',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'character-animations/c71ea46c-9c90-4c44-9892-53264ab6df55.png'
       },
@@ -375,7 +375,7 @@ export const PREVIEW_ITEMS = [
     title: 'Illustrations and Web Design for CryptoSoul',
     image: 'illustrations-and-web-design-for-crypto-soul.jpg',
     description: 'Web design, illustrations, icons and posters for the crypto project and the game "CryptoSoul".',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'illustrations-and-web-design-for-crypto-soul/fe4f6001-9ba6-40b5-b998-23989b3ae005.png'
       },
@@ -404,7 +404,7 @@ export const PREVIEW_ITEMS = [
     title: 'Telegram Animation',
     image: 'telegram-animation.png',
     description: 'A short animation that was created as an entry for the Telegram\'s competition and became one of its winners.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'telegram-animation/5bfae4f7-48aa-4c7c-b6ff-b62cc1aeb0a7.png'
       },
@@ -429,7 +429,7 @@ export const PREVIEW_ITEMS = [
     title: 'Memoryator Character Animations',
     image: 'memoryator-character-animations.png',
     description: 'Sketches of character animations for the game called "Memoryator".',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'memoryator-character-animations/e999903a-9bc4-4440-ace7-47eeeb29cb17.jpg'
       },
@@ -502,7 +502,7 @@ export const PREVIEW_ITEMS = [
     title: 'Animation for Codeur',
     image: 'animation-for-codeur.jpg',
     description: 'Short animation created for Codeur.com about the growth of the most popular social networks.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'animation-for-codeur/6c394342-1394-49a5-b793-70c4a0651ea5.jpg'
       },
@@ -522,7 +522,7 @@ export const PREVIEW_ITEMS = [
     title: 'City Restoration Animation',
     image: 'city-restoration-animation.jpg',
     description: 'An animated video made as a presentation and announcement of the restoration starting in the Chelyabinsk City.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'city-restoration-animation/843e6e81-efc7-4479-95c6-43de20b5c992.png'
       },
@@ -544,7 +544,7 @@ export const PREVIEW_ITEMS = [
     title: 'SCO & BRICS Explainer Video',
     image: 'sco-brics-explainer-video.png',
     description: 'An animated presentation of a business centre project.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'sco-brics-explainer-video/9b516770-6a9d-4b49-850c-4621bd6b345d.jpg'
       },
@@ -566,7 +566,7 @@ export const PREVIEW_ITEMS = [
     title: 'Dr Folsbuben Illustration',
     image: 'dr-folsbuben-illustration.png',
     description: 'Doctor Folsbuben with his droid mates in the alternate reality forest surrounded by its denizens: peaceful and maybe not quite...',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'dr-folsbuben-illustration/39ac319a-fd94-4bf5-be48-a6423e16cb95.png'
       },
@@ -588,7 +588,7 @@ export const PREVIEW_ITEMS = [
     title: 'CryptoSoul Digital Paintings',
     image: 'crypto-soul-digital-paintings.png',
     description: 'Promotional illustrations and arts for menu backgrounds created for the CryptoSoul Game.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'crypto-soul-digital-paintings/witch-raid.png',
         description: 'Witch raid'
@@ -615,7 +615,7 @@ export const PREVIEW_ITEMS = [
     title: 'CryptoSoul Character Designs',
     image: 'crypto-soul-character-designs.png',
     description: 'Character designs, concepts, animation sketches and 3d textures for the CryptoSoul Game.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'crypto-soul-character-designs/character-illustration.jpg',
         description: 'Character illustration'
@@ -691,7 +691,7 @@ export const PREVIEW_ITEMS = [
     title: 'Fanarts',
     image: 'fanarts.png',
     description: 'Some fanarts to my beloved movies and games.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'fanarts/a75ce5fe-5ea1-4de9-9af5-9e8865de1a8e.png'
       },
@@ -720,7 +720,7 @@ export const PREVIEW_ITEMS = [
     title: 'Game Objects',
     image: 'game-objects.png',
     description: '2D objects for the Memoryator game\'s world.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'game-objects/a3b524ff-ae7c-4f85-a93c-da60c536b726.jpg'
       },
@@ -748,7 +748,7 @@ export const PREVIEW_ITEMS = [
     title: 'Sticker Packs',
     image: 'sticker-packs.png',
     description: '4 packs of cute and funny stickers for iMessage.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'sticker-packs/329e3a0f-f977-498d-85c8-2301cd693296.png'
       },
@@ -794,7 +794,7 @@ export const PREVIEW_ITEMS = [
     title: 'Poster for Inventiv IT',
     image: 'poster-for-inventiv-it.jpg',
     description: 'This poster was created on the occasion of the 10th anniversary of the Inventiv IT company.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'poster-for-inventiv-it/325a0c5f-24e4-4718-8596-40ab873a506c.jpg'
       },
@@ -816,7 +816,7 @@ export const PREVIEW_ITEMS = [
     title: 'Character Sketches',
     image: 'character-sketches.png',
     description: 'Some personal character sketches and illustrations.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'character-sketches/a-tiny-cute-illustration-of-a-little-broccoli-who-believe-that-you-can-be-whoever-you-want.png',
         description: 'A tiny cute illustration of a little broccoli, who believe that you can be whoever you want :)'
@@ -875,7 +875,7 @@ export const PREVIEW_ITEMS = [
     title: 'Through the Forest',
     image: 'through-the-forest.png',
     description: 'Tiny digital illustration in children\'s book style.',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'through-the-forest/387235ce-0b68-4518-bd80-f04ecee3836a.png'
       },
@@ -894,7 +894,7 @@ export const PREVIEW_ITEMS = [
     title: 'Owl Rider Illustration',
     image: 'owl-rider-illustration.png',
     description: 'Adventures are waiting ahead! Why not face them riding a huge owl with magical books around and mighty sword in a hand?',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'owl-rider-illustration/young-elf-riding-a-huge-purple-owl-is-going-to-attack.jpg',
         description: 'Young elf riding a huge purple owl is going to attack!'
@@ -905,7 +905,7 @@ export const PREVIEW_ITEMS = [
     title: '2D Game Objects',
     image: '2-d-game-objects.png',
     description: 'Map ground textures and objects for the game\'s world.',
-    portfolioItems: [
+    projectItems: [
       {
         image: '2-d-game-objects/7726d28c-b446-4d3e-839c-62c38fd46f24.png',
         margin: '20 0 20 0'
@@ -960,7 +960,7 @@ export const PREVIEW_ITEMS = [
     title: 'Oil Painting for Memoryator',
     image: 'oil-painting-for-memoryator.png',
     description: 'Oil painted illustration of the Memoryator game world (40x40 cm)',
-    portfolioItems: [
+    projectItems: [
       {
         image: 'oil-painting-for-memoryator/adcf4c1b-3365-4c6e-bf81-a7196e248095.png'
       },
@@ -982,7 +982,8 @@ export const PREVIEW_ITEMS = [
     title: 'Christmas Family Illustration',
     image: 'christmas-family-illustration.jpg',
     description: 'Family members in a cute cartoonish style with Christmas mood.',
-    portfolioItems: [
+    category: 'Illustration',
+    projectItems: [
       {
         image: 'christmas-family-illustration/9c5c5e47-676e-411f-97af-6b324cb0ad21.jpg'
       },

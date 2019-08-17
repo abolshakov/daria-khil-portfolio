@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { DialogComponent } from './dialog';
+import { DialogComponent } from './dialog.component';
 import { CommonModule } from '@angular/common';
 import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
-import { ImageCardComponent } from '../image-card/image-card';
+import { ImageCardComponent } from '../image-card/image-card.component';
 
 @NgModule({
     exports: [DialogComponent],

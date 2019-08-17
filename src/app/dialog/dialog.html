@@ -1,9 +1,0 @@
-<div class="section">
-  <div class="mat-card-title">
-    {{previewItem.title}}
-  </div>
-  <div #visibleArea class="scrollable-content">
-    <pfo-image-card class="image-card" *ngFor="let item of previewItem.portfolioItems" [item]="item" [maxWidth]="visibleWidth" [maxHeight]="visibleHeight">
-    </pfo-image-card>
-  </div>
-</div>

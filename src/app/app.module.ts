@@ -2,7 +2,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { DialogComponent } from './dialog/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 import { DialogModule } from './dialog/dialog.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialAndFlexModule } from './shared/material-and-flex.module';

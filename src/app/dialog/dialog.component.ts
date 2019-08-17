@@ -6,26 +6,26 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { DialogData } from '../gallery/gallery';
+import { DialogData } from '../gallery/gallery.component';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
-import { PreviewItem } from '../gallery-items/gallery-items';
+import { PortfolioItem } from '../shared/gallery/gallery.service';
 
 @Component({
     selector: 'pfo-gallery-item-dialog',
-    templateUrl: './dialog.html',
-    styleUrls: ['./dialog.scss'],
+    templateUrl: './dialog.component.html',
+    styleUrls: ['./dialog.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
 export class DialogComponent implements AfterViewInit {
     @ViewChild('visibleArea', { static: false }) visibleArea: { nativeElement: HTMLElement; };
 
-    public previewItem: PreviewItem;
+    public portfolioItem: PortfolioItem;
     public visibleWidth: number;
     public visibleHeight: number;
 
     constructor(public dialogRef: MatDialogRef<DialogComponent>,
         @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-        this.previewItem = data.item;
+        this.portfolioItem = data.item;
     }
 
     ngAfterViewInit(): void {

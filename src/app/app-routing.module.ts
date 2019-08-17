@@ -1,6 +1,6 @@
-import { Category } from './gallery-items/category.enum';
+import { Category } from './shared/gallery/category.enum';
 import { filter } from 'rxjs/operators';
-import { GalleryComponent } from './gallery/gallery';
+import { GalleryComponent } from './gallery/gallery.component';
 import { KeepInTouchComponent } from './keep-in-touch/keep-in-touch.component';
 import { KeepInTouchModule } from './keep-in-touch/keep-in-touch.module';
 import { MatRippleModule } from '@angular/material';
@@ -16,21 +16,21 @@ import { NgModule } from '@angular/core';
 import { ShellComponent } from './shell/shell.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'projects', pathMatch: 'full' },
   {
     path: '',
     component: ShellComponent,
     children: [
-      { path: 'home', component: GalleryComponent },
-      { path: 'concept', component: GalleryComponent, data: { filter: Category.concept } },
-      { path: 'illustration', component: GalleryComponent, data: { filter: Category.illustation } },
-      { path: 'animation', component: GalleryComponent, data: { filter: Category.animation } },
-      { path: 'contact', component: KeepInTouchComponent }
+      { path: 'projects', component: GalleryComponent },
+      { path: 'projects/concepts', component: GalleryComponent, data: { filter: Category.concept } },
+      { path: 'projects/illustrations', component: GalleryComponent, data: { filter: Category.illustation } },
+      { path: 'projects/animations', component: GalleryComponent, data: { filter: Category.animation } },
+      { path: 'contacts', component: KeepInTouchComponent }
     ]
   },
 
   // Handle all other routes
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'projects' }
 ];
 
 @NgModule({
@@ -48,11 +48,11 @@ export class AppRoutingModule {
     private router: Router,
     private navigationRegistry: NavigationRegistryService
   ) {
-    navigationRegistry.register(1, '/home', NavigationArea.Home, 'All projects', 'My projects');
-    navigationRegistry.register(2, '/concept', NavigationArea.Concept, 'Concept art', 'My visual deveolpment');
-    navigationRegistry.register(3, '/illustration', NavigationArea.Illustration, 'Illustration', 'My illustrations');
-    navigationRegistry.register(4, '/animation', NavigationArea.Animation, 'Animation', 'My animations');
-    navigationRegistry.register(5, '/contact', NavigationArea.Contact, 'Contact', 'Contact me');
+    navigationRegistry.register(1, '/projects', NavigationArea.Home, 'All projects', 'My projects');
+    navigationRegistry.register(2, '/projects/concepts', NavigationArea.Concept, 'Concept art', 'My visual deveolpment');
+    navigationRegistry.register(3, '/projects/illustrations', NavigationArea.Illustration, 'Illustration', 'My illustrations');
+    navigationRegistry.register(4, '/projects/animations', NavigationArea.Animation, 'Animation', 'My animations');
+    navigationRegistry.register(5, '/contacts', NavigationArea.Contact, 'Contact', 'Contact me');
 
     this.router.events
       .pipe(filter(e => e instanceof NavigationEnd))

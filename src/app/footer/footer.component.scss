@@ -32,6 +32,17 @@ footer .mat-toolbar {
 
 mat-icon.mat-icon {
     &:hover {
-        color: #8b85dd;
+        &[svgicon="skype"] {
+            color: #00aff0;
+        }
+        &[svgicon="behance"] {
+            color: #4176fa;
+        }
+        &[svgicon="mail"] {
+            color: #9703ed;
+        }
+        &[svgicon="instagram"] {
+            color: #ed0098;
+        }
     }
 }

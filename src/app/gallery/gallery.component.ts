@@ -1,43 +1,43 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component } from '@angular/core';
-import { DialogComponent } from '../dialog/dialog';
-import { GalleryItems, PreviewItem } from '../gallery-items/gallery-items';
+import { DialogComponent } from '../dialog/dialog.component';
+import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
 import { MatDialog } from '@angular/material';
 import { of } from 'rxjs';
 import { switchMap, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 export interface DialogData {
-  item: PreviewItem;
+  item: PortfolioItem;
 }
 
 @Component({
   selector: 'pfo-gallery',
-  templateUrl: './gallery.html',
-  styleUrls: ['./gallery.scss']
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent extends Unsubscribable {
 
-  public get previewItems() {
+  public get portfolioItems() {
     return this.route.data
       .pipe(
         takeUntil(this.unsubscribe),
         switchMap(data => of(data.filter
-          ? this.items.previewItems.filter(x => x.category === data.filter)
-          : this.items.previewItems
+          ? this.gallery.portfolio.filter(x => x.category === data.filter)
+          : this.gallery.portfolio
         ))
       );
   }
 
   constructor(
     private dialog: MatDialog,
-    private items: GalleryItems,
+    private gallery: GalleryService,
     private route: ActivatedRoute
   ) {
     super();
   }
 
-  openDialog(item: PreviewItem): void {
+  openDialog(item: PortfolioItem): void {
     this.dialog.open(DialogComponent, {
       data: {
         item: item
