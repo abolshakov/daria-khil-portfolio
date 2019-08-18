@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { PORTFOLIO } from './portfolio';
 
 export interface PortfolioItem {
+    id?: number;
     title?: string;
     image?: string;
     description?: string;
@@ -10,6 +11,7 @@ export interface PortfolioItem {
 }
 
 export interface ProjectItem {
+    id?: number;
     image?: string;
     margin?: string;
     description?: string;
@@ -20,26 +22,33 @@ export interface ProjectItem {
 @Injectable({ providedIn: 'root' })
 export class GalleryService {
     private readonly imagesPath = '../assets/images/portfolio/';
+    private readonly projects = new Map<number, PortfolioItem>();
 
-    get portfolio(): PortfolioItem[] {
+    public get portfolio(): PortfolioItem[] {
         return PORTFOLIO;
     }
 
     constructor() {
-        for (const portfolioItem of PORTFOLIO as PortfolioItem[]) {
-            if (portfolioItem.image) {
-                portfolioItem.image = this.imagesPath + portfolioItem.image;
+        for (const project of this.portfolio) {
+            this.projects.set(project.id, project);
+
+            if (project.image) {
+                project.image = this.imagesPath + project.image;
             }
 
-            if (!portfolioItem.projectItems) {
+            if (!project.projectItems) {
                 continue;
             }
 
-            for (const projectItem of portfolioItem.projectItems) {
-                if (projectItem.image) {
-                    projectItem.image = this.imagesPath + projectItem.image;
+            for (const item of project.projectItems) {
+                if (item.image) {
+                    item.image = this.imagesPath + item.image;
                 }
             }
         }
+    }
+
+    public project(id: number | string): PortfolioItem {
+        return this.projects.get(Number(id));
     }
 }

@@ -38,7 +38,6 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   private player: AnimationPlayer;
   private docked: boolean;
 
-
   public get navigationDocked(): boolean {
     return this.docked;
   }

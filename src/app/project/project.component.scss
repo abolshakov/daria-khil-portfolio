@@ -1,0 +1,71 @@
+@import '../../styles/em-calc';
+
+.mat-dialog-container {
+    padding: em(2);
+    position: relative;
+}
+
+.ng-star-inserted {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;    
+    padding-top: em(16);
+    text-align: center;    
+}
+
+.scrollable-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: auto;
+    min-height: 0;
+    padding: 0 em(16);
+}
+
+.image-card {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    display: flex;
+    position: absolute;
+    right: em(8);
+    top: em(8);
+}
+
+.close .mat-mini-fab:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.close .mat-mini-fab.mat-accent {
+    background-color: #b9b9b945;
+    color: lightgray;
+}
+
+.image-content {
+    justify-content: center;
+    align-items: center;
+    padding: em(20);
+}
+
+.image-content .mat-progress-spinner {
+    position: absolute;
+}
+
+.image-content .mat-spinner circle {
+    stroke: #b7b7b7b7;
+}

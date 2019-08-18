@@ -1,0 +1,7 @@
+<div class="section">
+  <div #visibleArea class="scrollable-content">
+    <pfo-image-card class="image-card" *ngFor="let item of (portfolioItem | async).projectItems" [item]="item"
+      [maxWidth]="visibleWidth" [maxHeight]="visibleHeight">
+    </pfo-image-card>
+  </div>
+</div>

@@ -1,10 +1,9 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Category } from '../shared/gallery/category.enum';
 import { Component } from '@angular/core';
-import { DialogComponent } from '../dialog/dialog.component';
 import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
-import { MatDialog } from '@angular/material';
 import { of } from 'rxjs';
-import { switchMap, takeUntil } from 'rxjs/operators';
+import { switchMap, take } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 export interface DialogData {
@@ -18,31 +17,26 @@ export interface DialogData {
 })
 export class GalleryComponent extends Unsubscribable {
 
-  public get portfolioItems() {
-    return this.route.data
+  public get projects() {
+    return this.route.params
       .pipe(
-        takeUntil(this.unsubscribe),
-        switchMap(data => of(data.filter
-          ? this.gallery.portfolio.filter(x => x.category === data.filter)
+        take(1),
+        switchMap(params => of(params['category']
+          ? this.gallery.portfolio.filter(x => x.category === Category[params['category']])
           : this.gallery.portfolio
         ))
       );
   }
 
   constructor(
-    private dialog: MatDialog,
     private gallery: GalleryService,
+    private router: Router,
     private route: ActivatedRoute
   ) {
     super();
   }
 
-  openDialog(item: PortfolioItem): void {
-    this.dialog.open(DialogComponent, {
-      data: {
-        item: item
-      },
-      autoFocus: false
-    });
+  openProject(item: PortfolioItem): void {
+    this.router.navigate([this.router.url, item.id]);
   }
 }
