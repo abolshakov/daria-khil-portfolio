@@ -1,8 +1,13 @@
 import { ActivatedRoute } from '@angular/router';
 import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
-import { NavigationRegistryService } from '../navigation/shared/navigation-registry.service';
-import { take, switchMap, takeUntil, tap, filter } from 'rxjs/operators';
+import { HeaderService } from '../header/shared/header.service';
+import { Observable, of } from 'rxjs';
 import { Unsubscribable } from '../shared/unsubscribable';
+import {
+    filter,
+    switchMap,
+    takeUntil,
+    } from 'rxjs/operators';
 import {
     AfterViewInit,
     Component,
@@ -10,7 +15,6 @@ import {
     OnInit,
     ViewChild,
 } from '@angular/core';
-import { Observable, of } from 'rxjs';
 
 @Component({
     selector: 'pfo-project',
@@ -33,20 +37,27 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     constructor(
         private route: ActivatedRoute,
         private gallery: GalleryService,
-        private navigation: NavigationRegistryService
+        private header: HeaderService
     ) {
         super();
     }
 
     ngOnInit() {
-        this.portfolioItem
-            .pipe(takeUntil(this.unsubscribe), filter(p => !!p))
-            .subscribe(p => this.navigation.CurrentItem.description = p.title);
+        this.header.TitleProvider = this.portfolioItem
+            .pipe(
+                filter(p => !!p),
+                switchMap(p => of(p.title))
+            );
     }
 
     ngAfterViewInit(): void {
         Promise.resolve(null).then(() =>
             this.calculateSize(this.visibleArea.nativeElement));
+    }
+
+    ngOnDestroy() {
+        super.ngOnDestroy();
+        this.header.TitleProvider = null;
     }
 
     @HostListener('window:resize')
@@ -55,11 +66,13 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     private calculateSize(element: HTMLElement): void {
-        const style: CSSStyleDeclaration = window.getComputedStyle(element);
-        const horizontalPadding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
-        const verticalPadding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
-        this.visibleWidth = element.clientWidth - horizontalPadding;
-        this.visibleHeight = element.clientHeight - verticalPadding;
+        // const style: CSSStyleDeclaration = window.getComputedStyle(element);
+        // const horizontalPadding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+        // const verticalPadding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+        // this.visibleWidth = element.clientWidth - horizontalPadding;
+        // this.visibleHeight = element.clientHeight - verticalPadding;
+        this.visibleWidth = window.innerWidth / 4;
+        this.visibleHeight = window.innerHeight / 4;
         console.log('CALCULATE W x H', this.visibleWidth, this.visibleHeight);
     }
 }

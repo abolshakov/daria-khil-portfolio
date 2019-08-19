@@ -19,7 +19,7 @@ export class NavigationComponent extends Unsubscribable {
 
   constructor(private navigation: NavigationRegistryService) {
     super();
-    this.navigation.itemChanges
+    this.navigation.currentItemChanges
       .pipe(takeUntil(this.unsubscribe))
       .subscribe(() => this._items.next(this.navigation.NavigationItems));
   }

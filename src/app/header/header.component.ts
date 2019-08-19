@@ -5,7 +5,7 @@ import {
   OnDestroy,
   Renderer2,
   ViewChild
-} from '@angular/core';
+  } from '@angular/core';
 import {
   animate,
   AnimationBuilder,
@@ -13,10 +13,10 @@ import {
   AnimationPlayer,
   query,
   style
-} from '@angular/animations';
+  } from '@angular/animations';
 import { filter, map, takeUntil } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
-import { NavigationRegistryService } from '../navigation/shared/navigation-registry.service';
+import { HeaderService } from './shared/header.service';
 import { ResizeSensor } from 'css-element-queries';
 import { Unsubscribable } from '../shared/unsubscribable';
 
@@ -43,12 +43,12 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   }
 
   public get contentTitle(): string {
-    return this.navigation.CurrentItem.description;
+    return this.service.ContentTitle;
   }
 
   constructor(
     private builder: AnimationBuilder,
-    private navigation: NavigationRegistryService,
+    private service: HeaderService,
     private renderer: Renderer2
   ) {
     super();
