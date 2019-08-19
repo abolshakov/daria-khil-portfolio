@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
 import { NavigationRegistryService } from '../navigation/shared/navigation-registry.service';
-import { take, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { take, switchMap, takeUntil, tap, filter } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 import {
     AfterViewInit,
@@ -40,8 +40,8 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
     ngOnInit() {
         this.portfolioItem
-            .pipe(takeUntil(this.unsubscribe))
-            .subscribe(p => this.navigation.CurrentItem.description = p ? p.title : '');
+            .pipe(takeUntil(this.unsubscribe), filter(p => !!p))
+            .subscribe(p => this.navigation.CurrentItem.description = p.title);
     }
 
     ngAfterViewInit(): void {
@@ -60,5 +60,6 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         const verticalPadding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
         this.visibleWidth = element.clientWidth - horizontalPadding;
         this.visibleHeight = element.clientHeight - verticalPadding;
+        console.log('CALCULATE W x H', this.visibleWidth, this.visibleHeight);
     }
 }
