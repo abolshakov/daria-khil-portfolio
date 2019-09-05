@@ -1,35 +1,25 @@
-@import '../../styles/em-calc';
+@import "../../styles/em-calc";
 
-.section {
-    flex-grow: 1;
+.space-holder {
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 0;    
-    padding-top: em(16);
-    text-align: center;    
+    align-items: center;
+    justify-content: center;
 }
 
-.scrollable-content {
-    flex-grow: 1;
-    display: flex;
+.container {
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    overflow: auto;
-    min-height: 0;
-    padding: 0 em(16);
-}
-
-.image-card {
-    flex-direction: column;
     display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.image-content {
-    justify-content: center;
-    align-items: center;
-    padding: em(20);
+img {
+    margin: 4px;
+}
+
+.hidden {
+    visibility: hidden;
 }

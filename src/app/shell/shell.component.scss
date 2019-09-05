@@ -9,6 +9,10 @@
     right: 0;
     z-index: 2;
 }
+main {
+    width: 100vw;
+    max-width: 100%;
+}
 
 .main-content {
     margin: em(16);

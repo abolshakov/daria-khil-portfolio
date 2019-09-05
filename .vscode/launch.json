@@ -8,8 +8,7 @@
             "type": "chrome",
             "request": "attach",
             "name": "Attach to Chrome",
-            "port": 4201,
-            "sourceMaps": true,
+            "port": 9222,
             "webRoot": "${workspaceFolder}"
         },
         {

@@ -1,7 +1,6 @@
-<div class="section">
-  <div #visibleArea class="scrollable-content">
-    <pfo-image-card class="image-card" *ngFor="let item of (portfolioItem | async).projectItems" [item]="item"
-      [maxWidth]="visibleWidth" [maxHeight]="visibleHeight">
-    </pfo-image-card>
+<div class="space-holder" #container>
+  <div *ngIf="loading">LOADING...</div>
+  <div class="container" [ngClass]="{'hidden': loading}">
+    <img *ngFor="let source of sources | async" src="{{source}}" #img />
   </div>
 </div>
