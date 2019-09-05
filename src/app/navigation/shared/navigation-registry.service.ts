@@ -12,7 +12,7 @@ export class NavigationRegistryService {
   private _items: NavigationItem[];
   private _currentItem: NavigationItem;
 
-  public itemChanges = new EventEmitter<void>(true);
+  public currentItemChanges = new EventEmitter<NavigationItem>(true);
 
   constructor() {
     this._items = [];
@@ -20,11 +20,11 @@ export class NavigationRegistryService {
 
   public register(id: number, route: string, area: NavigationArea, title: string, description?: string) {
     const navigationItem = new NavigationItem(id, route, area, title, description);
-    if (!_.isNull(this.getItem(navigationItem.key))) {
+    if (!_.isNull(this.getItem(navigationItem.key, true))) {
       throw new Error(`Could not register NavigationItem: NavigationItem with key=${navigationItem.key} already exist`);
     }
     this._items.push(navigationItem);
-    this._items = _.sortBy(this._items, (x) => x.id);
+    this._items = _.sortBy(this._items, (x: NavigationItem) => x.id);
   }
 
   public get NavigationItems(): NavigationItem[] {
@@ -58,17 +58,19 @@ export class NavigationRegistryService {
     if (this._currentItem) {
       this._currentItem.selected = false;
     }
-    const item = this.getItem(path);
+    const item = this.getItem(path, false);
     if (!item) {
       this._currentItem = this.emptyItem;
       return;
     }
     this._currentItem = item;
     this._currentItem.selected = true;
-    this.itemChanges.emit();
+    this.currentItemChanges.emit(this._currentItem);
   }
 
-  private getItem(key: string): NavigationItem {
-    return _.find(this._items, (x) => x.key === key) || null;
+  private getItem(key: string, strict: boolean): NavigationItem {
+    return strict
+      ? _.find(this._items, (x) => x.key === key) || null
+      : _.maxBy(this._items, (x => key.indexOf(x.key) > -1 ? x.key.length : 0));
   }
 }

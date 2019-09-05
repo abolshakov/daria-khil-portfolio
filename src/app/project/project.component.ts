@@ -6,8 +6,9 @@ import {
     Observable,
     of,
     ReplaySubject
-} from 'rxjs';
+    } from 'rxjs';
 import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
+import { HeaderService } from '../header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
@@ -61,19 +62,21 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
     constructor(
         private gallery: GalleryService,
+        private header: HeaderService,
         private imageInfo: ImageInfoService,
         private loader: ImageLoadService,
         private masonry: MasonryService,
-        private navigation: NavigationRegistryService,
-        private route: ActivatedRoute,
+        private route: ActivatedRoute
     ) {
         super();
     }
 
     ngOnInit() {
-        this.portfolioItem
-            .pipe(takeUntil(this.unsubscribe), filter(p => !!p))
-            .subscribe(p => this.navigation.CurrentItem.description = p.title);
+        this.header.TitleProvider = this.portfolioItem
+            .pipe(
+                filter(p => !!p),
+                switchMap(p => of(p.title))
+            );
     }
 
     public ngAfterViewInit() {
@@ -100,6 +103,11 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
                         this.loading = false;
                     });
             });
+    }
+
+    public ngOnDestroy() {
+        super.ngOnDestroy();
+        this.header.TitleProvider = null;
     }
 
     private construct(info: ElementInfo[]) {
