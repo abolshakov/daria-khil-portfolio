@@ -6,13 +6,12 @@ import {
     Observable,
     of,
     ReplaySubject
-    } from 'rxjs';
+} from 'rxjs';
 import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
 import { HeaderService } from '../header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
-import { NavigationRegistryService } from '../navigation/shared/navigation-registry.service';
 import { Size } from '../shared/masonry/size.model';
 import { Unsubscribable } from '../shared/unsubscribable';
 import {
@@ -66,7 +65,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         private imageInfo: ImageInfoService,
         private loader: ImageLoadService,
         private masonry: MasonryService,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
     ) {
         super();
     }
@@ -111,7 +110,10 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     private construct(info: ElementInfo[]) {
-        const lineSize = new Size(this.containerRef.nativeElement.clientWidth, Math.min(window.innerHeight, window.innerWidth) / 3);
+        const container = this.containerRef.nativeElement;
+        const width = container.clientWidth;
+        const height = Math.min(window.innerHeight, window.innerWidth) / 3;
+        const lineSize = new Size(width, height);
         const updatedInfo = this.masonry.construct(info, lineSize, Direction.row);
         this.imageInfo.update(this.imageRefs.map(r => r.nativeElement), updatedInfo);
     }

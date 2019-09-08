@@ -13,7 +13,7 @@ export class ImageLoadService {
                         take(1),
                         map(() => image)
                     ))),
-                switchMap(() => forkJoin(loading).pipe())
+                switchMap(() => forkJoin(loading))
             );
     }
 }

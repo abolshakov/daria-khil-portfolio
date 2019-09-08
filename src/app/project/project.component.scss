@@ -1,12 +1,13 @@
 @import "../../styles/em-calc";
 
+$image-margin: 8;
+
 .space-holder {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    flex: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: em(16 - $image-margin);
 }
 
 .container {
@@ -17,7 +18,7 @@
 }
 
 img {
-    margin: 4px;
+    margin: em($image-margin);
 }
 
 .hidden {

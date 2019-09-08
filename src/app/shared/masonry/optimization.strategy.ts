@@ -5,7 +5,7 @@ import { Wall } from './wall.model';
 @Injectable({ providedIn: 'root' })
 export class OptimizationStrategy {
     public evaluate(wall: Wall, size: RelativeSize): number {
-        if (!wall || !size) {
+        if (!wall || !wall.lines.length || !size) {
             return 0;
         }
         let min = size.mainAxis;
