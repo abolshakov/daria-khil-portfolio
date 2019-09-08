@@ -5,7 +5,7 @@ import {
   OnDestroy,
   Renderer2,
   ViewChild
-  } from '@angular/core';
+} from '@angular/core';
 import {
   animate,
   AnimationBuilder,
@@ -13,7 +13,7 @@ import {
   AnimationPlayer,
   query,
   style
-  } from '@angular/animations';
+} from '@angular/animations';
 import { filter, map, takeUntil } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
 import { HeaderService } from './shared/header.service';
@@ -44,6 +44,10 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
 
   public get contentTitle(): string {
     return this.service.ContentTitle;
+  }
+
+  public get contentSubtitle(): string {
+    return this.service.ContentSubtitle;
   }
 
   constructor(

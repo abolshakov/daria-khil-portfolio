@@ -5,6 +5,8 @@
 .header {
     position: relative;
     background-color: white;
+    padding-bottom: em(24);
+    border-bottom: #d1d1d1 em(0.5) solid;
 }
 
 .top-padding {
@@ -62,9 +64,15 @@
 }
 
 .content-title {
-    padding: em(24) 0 em(24);
-    color: #a5a5a5;
+    padding: em(24) 0 0;
+    color: #7f7f7f;
     font-size: em(20);
     text-align: center;
-    border-bottom: #d1d1d1 em(0.5) solid;
+}
+
+.content-subtitle {
+    padding: em(8) 0 0;
+    color: #a5a5a5;
+    font-size: em(18);
+    text-align: center;
 }

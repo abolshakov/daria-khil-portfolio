@@ -6,28 +6,47 @@ import { switchMap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class HeaderService {
-    private readonly default: Observable<string> = this.navigation.currentItemChanges
+    private readonly defaultTitle: Observable<string> = this.navigation.currentItemChanges
         .pipe(switchMap((current: NavigationItem) => of(current.description)));
 
-    private _title = '';
+    private readonly defaultSubtitle: Observable<string> = of('');
 
-    private subscription: Subscription;
+    private _title = '';
+    private _subtitle = '';
+
+    private titleSubscription: Subscription;
+    private subtitleSubscription: Subscription;
 
     public get ContentTitle(): string {
         return this._title;
     }
 
+    public get ContentSubtitle(): string {
+        return this._subtitle;
+    }
+
     public set TitleProvider(provider: Observable<string>) {
-        if (this.subscription) {
-            this.subscription.unsubscribe();
+        if (this.titleSubscription) {
+            this.titleSubscription.unsubscribe();
         }
         if (provider === null) {
-            provider = this.default;
+            provider = this.defaultTitle;
         }
-        this.subscription = provider.subscribe(title => this._title = title);
+        this.titleSubscription = provider.subscribe(title => this._title = title);
+    }
+
+    public set SubtitleProvider(provider: Observable<string>) {
+        if (this.subtitleSubscription) {
+            this.subtitleSubscription.unsubscribe();
+        }
+        if (provider === null) {
+            provider = this.defaultSubtitle;
+        }
+        this.subtitleSubscription = provider.subscribe(subtitle => this._subtitle = subtitle);
     }
 
     constructor(private navigation: NavigationRegistryService) {
-        this.TitleProvider = this.default;
+        this.TitleProvider = this.defaultTitle;
+        this.SubtitleProvider = this.defaultSubtitle;
     }
 }

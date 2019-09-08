@@ -73,8 +73,15 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     ngOnInit() {
         this.header.TitleProvider = this.portfolioItem
             .pipe(
+                takeUntil(this.unsubscribe),
                 filter(p => !!p),
                 switchMap(p => of(p.title))
+            );
+        this.header.SubtitleProvider = this.portfolioItem
+            .pipe(
+                takeUntil(this.unsubscribe),
+                filter(p => !!p),
+                switchMap(p => of(p.description))
             );
     }
 
@@ -90,8 +97,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
         fromEvent(window, 'resize')
             .pipe(
-                takeUntil(this.unsubscribe),
-                debounceTime(500)
+                takeUntil(this.unsubscribe)
             )
             .subscribe(() => {
                 this.elementsInfo
@@ -107,6 +113,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     public ngOnDestroy() {
         super.ngOnDestroy();
         this.header.TitleProvider = null;
+        this.header.SubtitleProvider = null;
     }
 
     private construct(info: ElementInfo[]) {
