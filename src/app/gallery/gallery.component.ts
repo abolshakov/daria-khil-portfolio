@@ -1,13 +1,13 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Category } from '../shared/gallery/category.enum';
 import { Component } from '@angular/core';
-import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
+import { GalleryService, Project } from '../shared/gallery/gallery.service';
 import { of } from 'rxjs';
 import { switchMap, take } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 export interface DialogData {
-  item: PortfolioItem;
+  item: Project;
 }
 
 @Component({
@@ -36,7 +36,7 @@ export class GalleryComponent extends Unsubscribable {
     super();
   }
 
-  openProject(item: PortfolioItem): void {
+  openProject(item: Project): void {
     this.router.navigate([this.router.url, item.id]);
   }
 }

@@ -7,7 +7,7 @@ import {
     of,
     ReplaySubject
 } from 'rxjs';
-import { GalleryService, PortfolioItem } from '../shared/gallery/gallery.service';
+import { GalleryService, Project } from '../shared/gallery/gallery.service';
 import { HeaderService } from '../header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
@@ -48,11 +48,11 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     public get sources(): Observable<string[]> {
         return this.portfolioItem.pipe(
             takeUntil(this.unsubscribe),
-            switchMap(portfolio => of(portfolio.projectItems.map(x => x.image)))
+            switchMap(portfolio => of(portfolio.items.map(x => x.image)))
         );
     }
 
-    private get portfolioItem(): Observable<PortfolioItem> {
+    private get portfolioItem(): Observable<Project> {
         return this.route.params.pipe(
             takeUntil(this.unsubscribe),
             switchMap(params => of(this.gallery.project(params['id'])))

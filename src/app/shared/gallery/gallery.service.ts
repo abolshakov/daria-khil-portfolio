@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { PORTFOLIO } from './portfolio';
 
-export interface PortfolioItem {
+export interface Project {
     id?: number;
     title?: string;
     image?: string;
     description?: string;
     category?: string;
-    projectItems?: ProjectItem[];
+    items?: ProjectItem[];
 }
 
 export interface ProjectItem {
@@ -22,9 +22,9 @@ export interface ProjectItem {
 @Injectable({ providedIn: 'root' })
 export class GalleryService {
     private readonly imagesPath = '../assets/images/portfolio/';
-    private readonly projects = new Map<number, PortfolioItem>();
+    private readonly projects = new Map<number, Project>();
 
-    public get portfolio(): PortfolioItem[] {
+    public get portfolio(): Project[] {
         return PORTFOLIO;
     }
 
@@ -36,11 +36,11 @@ export class GalleryService {
                 project.image = this.imagesPath + project.image;
             }
 
-            if (!project.projectItems) {
+            if (!project.items) {
                 continue;
             }
 
-            for (const item of project.projectItems) {
+            for (const item of project.items) {
                 if (item.image) {
                     item.image = this.imagesPath + item.image;
                 }
@@ -48,7 +48,7 @@ export class GalleryService {
         }
     }
 
-    public project(id: number | string): PortfolioItem {
+    public project(id: number | string): Project {
         return this.projects.get(Number(id));
     }
 }
