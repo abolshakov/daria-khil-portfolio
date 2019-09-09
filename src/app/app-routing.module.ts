@@ -1,4 +1,6 @@
+import { CanActivateCategoryGuard } from './guards/can-activate-category.guard';
 import { CanActivateProjectGuard } from './guards/can-activate-project.guard';
+import { CanActivateProjectItemGuard } from './guards/can-activate-project-item.guard';
 import { filter } from 'rxjs/operators';
 import { GalleryComponent } from './gallery/gallery.component';
 import { KeepInTouchComponent } from './keep-in-touch/keep-in-touch.component';
@@ -10,12 +12,14 @@ import {
   Router,
   RouterModule,
   Routes
-} from '@angular/router';
+  } from '@angular/router';
 import { NavigationRegistryService } from './navigation/shared/navigation-registry.service';
 import { NgModule } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
+import { ProjectItemComponent } from './project-item/project-item.component';
+import { ProjectItemResolver } from './resolvers/project-item.resolver';
+import { ProjectResolver } from './resolvers/project.resolver';
 import { ShellComponent } from './shell/shell.component';
-import { CanActivateCategoryGuard } from './guards/can-activate-category.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'projects', pathMatch: 'full' },
@@ -28,9 +32,10 @@ const routes: Routes = [
         component: GalleryComponent
       },
       {
-        path: 'projects/:id',
+        path: 'projects/:project-id/fragments',
         component: ProjectComponent,
         canActivate: [CanActivateProjectGuard],
+        resolve: { project: ProjectResolver },
       },
       {
         path: 'projects/categories/:category',
@@ -38,9 +43,22 @@ const routes: Routes = [
         canActivate: [CanActivateCategoryGuard]
       },
       {
-        path: 'projects/categories/:category/:id',
+        path: 'projects/categories/:category/:project-id/fragments',
         component: ProjectComponent,
         canActivate: [CanActivateCategoryGuard, CanActivateProjectGuard],
+        resolve: { project: ProjectResolver }
+      },
+      {
+        path: 'projects/categories/:category/:project-id/fragments/:project-item-id',
+        component: ProjectItemComponent,
+        canActivate: [CanActivateCategoryGuard, CanActivateProjectGuard, CanActivateProjectItemGuard],
+        resolve: { project: ProjectResolver, projectItem: ProjectItemResolver }
+      },
+      {
+        path: 'projects/:project-id/fragments/:project-item-id',
+        component: ProjectItemComponent,
+        canActivate: [CanActivateProjectGuard, CanActivateProjectItemGuard],
+        resolve: { project: ProjectResolver, projectItem: ProjectItemResolver }
       },
       { path: 'contacts', component: KeepInTouchComponent }
     ]

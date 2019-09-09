@@ -12,7 +12,7 @@ export class CanActivateProjectGuard implements CanActivate {
     constructor(private gallery: GalleryService, private router: Router) { }
 
     canActivate(route: ActivatedRouteSnapshot, _state: RouterStateSnapshot): boolean {
-        const id = Number(route.params['id']);
+        const id = Number(route.params['project-id']);
         if (isNaN(id) || !this.gallery.project(id)) {
             this.router.navigate(['']);
         }

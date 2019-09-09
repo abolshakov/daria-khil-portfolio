@@ -19,6 +19,7 @@ $image-margin: 8;
 
 img {
     margin: em($image-margin);
+    cursor: pointer;
 }
 
 .hidden {

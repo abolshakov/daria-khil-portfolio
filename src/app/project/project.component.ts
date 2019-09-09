@@ -1,36 +1,16 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Direction } from '../shared/masonry/direction.enum';
 import { ElementInfo } from '../shared/masonry/element-info.interface';
-import {
-    fromEvent,
-    Observable,
-    of,
-    ReplaySubject
-} from 'rxjs';
-import { GalleryService, Project } from '../shared/gallery/gallery.service';
+import { fromEvent, of, ReplaySubject } from 'rxjs';
 import { HeaderService } from '../header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
+import { Project } from '../shared/gallery/gallery.service';
 import { Size } from '../shared/masonry/size.model';
+import { take, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
-import {
-    debounceTime,
-    switchMap,
-    take,
-    takeUntil,
-    filter,
-} from 'rxjs/operators';
-import {
-    AfterViewInit,
-    Component,
-    ViewChild,
-    OnDestroy,
-    ElementRef,
-    ViewChildren,
-    QueryList,
-    OnInit,
-} from '@angular/core';
+import { AfterViewInit, Component, ViewChild, OnDestroy, ElementRef, ViewChildren, QueryList, OnInit, } from '@angular/core';
 
 @Component({
     selector: 'pfo-project',
@@ -45,44 +25,28 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
     public loading = true;
 
-    public get sources(): Observable<string[]> {
-        return this.portfolioItem.pipe(
-            takeUntil(this.unsubscribe),
-            switchMap(portfolio => of(portfolio.items.map(x => x.image)))
-        );
+    public get images(): string[] {
+        return this.project.items.map(x => x.image);
     }
 
-    private get portfolioItem(): Observable<Project> {
-        return this.route.params.pipe(
-            takeUntil(this.unsubscribe),
-            switchMap(params => of(this.gallery.project(params['id'])))
-        );
+    private get project(): Project {
+        return this.route.snapshot.data['project'];
     }
 
     constructor(
-        private gallery: GalleryService,
         private header: HeaderService,
         private imageInfo: ImageInfoService,
         private loader: ImageLoadService,
         private masonry: MasonryService,
         private route: ActivatedRoute,
+        private router: Router
     ) {
         super();
     }
 
     ngOnInit() {
-        this.header.TitleProvider = this.portfolioItem
-            .pipe(
-                takeUntil(this.unsubscribe),
-                filter(p => !!p),
-                switchMap(p => of(p.title))
-            );
-        this.header.SubtitleProvider = this.portfolioItem
-            .pipe(
-                takeUntil(this.unsubscribe),
-                filter(p => !!p),
-                switchMap(p => of(p.description))
-            );
+        this.header.TitleProvider = of(this.project.title);
+        this.header.SubtitleProvider = of(this.project.description);
     }
 
     public ngAfterViewInit() {
@@ -114,6 +78,14 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         super.ngOnDestroy();
         this.header.TitleProvider = null;
         this.header.SubtitleProvider = null;
+    }
+
+    public openProjectItem(projectItemIndex: number): void {
+        if (this.project.items.length <= projectItemIndex) {
+            return;
+        }
+        const itemId = this.project.items[projectItemIndex].id;
+        this.router.navigate([this.router.url, itemId]);
     }
 
     private construct(info: ElementInfo[]) {

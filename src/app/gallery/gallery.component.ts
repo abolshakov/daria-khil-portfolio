@@ -36,7 +36,7 @@ export class GalleryComponent extends Unsubscribable {
     super();
   }
 
-  openProject(item: Project): void {
-    this.router.navigate([this.router.url, item.id]);
+  public openProject(item: Project): void {
+    this.router.navigate([this.router.url, item.id, 'fragments']);
   }
 }

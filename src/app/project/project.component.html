@@ -1,6 +1,6 @@
 <div class="space-holder" #container>
   <div *ngIf="loading">LOADING...</div>
   <div class="container" [ngClass]="{'hidden': loading}">
-    <img *ngFor="let source of sources | async" src="{{source}}" #img />
+    <img *ngFor="let image of images; let index = index" src="{{image}}" #img (click)="openProjectItem(index)" />
   </div>
 </div>

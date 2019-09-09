@@ -1,0 +1,9 @@
+<div class="space-holder" #container>
+  <ng-container *ngIf="projectItem.video; then embedVideo; else embedImage"></ng-container>
+  <ng-template #embedVideo>
+    <div [innerHtml]="videoHtml"></div>
+  </ng-template>
+  <ng-template #embedImage>
+    <img #image src="{{imageSource}}" (click)="onContentClick()" [ngClass]="cssClass" />
+  </ng-template>
+</div>
