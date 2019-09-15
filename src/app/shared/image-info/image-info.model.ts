@@ -1,21 +1,24 @@
 import { ElementInfo } from '../masonry/element-info.interface';
-import { Size } from '../masonry/size.model';
+import { RateableSize } from '../masonry/rateable-size.model';
 
-export class ImageInfo extends Size implements ElementInfo {
-    public get size(): Size {
-        return new Size(this.width, this.height);
+export class ImageInfo extends RateableSize implements ElementInfo {
+    public get size(): RateableSize {
+        return new RateableSize(this.width, this.height);
     }
 
-    public set size(value: Size) {
+    public set size(value: RateableSize) {
         this._width = value.width;
         this._height = value.height;
     }
 
-    constructor(size: Size, public margins: Size) {
+    constructor(size: RateableSize, public margins: RateableSize) {
         super(size.width, size.height);
     }
 
     public clone(): ElementInfo {
-        return new ImageInfo(new Size(this.size.width, this.size.height), new Size(this.margins.width, this.margins.height));
+        return new ImageInfo(
+            new RateableSize(this.size.width, this.size.height),
+            new RateableSize(this.margins.width, this.margins.height)
+        );
     }
 }

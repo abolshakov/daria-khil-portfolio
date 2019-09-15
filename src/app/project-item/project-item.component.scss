@@ -8,6 +8,18 @@
     margin: em(16);
 }
 
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+::ng-deep iframe {
+    height: 100%;
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     flex-grow: 0;

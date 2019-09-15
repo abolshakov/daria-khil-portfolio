@@ -1,9 +1,9 @@
 <div class="space-holder" #container>
   <ng-container *ngIf="projectItem.video; then embedVideo; else embedImage"></ng-container>
   <ng-template #embedVideo>
-    <div [innerHtml]="videoHtml"></div>
+    <div #video class="video" [innerHtml]="videoHtml"></div>
   </ng-template>
   <ng-template #embedImage>
-    <img #image src="{{imageSource}}" (click)="onContentClick()" [ngClass]="cssClass" />
+    <img #image src="{{imageSource}}" (click)="onContentClick()" [ngClass]="{'clickable': !!this.projectItem.url}" />
   </ng-template>
 </div>

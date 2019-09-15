@@ -1,9 +1,9 @@
-import { Size } from './size.model';
+import { RateableSize } from './rateable-size.model';
 
 export interface ElementInfo {
-    size: Size;
+    size: RateableSize;
     width: number;
     height: number;
-    margins: Size;
+    margins: RateableSize;
     clone(): ElementInfo;
 }

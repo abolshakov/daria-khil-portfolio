@@ -1,12 +1,11 @@
-import { AlertSnackComponent } from '../alert-snack/alert-snack.component';
-import { AlertSnackModule } from '../alert-snack/alert-snack.module';
+import { AlertSnackComponent } from '../../alert-snack/alert-snack.component';
+import { AlertSnackModule } from '../../alert-snack/alert-snack.module';
 import { CommonModule } from '@angular/common';
 import { FooterModule } from '../footer/footer.module';
-import { GalleryModule } from '../gallery/gallery.module';
+import { GalleryModule } from '../../gallery/gallery.module';
 import { HeaderModule } from '../header/header.module';
-import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
+import { MainModule } from '../main/main.module';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { ShellComponent } from './shell.component';
 
 @NgModule({
@@ -16,8 +15,7 @@ import { ShellComponent } from './shell.component';
     GalleryModule,
     HeaderModule,
     FooterModule,
-    MaterialAndFlexModule,
-    RouterModule
+    MainModule
   ],
   declarations: [ShellComponent],
   entryComponents: [AlertSnackComponent],

@@ -1,24 +1,10 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnDestroy,
-  Renderer2,
-  ViewChild
-} from '@angular/core';
-import {
-  animate,
-  AnimationBuilder,
-  AnimationFactory,
-  AnimationPlayer,
-  query,
-  style
-} from '@angular/animations';
+import { AfterViewInit, Component, ElementRef, OnDestroy, Renderer2, ViewChild } from '@angular/core';
+import { animate, AnimationBuilder, AnimationFactory, AnimationPlayer, query, style } from '@angular/animations';
 import { filter, map, takeUntil } from 'rxjs/operators';
-import { fromEvent } from 'rxjs';
+import { fromEvent, Observable } from 'rxjs';
 import { HeaderService } from './shared/header.service';
 import { ResizeSensor } from 'css-element-queries';
-import { Unsubscribable } from '../shared/unsubscribable';
+import { Unsubscribable } from 'src/app/shared/unsubscribable';
 
 @Component({
   selector: 'pfo-header',
@@ -42,12 +28,16 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
     return this.docked;
   }
 
-  public get contentTitle(): string {
-    return this.service.ContentTitle;
+  public get contentTitle(): Observable<string> {
+    return this.service.contentTitle;
   }
 
-  public get contentSubtitle(): string {
-    return this.service.ContentSubtitle;
+  public get contentSubtitle(): Observable<string> {
+    return this.service.contentSubtitle;
+  }
+
+  private get dockedHeight(): number {
+    return this.navRef.nativeElement.getBoundingClientRect().height;
   }
 
   constructor(
@@ -61,6 +51,12 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   public ngAfterViewInit() {
     this.navSensor = new ResizeSensor(this.navBodyRef.nativeElement, () => this.dockNavigation());
     this.player = this.buildFactory().create(this.headerRef.nativeElement);
+
+    this.setDockedHeight();
+
+    fromEvent(window, 'resize')
+      .pipe(takeUntil(this.unsubscribe))
+      .subscribe(() => this.setDockedHeight());
 
     fromEvent(window, 'scroll')
       .pipe(
@@ -96,8 +92,12 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
 
   private dockNavigation() {
     this.docked = this.titleRef.nativeElement.getBoundingClientRect().bottom < 0;
-    this.renderer.setStyle(this.navHolderRef.nativeElement, 'height', this.navRef.nativeElement.getBoundingClientRect().height + 'px');
+    this.renderer.setStyle(this.navHolderRef.nativeElement, 'height', this.dockedHeight + 'px');
     this.renderer.setStyle(this.navHolderRef.nativeElement, 'display', this.docked ? 'block' : 'none');
+  }
+
+  private setDockedHeight() {
+    this.service.dockedHeight.next(this.dockedHeight);
   }
 }
 

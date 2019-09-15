@@ -1,16 +1,16 @@
 import { ActivatedRoute, Router } from '@angular/router';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Direction } from '../shared/masonry/direction.enum';
 import { ElementInfo } from '../shared/masonry/element-info.interface';
 import { fromEvent, of, ReplaySubject } from 'rxjs';
-import { HeaderService } from '../header/shared/header.service';
+import { HeaderService } from '../layout/header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
 import { Project } from '../shared/gallery/gallery.service';
-import { Size } from '../shared/masonry/size.model';
+import { RateableSize } from '../shared/masonry/rateable-size.model';
 import { take, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
-import { AfterViewInit, Component, ViewChild, OnDestroy, ElementRef, ViewChildren, QueryList, OnInit, } from '@angular/core';
 
 @Component({
     selector: 'pfo-project',
@@ -44,9 +44,12 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         super();
     }
 
-    ngOnInit() {
-        this.header.TitleProvider = of(this.project.title);
-        this.header.SubtitleProvider = of(this.project.description);
+    public ngOnInit() {
+        if (this.project.items.length === 1) {
+            this.openProjectItem(0);
+        }
+        this.header.titleProvider = of(this.project.title);
+        this.header.subtitleProvider = of(this.project.description);
     }
 
     public ngAfterViewInit() {
@@ -76,8 +79,8 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
     public ngOnDestroy() {
         super.ngOnDestroy();
-        this.header.TitleProvider = null;
-        this.header.SubtitleProvider = null;
+        this.header.titleProvider = null;
+        this.header.subtitleProvider = null;
     }
 
     public openProjectItem(projectItemIndex: number): void {
@@ -89,10 +92,10 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     private construct(info: ElementInfo[]) {
-        const container = this.containerRef.nativeElement;
-        const width = container.clientWidth;
-        const height = Math.min(window.innerHeight, window.innerWidth) / 3;
-        const lineSize = new Size(width, height);
+        const style = window.getComputedStyle(this.containerRef.nativeElement);
+        const width = Math.floor(Number.parseFloat(style.width));
+        const height = document.documentElement.clientHeight / 3;
+        const lineSize = new RateableSize(width, height);
         const updatedInfo = this.masonry.construct(info, lineSize, Direction.row);
         this.imageInfo.update(this.imageRefs.map(r => r.nativeElement), updatedInfo);
     }

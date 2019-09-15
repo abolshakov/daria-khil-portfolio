@@ -1,6 +1,6 @@
 @import "~@angular/material/theming";
-@import "../../styles/em-calc";
-@import "../../styles/layout.variables";
+@import "../../../styles/em-calc";
+@import "../../../styles/layout.variables";
 
 .header {
     position: relative;
@@ -72,6 +72,8 @@
 
 .content-subtitle {
     padding: em(8) 0 0;
+    margin: auto;
+    max-width: 60%;
     color: #a5a5a5;
     font-size: em(18);
     text-align: center;

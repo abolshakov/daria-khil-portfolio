@@ -7,19 +7,14 @@ import { KeepInTouchComponent } from './keep-in-touch/keep-in-touch.component';
 import { KeepInTouchModule } from './keep-in-touch/keep-in-touch.module';
 import { MatRippleModule } from '@angular/material';
 import { NavigationArea } from './navigation/shared/navigation-area.enum';
-import {
-  NavigationEnd,
-  Router,
-  RouterModule,
-  Routes
-  } from '@angular/router';
+import { NavigationEnd, Router, RouterModule, Routes } from '@angular/router';
 import { NavigationRegistryService } from './navigation/shared/navigation-registry.service';
 import { NgModule } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { ProjectItemResolver } from './resolvers/project-item.resolver';
 import { ProjectResolver } from './resolvers/project.resolver';
-import { ShellComponent } from './shell/shell.component';
+import { ShellComponent } from './layout/shell/shell.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'projects', pathMatch: 'full' },

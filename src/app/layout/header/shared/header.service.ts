@@ -1,7 +1,12 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { NavigationItem } from 'src/app/navigation/shared/navigation-item';
 import { NavigationRegistryService } from 'src/app/navigation/shared/navigation-registry.service';
-import { Observable, of, Subscription } from 'rxjs';
+import {
+    Observable,
+    of,
+    ReplaySubject,
+    Subscription
+    } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
@@ -11,42 +16,36 @@ export class HeaderService {
 
     private readonly defaultSubtitle: Observable<string> = of('');
 
-    private _title = '';
-    private _subtitle = '';
-
     private titleSubscription: Subscription;
     private subtitleSubscription: Subscription;
 
-    public get ContentTitle(): string {
-        return this._title;
-    }
+    public readonly dockedHeight = new ReplaySubject<number>(1);
 
-    public get ContentSubtitle(): string {
-        return this._subtitle;
-    }
+    public readonly contentTitle = new EventEmitter<string>(true);
+    public readonly contentSubtitle = new EventEmitter<string>(true);
 
-    public set TitleProvider(provider: Observable<string>) {
+    public set titleProvider(provider: Observable<string>) {
         if (this.titleSubscription) {
             this.titleSubscription.unsubscribe();
         }
         if (provider === null) {
             provider = this.defaultTitle;
         }
-        this.titleSubscription = provider.subscribe(title => this._title = title);
+        this.titleSubscription = provider.subscribe(title => this.contentTitle.next(title));
     }
 
-    public set SubtitleProvider(provider: Observable<string>) {
+    public set subtitleProvider(provider: Observable<string>) {
         if (this.subtitleSubscription) {
             this.subtitleSubscription.unsubscribe();
         }
         if (provider === null) {
             provider = this.defaultSubtitle;
         }
-        this.subtitleSubscription = provider.subscribe(subtitle => this._subtitle = subtitle);
+        this.subtitleSubscription = provider.subscribe(subtitle => this.contentSubtitle.next(subtitle));
     }
 
     constructor(private navigation: NavigationRegistryService) {
-        this.TitleProvider = this.defaultTitle;
-        this.SubtitleProvider = this.defaultSubtitle;
+        this.titleProvider = this.defaultTitle;
+        this.subtitleProvider = this.defaultSubtitle;
     }
 }

@@ -1,7 +1,8 @@
 import { ElementInfo } from '../masonry/element-info.interface';
 import { ImageInfo } from './image-info.model';
 import { Injectable } from '@angular/core';
-import { Size } from '../masonry/size.model';
+import { RateableSize } from '../masonry/rateable-size.model';
+import { HtmlHelper } from '../html.helper';
 
 @Injectable({ providedIn: 'root' })
 export class ImageInfoService {
@@ -21,14 +22,12 @@ export class ImageInfoService {
         });
     }
 
-    private imageSize(image: HTMLImageElement): Size {
-        return new Size(image.naturalWidth, image.naturalHeight);
+    private imageSize(image: HTMLImageElement): RateableSize {
+        return new RateableSize(image.naturalWidth, image.naturalHeight);
     }
 
-    private imageMargins(image: HTMLImageElement): Size {
-        const style = window.getComputedStyle(image);
-        const width = Number.parseFloat(style.marginLeft) + Number.parseFloat(style.marginRight);
-        const height = Number.parseFloat(style.marginTop) + Number.parseFloat(style.marginBottom);
-        return new Size(width, height);
+    private imageMargins(image: HTMLImageElement): RateableSize {
+        const margins = HtmlHelper.margins(image);
+        return new RateableSize(margins.width, margins.height);
     }
 }

@@ -1,9 +1,8 @@
-export class Size {
-    protected _width: number;
-    protected _height: number;
+import { Size } from '../size-model';
 
+export class RateableSize extends Size {
     public get width(): number {
-        return this._width;
+        return super.width;
     }
 
     public set width(value: number) {
@@ -11,7 +10,7 @@ export class Size {
     }
 
     public get height(): number {
-        return this._height;
+        return super.height;
     }
 
     public set height(value: number) {
@@ -19,8 +18,7 @@ export class Size {
     }
 
     constructor(width: number, height: number) {
-        this._width = width;
-        this._height = height;
+        super(width, height);
     }
 
     private get ratio(): number {

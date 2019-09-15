@@ -1,11 +1,11 @@
 import { Direction } from './direction.enum';
-import { Size } from './size.model';
+import { RateableSize } from './rateable-size.model';
 
 export class RelativeSize {
-    private _size: Size;
+    private _size: RateableSize;
 
-    public get size(): Size {
-        return new Size(this._size.width, this._size.height);
+    public get size(): RateableSize {
+        return new RateableSize(this._size.width, this._size.height);
     }
 
     public get mainAxis(): number {
@@ -32,7 +32,7 @@ export class RelativeSize {
         return this.direction === Direction.row ? 'height' : 'width';
     }
 
-    constructor(size: Size, public direction: Direction) {
-        this._size = new Size(size.width, size.height);
+    constructor(size: RateableSize, public direction: Direction) {
+        this._size = new RateableSize(size.width, size.height);
     }
 }

@@ -4,14 +4,14 @@ import { Injectable } from '@angular/core';
 import { Line } from './line.model';
 import { OptimizationStrategy } from './optimization.strategy';
 import { RelativeSize } from './relative-size.model';
-import { Size } from './size.model';
+import { RateableSize } from './rateable-size.model';
 import { Wall } from './wall.model';
 
 @Injectable({ providedIn: 'root' })
 export class MasonryService {
     constructor(private strategy: OptimizationStrategy) { }
 
-    public construct(elements: ElementInfo[], lineSize: Size, direction: Direction): ElementInfo[] {
+    public construct(elements: ElementInfo[], lineSize: RateableSize, direction: Direction): ElementInfo[] {
         const relativeSize = new RelativeSize(lineSize, direction);
         const wall = this.build(elements, relativeSize, [new Wall()]);
         wall.fitLines();

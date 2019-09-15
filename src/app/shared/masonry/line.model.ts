@@ -2,8 +2,6 @@ import { ElementInfo } from './element-info.interface';
 import { RelativeSize } from './relative-size.model';
 
 export class Line {
-    private readonly roundingCompensation = 0.5;
-
     private _size: RelativeSize;
     private _elements: ElementInfo[] = [];
     private _freeSpace: number;
@@ -18,7 +16,6 @@ export class Line {
 
     public constructor(relativeSize: RelativeSize) {
         this._size = new RelativeSize(relativeSize.size, relativeSize.direction);
-        this._size.mainAxis -= this.roundingCompensation;
         this._freeSpace = this._size.mainAxis;
     }
 
@@ -76,7 +73,8 @@ export class Line {
         });
 
         const delta = this._freeSpace - freeSpaceDecreased;
-        const rise = delta ? this._freeSpace / delta : 0;
+        let rise = delta ? this._freeSpace / delta : 0;
+        rise = Math.floor(rise * 100) / 100;
         return rise;
     }
 }

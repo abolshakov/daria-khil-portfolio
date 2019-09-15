@@ -1,0 +1,12 @@
+@import "../../../styles/em-calc";
+@import "../../../styles/layout.variables";
+
+main {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.main-content {
+    margin: em(16);
+    max-width: em(map-get($layout, max-width));
+}

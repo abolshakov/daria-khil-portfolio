@@ -21,7 +21,8 @@ export interface ProjectItem {
 
 @Injectable({ providedIn: 'root' })
 export class GalleryService {
-    private readonly imagesPath = '../assets/images/portfolio/';
+    private readonly imagesPath = 'assets/images/portfolio/';
+    private readonly blankImagePath = 'assets/images/app/blank.png';
     private readonly projects = new Map<number, Project>();
 
     public get portfolio(): Project[] {
@@ -43,6 +44,8 @@ export class GalleryService {
             for (const item of project.items) {
                 if (item.image) {
                     item.image = this.imagesPath + item.image;
+                } else {
+                    item.image = this.blankImagePath;
                 }
             }
         }
