@@ -46,7 +46,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
     public ngOnInit() {
         if (this.project.items.length === 1) {
-            this.openProjectItem(0);
+            this.openProjectItem(0, true);
         }
         this.header.titleProvider = of(this.project.title);
         this.header.subtitleProvider = of(this.project.description);
@@ -83,12 +83,12 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         this.header.subtitleProvider = null;
     }
 
-    public openProjectItem(projectItemIndex: number): void {
-        if (this.project.items.length <= projectItemIndex) {
+    public openProjectItem(projectItemIndex: number, replaceUrl: boolean = false): void {
+        if (projectItemIndex < 0 || projectItemIndex >= this.project.items.length) {
             return;
         }
         const itemId = this.project.items[projectItemIndex].id;
-        this.router.navigate([this.router.url, itemId]);
+        this.router.navigate([this.router.url, itemId], {replaceUrl: replaceUrl});
     }
 
     private construct(info: ElementInfo[]) {

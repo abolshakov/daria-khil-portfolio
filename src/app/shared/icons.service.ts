@@ -15,6 +15,8 @@ export class IconsService {
         this.fromSvg('instagram', '../assets/icons/instagram.svg');
         this.fromSvg('skype', '../assets/icons/skype.svg');
         this.fromSvg('mail', '../assets/icons/mail.svg');
+        this.fromSvg('arrow_back', '../assets/icons/arrow_back.svg');
+        this.fromSvg('arrow_forward', '../assets/icons/arrow_forward.svg');
     }
 
     private fromSvg(name: string, path: string) {

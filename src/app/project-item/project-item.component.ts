@@ -1,7 +1,7 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
-import { fromEvent, Observable, of } from 'rxjs';
+import { fromEvent, Observable, of, Subscription } from 'rxjs';
 import { HeaderService } from '../layout/header/shared/header.service';
 import { HtmlHelper } from '../shared/html.helper';
 import { map, switchMap, take, takeUntil } from 'rxjs/operators';
@@ -18,9 +18,13 @@ import { Unsubscribable } from '../shared/unsubscribable';
     styleUrls: ['./project-item.component.scss'],
 })
 export class ProjectItemComponent extends Unsubscribable implements OnInit, AfterViewInit, OnDestroy {
-    @ViewChild('container', { static: true }) containerRef: ElementRef<HTMLElement>;
+    @ViewChild('container', { static: false }) containerRef: ElementRef<HTMLElement>;
     @ViewChild('image', { static: false }) imageRef: ElementRef<HTMLImageElement>;
     @ViewChild('video', { static: false }) videoRef: ElementRef<HTMLElement>;
+
+    private subscribtion: Subscription;
+    private _prev?: number;
+    private _next?: number;
 
     public videoHtml: SafeHtml;
 
@@ -34,6 +38,14 @@ export class ProjectItemComponent extends Unsubscribable implements OnInit, Afte
 
     public get imageSource(): string {
         return this.projectItem.image;
+    }
+
+    public get prev(): number {
+        return this._prev;
+    }
+
+    public get next(): number {
+        return this._next;
     }
 
     private get video(): HTMLElement {
@@ -54,25 +66,72 @@ export class ProjectItemComponent extends Unsubscribable implements OnInit, Afte
     }
 
     constructor(
+        private activatedRote: ActivatedRoute,
         private header: HeaderService,
         private shell: ShellService,
         private route: ActivatedRoute,
         private renderer: Renderer2,
+        private router: Router,
         private videoService: EmbedVideoService
     ) {
         super();
     }
 
     public ngOnInit() {
+        this.subscribtion = this.activatedRote.params.subscribe(() => {
+            if (this.subscribtion) {
+                console.log('ON INIT');
+                this.unsubscribe.next();
+                this.initialize();
+                this.subscribe();
+            }
+        });
+        this.initialize();
+    }
+
+    public ngAfterViewInit() {
+        this.subscribe();
+    }
+
+    public ngOnDestroy() {
+        super.ngOnDestroy();
+        this.subscribtion.unsubscribe();
+        this.header.titleProvider = null;
+        this.header.subtitleProvider = null;
+    }
+
+    public onContentClick(): void {
+        if (!this.projectItem.url) {
+            return;
+        }
+        const win = window.open(this.projectItem.url, '_blank');
+        win.focus();
+    }
+
+    public openProjectItem(projectItemIndex: number): void {
+        if (projectItemIndex < 0 || projectItemIndex >= this.project.items.length) {
+            return;
+        }
+        const itemId = this.project.items[projectItemIndex].id;
+        const url = this.router.url.replace(`/${this.projectItem.id}`, `/${itemId}`);
+        this.router.navigate([url], { replaceUrl: true });
+    }
+
+    private initialize() {
         this.header.titleProvider = of(this.project.title);
         this.header.subtitleProvider = of(this.projectItem.description);
 
         this.videoHtml = this.projectItem.video
             ? this.videoService.embed(this.projectItem.video)
             : null;
+
+        const ids = this.project.items.map(x => x.id);
+        const index = ids.indexOf(this.projectItem.id);
+        this._prev = index > 0 ? index - 1 : null;
+        this._next = index >= 0 && index < ids.length - 1 ? index + 1 : null;
     }
 
-    public ngAfterViewInit() {
+    private subscribe() {
         if (this.imageRef) {
             fromEvent(this.image, 'load')
                 .pipe(
@@ -92,19 +151,6 @@ export class ProjectItemComponent extends Unsubscribable implements OnInit, Afte
         }
     }
 
-    public ngOnDestroy() {
-        super.ngOnDestroy();
-        this.header.titleProvider = null;
-        this.header.subtitleProvider = null;
-    }
-
-    public onContentClick(): void {
-        if (!this.projectItem.url) {
-            return;
-        }
-        const win = window.open(this.projectItem.url, '_blank');
-        win.focus();
-    }
 
     private videoSize(maxVisibleSize: Size): Size {
         const rateable = new RateableSize(16, 9);

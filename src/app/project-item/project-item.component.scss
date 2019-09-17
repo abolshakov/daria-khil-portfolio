@@ -1,11 +1,14 @@
 @import "../../styles/em-calc";
 
+$content-margin: 16;
+
 .space-holder {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: em(16);
+    margin: em($content-margin);
 }
 
 .video {
@@ -27,4 +30,38 @@ img {
 
 .clickable {
     cursor: pointer;
+}
+
+$button-size: 64;
+$button-padding: 8;
+$icon-size: $button-size - $button-padding * 2;
+
+.nav-button {
+    width: em($button-size);
+    height: em($button-size);
+    border-radius: em($button-size / 2);
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.nav-button-back {
+    margin-left: em(-$content-margin);
+    left: 0;
+}
+
+.nav-button-next {
+    margin-right: em(-$content-margin);
+    right: 0;
+}
+
+mat-icon.mat-icon {
+    width: em($icon-size);
+    height: em($icon-size);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba($color: white, $alpha: 0.7);
 }
