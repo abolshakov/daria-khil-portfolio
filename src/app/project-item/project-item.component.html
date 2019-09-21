@@ -1,11 +1,6 @@
 <div class="space-holder" #container>
-  <ng-container *ngIf="projectItem.video; then embedVideo; else embedImage"></ng-container>
-  <ng-template #embedVideo>
-    <div #video class="video" [innerHtml]="videoHtml"></div>
-  </ng-template>
-  <ng-template #embedImage>
-    <img #image src="{{imageSource}}" (click)="onContentClick()" [ngClass]="{'clickable': !!this.projectItem.url}" />
-  </ng-template>
+  <pfo-image-view *ngIf="!projectItem.video"></pfo-image-view>
+  <pfo-video-view *ngIf="projectItem.video"></pfo-video-view>
   <div *ngIf="prev !== null" class="nav-button nav-button-back" (click)="openProjectItem(prev)" matRipple>
     <mat-icon svgIcon="arrow_back"></mat-icon>
   </div>

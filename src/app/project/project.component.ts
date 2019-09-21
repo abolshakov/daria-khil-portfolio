@@ -7,7 +7,7 @@ import { HeaderService } from '../layout/header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
-import { Project } from '../shared/gallery/gallery.service';
+import { Project } from '../shared/gallery/project.model';
 import { RateableSize } from '../shared/masonry/rateable-size.model';
 import { take, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';

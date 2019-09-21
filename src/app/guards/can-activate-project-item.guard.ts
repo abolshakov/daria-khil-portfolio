@@ -1,30 +1,34 @@
-import {
-    ActivatedRouteSnapshot,
-    Router,
-    RouterStateSnapshot,
-    CanActivate
-    } from '@angular/router';
-import { GalleryService } from '../shared/gallery/gallery.service';
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
+import { CanActivateProjectGuard } from './can-activate-project.guard';
 import { Injectable } from '@angular/core';
+import { ProjectItem } from '../shared/gallery/project-item.model';
 
 @Injectable({ providedIn: 'root' })
 export class CanActivateProjectItemGuard implements CanActivate {
-    constructor(private gallery: GalleryService, private router: Router) { }
+    constructor(private router: Router, private projectGuard: CanActivateProjectGuard) { }
 
-    canActivate(route: ActivatedRouteSnapshot, _state: RouterStateSnapshot): boolean {
-        const projectId = Number(route.params['project-id']);
-        const itemId = Number(route.params['project-item-id']);
-        if (isNaN(projectId) || isNaN(itemId)) {
-            this.router.navigate(['']);
-        }
-        const project = this.gallery.project(projectId);
-        if (!project || !project.items || !project.items.length) {
-            this.router.navigate(['']);
-        }
-        const item = project.items.find(x => x.id === itemId);
+    public canActivate(route: ActivatedRouteSnapshot, _state: RouterStateSnapshot): boolean {
+        const item = this.currentItem(route);
         if (!item) {
             this.router.navigate(['']);
         }
         return true;
+    }
+
+    public currentItem(route: ActivatedRouteSnapshot): ProjectItem {
+        const project = this.projectGuard.currentProject(route);
+        if (!project || !project.items || !project.items.length) {
+            return null;
+        }
+        const itemId = Number(route.params['project-item-id']);
+        if (isNaN(itemId)) {
+            return null;
+        }
+        const item = project.item(itemId);
+        if (!item) {
+            return null;
+        }
+
+        return item;
     }
 }

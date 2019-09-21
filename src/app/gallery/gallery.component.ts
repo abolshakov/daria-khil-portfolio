@@ -1,8 +1,9 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Category } from '../shared/gallery/category.enum';
 import { Component } from '@angular/core';
-import { GalleryService, Project } from '../shared/gallery/gallery.service';
+import { GalleryService } from '../shared/gallery/gallery.service';
 import { of } from 'rxjs';
+import { Project } from '../shared/gallery/project.model';
 import { switchMap, take } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 

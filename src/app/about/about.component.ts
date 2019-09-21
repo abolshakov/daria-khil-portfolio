@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'pfo-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
   constructor() { }
 
-  ngOnInit() {
+  public viewResume() {
+    window.open('assets/documents/daria-khil-artist-cv.pdf', '_blank');
   }
-
 }

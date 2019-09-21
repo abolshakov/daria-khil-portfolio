@@ -1,35 +1,11 @@
 @import "../../styles/em-calc";
 
-$content-margin: 16;
-
 .space-holder {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: em($content-margin);
-}
-
-.video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-::ng-deep iframe {
-    height: 100%;
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-    flex-grow: 0;
-}
-
-.clickable {
-    cursor: pointer;
 }
 
 $button-size: 64;
@@ -47,12 +23,10 @@ $icon-size: $button-size - $button-padding * 2;
 }
 
 .nav-button-back {
-    margin-left: em(-$content-margin);
     left: 0;
 }
 
 .nav-button-next {
-    margin-right: em(-$content-margin);
     right: 0;
 }
 

@@ -1,15 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { ImageCardModule } from '../image-card/image-card.module';
+import { ImageViewModule } from '../media-view/image-view/image-view.module';
 import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
 import { NgModule } from '@angular/core';
 import { ProjectItemComponent } from './project-item.component';
+import { RouterModule } from '@angular/router';
+import { VideoViewModule } from '../media-view/video-view/video-view.module';
 
 @NgModule({
     exports: [ProjectItemComponent],
     imports: [
         CommonModule,
-        ImageCardModule,
-        MaterialAndFlexModule
+        MaterialAndFlexModule,
+        RouterModule,
+        ImageViewModule,
+        VideoViewModule
     ],
     declarations: [ProjectItemComponent]
 })

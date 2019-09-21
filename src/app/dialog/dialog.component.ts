@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { DialogData } from '../gallery/gallery.component';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
-import { Project } from '../shared/gallery/gallery.service';
+import { Project } from '../shared/gallery/project.model';
 
 @Component({
     selector: 'pfo-gallery-item-dialog',

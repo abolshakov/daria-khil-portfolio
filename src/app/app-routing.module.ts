@@ -15,6 +15,7 @@ import { ProjectItemComponent } from './project-item/project-item.component';
 import { ProjectItemResolver } from './resolvers/project-item.resolver';
 import { ProjectResolver } from './resolvers/project.resolver';
 import { ShellComponent } from './layout/shell/shell.component';
+import { VideoViewComponent } from './media-view/video-view/video-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'projects', pathMatch: 'full' },
@@ -47,7 +48,7 @@ const routes: Routes = [
         path: 'projects/categories/:category/:project-id/fragments/:project-item-id',
         component: ProjectItemComponent,
         canActivate: [CanActivateCategoryGuard, CanActivateProjectGuard, CanActivateProjectItemGuard],
-        resolve: { project: ProjectResolver, projectItem: ProjectItemResolver }
+        resolve: { project: ProjectResolver, projectItem: ProjectItemResolver },
       },
       {
         path: 'projects/:project-id/fragments/:project-item-id',
@@ -82,7 +83,7 @@ export class AppRoutingModule {
     navigationRegistry.register(2, '/projects/categories/concept', NavigationArea.Concept, 'Concept art', 'My visual deveolpment');
     navigationRegistry.register(3, '/projects/categories/illustration', NavigationArea.Illustration, 'Illustration', 'My illustrations');
     navigationRegistry.register(4, '/projects/categories/animation', NavigationArea.Animation, 'Animation', 'My animations');
-    navigationRegistry.register(5, '/contacts', NavigationArea.Contact, 'Contact', 'Contact me');
+    navigationRegistry.register(5, '/contacts', NavigationArea.Contact, 'About / Contact', 'Contact me');
 
     this.router.events
       .pipe(filter(e => e instanceof NavigationEnd))

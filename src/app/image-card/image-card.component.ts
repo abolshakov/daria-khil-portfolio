@@ -1,14 +1,6 @@
-import {
-    Component,
-    ElementRef,
-    Input,
-    OnChanges,
-    OnInit,
-    SimpleChange,
-    ViewChild
-    } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChange, ViewChild } from '@angular/core';
 import { EmbedVideoService } from '../shared/embed-video.service/embed-video.service';
-import { ProjectItem } from '../shared/gallery/gallery.service';
+import { ProjectItem } from '../shared/gallery/project-item.model';
 
 interface Margins {
     top: number;

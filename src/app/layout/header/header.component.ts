@@ -20,7 +20,7 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   @ViewChild('decor', { static: false }) decorRef: ElementRef<HTMLElement>;
   @ViewChild('pattern', { static: false }) patternRef: ElementRef<HTMLElement>;
 
-  private navSensor: ResizeSensor;
+  private sensor: ResizeSensor;
   private player: AnimationPlayer;
   private docked: boolean;
 
@@ -49,7 +49,7 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   }
 
   public ngAfterViewInit() {
-    this.navSensor = new ResizeSensor(this.navBodyRef.nativeElement, () => this.dockNavigation());
+    this.sensor = new ResizeSensor(this.navBodyRef.nativeElement, () => this.dockNavigation());
     this.player = this.buildFactory().create(this.headerRef.nativeElement);
 
     this.setDockedHeight();
@@ -71,7 +71,7 @@ export class HeaderComponent extends Unsubscribable implements AfterViewInit, On
   }
 
   public ngOnDestroy() {
-    this.navSensor.detach();
+    this.sensor.detach();
   }
 
   private buildFactory(): AnimationFactory {

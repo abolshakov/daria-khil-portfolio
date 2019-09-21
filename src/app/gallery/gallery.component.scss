@@ -1,6 +1,10 @@
 @import "~@angular/material/theming";
 @import "../../styles/em-calc";
 
+.container {
+    margin: em(-16);
+}
+
 mat-card {
     width: em(358) !important;
     height: em(458) !important;

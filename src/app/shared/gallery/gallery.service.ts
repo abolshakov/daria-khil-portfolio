@@ -1,57 +1,59 @@
 import { Injectable } from '@angular/core';
 import { PORTFOLIO } from './portfolio';
-
-export interface Project {
-    id?: number;
-    title?: string;
-    image?: string;
-    description?: string;
-    category?: string;
-    items?: ProjectItem[];
-}
-
-export interface ProjectItem {
-    id?: number;
-    image?: string;
-    margin?: string;
-    description?: string;
-    url?: string;
-    video?: string;
-}
+import { Project } from './project.model';
+import { ProjectItem } from './project-item.model';
 
 @Injectable({ providedIn: 'root' })
 export class GalleryService {
     private readonly imagesPath = 'assets/images/portfolio/';
     private readonly blankImagePath = 'assets/images/app/blank.png';
-    private readonly projects = new Map<number, Project>();
+    private readonly projects: Project[] = [];
+    private readonly projectsMap = new Map<number, Project>();
 
     public get portfolio(): Project[] {
-        return PORTFOLIO;
+        return this.projects;
     }
 
     constructor() {
-        for (const project of this.portfolio) {
-            this.projects.set(project.id, project);
+        for (const projectLike of PORTFOLIO) {
 
+            const items: ProjectItem[] = [];
+            for (const itemLike of projectLike.items) {
+                const item = itemLike as ProjectItem;
+                const projectItem = new ProjectItem(
+                    item.id,
+                    item.image,
+                    item.margin,
+                    item.description,
+                    item.url,
+                    item.video
+                );
+                if (projectItem.image) {
+                    projectItem.image = this.imagesPath + projectItem.image;
+                } else {
+                    projectItem.image = this.blankImagePath;
+                }
+                items.push(projectItem);
+            }
+
+            const project = new Project(
+                projectLike.id,
+                projectLike.title,
+                projectLike.image,
+                projectLike.description,
+                projectLike.category,
+                items
+            );
             if (project.image) {
                 project.image = this.imagesPath + project.image;
             }
 
-            if (!project.items) {
-                continue;
-            }
-
-            for (const item of project.items) {
-                if (item.image) {
-                    item.image = this.imagesPath + item.image;
-                } else {
-                    item.image = this.blankImagePath;
-                }
-            }
+            this.projectsMap.set(project.id, project);
         }
+        this.projects = Array.from(this.projectsMap.values());
     }
 
     public project(id: number | string): Project {
-        return this.projects.get(Number(id));
+        return this.projectsMap.get(Number(id));
     }
 }
