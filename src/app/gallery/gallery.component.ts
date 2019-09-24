@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { GalleryService } from '../shared/gallery/gallery.service';
 import { of } from 'rxjs';
 import { Project } from '../shared/gallery/project.model';
-import { switchMap, take } from 'rxjs/operators';
+import { switchMap, take, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 export interface DialogData {
@@ -21,11 +21,12 @@ export class GalleryComponent extends Unsubscribable {
   public get projects() {
     return this.route.params
       .pipe(
-        take(1),
+        takeUntil(this.unsubscribe),
         switchMap(params => of(params['category']
           ? this.gallery.portfolio.filter(x => x.category === Category[params['category']])
           : this.gallery.portfolio
-        ))
+        ).pipe(take(1))),
+        takeUntil(this.unsubscribe)
       );
   }
 

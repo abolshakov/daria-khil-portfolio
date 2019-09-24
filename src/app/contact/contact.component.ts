@@ -1,26 +1,12 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  ViewChild
-} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { catchError, debounceTime, distinctUntilChanged, filter, switchMap, take, takeUntil, tap } from 'rxjs/operators';
 import { ComparerService } from '../shared/comparer.service';
 import { ContactsService, Letter } from '../shared/contacts.service';
-import {
-  debounceTime,
-  distinctUntilChanged,
-  filter,
-  switchMap,
-  takeUntil,
-  tap,
-  catchError,
-  take
-} from 'rxjs/operators';
 import { FormBuilder, Validators } from '@angular/forms';
 import { fromEvent, of } from 'rxjs';
 import { markAllAsTouched } from '../shared/validation';
-import { Unsubscribable } from '../shared/unsubscribable';
 import { SnackBarService } from '../shared/snack-bar.service';
+import { Unsubscribable } from '../shared/unsubscribable';
 
 @Component({
   selector: 'pfo-contact',

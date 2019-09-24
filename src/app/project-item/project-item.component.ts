@@ -1,5 +1,5 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HeaderService } from '../layout/header/shared/header.service';
 import { of } from 'rxjs';
 import { Project } from '../shared/gallery/project.model';
@@ -12,11 +12,7 @@ import { takeUntil } from 'rxjs/operators';
     templateUrl: './project-item.component.html',
     styleUrls: ['./project-item.component.scss'],
 })
-export class ProjectItemComponent extends Unsubscribable implements OnInit, AfterViewInit, OnDestroy {
-    @ViewChild('container', { static: false }) containerRef: ElementRef<HTMLElement>;
-    @ViewChild('image', { static: false }) imageRef: ElementRef<HTMLImageElement>;
-    @ViewChild('video', { static: false }) videoRef: ElementRef<HTMLElement>;
-
+export class ProjectItemComponent extends Unsubscribable implements OnInit, OnDestroy {
     private _prev?: number;
     private _next?: number;
 
@@ -42,16 +38,12 @@ export class ProjectItemComponent extends Unsubscribable implements OnInit, Afte
         private router: Router
     ) {
         super();
-        console.log('PROJECT ITEM CREATED');
     }
 
     public ngOnInit() {
         this.route.params
             .pipe(takeUntil(this.unsubscribe))
             .subscribe(() => this.initialize());
-    }
-
-    public ngAfterViewInit() {
     }
 
     public ngOnDestroy() {
@@ -70,7 +62,6 @@ export class ProjectItemComponent extends Unsubscribable implements OnInit, Afte
     }
 
     private initialize() {
-        console.log('INITIALIZE PROJECt ITEM');
         this.header.titleProvider = of(this.project.title);
         this.header.subtitleProvider = of(this.projectItem.description);
 

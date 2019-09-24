@@ -1,12 +1,17 @@
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { ProjectItem } from '../shared/gallery/project-item.model';
 import { RateableSize } from '../shared/masonry/rateable-size.model';
 import { ShellService } from '../layout/shell/shared/shell.service';
 import { Size } from '../shared/size-model';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 export abstract class AbstractMediaView extends Unsubscribable {
+    protected get projectItem(): ProjectItem {
+        return this.route.snapshot.data['projectItem'];
+    }
+
     protected get maxVisibleSize(): Observable<Size> {
         return this.shell.maxVisibleSize.pipe(
             map(value => {

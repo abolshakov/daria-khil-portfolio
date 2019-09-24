@@ -1,12 +1,11 @@
 import { AbstractMediaView } from '../abstract-media-view';
 import { ActivatedRoute } from '@angular/router';
 import { AfterViewInit, Component, ElementRef, EventEmitter, Renderer2, ViewChild } from '@angular/core';
-import { filter, map, takeUntil, tap, switchMap } from 'rxjs/operators';
-import { ProjectItem } from '../../shared/gallery/project-item.model';
+import { fromEvent } from 'rxjs';
 import { RateableSize } from '../../shared/masonry/rateable-size.model';
 import { ShellService } from '../../layout/shell/shared/shell.service';
 import { Size } from '../../shared/size-model';
-import { fromEvent } from 'rxjs';
+import { switchMap, takeUntil, tap, take } from 'rxjs/operators';
 
 @Component({
     selector: 'pfo-image-view',
@@ -18,10 +17,6 @@ export class ImageViewComponent extends AbstractMediaView implements AfterViewIn
 
     public readonly imageSource = new EventEmitter<string>(true);
 
-    public get projectItem(): ProjectItem {
-        return this.route.snapshot.data['projectItem'];
-    }
-
     private get image(): HTMLImageElement {
         return this.imageRef.nativeElement;
     }
@@ -32,40 +27,28 @@ export class ImageViewComponent extends AbstractMediaView implements AfterViewIn
         private renderer: Renderer2
     ) {
         super(shell, route);
-        console.log('IMAGE VIEW CREATED');
     }
 
     public ngAfterViewInit() {
         this.route.params
             .pipe(
-                takeUntil(this.unsubscribe),
-                map(() => !this.projectItem.video && !!this.projectItem.image
-                    ? this.projectItem.image
-                    : '')
+                takeUntil(this.unsubscribe)
             )
-            .subscribe(src => {
-                console.log('IMAGE ROUTE CHANGED');
-                if (!src) {
-                    this.resizeImage(this.image, null);
-                }
-                this.imageSource.next(src);
+            .subscribe(() => {
+                this.imageSource.next(this.projectItem.image);
             });
 
         fromEvent(this.image, 'load')
             .pipe(
                 takeUntil(this.unsubscribe),
-                tap(() => console.log('IMAGE LOADED')),
-                switchMap(() => !this.projectItem.video && !!this.projectItem.image
-                    ? this.maxVisibleSize
-                    : null)
+                switchMap(() => this.maxVisibleSize.pipe(take(1)))
             )
             .subscribe(maxSize => this.resizeImage(this.image, maxSize));
 
         this.maxVisibleSize
             .pipe(
-                takeUntil(this.unsubscribe),
-                filter(() => !this.projectItem.video && !!this.projectItem.image),
-                tap(() => console.log('IMAGE VIEW SIZE CHANGED')))
+                takeUntil(this.unsubscribe)
+            )
             .subscribe(size => this.resizeImage(this.image, size));
     }
 
@@ -78,12 +61,6 @@ export class ImageViewComponent extends AbstractMediaView implements AfterViewIn
     }
 
     private resizeImage(image: HTMLImageElement, maxVisibleSize: Size) {
-        console.log('RESIZE IMAGE');
-        if (!maxVisibleSize) {
-            this.renderer.setStyle(image, 'width', 0);
-            this.renderer.setStyle(image, 'height', 0);
-            return;
-        }
         const size = this.imageSize(image, maxVisibleSize);
         this.renderer.setStyle(image, 'width', size.width + 'px');
         this.renderer.setStyle(image, 'height', size.height + 'px');
