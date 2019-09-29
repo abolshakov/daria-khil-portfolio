@@ -9,7 +9,6 @@ export const PORTFOLIO = [
       {
         id: 9977109,
         image: 'showreel-2019/showreel-2019.jpg',
-        margin: '15 0 0 15',
         description: 'Showreel 2019',
         video: 'https://vimeo.com/338517704'
       }
@@ -25,55 +24,46 @@ export const PORTFOLIO = [
       {
         id: 9705362,
         image: 'animation-for-boost-vr/boost-vr-animation.jpg',
-        margin: '50 0 0 50',
         description: 'Boost VR Animation',
         video: 'https://vimeo.com/330015242'
       },
       {
         id: 4178754,
-        image: 'animation-for-boost-vr/9398dab4-6503-49e0-af5a-6d087d99753b.jpg',
-        margin: '20 0 20 0'
+        image: 'animation-for-boost-vr/9398dab4-6503-49e0-af5a-6d087d99753b.jpg'
       },
       {
         id: 3455442,
         image: 'animation-for-boost-vr/character-intro.gif',
-        margin: '5 5 5 5',
         description: 'Character intro'
       },
       {
         id: 2997691,
         image: 'animation-for-boost-vr/putting-on-a-helmet.gif',
-        margin: '5 5 5 5',
         description: 'Putting on a helmet'
       },
       {
         id: 1264676,
         image: 'animation-for-boost-vr/ee75b06c-7775-4993-bb9a-5576cc2ebb1d.gif',
-        margin: '5 5 5 5',
         description: 'Interaction with car models in VR'
       },
       {
         id: 3863530,
         image: 'animation-for-boost-vr/car-transformations.gif',
-        margin: '5 5 5 5',
         description: 'Car transformations'
       },
       {
         id: 6962434,
         image: 'animation-for-boost-vr/interaction-with-car-models-in-vr.gif',
-        margin: '5 5 5 5',
         description: 'Swipe!'
       },
       {
         id: 4929330,
         image: 'animation-for-boost-vr/interriors-and-games-in-vr.gif',
-        margin: '5 5 5 5',
         description: 'Interriors and games in VR'
       },
       {
         id: 7110340,
         image: 'animation-for-boost-vr/frames.png',
-        margin: '20 0 20 0',
         description: 'Frames'
       },
       {
@@ -105,7 +95,6 @@ export const PORTFOLIO = [
       {
         id: 9039756,
         image: 'animation-for-boost-vr/logo-animation.gif',
-        margin: '20 0 20 0',
         description: 'Logo animation'
       }
     ]
@@ -253,19 +242,16 @@ export const PORTFOLIO = [
       {
         id: 6450583,
         image: 'illustrations-for-dogg-dog/illustration-on-the-website-page.jpg',
-        margin: '20 0 20 0',
         description: 'Illustration on the website page'
       },
       {
         id: 3936608,
         image: 'illustrations-for-dogg-dog/icons-for-the-types-of-the-website-members.jpg',
-        margin: '20 0 20 0',
         description: 'Icons for the types of the website members.'
       },
       {
         id: 2444781,
         image: 'illustrations-for-dogg-dog/404-page-illustration.jpg',
-        margin: '20 0 20 0',
         description: '404 page illustration.'
       },
       {
@@ -281,13 +267,11 @@ export const PORTFOLIO = [
       {
         id: 3277353,
         image: 'illustrations-for-dogg-dog/a-dog-owner-using-the-application.jpg',
-        margin: '20 0 20 0',
         description: 'A dog owner, using the application.'
       },
       {
         id: 2857787,
         image: 'illustrations-for-dogg-dog/a-dog-show-judge-and-his-profile.jpg',
-        margin: '20 0 20 0',
         description: 'A dog show judge and his profile.'
       },
       {
@@ -298,13 +282,11 @@ export const PORTFOLIO = [
       {
         id: 8056279,
         image: 'illustrations-for-dogg-dog/app-features-for-a-club-manager.jpg',
-        margin: '20 0 20 0',
         description: 'App features for a club manager.'
       },
       {
         id: 1610227,
         image: 'illustrations-for-dogg-dog/a-dog-breeder-and-his-connections-via-the-app.jpg',
-        margin: '20 0 20 0',
         description: 'A dog breeder and his connections via the app.'
       },
       {
@@ -315,7 +297,6 @@ export const PORTFOLIO = [
       {
         id: 6966705,
         image: 'illustrations-for-dogg-dog/home-page-illustration.jpg',
-        margin: '20 0 20 0',
         description: 'Home page illustration.'
       },
       {
@@ -962,73 +943,61 @@ export const PORTFOLIO = [
       {
         id: 6200030,
         image: 'set-designs-for-cryptosoul-game/source-of-energy.png',
-        margin: '20 0 20 0',
         description: 'Source of Energy'
       },
       {
         id: 7505036,
         image: 'set-designs-for-cryptosoul-game/central-area.png',
-        margin: '20 0 20 0',
         description: 'Central Area'
       },
       {
         id: 2860796,
         image: 'set-designs-for-cryptosoul-game/central-area-objects.png',
-        margin: '20 0 20 0',
         description: 'Central Area objects'
       },
       {
         id: 6404607,
         image: 'set-designs-for-cryptosoul-game/center-area-sketch.png',
-        margin: '20 0 20 0',
         description: 'Center Area sketch'
       },
       {
         id: 8562919,
         image: 'set-designs-for-cryptosoul-game/8f457188-efec-4e86-bf7f-32d08b812bcf.png',
-        margin: '20 0 20 0',
         description: 'Magic Lakes'
       },
       {
         id: 2934180,
         image: 'set-designs-for-cryptosoul-game/magic-lakes-objects.png',
-        margin: '20 0 20 0',
         description: 'Magic Lakes objects'
       },
       {
         id: 9391319,
         image: 'set-designs-for-cryptosoul-game/cc6c11c1-62a9-4895-8cea-0a55a9bd5621.png',
-        margin: '20 0 20 0',
         description: 'Magic Lakes objects'
       },
       {
         id: 3626336,
         image: 'set-designs-for-cryptosoul-game/magic-lakes-sketch.png',
-        margin: '20 0 20 0',
         description: 'Magic Lakes sketch'
       },
       {
         id: 8186299,
         image: 'set-designs-for-cryptosoul-game/crystal-rocks.png',
-        margin: '20 0 20 0',
         description: 'Crystal Rocks'
       },
       {
         id: 7401593,
         image: 'set-designs-for-cryptosoul-game/crystal-rocks-sketch.png',
-        margin: '20 0 20 0',
         description: 'Crystal Rocks sketch'
       },
       {
         id: 6790649,
         image: 'set-designs-for-cryptosoul-game/river-side.png',
-        margin: '20 0 20 0',
         description: 'River Side'
       },
       {
         id: 6803178,
         image: 'set-designs-for-cryptosoul-game/river-side-sketch.png',
-        margin: '20 0 20 0',
         description: 'River Side sketch'
       }
     ]
