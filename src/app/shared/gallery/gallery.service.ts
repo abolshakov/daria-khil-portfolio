@@ -23,7 +23,6 @@ export class GalleryService {
                 const projectItem = new ProjectItem(
                     item.id,
                     item.image,
-                    item.margin,
                     item.description,
                     item.url,
                     item.video

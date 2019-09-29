@@ -8,7 +8,7 @@ import { Size } from '../shared/size-model';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 export abstract class AbstractMediaView extends Unsubscribable {
-    protected get projectItem(): ProjectItem {
+    public get projectItem(): ProjectItem {
         return this.route.snapshot.data['projectItem'];
     }
 

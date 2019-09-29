@@ -1,0 +1,30 @@
+@import "em-calc";
+@import "icon-button.variables";
+
+$button-size: map-get($icon-button, size);
+$button-padding: map-get($icon-button, padding);
+$background-color: map-get($icon-button, background-color);
+$color: map-get($icon-button, color);
+$border-radius: map-get($icon-button, border-radius);
+
+$icon-size: $button-size - $button-padding * 2;
+
+.icon-button {
+    width: em($button-size);
+    height: em($button-size);
+    border-radius: em($border-radius);
+    background-color: $background-color;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+mat-icon.mat-icon {
+    width: em($icon-size);
+    height: em($icon-size);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color;
+}

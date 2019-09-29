@@ -1,5 +1,5 @@
 <div fxLayout="row wrap" fxLayoutAlign="center" class="container">
-  <mat-card fxFlex="1 1 auto" *ngFor="let item of projects | async" (click)="openProject(item)">
+  <mat-card fxFlex="1 1 auto" *ngFor="let item of projects | async" (click)="openProject(item)" matRipple>
     <img mat-card-image src="{{item.image}}" aria-hidden="true">
     <mat-card-content>
       <mat-card-title>{{item.title}}</mat-card-title>

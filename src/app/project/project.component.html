@@ -1,6 +1,11 @@
 <div class="space-holder" #container>
   <div *ngIf="loading">LOADING...</div>
   <div class="container" [ngClass]="{'hidden': loading}">
-    <img *ngFor="let image of images; let index = index" src="{{image}}" #img (click)="openProjectItem(index)" />
+    <div class="image" *ngFor="let image of images; let index = index" (click)="openProjectItem(index)" matRipple>
+      <div *ngIf="project.items[index].video" class="icon-button icon-button-play">
+        <mat-icon svgIcon="play"></mat-icon>
+      </div>
+      <img src="{{image}}" #img />
+    </div>
   </div>
 </div>

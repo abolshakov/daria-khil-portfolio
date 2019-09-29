@@ -1,4 +1,5 @@
 @import "../../styles/em-calc";
+@import "../../styles/icon-button";
 
 .space-holder {
     position: relative;
@@ -8,34 +9,10 @@
     justify-content: center;
 }
 
-$button-size: 64;
-$button-padding: 8;
-$icon-size: $button-size - $button-padding * 2;
-
-.nav-button {
-    width: em($button-size);
-    height: em($button-size);
-    border-radius: em($button-size / 2);
-    background-color: rgba($color: #000000, $alpha: 0.05);
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.nav-button-back {
+.icon-button-back {
     left: 0;
 }
 
-.nav-button-next {
+.icon-button-next {
     right: 0;
-}
-
-mat-icon.mat-icon {
-    width: em($icon-size);
-    height: em($icon-size);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgba($color: white, $alpha: 0.7);
 }

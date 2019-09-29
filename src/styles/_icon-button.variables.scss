@@ -1,0 +1,24 @@
+$icon-button: () !default;
+$icon-button: map-merge(
+    (
+        size: 64,
+        padding: 8,
+        background-color:
+            rgba(
+                $color: #000000,
+                $alpha: 0.05
+            ),
+        color:
+            rgba(
+                $color: white,
+                $alpha: 0.7
+            )
+    ),
+    $icon-button
+);
+$icon-button: map-merge(
+    (
+        border-radius: map-get($icon-button, size) / 2
+    ),
+    $icon-button
+);
