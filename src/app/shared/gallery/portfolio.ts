@@ -23,7 +23,7 @@ export const PORTFOLIO = [
     items: [
       {
         id: 9705362,
-        image: 'animation-for-boost-vr/boost-vr-animation.jpg',
+        image: 'animation-for-boost-vr/38d5e070-44b3-4b5f-9063-8a26a529f8a9.png',
         description: 'Boost VR Animation',
         video: 'https://vimeo.com/330015242'
       },
@@ -422,6 +422,11 @@ export const PORTFOLIO = [
         id: 2901393,
         image: 'locations-set-for-merge-cats-game/marine-ship-cat.png',
         description: 'Marine ship-cat'
+      },
+      {
+        id: 8736312,
+        image: 'locations-set-for-merge-cats-game/ef119928-7cab-45d6-95e5-1ed2e513aec4.png',
+        description: 'Set of trees'
       }
     ]
   },
@@ -679,60 +684,152 @@ export const PORTFOLIO = [
     image: 'character-designs-for-memoryator-game.png',
     description: 'Chaarcter development',
     category: 'Concept',
-    items: []
+    items: [
+      {
+        id: 7997429,
+        image: 'character-designs-for-memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
+        description: 'Main character design research'
+      },
+      {
+        id: 5585575,
+        image: 'character-designs-for-memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
+        description: 'Main character pose sheet'
+      },
+      {
+        id: 3517206,
+        image: 'character-designs-for-memoryator-game/a14e9d0b-c2d8-42f4-bad8-e823d7cf809c.png',
+        description: 'First-level Nightmare concept'
+      }
+    ]
   },
   {
     id: 7521358,
     title: 'Character Designs for MyRide',
     image: 'character-designs-for-my-ride.png',
     description: 'Designs and illustrations of the characters for the animated series, explaining MyRide\'s services.',
-    items: []
+    items: [
+      {
+        id: 9933808,
+        image: 'character-designs-for-my-ride/eecf6194-351d-4acb-a205-f45d9a96249f.png',
+        description: 'Barefoot'
+      },
+      {
+        id: 7900386,
+        image: 'character-designs-for-my-ride/083bfe04-f6c0-4322-a92d-042a2dac056e.jpg',
+        description: 'Barefoot sketches'
+      },
+      {
+        id: 9728258,
+        image: 'character-designs-for-my-ride/c970e0e6-6e75-47e2-a98e-f37510879261.png',
+        description: 'Barnes, the dog'
+      },
+      {
+        id: 3943235,
+        image: 'character-designs-for-my-ride/e77b32c6-3c5a-4446-ba9f-0f2acc565303.png',
+        description: 'Beatrice, the police officer'
+      },
+      {
+        id: 3854357,
+        image: 'character-designs-for-my-ride/61ad69a5-8b04-477b-8d1c-6e10dbe662ec.png',
+        description: 'Beatrice sketches'
+      },
+      {
+        id: 3315712,
+        image: 'character-designs-for-my-ride/096f29ba-456d-4ea4-86e8-0a72d6000283.png',
+        description: 'Fletcher'
+      },
+      {
+        id: 7398609,
+        image: 'character-designs-for-my-ride/d69bab5b-e2a5-4b89-8c91-d0b107cde064.png',
+        description: 'Professor Potts'
+      },
+      {
+        id: 9974830,
+        image: 'character-designs-for-my-ride/2c7e6a7b-a0f7-4515-9e87-a4af13cdf9bd.png',
+        description: 'Professor Potts sketches'
+      },
+      {
+        id: 1941400,
+        image: 'character-designs-for-my-ride/7fac254b-ef2c-4157-b55b-4f76c5c3be2e.png',
+        description: 'Gloria Potts'
+      },
+      {
+        id: 3875462,
+        image: 'character-designs-for-my-ride/8313ac54-25c1-42b6-b55a-0f1dea3f9a18.jpg',
+        description: 'Gloria Potts sketches'
+      },
+      {
+        id: 8706501,
+        image: 'character-designs-for-my-ride/79c77576-43c9-496a-8470-9928fe7be684.png',
+        description: 'Professor Potts with his pets'
+      },
+      {
+        id: 6266791,
+        image: 'character-designs-for-my-ride/141bfd99-6ef3-4417-956a-305bc8b97faf.png',
+        description: 'Tulip, the bird'
+      },
+      {
+        id: 8651019,
+        image: 'character-designs-for-my-ride/be48319e-98ad-4ff8-86c0-f9217b9cb85b.png',
+        description: 'Bird sketches'
+      },
+      {
+        id: 8734492,
+        image: 'character-designs-for-my-ride/e5359921-b441-487c-a69d-752abce9b04c.jpg',
+        description: 'Charles sketches'
+      },
+      {
+        id: 6157237,
+        image: 'character-designs-for-my-ride/84b4941e-5af8-4114-a1f0-0de9871ac3ae.jpg',
+        description: 'Character sketches'
+      }
+    ]
   },
   {
     id: 6614815,
-    title: 'Illustrations',
-    image: 'illustrations.png',
+    title: 'Digital Illustrations',
+    image: 'digital-illustrations.png',
     description: 'Collection of digital illustrations.',
     category: 'Illustration',
     items: [
       {
         id: 9686021,
-        image: 'illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
+        image: 'digital-illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
         description: '"A Bug\'s Life" fanart'
       },
       {
         id: 6572595,
-        image: 'illustrations/dr-folsbuben-s-adventure.jpg',
+        image: 'digital-illustrations/dr-folsbuben-s-adventure.jpg',
         description: 'Dr Folsbuben\'s Adventure'
       },
       {
         id: 6532804,
-        image: 'illustrations/owl-rider.jpg',
+        image: 'digital-illustrations/owl-rider.jpg',
         description: 'Owl rider'
       },
       {
         id: 6776108,
-        image: 'illustrations/domestic-christmas.jpg',
+        image: 'digital-illustrations/domestic-christmas.jpg',
         description: 'Domestic Christmas'
       },
       {
         id: 7449827,
-        image: 'illustrations/through-the-forest.jpg',
+        image: 'digital-illustrations/through-the-forest.jpg',
         description: 'Through the Forest'
       },
       {
         id: 6569582,
-        image: 'illustrations/snowball.png',
+        image: 'digital-illustrations/snowball.png',
         description: 'Snowball'
       },
       {
         id: 1057522,
-        image: 'illustrations/blizzard-s-paladin-fanart.png',
+        image: 'digital-illustrations/blizzard-s-paladin-fanart.png',
         description: 'Blizzard\'s Paladin fanart'
       },
       {
         id: 9526088,
-        image: 'illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
+        image: 'digital-illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
         description: 'Style test for Abbax animation, made with Hound Studio'
       }
     ]
@@ -1003,6 +1100,39 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 3459629,
+    title: 'Sights Illustrations',
+    image: 'sights-illustrations.png',
+    description: 'Illustrations of some Russian sights for the book cover.',
+    items: [
+      {
+        id: 7738893,
+        image: 'sights-illustrations/7afd1d91-98ae-471e-aa3a-0d9a8661f2bf.png',
+        description: 'Saint Basil\'s Cathedral'
+      },
+      {
+        id: 3464948,
+        image: 'sights-illustrations/edb49b7b-44bb-42c1-90a3-acbe36718afe.png',
+        description: 'Arc de Triomphe'
+      },
+      {
+        id: 6884139,
+        image: 'sights-illustrations/b779b2e8-886c-42c7-96b2-421785e630d2.png',
+        description: 'Kizhi Pogost'
+      },
+      {
+        id: 8189204,
+        image: 'sights-illustrations/961c400c-d7b0-42fd-8a28-6d8e10f15a74.png',
+        description: 'Kul Sharif Mosque'
+      },
+      {
+        id: 7002030,
+        image: 'sights-illustrations/e455f1f3-c5d6-4ce1-90ff-d6e1dd5e51f0.png',
+        description: 'Peterhof Palace'
+      }
+    ]
+  },
+  {
     id: 8946654,
     title: 'Explainer Videos',
     image: 'explainer-videos.png',
@@ -1010,22 +1140,28 @@ export const PORTFOLIO = [
     category: 'Animation',
     items: [
       {
-        id: 4996942,
-        image: 'explainer-videos/social-networks-for-codeur.jpg',
-        description: 'Social Networks for Codeur',
-        video: 'https://vimeo.com/266870205'
-      },
-      {
         id: 2862979,
-        image: 'explainer-videos/presentation-of-a-business-centre-project.png',
-        description: 'Presentation of a business centre project',
+        image: 'explainer-videos/b8922248-beb1-4d86-ae4f-a84aca699957.png',
+        description: 'Presentation of the business centre project in the Chelyabinsk City.',
         video: 'https://vimeo.com/315950896'
       },
       {
         id: 5686157,
-        image: 'explainer-videos/chelyabinsk-city-restauration.png',
-        description: 'Chelyabinsk City Restauration',
+        image: 'explainer-videos/51d6255a-e3c4-402b-94f6-c59d0131c21d.png',
+        description: 'Explainer video of the Smart City project.',
         video: 'https://vimeo.com/319157235'
+      },
+      {
+        id: 2235342,
+        image: 'explainer-videos/35aff08e-49c0-414f-b835-f28a872b9eef.png',
+        description: 'Illustrations for the animated video about Evotor\'s marketing success.',
+        video: 'https://vimeo.com/340274780'
+      },
+      {
+        id: 4996942,
+        image: 'explainer-videos/81b3956c-851b-4a5d-8316-a61ca9efa763.jpg',
+        description: 'Social Networks for Codeur',
+        video: 'https://vimeo.com/266870205'
       }
     ]
   },
@@ -1185,19 +1321,5 @@ export const PORTFOLIO = [
         description: 'Motion Pipe Studio'
       }
     ]
-  },
-  {
-    id: 3459629,
-    title: 'Sights Illustrations',
-    image: 'sights-illustrations.png',
-    description: 'Illustrations of some Russian sights for the book cover.',
-    items: []
-  },
-  {
-    id: 6249691,
-    title: 'Evotor Animation',
-    description: 'Illustrations for the animated video about Evotor\'s marketing success.',
-    category: 'Animation',
-    items: []
   }
 ];
