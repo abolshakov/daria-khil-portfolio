@@ -7,6 +7,6 @@ main {
 }
 
 .main-content {
-    margin: em(16);
+    margin: em(32);
     max-width: em(map-get($layout, max-width));
 }

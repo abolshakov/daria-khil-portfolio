@@ -1,6 +1,6 @@
+import { forkJoin, from, fromEvent, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { from, Observable, fromEvent, forkJoin } from 'rxjs';
-import { switchMap, tap, take, map } from 'rxjs/operators';
+import { map, switchMap, take, tap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class ImageLoadService {
@@ -13,7 +13,7 @@ export class ImageLoadService {
                         take(1),
                         map(() => image)
                     ))),
-                switchMap(() => forkJoin(loading))
+                switchMap(() => forkJoin(loading).pipe(take(1)))
             );
     }
 }

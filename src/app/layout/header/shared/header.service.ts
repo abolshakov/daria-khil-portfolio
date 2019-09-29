@@ -1,12 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { NavigationItem } from 'src/app/navigation/shared/navigation-item';
 import { NavigationRegistryService } from 'src/app/navigation/shared/navigation-registry.service';
-import {
-    Observable,
-    of,
-    ReplaySubject,
-    Subscription
-    } from 'rxjs';
+import { Observable, of, ReplaySubject, Subscription } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })

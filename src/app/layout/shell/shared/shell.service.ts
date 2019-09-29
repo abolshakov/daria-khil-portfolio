@@ -1,7 +1,6 @@
 import { combineLatest, Observable } from 'rxjs';
 import { ComparerService } from '../../../shared/comparer.service';
 import {
-    debounceTime,
     distinctUntilChanged,
     map,
     tap
@@ -17,13 +16,13 @@ export class ShellService {
     public get maxVisibleSize(): Observable<Size> {
         return combineLatest([this.header.dockedHeight, this.main.margins, this.footer.height])
             .pipe(
-                distinctUntilChanged(ComparerService.byAllFields),
                 map((values: [number, Size, number]) => {
                     const [dockedHeight, margins, footerHeight] = values;
                     const heigt = document.documentElement.clientHeight - dockedHeight - margins.height - footerHeight;
                     const width = document.documentElement.clientWidth - margins.width;
                     return new Size(width, heigt);
-                })
+                }),
+                distinctUntilChanged(ComparerService.byAllFields),
             );
     }
 

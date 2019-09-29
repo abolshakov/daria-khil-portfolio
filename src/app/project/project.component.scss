@@ -1,4 +1,5 @@
 @import "../../styles/em-calc";
+@import "../../styles/icon-button-play";
 
 $image-margin: 8;
 
@@ -7,7 +8,7 @@ $image-margin: 8;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: em(16 - $image-margin);
+    margin: em(-$image-margin);
 }
 
 .container {
@@ -24,4 +25,8 @@ img {
 
 .hidden {
     visibility: hidden;
+}
+
+.image {
+    position: relative;
 }

@@ -1,6 +1,7 @@
-import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { GalleryService, ProjectItem } from '../shared/gallery/gallery.service';
+import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
+import { GalleryService } from '../shared/gallery/gallery.service';
 import { Injectable } from '@angular/core';
+import { ProjectItem } from '../shared/gallery/project-item.model';
 
 @Injectable({ providedIn: 'root' })
 export class ProjectItemResolver implements Resolve<ProjectItem> {

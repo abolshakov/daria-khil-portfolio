@@ -1,0 +1,13 @@
+@import "icon-button.variables";
+
+$custom: (size: 128, padding: 16, border-radius: 8);
+$icon-button: map-merge($icon-button, $custom);
+
+@import "icon-button";
+
+.icon-button-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
