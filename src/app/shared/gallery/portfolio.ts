@@ -1025,7 +1025,7 @@ export const PORTFOLIO = [
         id: 5686157,
         image: 'explainer-videos/chelyabinsk-city-restauration.png',
         description: 'Chelyabinsk City Restauration',
-        url: 'https://vimeo.com/319157235'
+        video: 'https://vimeo.com/319157235'
       }
     ]
   },
