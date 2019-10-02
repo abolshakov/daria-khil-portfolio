@@ -1273,11 +1273,6 @@ export const PORTFOLIO = [
         id: 2584935,
         image: 'stickers/cats-sticker-pack.png',
         description: 'Cats Sticker pack'
-      },
-      {
-        id: 4738085,
-        image: 'stickers/preview.gif',
-        description: 'Preview'
       }
     ]
   },

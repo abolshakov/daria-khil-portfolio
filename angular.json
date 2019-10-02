@@ -25,7 +25,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/scripts"
+              "src/scripts",
+              { "glob": ".htaccess", "input": "src/", "output": "/" }
             ],
             "styles": [
               "src/styles.scss"

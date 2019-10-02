@@ -1,3 +1,6 @@
+@import "../../../styles/em-calc";
+@import "../../../styles/layout.variables";
+
 .app {
     min-height: 100vh;
 }
@@ -17,4 +20,6 @@ pfo-footer {
 pfo-main {
     flex-direction: column;
     flex-grow: 1;
+    align-self: center;
+    max-width: em(map-get($layout, max-width));
 }

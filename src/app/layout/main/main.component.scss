@@ -1,5 +1,4 @@
 @import "../../../styles/em-calc";
-@import "../../../styles/layout.variables";
 
 main {
     width: 100vw;
@@ -8,5 +7,4 @@ main {
 
 .main-content {
     margin: em(32);
-    max-width: em(map-get($layout, max-width));
 }
