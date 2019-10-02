@@ -550,163 +550,11 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 2893552,
-    title: 'Animations for Memoryator Game',
-    image: 'animations-for-memoryator-game.png',
-    description: 'Classic frame by frame animations of characters for the Memoryator Game.',
-    category: 'Animation',
-    items: [
-      {
-        id: 6221320,
-        image: 'animations-for-memoryator-game/e999903a-9bc4-4440-ace7-47eeeb29cb17.jpg'
-      },
-      {
-        id: 1202411,
-        image: 'animations-for-memoryator-game/aa0a0ed1-320d-45c9-bd3a-ccacabf4e5a5.jpg'
-      },
-      {
-        id: 7210286,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-hit-animation.gif',
-        description: '1st level Nightmare hit animation'
-      },
-      {
-        id: 7086540,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-idle-animation.gif',
-        description: '1st level Nightmare idle animation'
-      },
-      {
-        id: 8165164,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-run-animation.gif',
-        description: '1st level Nightmare run animation'
-      },
-      {
-        id: 5710994,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-hit-animation.gif',
-        description: '2nd level Nightmare hit animation'
-      },
-      {
-        id: 9407874,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-idle-animation.gif',
-        description: '2nd level Nightmare idle animation'
-      },
-      {
-        id: 3885994,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-run-animation.gif',
-        description: '2nd level Nightmare run animation'
-      },
-      {
-        id: 5106084,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-clap-animation.gif',
-        description: '3rd level Nightmare clap animation'
-      },
-      {
-        id: 1702797,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-idle-animation.gif',
-        description: '3rd level Nightmare idle animation'
-      },
-      {
-        id: 9918713,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-hit-animation.gif',
-        description: '3rd level Nightmare hit animation'
-      },
-      {
-        id: 8674179,
-        image: 'animations-for-memoryator-game/protagonist-animations-of-run.gif',
-        description: 'Protagonist animations of run'
-      },
-      {
-        id: 1082612,
-        image: 'animations-for-memoryator-game/protagonist-animations-of-actions.gif',
-        description: 'Protagonist animations of actions'
-      },
-      {
-        id: 9720027,
-        image: 'animations-for-memoryator-game/hare-animations.gif',
-        description: 'Hare animations'
-      },
-      {
-        id: 1081245,
-        image: 'animations-for-memoryator-game/wolf-animations.gif',
-        description: 'Wolf animations'
-      },
-      {
-        id: 7739676,
-        image: 'animations-for-memoryator-game/owl-animations.gif',
-        description: 'Owl animations'
-      },
-      {
-        id: 5125317,
-        image: 'animations-for-memoryator-game/owl-transformation.gif',
-        description: 'Owl transformation'
-      }
-    ]
-  },
-  {
-    id: 1289848,
-    title: 'Set Designs for Memoryator Game',
-    image: 'set-designs-for-memoryator-game.png',
-    description: 'Environment assets for the game\'s world.',
-    category: 'Concept',
-    items: [
-      {
-        id: 5394904,
-        image: 'set-designs-for-memoryator-game/a3b524ff-ae7c-4f85-a93c-da60c536b726.jpg'
-      },
-      {
-        id: 2791553,
-        image: 'set-designs-for-memoryator-game/ba53c354-7f99-4a87-8c95-18d4ddd4b764.png'
-      },
-      {
-        id: 1079053,
-        image: 'set-designs-for-memoryator-game/b07f9f1d-53b0-472a-9c76-aae215acfe29.png'
-      },
-      {
-        id: 3162940,
-        image: 'set-designs-for-memoryator-game/9ea5521f-4cf1-442a-b703-d66cd374caf0.png'
-      },
-      {
-        id: 7428497,
-        image: 'set-designs-for-memoryator-game/b8a30c0d-c05a-45c8-aa1c-f4c5870bdddf.png'
-      },
-      {
-        id: 5860536,
-        image: 'set-designs-for-memoryator-game/22c41499-60e8-49a9-a5c9-f57c61a79631.png'
-      },
-      {
-        id: 4455192,
-        image: 'set-designs-for-memoryator-game/d4eeebfb-58b7-459e-89ac-a42856bb246a.png'
-      }
-    ]
-  },
-  {
-    id: 5019519,
-    title: 'Character Designs for Memoryator Game',
-    image: 'character-designs-for-memoryator-game.png',
-    description: 'Chaarcter development',
-    category: 'Concept',
-    items: [
-      {
-        id: 7997429,
-        image: 'character-designs-for-memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
-        description: 'Main character design research'
-      },
-      {
-        id: 5585575,
-        image: 'character-designs-for-memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
-        description: 'Main character pose sheet'
-      },
-      {
-        id: 3517206,
-        image: 'character-designs-for-memoryator-game/a14e9d0b-c2d8-42f4-bad8-e823d7cf809c.png',
-        description: 'First-level Nightmare concept'
-      }
-    ]
-  },
-  {
     id: 7521358,
     title: 'Character Designs for MyRide',
     image: 'character-designs-for-my-ride.png',
     description: 'Designs and illustrations of the characters for the animated series, explaining MyRide\'s services.',
+    category: 'Concept',
     items: [
       {
         id: 9933808,
@@ -786,128 +634,51 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 6614815,
-    title: 'Digital Illustrations',
-    image: 'digital-illustrations.png',
-    description: 'Collection of digital illustrations.',
-    category: 'Illustration',
+    id: 1289848,
+    title: 'Set Designs for Memoryator Game',
+    image: 'set-designs-for-memoryator-game.png',
+    description: 'Environment assets for the game\'s world.',
+    category: 'Concept',
     items: [
       {
-        id: 9686021,
-        image: 'digital-illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
-        description: '"A Bug\'s Life" fanart'
+        id: 7428497,
+        image: 'set-designs-for-memoryator-game/d85b0731-a6f1-45f7-a5f8-361c8adbd6fd.png',
+        description: 'Brazier'
       },
       {
-        id: 6572595,
-        image: 'digital-illustrations/dr-folsbuben-s-adventure.jpg',
-        description: 'Dr Folsbuben\'s Adventure'
+        id: 5860536,
+        image: 'set-designs-for-memoryator-game/377429e2-df89-4eb1-8443-9bf394357df0.png',
+        description: 'Wreath-weaving table'
       },
       {
-        id: 6532804,
-        image: 'digital-illustrations/owl-rider.jpg',
-        description: 'Owl rider'
+        id: 6916819,
+        image: 'set-designs-for-memoryator-game/a537ef70-2f16-43af-aa4c-4ab41a0bfdaa.png',
+        description: 'Forest trees'
       },
       {
-        id: 6776108,
-        image: 'digital-illustrations/domestic-christmas.jpg',
-        description: 'Domestic Christmas'
+        id: 5394904,
+        image: 'set-designs-for-memoryator-game/588543fd-4226-464c-a361-d034535c77f0.png',
+        description: 'Animal totems'
       },
       {
-        id: 7449827,
-        image: 'digital-illustrations/through-the-forest.jpg',
-        description: 'Through the Forest'
+        id: 2791553,
+        image: 'set-designs-for-memoryator-game/c4f10ceb-88fd-4711-849d-9141b5575b8a.png',
+        description: 'Ground objects'
       },
       {
-        id: 6569582,
-        image: 'digital-illustrations/snowball.png',
-        description: 'Snowball'
+        id: 1079053,
+        image: 'set-designs-for-memoryator-game/ad2385e9-cf04-4ad4-95af-7ec0f9c0011a.png',
+        description: 'Roofed pillars'
       },
       {
-        id: 1057522,
-        image: 'digital-illustrations/blizzard-s-paladin-fanart.png',
-        description: 'Blizzard\'s Paladin fanart'
+        id: 3162940,
+        image: 'set-designs-for-memoryator-game/f24e9c50-b26d-40d2-9be1-315653ea1f79.png',
+        description: 'Spruce'
       },
       {
-        id: 9526088,
-        image: 'digital-illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
-        description: 'Style test for Abbax animation, made with Hound Studio'
-      }
-    ]
-  },
-  {
-    id: 3934960,
-    title: 'Illustrations and Web Design for CryptoSoul',
-    image: 'illustrations-and-web-design-for-crypto-soul.jpg',
-    description: 'Web design, illustrations, icons and posters for the project "CryptoSoul".',
-    category: 'Illustration',
-    items: [
-      {
-        id: 7736350,
-        image: 'illustrations-and-web-design-for-crypto-soul/fe4f6001-9ba6-40b5-b998-23989b3ae005.png'
-      },
-      {
-        id: 2680934,
-        image: 'illustrations-and-web-design-for-crypto-soul/62ff667e-36b1-4017-b4b4-013e8c0eace8.png',
-        url: 'https://cryptosoul.io'
-      },
-      {
-        id: 3258841,
-        image: 'illustrations-and-web-design-for-crypto-soul/1e567ff5-2fd0-4a3d-820d-417bccece964.jpg'
-      },
-      {
-        id: 3655781,
-        image: 'illustrations-and-web-design-for-crypto-soul/cd8b9097-9840-4a77-9f9f-0c245e6ef069.jpg'
-      },
-      {
-        id: 3408204,
-        image: 'illustrations-and-web-design-for-crypto-soul/fde65415-2bbe-4e2b-8617-38ba9371dfbb.jpg'
-      },
-      {
-        id: 7140653,
-        image: 'illustrations-and-web-design-for-crypto-soul/aec6744a-b999-4fa4-99c6-cd9ddd4f417f.jpg'
-      },
-      {
-        id: 2210082,
-        image: 'illustrations-and-web-design-for-crypto-soul/37be3088-4a30-466d-b694-35d57fb23478.jpg'
-      }
-    ]
-  },
-  {
-    id: 9730411,
-    title: 'Digital Paintings for CryptoSoul Game',
-    image: 'digital-paintings-for-crypto-soul-game.png',
-    description: 'Digital paintings, promotional illustrations and backgrounds for the CryptoSoul game.',
-    category: 'Illustration',
-    items: [
-      {
-        id: 7155101,
-        image: 'digital-paintings-for-crypto-soul-game/witch-raid.png',
-        description: 'Witch raid'
-      },
-      {
-        id: 7837752,
-        image: 'digital-paintings-for-crypto-soul-game/heroes.png',
-        description: 'Heroes'
-      },
-      {
-        id: 7667012,
-        image: 'digital-paintings-for-crypto-soul-game/canyon.png',
-        description: 'Canyon'
-      },
-      {
-        id: 4527085,
-        image: 'digital-paintings-for-crypto-soul-game/king-s-cave.png',
-        description: 'King\'s Cave'
-      },
-      {
-        id: 4850355,
-        image: 'digital-paintings-for-crypto-soul-game/outbreak.png',
-        description: 'Outbreak'
-      },
-      {
-        id: 7574848,
-        image: 'digital-paintings-for-crypto-soul-game/source-of-life.jpg',
-        description: 'Source of Life'
+        id: 7344815,
+        image: 'set-designs-for-memoryator-game/d2192abf-0c43-43c2-ac12-9e10b7f39795.png',
+        description: 'Flowers'
       }
     ]
   },
@@ -1031,6 +802,214 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 2893552,
+    title: 'Animations for Memoryator Game',
+    image: 'animations-for-memoryator-game.png',
+    description: 'Classic frame by frame animations of characters for the Memoryator Game.',
+    category: 'Animation',
+    items: [
+      {
+        id: 8907742,
+        image: 'animations-for-memoryator-game/b2145e75-0940-4c7b-a3c2-f6f05c244ed8.gif'
+      },
+      {
+        id: 2253269,
+        image: 'animations-for-memoryator-game/16039ef0-3cff-450e-b226-14d791204341.gif'
+      },
+      {
+        id: 3027285,
+        image: 'animations-for-memoryator-game/0642474e-4396-4d6f-bf9c-05f955284c31.gif'
+      },
+      {
+        id: 7210286,
+        image: 'animations-for-memoryator-game/1-st-level-nightmare-hit-animation.gif',
+        description: '1st level Nightmare hit animation'
+      },
+      {
+        id: 7086540,
+        image: 'animations-for-memoryator-game/1-st-level-nightmare-idle-animation.gif',
+        description: '1st level Nightmare idle animation'
+      },
+      {
+        id: 8165164,
+        image: 'animations-for-memoryator-game/1-st-level-nightmare-run-animation.gif',
+        description: '1st level Nightmare run animation'
+      },
+      {
+        id: 5710994,
+        image: 'animations-for-memoryator-game/2-nd-level-nightmare-hit-animation.gif',
+        description: '2nd level Nightmare hit animation'
+      },
+      {
+        id: 9407874,
+        image: 'animations-for-memoryator-game/2-nd-level-nightmare-idle-animation.gif',
+        description: '2nd level Nightmare idle animation'
+      },
+      {
+        id: 3885994,
+        image: 'animations-for-memoryator-game/2-nd-level-nightmare-run-animation.gif',
+        description: '2nd level Nightmare run animation'
+      },
+      {
+        id: 5106084,
+        image: 'animations-for-memoryator-game/3-rd-level-nightmare-clap-animation.gif',
+        description: '3rd level Nightmare clap animation'
+      },
+      {
+        id: 1702797,
+        image: 'animations-for-memoryator-game/3-rd-level-nightmare-idle-animation.gif',
+        description: '3rd level Nightmare idle animation'
+      },
+      {
+        id: 9918713,
+        image: 'animations-for-memoryator-game/3-rd-level-nightmare-hit-animation.gif',
+        description: '3rd level Nightmare hit animation'
+      },
+      {
+        id: 8674179,
+        image: 'animations-for-memoryator-game/protagonist-animations-of-run.gif',
+        description: 'Protagonist animations of run'
+      },
+      {
+        id: 1082612,
+        image: 'animations-for-memoryator-game/protagonist-animations-of-actions.gif',
+        description: 'Protagonist animations of actions'
+      },
+      {
+        id: 9720027,
+        image: 'animations-for-memoryator-game/hare-animations.gif',
+        description: 'Hare animations'
+      },
+      {
+        id: 1081245,
+        image: 'animations-for-memoryator-game/wolf-animations.gif',
+        description: 'Wolf animations'
+      },
+      {
+        id: 7739676,
+        image: 'animations-for-memoryator-game/owl-animations.gif',
+        description: 'Owl animations'
+      },
+      {
+        id: 5125317,
+        image: 'animations-for-memoryator-game/owl-transformation.gif',
+        description: 'Owl transformation'
+      }
+    ]
+  },
+  {
+    id: 5019519,
+    title: 'Character Designs for Memoryator Game',
+    image: 'character-designs-for-memoryator-game.png',
+    description: 'Chaarcter development',
+    category: 'Concept',
+    items: [
+      {
+        id: 7997429,
+        image: 'character-designs-for-memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
+        description: 'Main character design research'
+      },
+      {
+        id: 5585575,
+        image: 'character-designs-for-memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
+        description: 'Main character pose sheet'
+      },
+      {
+        id: 3517206,
+        image: 'character-designs-for-memoryator-game/a14e9d0b-c2d8-42f4-bad8-e823d7cf809c.png',
+        description: 'First-level Nightmare concept'
+      }
+    ]
+  },
+  {
+    id: 6614815,
+    title: 'Digital Illustrations',
+    image: 'digital-illustrations.png',
+    description: 'Collection of digital illustrations.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 9686021,
+        image: 'digital-illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
+        description: '"A Bug\'s Life" fanart'
+      },
+      {
+        id: 6572595,
+        image: 'digital-illustrations/dr-folsbuben-s-adventure.jpg',
+        description: 'Dr Folsbuben\'s Adventure'
+      },
+      {
+        id: 6532804,
+        image: 'digital-illustrations/owl-rider.jpg',
+        description: 'Owl rider'
+      },
+      {
+        id: 6776108,
+        image: 'digital-illustrations/domestic-christmas.jpg',
+        description: 'Domestic Christmas'
+      },
+      {
+        id: 7449827,
+        image: 'digital-illustrations/through-the-forest.jpg',
+        description: 'Through the Forest'
+      },
+      {
+        id: 6569582,
+        image: 'digital-illustrations/snowball.png',
+        description: 'Snowball'
+      },
+      {
+        id: 1057522,
+        image: 'digital-illustrations/blizzard-s-paladin-fanart.png',
+        description: 'Blizzard\'s Paladin fanart'
+      },
+      {
+        id: 9526088,
+        image: 'digital-illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
+        description: 'Style test for Abbax animation, made with Hound Studio'
+      }
+    ]
+  },
+  {
+    id: 9730411,
+    title: 'Digital Paintings for CryptoSoul Game',
+    image: 'digital-paintings-for-crypto-soul-game.png',
+    description: 'Digital paintings, promotional illustrations and backgrounds for the CryptoSoul game.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 7155101,
+        image: 'digital-paintings-for-crypto-soul-game/witch-raid.png',
+        description: 'Witch raid'
+      },
+      {
+        id: 7837752,
+        image: 'digital-paintings-for-crypto-soul-game/heroes.png',
+        description: 'Heroes'
+      },
+      {
+        id: 7667012,
+        image: 'digital-paintings-for-crypto-soul-game/canyon.png',
+        description: 'Canyon'
+      },
+      {
+        id: 4527085,
+        image: 'digital-paintings-for-crypto-soul-game/king-s-cave.png',
+        description: 'King\'s Cave'
+      },
+      {
+        id: 4850355,
+        image: 'digital-paintings-for-crypto-soul-game/outbreak.png',
+        description: 'Outbreak'
+      },
+      {
+        id: 7574848,
+        image: 'digital-paintings-for-crypto-soul-game/source-of-life.jpg',
+        description: 'Source of Life'
+      }
+    ]
+  },
+  {
     id: 9503575,
     title: 'Set Designs for Cryptosoul Game',
     image: 'set-designs-for-cryptosoul-game.png',
@@ -1100,39 +1079,6 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 3459629,
-    title: 'Sights Illustrations',
-    image: 'sights-illustrations.png',
-    description: 'Illustrations of some Russian sights for the book cover.',
-    items: [
-      {
-        id: 7738893,
-        image: 'sights-illustrations/7afd1d91-98ae-471e-aa3a-0d9a8661f2bf.png',
-        description: 'Saint Basil\'s Cathedral'
-      },
-      {
-        id: 3464948,
-        image: 'sights-illustrations/edb49b7b-44bb-42c1-90a3-acbe36718afe.png',
-        description: 'Arc de Triomphe'
-      },
-      {
-        id: 6884139,
-        image: 'sights-illustrations/b779b2e8-886c-42c7-96b2-421785e630d2.png',
-        description: 'Kizhi Pogost'
-      },
-      {
-        id: 8189204,
-        image: 'sights-illustrations/961c400c-d7b0-42fd-8a28-6d8e10f15a74.png',
-        description: 'Kul Sharif Mosque'
-      },
-      {
-        id: 7002030,
-        image: 'sights-illustrations/e455f1f3-c5d6-4ce1-90ff-d6e1dd5e51f0.png',
-        description: 'Peterhof Palace'
-      }
-    ]
-  },
-  {
     id: 8946654,
     title: 'Explainer Videos',
     image: 'explainer-videos.png',
@@ -1162,6 +1108,102 @@ export const PORTFOLIO = [
         image: 'explainer-videos/81b3956c-851b-4a5d-8316-a61ca9efa763.jpg',
         description: 'Social Networks for Codeur',
         video: 'https://vimeo.com/266870205'
+      }
+    ]
+  },
+  {
+    id: 3459629,
+    title: 'Sights Illustrations',
+    image: 'sights-illustrations.png',
+    description: 'Illustrations of some Russian sights for the book cover.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 7738893,
+        image: 'sights-illustrations/7afd1d91-98ae-471e-aa3a-0d9a8661f2bf.png',
+        description: 'Saint Basil\'s Cathedral'
+      },
+      {
+        id: 3464948,
+        image: 'sights-illustrations/edb49b7b-44bb-42c1-90a3-acbe36718afe.png',
+        description: 'Arc de Triomphe'
+      },
+      {
+        id: 6884139,
+        image: 'sights-illustrations/b779b2e8-886c-42c7-96b2-421785e630d2.png',
+        description: 'Kizhi Pogost'
+      },
+      {
+        id: 8189204,
+        image: 'sights-illustrations/961c400c-d7b0-42fd-8a28-6d8e10f15a74.png',
+        description: 'Kul Sharif Mosque'
+      },
+      {
+        id: 7002030,
+        image: 'sights-illustrations/e455f1f3-c5d6-4ce1-90ff-d6e1dd5e51f0.png',
+        description: 'Peterhof Palace'
+      }
+    ]
+  },
+  {
+    id: 8064643,
+    title: 'Logo Animations',
+    image: 'logo-animations.png',
+    description: 'Multiple animated logo intros.',
+    category: 'Animation',
+    items: [
+      {
+        id: 7287531,
+        image: 'logo-animations/hound-studio.gif',
+        description: 'Hound Studio'
+      },
+      {
+        id: 6057818,
+        image: 'logo-animations/piglette.gif',
+        description: 'Piglette'
+      },
+      {
+        id: 5835926,
+        image: 'logo-animations/motion-pipe-studio.gif',
+        description: 'Motion Pipe Studio'
+      }
+    ]
+  },
+  {
+    id: 3934960,
+    title: 'Illustrations and Web Design for CryptoSoul',
+    image: 'illustrations-and-web-design-for-crypto-soul.jpg',
+    description: 'Web design, illustrations, icons and posters for the project "CryptoSoul".',
+    category: 'Illustration',
+    items: [
+      {
+        id: 7736350,
+        image: 'illustrations-and-web-design-for-crypto-soul/fe4f6001-9ba6-40b5-b998-23989b3ae005.png'
+      },
+      {
+        id: 2680934,
+        image: 'illustrations-and-web-design-for-crypto-soul/62ff667e-36b1-4017-b4b4-013e8c0eace8.png',
+        url: 'https://cryptosoul.io'
+      },
+      {
+        id: 3258841,
+        image: 'illustrations-and-web-design-for-crypto-soul/1e567ff5-2fd0-4a3d-820d-417bccece964.jpg'
+      },
+      {
+        id: 3655781,
+        image: 'illustrations-and-web-design-for-crypto-soul/cd8b9097-9840-4a77-9f9f-0c245e6ef069.jpg'
+      },
+      {
+        id: 3408204,
+        image: 'illustrations-and-web-design-for-crypto-soul/fde65415-2bbe-4e2b-8617-38ba9371dfbb.jpg'
+      },
+      {
+        id: 7140653,
+        image: 'illustrations-and-web-design-for-crypto-soul/aec6744a-b999-4fa4-99c6-cd9ddd4f417f.jpg'
+      },
+      {
+        id: 2210082,
+        image: 'illustrations-and-web-design-for-crypto-soul/37be3088-4a30-466d-b694-35d57fb23478.jpg'
       }
     ]
   },
@@ -1216,6 +1258,11 @@ export const PORTFOLIO = [
         id: 5957897,
         image: 'stickers/151949ac-a923-4277-9a55-e43a692d3ced.png',
         description: 'Owl Sticker Pack'
+      },
+      {
+        id: 5107638,
+        image: 'stickers/c62553d0-1f9c-45e6-a559-ea78665306c1.jpg',
+        description: 'Character research'
       },
       {
         id: 3746870,
@@ -1295,30 +1342,6 @@ export const PORTFOLIO = [
         id: 3464218,
         image: 'sketchbook/50ac00da-79cf-4ba5-9fab-31c12d9bb13e.JPG',
         description: '"Conservatoire" Vegetables-characters'
-      }
-    ]
-  },
-  {
-    id: 8064643,
-    title: 'Logo Animations',
-    image: 'logo-animations.png',
-    description: 'Multiple animated logo intros.',
-    category: 'Animation',
-    items: [
-      {
-        id: 7287531,
-        image: 'logo-animations/hound-studio.gif',
-        description: 'Hound Studio'
-      },
-      {
-        id: 6057818,
-        image: 'logo-animations/piglette.gif',
-        description: 'Piglette'
-      },
-      {
-        id: 5835926,
-        image: 'logo-animations/motion-pipe-studio.gif',
-        description: 'Motion Pipe Studio'
       }
     ]
   }

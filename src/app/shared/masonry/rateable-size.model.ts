@@ -2,7 +2,7 @@ import { Size } from '../size-model';
 
 export class RateableSize extends Size {
     public get width(): number {
-        return super.width;
+        return this._width;
     }
 
     public set width(value: number) {
@@ -10,7 +10,7 @@ export class RateableSize extends Size {
     }
 
     public get height(): number {
-        return super.height;
+        return this._height;
     }
 
     public set height(value: number) {

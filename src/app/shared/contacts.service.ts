@@ -31,6 +31,6 @@ export class ContactsService {
     constructor(private http: HttpClient) { }
 
     public sendEmail(letter: Letter): Observable<void> {
-        return this.http.post<void>('/scripts/sendemail.php', letter);
+        return this.http.post<void>('/scripts/email.php', letter);
     }
 }
