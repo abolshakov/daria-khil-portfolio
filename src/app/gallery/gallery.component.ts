@@ -2,7 +2,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Category } from '../shared/gallery/category.enum';
 import { Component } from '@angular/core';
 import { GalleryService } from '../shared/gallery/gallery.service';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Project } from '../shared/gallery/project.model';
 import { switchMap, take, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
@@ -18,7 +18,7 @@ export interface DialogData {
 })
 export class GalleryComponent extends Unsubscribable {
 
-  public get projects() {
+  public get projects(): Observable<Project[]> {
     return this.route.params
       .pipe(
         takeUntil(this.unsubscribe),

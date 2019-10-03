@@ -1,6 +1,7 @@
 import { AlertSnackComponent } from '../../alert-snack/alert-snack.component';
 import { AlertSnackModule } from '../../alert-snack/alert-snack.module';
 import { CommonModule } from '@angular/common';
+import { FlexModule } from '@angular/flex-layout';
 import { FooterModule } from '../footer/footer.module';
 import { GalleryModule } from '../../gallery/gallery.module';
 import { HeaderModule } from '../header/header.module';
@@ -15,6 +16,7 @@ import { ShellComponent } from './shell.component';
     GalleryModule,
     HeaderModule,
     FooterModule,
+    FlexModule,
     MainModule
   ],
   declarations: [ShellComponent],
