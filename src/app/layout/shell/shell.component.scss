@@ -7,19 +7,10 @@
 
 section {
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-pfo-header,
-pfo-footer {
-    flex-direction: column;
-    flex-shrink: 0;
 }
 
 pfo-main {
-    flex-direction: column;
-    flex-grow: 1;
     align-self: center;
+    width: 100%;
     max-width: em(map-get($layout, max-width));
 }

@@ -2,11 +2,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Direction } from '../shared/masonry/direction.enum';
 import { ElementInfo } from '../shared/masonry/element-info.interface';
-import { fromEvent, of, ReplaySubject } from 'rxjs';
 import { HeaderService } from '../layout/header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
+import { MainSectionService } from '../layout/main/shared/main-section.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
+import { of, ReplaySubject } from 'rxjs';
 import { Project } from '../shared/gallery/project.model';
 import { RateableSize } from '../shared/masonry/rateable-size.model';
 import { take, takeUntil } from 'rxjs/operators';
@@ -37,6 +38,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         private header: HeaderService,
         private imageInfo: ImageInfoService,
         private loader: ImageLoadService,
+        private mainSection: MainSectionService,
         private masonry: MasonryService,
         private route: ActivatedRoute,
         private router: Router
@@ -62,7 +64,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
                 this.loading = false;
             });
 
-        fromEvent(window, 'resize')
+        this.mainSection.margins
             .pipe(
                 takeUntil(this.unsubscribe)
             )
@@ -70,9 +72,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
                 this.elementsInfo
                     .pipe(take(1))
                     .subscribe(info => {
-                        this.loading = true;
                         this.construct(info);
-                        this.loading = false;
                     });
             });
     }
@@ -88,7 +88,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
             return;
         }
         const itemId = this.project.items[projectItemIndex].id;
-        this.router.navigate([this.router.url, itemId], {replaceUrl: replaceUrl});
+        this.router.navigate([this.router.url, itemId], { replaceUrl: replaceUrl });
     }
 
     private construct(info: ElementInfo[]) {
