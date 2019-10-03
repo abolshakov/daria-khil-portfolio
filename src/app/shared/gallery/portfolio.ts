@@ -350,7 +350,7 @@ export const PORTFOLIO = [
       },
       {
         id: 7162943,
-        image: 'animated-gifs/animation-of-receiving-a-message-for-telegram.png',
+        image: 'animated-gifs/cc850893-19ba-4e82-842f-e551bd297e6b.png',
         description: 'Animation of receiving a message for Telegram',
         video: 'https://vimeo.com/328141388'
       },
