@@ -233,6 +233,139 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 7521358,
+    title: 'Character Designs for MyRide',
+    image: 'character-designs-for-my-ride.png',
+    description: 'Designs and illustrations of the characters for the animated series, explaining MyRide\'s services.',
+    category: 'Concept',
+    items: [
+      {
+        id: 9933808,
+        image: 'character-designs-for-my-ride/eecf6194-351d-4acb-a205-f45d9a96249f.png',
+        description: 'Barefoot'
+      },
+      {
+        id: 7900386,
+        image: 'character-designs-for-my-ride/083bfe04-f6c0-4322-a92d-042a2dac056e.jpg',
+        description: 'Barefoot sketches'
+      },
+      {
+        id: 9728258,
+        image: 'character-designs-for-my-ride/c970e0e6-6e75-47e2-a98e-f37510879261.png',
+        description: 'Barnes, the dog'
+      },
+      {
+        id: 3943235,
+        image: 'character-designs-for-my-ride/e77b32c6-3c5a-4446-ba9f-0f2acc565303.png',
+        description: 'Beatrice, the police officer'
+      },
+      {
+        id: 3854357,
+        image: 'character-designs-for-my-ride/61ad69a5-8b04-477b-8d1c-6e10dbe662ec.png',
+        description: 'Beatrice sketches'
+      },
+      {
+        id: 3315712,
+        image: 'character-designs-for-my-ride/096f29ba-456d-4ea4-86e8-0a72d6000283.png',
+        description: 'Fletcher'
+      },
+      {
+        id: 7398609,
+        image: 'character-designs-for-my-ride/d69bab5b-e2a5-4b89-8c91-d0b107cde064.png',
+        description: 'Professor Potts'
+      },
+      {
+        id: 9974830,
+        image: 'character-designs-for-my-ride/2c7e6a7b-a0f7-4515-9e87-a4af13cdf9bd.png',
+        description: 'Professor Potts sketches'
+      },
+      {
+        id: 1941400,
+        image: 'character-designs-for-my-ride/7fac254b-ef2c-4157-b55b-4f76c5c3be2e.png',
+        description: 'Gloria Potts'
+      },
+      {
+        id: 3875462,
+        image: 'character-designs-for-my-ride/8313ac54-25c1-42b6-b55a-0f1dea3f9a18.jpg',
+        description: 'Gloria Potts sketches'
+      },
+      {
+        id: 8706501,
+        image: 'character-designs-for-my-ride/79c77576-43c9-496a-8470-9928fe7be684.png',
+        description: 'Professor Potts with his pets'
+      },
+      {
+        id: 6266791,
+        image: 'character-designs-for-my-ride/141bfd99-6ef3-4417-956a-305bc8b97faf.png',
+        description: 'Tulip, the bird'
+      },
+      {
+        id: 8651019,
+        image: 'character-designs-for-my-ride/be48319e-98ad-4ff8-86c0-f9217b9cb85b.png',
+        description: 'Bird sketches'
+      },
+      {
+        id: 8734492,
+        image: 'character-designs-for-my-ride/e5359921-b441-487c-a69d-752abce9b04c.jpg',
+        description: 'Charles sketches'
+      },
+      {
+        id: 6157237,
+        image: 'character-designs-for-my-ride/84b4941e-5af8-4114-a1f0-0de9871ac3ae.jpg',
+        description: 'Character sketches'
+      }
+    ]
+  },
+  {
+    id: 9423090,
+    title: 'Locations Set for Merge Cats Game',
+    image: 'locations-set-for-merge-cats-game.png',
+    description: 'Designs for the level map in a cat style.',
+    category: 'Concept',
+    items: [
+      {
+        id: 2127565,
+        image: 'locations-set-for-merge-cats-game/levels.png',
+        description: 'Levels'
+      },
+      {
+        id: 6858802,
+        image: 'locations-set-for-merge-cats-game/lock-and-map-icons.png',
+        description: 'Lock and map icons'
+      },
+      {
+        id: 8807852,
+        image: 'locations-set-for-merge-cats-game/forest-cabin-cat.png',
+        description: 'Forest cabin-cat'
+      },
+      {
+        id: 6157295,
+        image: 'locations-set-for-merge-cats-game/jungle-cave-cat.png',
+        description: 'Jungle cave-cat'
+      },
+      {
+        id: 2765165,
+        image: 'locations-set-for-merge-cats-game/icy-igloo-cat.png',
+        description: 'Icy igloo-cat'
+      },
+      {
+        id: 6170575,
+        image: 'locations-set-for-merge-cats-game/desert-pyramid-cat.png',
+        description: 'Desert pyramid-cat'
+      },
+      {
+        id: 2901393,
+        image: 'locations-set-for-merge-cats-game/marine-ship-cat.png',
+        description: 'Marine ship-cat'
+      },
+      {
+        id: 8736312,
+        image: 'locations-set-for-merge-cats-game/ef119928-7cab-45d6-95e5-1ed2e513aec4.png',
+        description: 'Set of trees'
+      }
+    ]
+  },
+  {
     id: 7296578,
     title: 'Illustrations for Dogg.Dog',
     image: 'illustrations-for-dogg-dog.jpg',
@@ -317,116 +450,6 @@ export const PORTFOLIO = [
       {
         id: 3750904,
         image: 'illustrations-for-dogg-dog/be2b0053-e52c-4023-8114-d054a950e84b.jpg'
-      }
-    ]
-  },
-  {
-    id: 3447668,
-    title: 'Animated Gifs',
-    image: 'animated-gifs.png',
-    description: 'Collection of character animations and short loops.',
-    category: 'Animation',
-    items: [
-      {
-        id: 4765816,
-        image: 'animated-gifs/rabbit-hole.jpg',
-        description: 'Rabbit hole',
-        video: 'https://vimeo.com/330706541'
-      },
-      {
-        id: 5387183,
-        image: 'animated-gifs/rabbit-jump-cycle.gif',
-        description: 'Rabbit jump cycle'
-      },
-      {
-        id: 2373584,
-        image: 'animated-gifs/christmas-run.gif',
-        description: 'Christmas run'
-      },
-      {
-        id: 6409119,
-        image: 'animated-gifs/character-animation-for-telegram.gif',
-        description: 'Character animation for Telegram'
-      },
-      {
-        id: 7162943,
-        image: 'animated-gifs/cc850893-19ba-4e82-842f-e551bd297e6b.png',
-        description: 'Animation of receiving a message for Telegram',
-        video: 'https://vimeo.com/328141388'
-      },
-      {
-        id: 1658760,
-        image: 'animated-gifs/roller-skater.gif',
-        description: 'Roller skater'
-      },
-      {
-        id: 7468916,
-        image: 'animated-gifs/happiness.gif',
-        description: 'Happiness'
-      },
-      {
-        id: 5163279,
-        image: 'animated-gifs/gnome-emotions.gif',
-        description: 'Gnome emotions'
-      },
-      {
-        id: 5158961,
-        image: 'animated-gifs/3a3695a0-f251-45a3-9520-84a59b118bc8.gif',
-        description: 'Gnome emotions'
-      },
-      {
-        id: 2294966,
-        image: 'animated-gifs/halloween-train.gif',
-        description: 'Halloween train'
-      }
-    ]
-  },
-  {
-    id: 9423090,
-    title: 'Locations Set for Merge Cats Game',
-    image: 'locations-set-for-merge-cats-game.png',
-    description: 'Designs for the level map in a cat style.',
-    category: 'Concept',
-    items: [
-      {
-        id: 2127565,
-        image: 'locations-set-for-merge-cats-game/levels.png',
-        description: 'Levels'
-      },
-      {
-        id: 6858802,
-        image: 'locations-set-for-merge-cats-game/lock-and-map-icons.png',
-        description: 'Lock and map icons'
-      },
-      {
-        id: 8807852,
-        image: 'locations-set-for-merge-cats-game/forest-cabin-cat.png',
-        description: 'Forest cabin-cat'
-      },
-      {
-        id: 6157295,
-        image: 'locations-set-for-merge-cats-game/jungle-cave-cat.png',
-        description: 'Jungle cave-cat'
-      },
-      {
-        id: 2765165,
-        image: 'locations-set-for-merge-cats-game/icy-igloo-cat.png',
-        description: 'Icy igloo-cat'
-      },
-      {
-        id: 6170575,
-        image: 'locations-set-for-merge-cats-game/desert-pyramid-cat.png',
-        description: 'Desert pyramid-cat'
-      },
-      {
-        id: 2901393,
-        image: 'locations-set-for-merge-cats-game/marine-ship-cat.png',
-        description: 'Marine ship-cat'
-      },
-      {
-        id: 8736312,
-        image: 'locations-set-for-merge-cats-game/ef119928-7cab-45d6-95e5-1ed2e513aec4.png',
-        description: 'Set of trees'
       }
     ]
   },
@@ -550,86 +573,41 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 7521358,
-    title: 'Character Designs for MyRide',
-    image: 'character-designs-for-my-ride.png',
-    description: 'Designs and illustrations of the characters for the animated series, explaining MyRide\'s services.',
+    id: 5019519,
+    title: 'Character Designs for Memoryator Game',
+    image: 'character-designs-for-memoryator-game.png',
+    description: 'Chaarcter development',
     category: 'Concept',
     items: [
       {
-        id: 9933808,
-        image: 'character-designs-for-my-ride/eecf6194-351d-4acb-a205-f45d9a96249f.png',
-        description: 'Barefoot'
+        id: 7997429,
+        image: 'character-designs-for-memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
+        description: 'Main character design research'
       },
       {
-        id: 7900386,
-        image: 'character-designs-for-my-ride/083bfe04-f6c0-4322-a92d-042a2dac056e.jpg',
-        description: 'Barefoot sketches'
+        id: 5585575,
+        image: 'character-designs-for-memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
+        description: 'Main character pose sheet'
       },
       {
-        id: 9728258,
-        image: 'character-designs-for-my-ride/c970e0e6-6e75-47e2-a98e-f37510879261.png',
-        description: 'Barnes, the dog'
+        id: 6375686,
+        image: 'character-designs-for-memoryator-game/9cf0ff3a-5295-480a-a995-db0d1d730894.png',
+        description: 'Nightmares of different levels comparing to the main character'
       },
       {
-        id: 3943235,
-        image: 'character-designs-for-my-ride/e77b32c6-3c5a-4446-ba9f-0f2acc565303.png',
-        description: 'Beatrice, the police officer'
+        id: 3517206,
+        image: 'character-designs-for-memoryator-game/8bd6ca5f-6dcf-4d3b-9c61-f0667139651b.png',
+        description: 'First-level Nightmare concept'
       },
       {
-        id: 3854357,
-        image: 'character-designs-for-my-ride/61ad69a5-8b04-477b-8d1c-6e10dbe662ec.png',
-        description: 'Beatrice sketches'
+        id: 3810926,
+        image: 'character-designs-for-memoryator-game/9914f6ca-f930-4dc4-8afd-a1ccfbeda03d.png',
+        description: 'Fourth-level Nightmare concept'
       },
       {
-        id: 3315712,
-        image: 'character-designs-for-my-ride/096f29ba-456d-4ea4-86e8-0a72d6000283.png',
-        description: 'Fletcher'
-      },
-      {
-        id: 7398609,
-        image: 'character-designs-for-my-ride/d69bab5b-e2a5-4b89-8c91-d0b107cde064.png',
-        description: 'Professor Potts'
-      },
-      {
-        id: 9974830,
-        image: 'character-designs-for-my-ride/2c7e6a7b-a0f7-4515-9e87-a4af13cdf9bd.png',
-        description: 'Professor Potts sketches'
-      },
-      {
-        id: 1941400,
-        image: 'character-designs-for-my-ride/7fac254b-ef2c-4157-b55b-4f76c5c3be2e.png',
-        description: 'Gloria Potts'
-      },
-      {
-        id: 3875462,
-        image: 'character-designs-for-my-ride/8313ac54-25c1-42b6-b55a-0f1dea3f9a18.jpg',
-        description: 'Gloria Potts sketches'
-      },
-      {
-        id: 8706501,
-        image: 'character-designs-for-my-ride/79c77576-43c9-496a-8470-9928fe7be684.png',
-        description: 'Professor Potts with his pets'
-      },
-      {
-        id: 6266791,
-        image: 'character-designs-for-my-ride/141bfd99-6ef3-4417-956a-305bc8b97faf.png',
-        description: 'Tulip, the bird'
-      },
-      {
-        id: 8651019,
-        image: 'character-designs-for-my-ride/be48319e-98ad-4ff8-86c0-f9217b9cb85b.png',
-        description: 'Bird sketches'
-      },
-      {
-        id: 8734492,
-        image: 'character-designs-for-my-ride/e5359921-b441-487c-a69d-752abce9b04c.jpg',
-        description: 'Charles sketches'
-      },
-      {
-        id: 6157237,
-        image: 'character-designs-for-my-ride/84b4941e-5af8-4114-a1f0-0de9871ac3ae.jpg',
-        description: 'Character sketches'
+        id: 1780418,
+        image: 'character-designs-for-memoryator-game/2ac222f8-f570-4ff7-b9cd-69a0ba772caf.png',
+        description: 'Boss concept'
       }
     ]
   },
@@ -679,6 +657,102 @@ export const PORTFOLIO = [
         id: 7344815,
         image: 'set-designs-for-memoryator-game/d2192abf-0c43-43c2-ac12-9e10b7f39795.png',
         description: 'Flowers'
+      }
+    ]
+  },
+  {
+    id: 2893552,
+    title: 'Animations for Memoryator Game',
+    image: 'animations-for-memoryator-game.png',
+    description: 'Classic frame by frame animations of characters for the Memoryator Game.',
+    category: 'Animation',
+    items: [
+      {
+        id: 8907742,
+        image: 'animations-for-memoryator-game/b2145e75-0940-4c7b-a3c2-f6f05c244ed8.gif'
+      },
+      {
+        id: 2253269,
+        image: 'animations-for-memoryator-game/16039ef0-3cff-450e-b226-14d791204341.gif'
+      },
+      {
+        id: 3027285,
+        image: 'animations-for-memoryator-game/0642474e-4396-4d6f-bf9c-05f955284c31.gif'
+      },
+      {
+        id: 7210286,
+        image: 'animations-for-memoryator-game/1-st-level-nightmare-hit-animation.gif',
+        description: '1st level Nightmare hit animation'
+      },
+      {
+        id: 7086540,
+        image: 'animations-for-memoryator-game/1-st-level-nightmare-idle-animation.gif',
+        description: '1st level Nightmare idle animation'
+      },
+      {
+        id: 8165164,
+        image: 'animations-for-memoryator-game/1-st-level-nightmare-run-animation.gif',
+        description: '1st level Nightmare run animation'
+      },
+      {
+        id: 5710994,
+        image: 'animations-for-memoryator-game/2-nd-level-nightmare-hit-animation.gif',
+        description: '2nd level Nightmare hit animation'
+      },
+      {
+        id: 9407874,
+        image: 'animations-for-memoryator-game/2-nd-level-nightmare-idle-animation.gif',
+        description: '2nd level Nightmare idle animation'
+      },
+      {
+        id: 3885994,
+        image: 'animations-for-memoryator-game/2-nd-level-nightmare-run-animation.gif',
+        description: '2nd level Nightmare run animation'
+      },
+      {
+        id: 5106084,
+        image: 'animations-for-memoryator-game/3-rd-level-nightmare-clap-animation.gif',
+        description: '3rd level Nightmare clap animation'
+      },
+      {
+        id: 1702797,
+        image: 'animations-for-memoryator-game/3-rd-level-nightmare-idle-animation.gif',
+        description: '3rd level Nightmare idle animation'
+      },
+      {
+        id: 9918713,
+        image: 'animations-for-memoryator-game/3-rd-level-nightmare-hit-animation.gif',
+        description: '3rd level Nightmare hit animation'
+      },
+      {
+        id: 8674179,
+        image: 'animations-for-memoryator-game/protagonist-animations-of-run.gif',
+        description: 'Protagonist animations of run'
+      },
+      {
+        id: 1082612,
+        image: 'animations-for-memoryator-game/protagonist-animations-of-actions.gif',
+        description: 'Protagonist animations of actions'
+      },
+      {
+        id: 9720027,
+        image: 'animations-for-memoryator-game/hare-animations.gif',
+        description: 'Hare animations'
+      },
+      {
+        id: 1081245,
+        image: 'animations-for-memoryator-game/wolf-animations.gif',
+        description: 'Wolf animations'
+      },
+      {
+        id: 7739676,
+        image: 'animations-for-memoryator-game/owl-animations.gif',
+        description: 'Owl animations'
+      },
+      {
+        id: 5125317,
+        image: 'animations-for-memoryator-game/owl-transformation.gif',
+        description: 'Owl transformation'
       }
     ]
   },
@@ -802,175 +876,6 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 2893552,
-    title: 'Animations for Memoryator Game',
-    image: 'animations-for-memoryator-game.png',
-    description: 'Classic frame by frame animations of characters for the Memoryator Game.',
-    category: 'Animation',
-    items: [
-      {
-        id: 8907742,
-        image: 'animations-for-memoryator-game/b2145e75-0940-4c7b-a3c2-f6f05c244ed8.gif'
-      },
-      {
-        id: 2253269,
-        image: 'animations-for-memoryator-game/16039ef0-3cff-450e-b226-14d791204341.gif'
-      },
-      {
-        id: 3027285,
-        image: 'animations-for-memoryator-game/0642474e-4396-4d6f-bf9c-05f955284c31.gif'
-      },
-      {
-        id: 7210286,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-hit-animation.gif',
-        description: '1st level Nightmare hit animation'
-      },
-      {
-        id: 7086540,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-idle-animation.gif',
-        description: '1st level Nightmare idle animation'
-      },
-      {
-        id: 8165164,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-run-animation.gif',
-        description: '1st level Nightmare run animation'
-      },
-      {
-        id: 5710994,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-hit-animation.gif',
-        description: '2nd level Nightmare hit animation'
-      },
-      {
-        id: 9407874,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-idle-animation.gif',
-        description: '2nd level Nightmare idle animation'
-      },
-      {
-        id: 3885994,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-run-animation.gif',
-        description: '2nd level Nightmare run animation'
-      },
-      {
-        id: 5106084,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-clap-animation.gif',
-        description: '3rd level Nightmare clap animation'
-      },
-      {
-        id: 1702797,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-idle-animation.gif',
-        description: '3rd level Nightmare idle animation'
-      },
-      {
-        id: 9918713,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-hit-animation.gif',
-        description: '3rd level Nightmare hit animation'
-      },
-      {
-        id: 8674179,
-        image: 'animations-for-memoryator-game/protagonist-animations-of-run.gif',
-        description: 'Protagonist animations of run'
-      },
-      {
-        id: 1082612,
-        image: 'animations-for-memoryator-game/protagonist-animations-of-actions.gif',
-        description: 'Protagonist animations of actions'
-      },
-      {
-        id: 9720027,
-        image: 'animations-for-memoryator-game/hare-animations.gif',
-        description: 'Hare animations'
-      },
-      {
-        id: 1081245,
-        image: 'animations-for-memoryator-game/wolf-animations.gif',
-        description: 'Wolf animations'
-      },
-      {
-        id: 7739676,
-        image: 'animations-for-memoryator-game/owl-animations.gif',
-        description: 'Owl animations'
-      },
-      {
-        id: 5125317,
-        image: 'animations-for-memoryator-game/owl-transformation.gif',
-        description: 'Owl transformation'
-      }
-    ]
-  },
-  {
-    id: 5019519,
-    title: 'Character Designs for Memoryator Game',
-    image: 'character-designs-for-memoryator-game.png',
-    description: 'Chaarcter development',
-    category: 'Concept',
-    items: [
-      {
-        id: 7997429,
-        image: 'character-designs-for-memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
-        description: 'Main character design research'
-      },
-      {
-        id: 5585575,
-        image: 'character-designs-for-memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
-        description: 'Main character pose sheet'
-      },
-      {
-        id: 3517206,
-        image: 'character-designs-for-memoryator-game/a14e9d0b-c2d8-42f4-bad8-e823d7cf809c.png',
-        description: 'First-level Nightmare concept'
-      }
-    ]
-  },
-  {
-    id: 6614815,
-    title: 'Digital Illustrations',
-    image: 'digital-illustrations.png',
-    description: 'Collection of digital illustrations.',
-    category: 'Illustration',
-    items: [
-      {
-        id: 9686021,
-        image: 'digital-illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
-        description: '"A Bug\'s Life" fanart'
-      },
-      {
-        id: 6572595,
-        image: 'digital-illustrations/dr-folsbuben-s-adventure.jpg',
-        description: 'Dr Folsbuben\'s Adventure'
-      },
-      {
-        id: 6532804,
-        image: 'digital-illustrations/owl-rider.jpg',
-        description: 'Owl rider'
-      },
-      {
-        id: 6776108,
-        image: 'digital-illustrations/domestic-christmas.jpg',
-        description: 'Domestic Christmas'
-      },
-      {
-        id: 7449827,
-        image: 'digital-illustrations/through-the-forest.jpg',
-        description: 'Through the Forest'
-      },
-      {
-        id: 6569582,
-        image: 'digital-illustrations/snowball.png',
-        description: 'Snowball'
-      },
-      {
-        id: 1057522,
-        image: 'digital-illustrations/blizzard-s-paladin-fanart.png',
-        description: 'Blizzard\'s Paladin fanart'
-      },
-      {
-        id: 9526088,
-        image: 'digital-illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
-        description: 'Style test for Abbax animation, made with Hound Studio'
-      }
-    ]
-  },
-  {
     id: 9730411,
     title: 'Digital Paintings for CryptoSoul Game',
     image: 'digital-paintings-for-crypto-soul-game.png',
@@ -1079,6 +984,55 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 6614815,
+    title: 'Digital Illustrations',
+    image: 'digital-illustrations.png',
+    description: 'Collection of digital illustrations.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 9686021,
+        image: 'digital-illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
+        description: '"A Bug\'s Life" fanart'
+      },
+      {
+        id: 6572595,
+        image: 'digital-illustrations/dr-folsbuben-s-adventure.jpg',
+        description: 'Dr Folsbuben\'s Adventure'
+      },
+      {
+        id: 6532804,
+        image: 'digital-illustrations/owl-rider.jpg',
+        description: 'Owl rider'
+      },
+      {
+        id: 6776108,
+        image: 'digital-illustrations/domestic-christmas.jpg',
+        description: 'Domestic Christmas'
+      },
+      {
+        id: 7449827,
+        image: 'digital-illustrations/through-the-forest.jpg',
+        description: 'Through the Forest'
+      },
+      {
+        id: 6569582,
+        image: 'digital-illustrations/snowball.png',
+        description: 'Snowball'
+      },
+      {
+        id: 1057522,
+        image: 'digital-illustrations/blizzard-s-paladin-fanart.png',
+        description: 'Blizzard\'s Paladin fanart'
+      },
+      {
+        id: 9526088,
+        image: 'digital-illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
+        description: 'Style test for Abbax animation, made with Hound Studio'
+      }
+    ]
+  },
+  {
     id: 8946654,
     title: 'Explainer Videos',
     image: 'explainer-videos.png',
@@ -1108,6 +1062,67 @@ export const PORTFOLIO = [
         image: 'explainer-videos/81b3956c-851b-4a5d-8316-a61ca9efa763.jpg',
         description: 'Social Networks for Codeur',
         video: 'https://vimeo.com/266870205'
+      }
+    ]
+  },
+  {
+    id: 3447668,
+    title: 'Animated Gifs',
+    image: 'animated-gifs.png',
+    description: 'Collection of character animations and short loops.',
+    category: 'Animation',
+    items: [
+      {
+        id: 4765816,
+        image: 'animated-gifs/rabbit-hole.jpg',
+        description: 'Rabbit hole',
+        video: 'https://vimeo.com/330706541'
+      },
+      {
+        id: 5387183,
+        image: 'animated-gifs/f95f6a4d-860c-41ba-9e2a-9f1109215c85.gif',
+        description: 'Rabbit jump cycle'
+      },
+      {
+        id: 2373584,
+        image: 'animated-gifs/431f5b6e-1659-4cd5-abca-1e062dbcdac3.gif',
+        description: 'Christmas run'
+      },
+      {
+        id: 6409119,
+        image: 'animated-gifs/495889aa-710e-46d8-ba4f-671a7e9864f8.gif',
+        description: 'Character animation for Telegram'
+      },
+      {
+        id: 7162943,
+        image: 'animated-gifs/cc850893-19ba-4e82-842f-e551bd297e6b.png',
+        description: 'Animation of receiving a message for Telegram',
+        video: 'https://vimeo.com/328141388'
+      },
+      {
+        id: 1658760,
+        image: 'animated-gifs/roller-skater.gif',
+        description: 'Roller skater'
+      },
+      {
+        id: 7468916,
+        image: 'animated-gifs/3199a201-93e6-4c7d-b35e-8af7b0a7783a.gif',
+        description: 'Happiness'
+      },
+      {
+        id: 5163279,
+        image: 'animated-gifs/89a720ed-8ba8-4d32-ac3b-55b1edcf04db.gif',
+        description: 'Gnome emotions'
+      },
+      {
+        id: 5158961,
+        image: 'animated-gifs/4b653f4c-5cd8-4d5d-beb4-b63aa63472c0.gif',
+        description: 'Gnome emotions'
+      },
+      {
+        id: 2294966,
+        image: 'animated-gifs/776c2b77-66e1-4ca4-b785-475ef990e4c8.gif',
+        description: 'Halloween train'
       }
     ]
   },
