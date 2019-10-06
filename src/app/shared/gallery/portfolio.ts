@@ -1085,7 +1085,7 @@ export const PORTFOLIO = [
       },
       {
         id: 2373584,
-        image: 'animated-gifs/431f5b6e-1659-4cd5-abca-1e062dbcdac3.gif',
+        image: 'animated-gifs/44a0ca8b-bc17-4a1a-b080-b7dc7cfa9bee.gif',
         description: 'Christmas run'
       },
       {
@@ -1101,7 +1101,7 @@ export const PORTFOLIO = [
       },
       {
         id: 1658760,
-        image: 'animated-gifs/roller-skater.gif',
+        image: 'animated-gifs/e232d255-62b3-4e98-a629-fc1c6f30bd2a.gif',
         description: 'Roller skater'
       },
       {
@@ -1123,6 +1123,21 @@ export const PORTFOLIO = [
         id: 2294966,
         image: 'animated-gifs/776c2b77-66e1-4ca4-b785-475ef990e4c8.gif',
         description: 'Halloween train'
+      },
+      {
+        id: 8787302,
+        image: 'animated-gifs/6c8f5060-a148-440e-a484-e64d3b31f2dc.gif',
+        description: 'Light animation'
+      },
+      {
+        id: 7159491,
+        image: 'animated-gifs/425fd579-a3d5-4c39-802e-2a6d9fde67c4.gif',
+        description: 'Ogre running animation'
+      },
+      {
+        id: 2715081,
+        image: 'animated-gifs/ebf2d5a8-9e30-41e1-893f-cd661e0d111e.gif',
+        description: 'Ogre turnaround'
       }
     ]
   },
