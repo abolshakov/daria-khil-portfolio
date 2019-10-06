@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { catchError, debounceTime, distinctUntilChanged, filter, switchMap, take, takeUntil, tap } from 'rxjs/operators';
 import { ComparerService } from '../shared/comparer.service';
-import { ContactsService, Letter } from '../shared/contacts.service';
+import { ContactsService } from '../shared/contacts/contacts.service';
 import { FormBuilder, Validators } from '@angular/forms';
 import { fromEvent, of } from 'rxjs';
+import { Letter } from '../shared/contacts/letter.model';
 import { markAllAsTouched } from '../shared/validation';
 import { SnackBarService } from '../shared/snack-bar.service';
 import { Unsubscribable } from '../shared/unsubscribable';
@@ -57,26 +58,26 @@ export class ContactComponent extends Unsubscribable implements AfterViewInit {
 
     fromEvent(this.buttonRef.nativeElement, 'click')
       .pipe(
+        takeUntil(this.unsubscribe),
         debounceTime(this.debounceTime),
         tap(() => {
           this._hasErrors = !this.form.valid;
           markAllAsTouched(this.form);
         }),
         filter(() => this.form.valid),
-        switchMap(() => of(this.form.value)),
         distinctUntilChanged(ComparerService.byAllFields),
-        takeUntil(this.unsubscribe)
+        switchMap((value: Letter) => this.contacts.sendEmail(value)
+          .pipe(
+            take(1),
+            catchError(() => {
+              this.snack.error(['Sorry, an error has happened sending the message.', 'Please try again later.']);
+              return of();
+            }))
+        )
       )
-      .subscribe((value: Letter) => this.contacts.sendEmail(value)
-        .pipe(
-          take(1),
-          catchError(() => {
-            this.snack.error(['Sorry, an error has happened sending the message.', 'Please try again later.']);
-            return of();
-          }))
-        .subscribe(() => {
-          this.form.setValue({});
-          this.snack.info(['The message has been successfully sent.', 'Thank you!']);
-        }));
+      .subscribe(() => {
+        this.form.setValue(new Letter());
+        this.snack.info(['The message has been successfully sent.', 'Thank you!']);
+      });
   }
 }
