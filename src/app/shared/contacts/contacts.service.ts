@@ -1,13 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-export interface Letter {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
+import { Letter } from './letter.model';
 
 @Injectable({ providedIn: 'root' })
 export class ContactsService {

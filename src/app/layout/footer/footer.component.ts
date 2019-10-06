@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { ContactsService } from '../../shared/contacts.service';
+import { ContactsService } from '../../shared/contacts/contacts.service';
 import { FooterService } from './shared/footer.service';
 import { fromEvent } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -46,4 +46,3 @@ export class FooterComponent extends Unsubscribable implements AfterViewInit {
     this.footer.height.next(this.height);
   }
 }
-
