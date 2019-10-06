@@ -669,60 +669,63 @@ export const PORTFOLIO = [
     items: [
       {
         id: 8907742,
-        image: 'animations-for-memoryator-game/b2145e75-0940-4c7b-a3c2-f6f05c244ed8.gif'
+        image: 'animations-for-memoryator-game/437887a7-f80f-4dc5-be62-b690db73b460.gif',
+        description: 'Main character front idle'
       },
       {
         id: 2253269,
-        image: 'animations-for-memoryator-game/16039ef0-3cff-450e-b226-14d791204341.gif'
+        image: 'animations-for-memoryator-game/ceac67e2-4a02-4165-91b4-1c1bf16b0d7c.gif',
+        description: 'Main character side idle'
       },
       {
         id: 3027285,
-        image: 'animations-for-memoryator-game/0642474e-4396-4d6f-bf9c-05f955284c31.gif'
+        image: 'animations-for-memoryator-game/1e4926ef-b0bf-4307-881e-a1f611ccaca9.gif',
+        description: 'Main character back idle'
       },
       {
-        id: 7210286,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-hit-animation.gif',
-        description: '1st level Nightmare hit animation'
-      },
-      {
-        id: 7086540,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-idle-animation.gif',
-        description: '1st level Nightmare idle animation'
-      },
-      {
-        id: 8165164,
-        image: 'animations-for-memoryator-game/1-st-level-nightmare-run-animation.gif',
-        description: '1st level Nightmare run animation'
-      },
-      {
-        id: 5710994,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-hit-animation.gif',
-        description: '2nd level Nightmare hit animation'
-      },
-      {
-        id: 9407874,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-idle-animation.gif',
-        description: '2nd level Nightmare idle animation'
-      },
-      {
-        id: 3885994,
-        image: 'animations-for-memoryator-game/2-nd-level-nightmare-run-animation.gif',
-        description: '2nd level Nightmare run animation'
+        id: 9918713,
+        image: 'animations-for-memoryator-game/676ad951-bced-4ef1-9703-de377b7d7929.gif',
+        description: '3rd level Nightmare hit animation'
       },
       {
         id: 5106084,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-clap-animation.gif',
+        image: 'animations-for-memoryator-game/0260edc9-6515-4425-b21d-ac76f2b750f5.gif',
         description: '3rd level Nightmare clap animation'
       },
       {
         id: 1702797,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-idle-animation.gif',
+        image: 'animations-for-memoryator-game/7dfcc2ab-7893-4712-a8a1-b72e30b9f933.gif',
         description: '3rd level Nightmare idle animation'
       },
       {
-        id: 9918713,
-        image: 'animations-for-memoryator-game/3-rd-level-nightmare-hit-animation.gif',
-        description: '3rd level Nightmare hit animation'
+        id: 7210286,
+        image: 'animations-for-memoryator-game/acab466b-72f0-4fd7-9496-e225e2d8063a.gif',
+        description: '1st level Nightmare hit animation'
+      },
+      {
+        id: 7086540,
+        image: 'animations-for-memoryator-game/0544efad-1b9c-4428-bc27-47f313d473df.gif',
+        description: '1st level Nightmare idle animation'
+      },
+      {
+        id: 8165164,
+        image: 'animations-for-memoryator-game/6d38d7ba-a60d-4530-b428-7d898f9034f6.gif',
+        description: '1st level Nightmare run animation'
+      },
+      {
+        id: 5710994,
+        image: 'animations-for-memoryator-game/4e293be9-e3b4-4d0f-af9d-569c155dd626.gif',
+        description: '2nd level Nightmare hit animation'
+      },
+      {
+        id: 9407874,
+        image: 'animations-for-memoryator-game/288becc0-bac2-498b-8a0d-8dc63bdaed23.gif',
+        description: '2nd level Nightmare idle animation'
+      },
+      {
+        id: 3885994,
+        image: 'animations-for-memoryator-game/af1a7c96-31e2-4a06-96cf-ad206cbcff41.gif',
+        description: '2nd level Nightmare run animation'
       },
       {
         id: 8674179,
@@ -743,11 +746,6 @@ export const PORTFOLIO = [
         id: 1081245,
         image: 'animations-for-memoryator-game/wolf-animations.gif',
         description: 'Wolf animations'
-      },
-      {
-        id: 7739676,
-        image: 'animations-for-memoryator-game/owl-animations.gif',
-        description: 'Owl animations'
       },
       {
         id: 5125317,
