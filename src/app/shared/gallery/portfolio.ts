@@ -674,12 +674,12 @@ export const PORTFOLIO = [
       },
       {
         id: 2253269,
-        image: 'animations-for-memoryator-game/ceac67e2-4a02-4165-91b4-1c1bf16b0d7c.gif',
+        image: 'animations-for-memoryator-game/1b43280a-19a4-4da1-9225-34d572fc0dd5.gif',
         description: 'Main character side idle'
       },
       {
         id: 3027285,
-        image: 'animations-for-memoryator-game/1e4926ef-b0bf-4307-881e-a1f611ccaca9.gif',
+        image: 'animations-for-memoryator-game/73533c98-2d53-4378-9934-6720e10b1289.gif',
         description: 'Main character back idle'
       },
       {
