@@ -77,6 +77,7 @@ export class ContactComponent extends Unsubscribable implements AfterViewInit {
       )
       .subscribe(() => {
         this.form.setValue(new Letter());
+        this.form.markAsUntouched();
         this.snack.info(['The message has been successfully sent.', 'Thank you!']);
       });
   }

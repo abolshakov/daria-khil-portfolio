@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  popupDuration: 3000
+  popupDuration: 7000
 };
 
 /*

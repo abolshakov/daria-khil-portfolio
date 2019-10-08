@@ -1,63 +1,8 @@
-// @import "em-calc";
-
-// // View ports
-// $vp-xsmall: 600px;
-// $vp-small: 960px;
-// $vp-medium: 1280px;
-// $vp-large: 1920px;
-// $vp-xlarge: 2560px;
-// $vp-xxlarge: 3600px;
-// $vp-xxxlarge: 5000px;
-
-// // Media Queries
-// $mq-xsmall: "only screen and (max-width: #{$vp-xsmall})";
-// $mq-small: "only screen and (max-width: #{$vp-small})";
-// $mq-medium: "only screen and (max-width: #{$vp-medium})";
-// $mq-large: "only screen and (max-width: #{$vp-large})";
-// $mq-xlarge: "only screen and (max-width: #{$vp-xlarge})";
-// $mq-xxlarge: "only screen and (max-width: #{$vp-xxlarge})";
-// $mq-xxxlarge: "only screen and (max-width: #{$vp-xxxlarge})";
-// $mq-ularge: "only screen and (min-width: #{$vp-xxxlarge})";
-
-// $base-font-size: $browser-context;
-
-// html {
-//     font-size: $base-font-size * 1px;
-
-//     @media #{$mq-ularge} {
-//         font-size: $base-font-size * 2.6px;
-//     }
-
-//     @media #{$mq-xxxlarge} {
-//         font-size: $base-font-size * 2px;
-//     }
-
-//     @media #{$mq-xxlarge} {
-//         font-size: $base-font-size * 1.4px;
-//     }
-
-//     @media #{$mq-xlarge} {
-//         font-size: $base-font-size * 1px;
-//     }
-
-//     @media #{$mq-medium} {
-//         font-size: $base-font-size * 0.8px;
-//     }
-
-//     @media #{$mq-small} {
-//         font-size: $base-font-size * 0.7px;
-//     }
-
-//     @media #{$mq-xsmall} {
-//         font-size: $base-font-size * 0.6px;
-//     }
-// }
-
-$min_width: 600;
+$min_width: 320;
 $max_width: 3840;
 
-$min_font: 8;
-$max_font: 24;
+$min_font: 12;
+$max_font: 22;
 
 :root {
     font-size: #{$min_font}px;
