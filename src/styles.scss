@@ -36,6 +36,10 @@ p {
     display: none !important;
 }
 
+:focus, :active {
+    outline: none;
+}
+
 .mat-card {
     border: em(1) solid #e5e5e5;
     border-radius: em(6) !important;

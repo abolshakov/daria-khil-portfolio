@@ -1,8 +1,8 @@
 <header class="header" fxLayout="column" fxLayoutAlign="start" #header>
   <div fxFlex="0 1 100%" class="top-padding">&nbsp;</div>
-  <div fxFlex="0 1 100%" class="logo"><img src="/assets/images/app/my_pic.png" /></div>
-  <div fxFlex="0 1 100%" #title>
-    <div class="title">Daria Khil</div>
+  <div fxFlex="0 1 100%" class="logo" ><img src="/assets/images/app/my_pic.png" [routerLink]="'/'"/></div>
+  <div fxFlex="0 1 auto" fxLayout="column" fxLayoutAlign="center center" #title>
+    <div fxFlex="0 1 auto" class="title" [routerLink]="'/'">Daria Khil</div>
   </div>
   <div fxFlex="0 1 100%" fxLayout="row" fxLayoutAlign="center" [ngClass]="{'nav-elevated':navigationDocked}" #nav>
     <div #navbody>

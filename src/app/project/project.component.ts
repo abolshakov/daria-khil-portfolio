@@ -1,16 +1,16 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { ComparerService } from '../shared/comparer.service';
+import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
 import { Direction } from '../shared/masonry/direction.enum';
-import { ElementInfo } from '../shared/masonry/element-info.interface';
 import { HeaderService } from '../layout/header/shared/header.service';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MainSectionService } from '../layout/main/shared/main-section.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
-import { of, ReplaySubject } from 'rxjs';
+import { of } from 'rxjs';
 import { Project } from '../shared/gallery/project.model';
 import { RateableSize } from '../shared/masonry/rateable-size.model';
-import { take, takeUntil } from 'rxjs/operators';
 import { Unsubscribable } from '../shared/unsubscribable';
 
 @Component({
@@ -19,10 +19,10 @@ import { Unsubscribable } from '../shared/unsubscribable';
     styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent extends Unsubscribable implements OnInit, AfterViewInit, OnDestroy {
-    private elementsInfo = new ReplaySubject<ElementInfo[]>(1);
-
     @ViewChild('container', { static: true }) containerRef: ElementRef<HTMLElement>;
     @ViewChildren('img') imageRefs: QueryList<ElementRef<HTMLImageElement>>;
+
+    private imageElements: HTMLImageElement[];
 
     public loading = true;
 
@@ -55,25 +55,23 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     public ngAfterViewInit() {
-        this.loader.whenAll(this.imageRefs.map(r => r.nativeElement))
+        this.imageElements = this.imageRefs.map(r => r.nativeElement);
+
+        this.loader.whenAll(this.imageElements)
             .pipe(take(1))
-            .subscribe(images => {
-                const info = this.imageInfo.retrive(images);
-                this.elementsInfo.next(info);
-                this.construct(info);
+            .subscribe(() => {
                 this.loading = false;
+                this.construct();
             });
 
         this.mainSection.margins
             .pipe(
-                takeUntil(this.unsubscribe)
+                takeUntil(this.unsubscribe),
+                debounceTime(100),
+                distinctUntilChanged(ComparerService.byAllFields)
             )
             .subscribe(() => {
-                this.elementsInfo
-                    .pipe(take(1))
-                    .subscribe(info => {
-                        this.construct(info);
-                    });
+                this.construct();
             });
     }
 
@@ -91,12 +89,13 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         this.router.navigate([this.router.url, itemId], { replaceUrl: replaceUrl });
     }
 
-    private construct(info: ElementInfo[]) {
+    private construct() {
+        const info = this.imageInfo.retrive(this.imageElements);
         const style = window.getComputedStyle(this.containerRef.nativeElement);
         const width = Math.floor(Number.parseFloat(style.width));
         const height = document.documentElement.clientHeight / 3;
         const lineSize = new RateableSize(width, height);
         const updatedInfo = this.masonry.construct(info, lineSize, Direction.row);
-        this.imageInfo.update(this.imageRefs.map(r => r.nativeElement), updatedInfo);
+        this.imageInfo.update(this.imageElements, updatedInfo);
     }
 }
