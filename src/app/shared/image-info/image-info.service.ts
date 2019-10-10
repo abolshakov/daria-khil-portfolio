@@ -19,9 +19,9 @@ export class ImageInfoService {
             const height = info[i].height;
             
             if (width > height) {
-                image.setAttribute('width', width.toString());
+                image.setAttribute('width', Math.floor(width).toString());
             } else {
-                image.setAttribute('height', height.toString());
+                image.setAttribute('height', Math.floor(height).toString());
             }
         });
     }
