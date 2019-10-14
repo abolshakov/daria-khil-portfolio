@@ -47,6 +47,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     public ngOnInit() {
+        document.body.parentElement.scrollTop = 0;
         if (this.project.items.length === 1) {
             this.openProjectItem(0, true);
         }
