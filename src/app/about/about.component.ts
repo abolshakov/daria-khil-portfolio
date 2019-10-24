@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TrackingService } from '../shared/tracking/tracking.service';
 
 @Component({
   selector: 'pfo-about',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  constructor() { }
+  constructor(public tracking: TrackingService) { }
 
   public viewResume() {
     window.open('assets/documents/daria-khil-artist-cv.pdf', '_blank');

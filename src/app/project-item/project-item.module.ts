@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ImageViewModule } from '../media-view/image-view/image-view.module';
-import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
+import { MaterialAndFlexModule } from '../material-and-flex.module';
 import { NgModule } from '@angular/core';
 import { ProjectItemComponent } from './project-item.component';
 import { RouterModule } from '@angular/router';

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { MaterialAndFlexModule } from '../shared/material-and-flex.module';
+import { MaterialAndFlexModule } from '../material-and-flex.module';
 import { NgModule } from '@angular/core';
 import { ProjectComponent } from './project.component';
 
