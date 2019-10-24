@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   popupDuration: 7000,
-  enableTracking: true,
+  enableTracking: false,
   tracking: {
     gtag: {
       src: 'https://www.googletagmanager.com/gtag/js',
