@@ -1,6 +1,6 @@
 import { forkJoin, from, fromEvent, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { map, switchMap, take, tap } from 'rxjs/operators';
+import { map, mergeMap, switchMap, take, tap } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class ImageLoadService {
@@ -15,5 +15,14 @@ export class ImageLoadService {
                     ))),
                 switchMap(() => forkJoin(loading).pipe(take(1)))
             );
+    }
+
+    public whenAny(images: HTMLImageElement[]): Observable<HTMLImageElement> {
+        return from(images)
+            .pipe(
+                mergeMap(image => fromEvent(image, 'load').pipe(
+                    take(1),
+                    map(() => image)
+                )));
     }
 }

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HtmlHelper } from '../../shared/html.helper';
+import { HtmlHelper } from '../../shared/html-helper';
 import { MainSectionService } from './shared/main-section.service';
 import { ResizeSensor } from 'css-element-queries';
 

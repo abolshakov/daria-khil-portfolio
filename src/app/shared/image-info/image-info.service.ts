@@ -1,8 +1,8 @@
 import { ElementInfo } from '../masonry/element-info.interface';
+import { HtmlHelper } from '../html-helper';
 import { ImageInfo } from './image-info.model';
 import { Injectable } from '@angular/core';
 import { RateableSize } from '../masonry/rateable-size.model';
-import { HtmlHelper } from '../html.helper';
 
 @Injectable({ providedIn: 'root' })
 export class ImageInfoService {
@@ -14,10 +14,10 @@ export class ImageInfoService {
         images.forEach((image, i) => {
             image.removeAttribute('width');
             image.removeAttribute('height');
-            
+
             const width = info[i].width;
             const height = info[i].height;
-            
+
             if (width > height) {
                 image.setAttribute('width', Math.floor(width).toString());
             } else {

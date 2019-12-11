@@ -1,9 +1,10 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
 import { ComparerService } from '../shared/comparer.service';
 import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
 import { Direction } from '../shared/masonry/direction.enum';
 import { HeaderService } from '../layout/header/shared/header.service';
+import { HtmlHelper } from '../shared/html-helper';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
 import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MainSectionService } from '../layout/main/shared/main-section.service';
@@ -22,9 +23,8 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     @ViewChild('container', { static: true }) containerRef: ElementRef<HTMLElement>;
     @ViewChildren('img') imageRefs: QueryList<ElementRef<HTMLImageElement>>;
 
-    private imageElements: HTMLImageElement[];
-
-    public loading = true;
+    private loadedImageElements: HTMLImageElement[] = [];
+    private scrollBarWidth: number;
 
     public get images(): string[] {
         return this.project.items.map(x => x.image);
@@ -40,6 +40,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         private loader: ImageLoadService,
         private mainSection: MainSectionService,
         private masonry: MasonryService,
+        private renderer: Renderer2,
         private route: ActivatedRoute,
         private router: Router
     ) {
@@ -56,12 +57,20 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     public ngAfterViewInit() {
-        this.imageElements = this.imageRefs.map(r => r.nativeElement);
+        this.scrollBarWidth = HtmlHelper.getScrollbarWidth();
+        const imageElements = this.imageRefs.map(r => r.nativeElement);
 
-        this.loader.whenAll(this.imageElements)
+        const anySubscr = this.loader.whenAny(imageElements)
+            .subscribe(image => {
+                this.loadedImageElements.push(image);
+                this.construct();
+            });
+
+        this.loader.whenAll(imageElements)
             .pipe(take(1))
             .subscribe(() => {
-                this.loading = false;
+                anySubscr.unsubscribe();
+                this.loadedImageElements = imageElements;
                 this.construct();
             });
 
@@ -90,13 +99,25 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         this.router.navigate([this.router.url, itemId], { replaceUrl: replaceUrl });
     }
 
+    private hideAllImages() {
+        this.loadedImageElements.forEach(x => this.renderer.addClass(x.parentElement, 'hidden'));
+    }
+
+    private showAllImages() {
+        this.loadedImageElements.forEach(x => this.renderer.removeClass(x.parentElement, 'hidden'));
+    }
+
     private construct() {
-        const info = this.imageInfo.retrive(this.imageElements);
+        this.hideAllImages();
+        const info = this.imageInfo.retrive(this.loadedImageElements);
         const style = window.getComputedStyle(this.containerRef.nativeElement);
-        const width = Math.floor(Number.parseFloat(style.width));
-        const height = document.documentElement.clientHeight / 3;
+        const itemsPerView = 3;
+        const scrollBarWidth = this.loadedImageElements.length > itemsPerView ? this.scrollBarWidth : 0;
+        const width = Math.floor(Number.parseFloat(style.width)) - scrollBarWidth  ;
+        const height = document.documentElement.clientHeight / itemsPerView;
         const lineSize = new RateableSize(width, height);
         const updatedInfo = this.masonry.construct(info, lineSize, Direction.row);
-        this.imageInfo.update(this.imageElements, updatedInfo);
+        this.imageInfo.update(this.loadedImageElements, updatedInfo);
+        this.showAllImages();
     }
 }
