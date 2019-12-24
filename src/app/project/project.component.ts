@@ -29,7 +29,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
         return this.project.items.map(x => x.image);
     }
 
-    private get project(): Project {
+    public get project(): Project {
         return this.route.snapshot.data['project'];
     }
 
