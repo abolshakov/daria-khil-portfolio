@@ -1,12 +1,11 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
 import { ComparerService } from '../shared/comparer.service';
-import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { Direction } from '../shared/masonry/direction.enum';
 import { HeaderService } from '../layout/header/shared/header.service';
 import { HtmlHelper } from '../shared/html-helper';
 import { ImageInfoService } from '../shared/image-info/image-info.service';
-import { ImageLoadService } from '../shared/image-info/image-load.service';
 import { MainSectionService } from '../layout/main/shared/main-section.service';
 import { MasonryService } from '../shared/masonry/masonry.service';
 import { of } from 'rxjs';
@@ -23,7 +22,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     @ViewChild('container', { static: true }) containerRef: ElementRef<HTMLElement>;
     @ViewChildren('img') imageRefs: QueryList<ElementRef<HTMLImageElement>>;
 
-    private loadedImageElements: HTMLImageElement[] = [];
+    private imageElements: HTMLImageElement[] = [];
     private scrollBarWidth: number;
 
     public get images(): string[] {
@@ -37,7 +36,6 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     constructor(
         private header: HeaderService,
         private imageInfo: ImageInfoService,
-        private loader: ImageLoadService,
         private mainSection: MainSectionService,
         private masonry: MasonryService,
         private renderer: Renderer2,
@@ -58,21 +56,7 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
 
     public ngAfterViewInit() {
         this.scrollBarWidth = HtmlHelper.getScrollbarWidth();
-        const imageElements = this.imageRefs.map(r => r.nativeElement);
-
-        const anySubscr = this.loader.whenAny(imageElements)
-            .subscribe(image => {
-                this.loadedImageElements.push(image);
-                this.construct();
-            });
-
-        this.loader.whenAll(imageElements)
-            .pipe(take(1))
-            .subscribe(() => {
-                anySubscr.unsubscribe();
-                this.loadedImageElements = imageElements;
-                this.construct();
-            });
+        this.imageElements = this.imageRefs.map(r => r.nativeElement);
 
         this.mainSection.margins
             .pipe(
@@ -100,24 +84,24 @@ export class ProjectComponent extends Unsubscribable implements OnInit, AfterVie
     }
 
     private hideAllImages() {
-        this.loadedImageElements.forEach(x => this.renderer.addClass(x.parentElement, 'hidden'));
+        this.imageElements.forEach(x => this.renderer.addClass(x.parentElement, 'hidden'));
     }
 
     private showAllImages() {
-        this.loadedImageElements.forEach(x => this.renderer.removeClass(x.parentElement, 'hidden'));
+        this.imageElements.forEach(x => this.renderer.removeClass(x.parentElement, 'hidden'));
     }
 
     private construct() {
         this.hideAllImages();
-        const info = this.imageInfo.retrive(this.loadedImageElements);
+        const info = this.imageInfo.retrive(this.imageElements);
         const style = window.getComputedStyle(this.containerRef.nativeElement);
         const itemsPerView = 3;
-        const scrollBarWidth = this.loadedImageElements.length > itemsPerView ? this.scrollBarWidth : 0;
-        const width = Math.floor(Number.parseFloat(style.width)) - scrollBarWidth  ;
+        const scrollBarWidth = this.imageElements.length > itemsPerView ? this.scrollBarWidth : 0;
+        const width = Math.floor(Number.parseFloat(style.width)) - scrollBarWidth;
         const height = document.documentElement.clientHeight / itemsPerView;
         const lineSize = new RateableSize(width, height);
         const updatedInfo = this.masonry.construct(info, lineSize, Direction.row);
-        this.imageInfo.update(this.loadedImageElements, updatedInfo);
+        this.imageInfo.update(this.imageElements, updatedInfo);
         this.showAllImages();
     }
 }

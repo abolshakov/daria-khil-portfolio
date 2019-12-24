@@ -5,5 +5,7 @@ export class ProjectItem {
         public description?: string,
         public url?: string,
         public video?: string,
+        public width?: number,
+        public height?: number
     ) { }
 }

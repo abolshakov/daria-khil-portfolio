@@ -1,10 +1,10 @@
 <div class="space-holder" #container>
   <div class="container">
-    <div class="image hidden" *ngFor="let image of images; let index = index" (click)="openProjectItem(index)" matRipple>
+    <div class="image hidden" *ngFor="let item of project.items; let index = index" (click)="openProjectItem(index)" matRipple>
       <div *ngIf="project.items[index].video" class="icon-button icon-button-play">
         <mat-icon svgIcon="play"></mat-icon>
       </div>
-      <img src="{{image}}" #img />
+      <img src="{{item.image}}" width="{{item.width}}" height="{{item.height}}" #img />
     </div>
   </div>
 </div>

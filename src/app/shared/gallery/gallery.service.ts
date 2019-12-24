@@ -25,7 +25,9 @@ export class GalleryService {
                     item.image,
                     item.description,
                     item.url,
-                    item.video
+                    item.video,
+                    item.width,
+                    item.height
                 );
                 if (projectItem.image) {
                     projectItem.image = this.imagesPath + projectItem.image;

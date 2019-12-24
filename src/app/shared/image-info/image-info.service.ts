@@ -18,16 +18,13 @@ export class ImageInfoService {
             const width = info[i].width;
             const height = info[i].height;
 
-            if (width > height) {
-                image.setAttribute('width', Math.floor(width).toString());
-            } else {
-                image.setAttribute('height', Math.floor(height).toString());
-            }
+            image.setAttribute('width', Math.floor(width).toString());
+            image.setAttribute('height', Math.floor(height).toString());
         });
     }
 
     private imageSize(image: HTMLImageElement): RateableSize {
-        return new RateableSize(image.naturalWidth, image.naturalHeight);
+        return new RateableSize(image.width, image.height);
     }
 
     private imageMargins(image: HTMLImageElement): RateableSize {
