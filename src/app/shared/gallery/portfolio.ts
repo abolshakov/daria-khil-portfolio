@@ -1,18 +1,34 @@
 export const PORTFOLIO = [
   {
-    id: 4020078,
-    title: 'Showreel 2019',
-    image: 'showreel-2019.jpg',
-    description: 'A collection of animation clippings for 2018-2019 years.',
+    id: 7225846,
+    title: 'Animation for Qdooz',
+    image: 'animation-for-qdooz.png',
+    description: 'Directed and animated by me in collaboration with the Hound Studio team.',
     category: 'Animation',
     items: [
       {
-        id: 9977109,
-        image: 'showreel-2019/showreel-2019.jpg',
-        description: 'Showreel 2019',
-        video: 'https://vimeo.com/338517704',
-        width: 1440,
-        height: 810
+        id: 3245792,
+        image: 'animation-for-qdooz/32508d3f-1a88-442e-9dfb-1c0143c9a4a3.png',
+        description: 'Our project was featured in two galleries on Behance! ;)',
+        url: 'https://www.behance.net/gallery/88393129/Qdooz',
+        width: 857,
+        height: 670
+      },
+      {
+        id: 1447687,
+        image: 'animation-for-qdooz/5b1ec3ae-5084-4002-b2c1-80f7a81f0a44.png',
+        description: 'I had a nice experience of directing and animating this video in collaboration with the Hound Studio team.',
+        video: 'https://vimeo.com/374363478',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 1724045,
+        image: 'animation-for-qdooz/cdcbaa22-ddd0-47f9-a796-3689fb83471f.gif',
+        description: 'A bit of process...',
+        url: 'https://www.behance.net/gallery/88393129/Qdooz',
+        width: 1130,
+        height: 754
       }
     ]
   },
@@ -128,6 +144,70 @@ export const PORTFOLIO = [
         description: 'Logo animation',
         width: 800,
         height: 450
+      }
+    ]
+  },
+  {
+    id: 6922603,
+    title: 'Animation for LastSwab',
+    image: 'animation-for-last-swab.png',
+    description: 'A collaboartive project, directed by me at the Hound Studio',
+    category: 'Animation',
+    items: [
+      {
+        id: 3550245,
+        image: 'animation-for-last-swab/51a49bc9-e8b7-49d8-a692-cd8db99c3e0d.png',
+        description: 'Our project was featured in the Motion Design gallery on Behance :)',
+        url: 'https://www.behance.net/gallery/88146123/LastSwab',
+        width: 857,
+        height: 670
+      },
+      {
+        id: 4809082,
+        image: 'animation-for-last-swab/7ec5bcb9-9a7e-40f8-89c3-2809a62bf771.png',
+        description: 'An animated video about a sustainable alternative to the cotton swabs that helps to reduce harmful waste impacting the environment.',
+        video: 'https://vimeo.com/375662853',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7125242,
+        image: 'animation-for-last-swab/7dee31a9-d958-4f28-88c6-09adc41f15bf.gif',
+        url: 'https://www.behance.net/gallery/88146123/LastSwab',
+        width: 1400,
+        height: 768
+      }
+    ]
+  },
+  {
+    id: 3436025,
+    title: 'Animation for Payticket',
+    image: 'animation-for-payticket.jpg',
+    description: 'An animated commercial that I directed and animated together with the Hound Studio team for the Traffic Ticket App',
+    category: 'Animation',
+    items: [
+      {
+        id: 2420286,
+        image: 'animation-for-payticket/e409c9ba-67a7-4ccf-801b-2819ff17c92b.png',
+        description: 'Some additional details and process.',
+        url: 'https://www.behance.net/gallery/88794337/PayTicket',
+        width: 857,
+        height: 670
+      },
+      {
+        id: 9991113,
+        image: 'animation-for-payticket/d8224cff-5beb-47c7-9866-31330171f842.png',
+        description: 'An animated commercial that I directed and animated together with the Hound Studio team for the Traffic Ticket App, which allows paying for a traffic ticket online within seconds.',
+        video: 'https://vimeo.com/376385770',
+        width: 2300,
+        height: 1080
+      },
+      {
+        id: 1088239,
+        image: 'animation-for-payticket/683a2072-b9b9-4ea5-b78a-522f63973025.gif',
+        url: 'https://www.behance.net/gallery/88794337/PayTicket',
+        width: 1400,
+        height: 394
       }
     ]
   },
@@ -426,63 +506,63 @@ export const PORTFOLIO = [
   },
   {
     id: 9423090,
-    title: 'Locations Set for Merge Cats Game',
-    image: 'locations-set-for-merge-cats-game.png',
-    description: 'Designs for the level map in a cat style.',
-    category: 'Concept',
+    title: 'Illustrations for Merge Cats Game',
+    image: 'illustrations-for-merge-cats-game.png',
+    description: 'Designs for the game\'s level map.',
+    category: 'Illustration',
     items: [
       {
         id: 2127565,
-        image: 'locations-set-for-merge-cats-game/levels.png',
+        image: 'illustrations-for-merge-cats-game/levels.png',
         description: 'Levels',
         width: 1440,
         height: 810
       },
       {
         id: 6858802,
-        image: 'locations-set-for-merge-cats-game/lock-and-map-icons.png',
+        image: 'illustrations-for-merge-cats-game/lock-and-map-icons.png',
         description: 'Lock and map icons',
         width: 450,
         height: 620
       },
       {
         id: 8807852,
-        image: 'locations-set-for-merge-cats-game/forest-cabin-cat.png',
+        image: 'illustrations-for-merge-cats-game/forest-cabin-cat.png',
         description: 'Forest cabin-cat',
         width: 960,
         height: 960
       },
       {
         id: 6157295,
-        image: 'locations-set-for-merge-cats-game/jungle-cave-cat.png',
+        image: 'illustrations-for-merge-cats-game/jungle-cave-cat.png',
         description: 'Jungle cave-cat',
         width: 960,
         height: 960
       },
       {
         id: 2765165,
-        image: 'locations-set-for-merge-cats-game/icy-igloo-cat.png',
+        image: 'illustrations-for-merge-cats-game/icy-igloo-cat.png',
         description: 'Icy igloo-cat',
         width: 960,
         height: 960
       },
       {
         id: 6170575,
-        image: 'locations-set-for-merge-cats-game/desert-pyramid-cat.png',
+        image: 'illustrations-for-merge-cats-game/desert-pyramid-cat.png',
         description: 'Desert pyramid-cat',
         width: 960,
         height: 960
       },
       {
         id: 2901393,
-        image: 'locations-set-for-merge-cats-game/marine-ship-cat.png',
+        image: 'illustrations-for-merge-cats-game/marine-ship-cat.png',
         description: 'Marine ship-cat',
         width: 960,
         height: 960
       },
       {
         id: 8736312,
-        image: 'locations-set-for-merge-cats-game/ef119928-7cab-45d6-95e5-1ed2e513aec4.png',
+        image: 'illustrations-for-merge-cats-game/ef119928-7cab-45d6-95e5-1ed2e513aec4.png',
         description: 'Set of trees',
         width: 1440,
         height: 810
@@ -809,17 +889,31 @@ export const PORTFOLIO = [
       },
       {
         id: 3810926,
-        image: 'character-designs-for-memoryator-game/9914f6ca-f930-4dc4-8afd-a1ccfbeda03d.png',
+        image: 'character-designs-for-memoryator-game/d1f975fc-e67b-4bd5-b43d-9cd620dc44be.png',
         description: 'Fourth-level Nightmare concept',
+        width: 2630,
+        height: 1080
+      },
+      {
+        id: 1780418,
+        image: 'character-designs-for-memoryator-game/4c59f750-8f21-476b-ad8b-fea0df91d8fa.png',
+        description: 'Nightmare character design process',
         width: 1440,
         height: 810
       },
       {
-        id: 1780418,
-        image: 'character-designs-for-memoryator-game/2ac222f8-f570-4ff7-b9cd-69a0ba772caf.png',
-        description: 'Boss concept',
-        width: 1440,
-        height: 810
+        id: 4407856,
+        image: 'character-designs-for-memoryator-game/eec0fe3b-285f-4711-8adb-40363bfd4431.png',
+        description: 'Some researches for the Nightmare character',
+        width: 2400,
+        height: 1350
+      },
+      {
+        id: 4087888,
+        image: 'character-designs-for-memoryator-game/786822bb-ef47-438f-b934-d9eed6dd58a6.png',
+        description: 'Forest animals: hare, owl and deer',
+        width: 1920,
+        height: 1729
       }
     ]
   },
@@ -1331,6 +1425,20 @@ export const PORTFOLIO = [
     category: 'Illustration',
     items: [
       {
+        id: 4729792,
+        image: 'digital-illustrations/b17829c5-3cb4-41d0-bfb9-2f3eaa69f02a.png',
+        description: 'Two Beasts',
+        width: 2048,
+        height: 2048
+      },
+      {
+        id: 6532804,
+        image: 'digital-illustrations/owl-rider.jpg',
+        description: 'Owl rider',
+        width: 1098,
+        height: 960
+      },
+      {
         id: 9686021,
         image: 'digital-illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
         description: '"A Bug\'s Life" fanart',
@@ -1342,13 +1450,6 @@ export const PORTFOLIO = [
         image: 'digital-illustrations/dr-folsbuben-s-adventure.jpg',
         description: 'Dr Folsbuben\'s Adventure',
         width: 1173,
-        height: 960
-      },
-      {
-        id: 6532804,
-        image: 'digital-illustrations/owl-rider.jpg',
-        description: 'Owl rider',
-        width: 1098,
         height: 960
       },
       {
@@ -1385,6 +1486,14 @@ export const PORTFOLIO = [
         description: 'Style test for Abbax animation, made with Hound Studio',
         width: 1440,
         height: 810
+      },
+      {
+        id: 5680773,
+        image: 'digital-illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
+        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
+        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
+        width: 3840,
+        height: 2160
       }
     ]
   },
@@ -1395,6 +1504,22 @@ export const PORTFOLIO = [
     description: 'Animated videos for services explaining.',
     category: 'Animation',
     items: [
+      {
+        id: 6681501,
+        image: 'explainer-videos/9a688332-1461-4abe-b7fd-143bf1eeab5f.png',
+        description: 'Illustrations for the animated video about a mini speaker by Yandex',
+        video: 'https://www.youtube.com/watch?v=c0mVt6PoUeE',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 2235342,
+        image: 'explainer-videos/35aff08e-49c0-414f-b835-f28a872b9eef.png',
+        description: 'Illustrations for the animated video about Evotor\'s marketing success.',
+        video: 'https://vimeo.com/340274780',
+        width: 1440,
+        height: 810
+      },
       {
         id: 2862979,
         image: 'explainer-videos/b8922248-beb1-4d86-ae4f-a84aca699957.png',
@@ -1408,14 +1533,6 @@ export const PORTFOLIO = [
         image: 'explainer-videos/51d6255a-e3c4-402b-94f6-c59d0131c21d.png',
         description: 'Explainer video of the Smart City project.',
         video: 'https://vimeo.com/319157235',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 2235342,
-        image: 'explainer-videos/35aff08e-49c0-414f-b835-f28a872b9eef.png',
-        description: 'Illustrations for the animated video about Evotor\'s marketing success.',
-        video: 'https://vimeo.com/340274780',
         width: 1440,
         height: 810
       },
@@ -1606,6 +1723,106 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 4875408,
+    title: 'Sketchbook',
+    image: 'sketchbook.png',
+    description: 'My personal drawings.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 2653842,
+        image: 'sketchbook/7ce5178a-c4be-4b16-b94d-d6a4483ffba2.png',
+        description: 'Concept for an animated video',
+        width: 2560,
+        height: 1440
+      },
+      {
+        id: 9528313,
+        image: 'sketchbook/3d0687dd-8398-4b14-b029-f192b085c314.png',
+        description: 'Chilling in the stars (quick doodle)',
+        width: 2000,
+        height: 2000
+      },
+      {
+        id: 9320189,
+        image: 'sketchbook/summer-dad.jpg',
+        description: 'Summer dad',
+        width: 912,
+        height: 912
+      },
+      {
+        id: 2584544,
+        image: 'sketchbook/community.jpg',
+        description: 'Community',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 5131750,
+        image: 'sketchbook/creative-glasses.jpg',
+        description: 'Creative glasses',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 9433167,
+        image: 'sketchbook/a-tiny-cute-illustration-of-a-little-broccoli-who-believe-that-you-can-be-whoever-you-want.png',
+        description: 'A tiny cute illustration of a little broccoli, who believe that you can be whoever you want :)',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 5745865,
+        image: 'sketchbook/elf-princess.jpg',
+        description: 'Elf Princess',
+        width: 800,
+        height: 800
+      },
+      {
+        id: 3548024,
+        image: 'sketchbook/hippie-dog.jpg',
+        description: 'Hippie Dog',
+        width: 800,
+        height: 800
+      },
+      {
+        id: 8302831,
+        image: 'sketchbook/me.png',
+        description: 'Me',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 4049010,
+        image: 'sketchbook/bogdan.png',
+        description: 'Bogdan',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 6674339,
+        image: 'sketchbook/lil-me.png',
+        description: 'Lil me',
+        width: 785,
+        height: 960
+      },
+      {
+        id: 3244523,
+        image: 'sketchbook/parrot-sketch.png',
+        description: 'Parrot sketch',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 3464218,
+        image: 'sketchbook/50ac00da-79cf-4ba5-9fab-31c12d9bb13e.JPG',
+        description: '"Conservatoire" Vegetables-characters',
+        width: 1440,
+        height: 548
+      }
+    ]
+  },
+  {
     id: 3934960,
     title: 'Illustrations and Web Design for CryptoSoul',
     image: 'illustrations-and-web-design-for-crypto-soul.jpg',
@@ -1747,92 +1964,6 @@ export const PORTFOLIO = [
         description: 'Cats Sticker pack',
         width: 600,
         height: 800
-      }
-    ]
-  },
-  {
-    id: 4875408,
-    title: 'Sketchbook',
-    image: 'sketchbook.png',
-    description: 'My personal drawings.',
-    category: 'Illustration',
-    items: [
-      {
-        id: 9433167,
-        image: 'sketchbook/a-tiny-cute-illustration-of-a-little-broccoli-who-believe-that-you-can-be-whoever-you-want.png',
-        description: 'A tiny cute illustration of a little broccoli, who believe that you can be whoever you want :)',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 5745865,
-        image: 'sketchbook/elf-princess.jpg',
-        description: 'Elf Princess',
-        width: 800,
-        height: 800
-      },
-      {
-        id: 3548024,
-        image: 'sketchbook/hippie-dog.jpg',
-        description: 'Hippie Dog',
-        width: 800,
-        height: 800
-      },
-      {
-        id: 8302831,
-        image: 'sketchbook/me.png',
-        description: 'Me',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 4049010,
-        image: 'sketchbook/bogdan.png',
-        description: 'Bogdan',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 6674339,
-        image: 'sketchbook/lil-me.png',
-        description: 'Lil me',
-        width: 785,
-        height: 960
-      },
-      {
-        id: 2584544,
-        image: 'sketchbook/community.jpg',
-        description: 'Community',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 5131750,
-        image: 'sketchbook/creative-glasses.jpg',
-        description: 'Creative glasses',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 9320189,
-        image: 'sketchbook/summer-dad.jpg',
-        description: 'Summer dad',
-        width: 912,
-        height: 912
-      },
-      {
-        id: 3244523,
-        image: 'sketchbook/parrot-sketch.png',
-        description: 'Parrot sketch',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 3464218,
-        image: 'sketchbook/50ac00da-79cf-4ba5-9fab-31c12d9bb13e.JPG',
-        description: '"Conservatoire" Vegetables-characters',
-        width: 1440,
-        height: 548
       }
     ]
   }
