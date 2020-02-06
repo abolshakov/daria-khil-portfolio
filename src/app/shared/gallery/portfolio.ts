@@ -24,11 +24,11 @@ export const PORTFOLIO = [
       },
       {
         id: 1724045,
-        image: 'animation-for-qdooz/cdcbaa22-ddd0-47f9-a796-3689fb83471f.gif',
+        image: 'animation-for-qdooz/78af9a21-7b2c-4865-8519-1d1e301ff8b5.gif',
         description: 'A bit of process...',
         url: 'https://www.behance.net/gallery/88393129/Qdooz',
-        width: 1130,
-        height: 754
+        width: 1400,
+        height: 787
       }
     ]
   },
@@ -1426,10 +1426,10 @@ export const PORTFOLIO = [
     items: [
       {
         id: 4729792,
-        image: 'digital-illustrations/b17829c5-3cb4-41d0-bfb9-2f3eaa69f02a.png',
+        image: 'digital-illustrations/7f61f99d-d2bb-4302-93ad-b4ac0a3abdd1.png',
         description: 'Two Beasts',
-        width: 2048,
-        height: 2048
+        width: 1800,
+        height: 1800
       },
       {
         id: 6532804,
