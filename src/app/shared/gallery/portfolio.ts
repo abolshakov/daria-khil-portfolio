@@ -50,13 +50,6 @@ export const PORTFOLIO = [
         height: 450
       },
       {
-        id: 7110340,
-        image: 'animation-for-boost-vr/frames.png',
-        description: 'Frames',
-        width: 1440,
-        height: 540
-      },
-      {
         id: 2747612,
         image: 'animation-for-boost-vr/animatic.gif',
         description: 'Animatic',
@@ -72,6 +65,13 @@ export const PORTFOLIO = [
         height: 540
       },
       {
+        id: 7110340,
+        image: 'animation-for-boost-vr/frames.png',
+        description: 'Frames',
+        width: 1440,
+        height: 540
+      },
+      {
         id: 9039756,
         image: 'animation-for-boost-vr/98cb9aac-9858-4e9e-a56e-82e5dd521c02.gif',
         description: 'The end',
@@ -83,7 +83,7 @@ export const PORTFOLIO = [
   {
     id: 8573708,
     title: 'Character Design',
-    image: 'character-design.jpg',
+    image: 'character-design.png',
     description: 'Character development and illustrations for multiple projects.',
     category: 'Concept',
     items: [
@@ -205,6 +205,149 @@ export const PORTFOLIO = [
         description: 'Strangimals',
         width: 1700,
         height: 1700
+      }
+    ]
+  },
+  {
+    id: 5019519,
+    title: 'Memoryator Game',
+    image: 'memoryator-game.png',
+    description: 'Visual development for the indie game project.',
+    category: 'Concept',
+    items: [
+      {
+        id: 4064303,
+        image: 'memoryator-game/c899c151-355d-4d5b-bd6a-7a9645878694.jpg',
+        description: 'Birch Grove',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 8820968,
+        image: 'memoryator-game/ef6d6dbb-20c4-40dc-98f4-1db42d967b14.jpg',
+        description: 'Dark Woods',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 8642395,
+        image: 'memoryator-game/e76d1d66-f924-463e-a6de-14874a34dd90.jpg',
+        description: 'Flower Valley',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 9053558,
+        image: 'memoryator-game/1ed420c5-c30d-4196-831c-cb7e37863bf4.jpg',
+        description: 'Swampy Trees',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7849840,
+        image: 'memoryator-game/a6d6aea6-9c36-4ecd-9b5b-71bb8fc06c15.jpg',
+        description: 'Roofs in the Dark Woods',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 6610130,
+        image: 'memoryator-game/b75073da-f2cc-4df5-ac6a-e659bd1b6d7b.png',
+        description: 'Spawn',
+        width: 1000,
+        height: 1000
+      },
+      {
+        id: 7180983,
+        image: 'memoryator-game/65300e92-dcf7-4492-80ff-ad346b781043.png',
+        description: 'Wreath table',
+        width: 600,
+        height: 600
+      },
+      {
+        id: 6136971,
+        image: 'memoryator-game/5ee3284b-9959-4048-90b4-6d60e54b6d38.gif',
+        description: 'Process of the Nightmare\'s run cycle',
+        video: 'https://vimeo.com/394376349',
+        width: 400,
+        height: 400
+      },
+      {
+        id: 7997429,
+        image: 'memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
+        description: 'Main character design research',
+        width: 1440,
+        height: 810
+      },
+      {
+        id: 5585575,
+        image: 'memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
+        description: 'Main character pose sheet',
+        width: 1440,
+        height: 810
+      },
+      {
+        id: 3517206,
+        image: 'memoryator-game/8bd6ca5f-6dcf-4d3b-9c61-f0667139651b.png',
+        description: 'First-level Nightmare concept',
+        width: 1440,
+        height: 810
+      },
+      {
+        id: 6375686,
+        image: 'memoryator-game/26fabb9d-2a18-4638-9700-ffbbcc2e2de6.png',
+        description: 'Nightmares of different levels',
+        width: 1440,
+        height: 426
+      },
+      {
+        id: 3810926,
+        image: 'memoryator-game/d1f975fc-e67b-4bd5-b43d-9cd620dc44be.png',
+        description: 'Fourth-level Nightmare concept',
+        width: 2630,
+        height: 1080
+      },
+      {
+        id: 1780418,
+        image: 'memoryator-game/4c59f750-8f21-476b-ad8b-fea0df91d8fa.png',
+        description: 'Nightmare character design process',
+        width: 1440,
+        height: 810
+      },
+      {
+        id: 4407856,
+        image: 'memoryator-game/eec0fe3b-285f-4711-8adb-40363bfd4431.png',
+        description: 'Some researches for the Nightmare character',
+        width: 2400,
+        height: 1350
+      },
+      {
+        id: 4087888,
+        image: 'memoryator-game/786822bb-ef47-438f-b934-d9eed6dd58a6.png',
+        description: 'Forest animals: hare, owl and deer',
+        width: 1920,
+        height: 1729
+      },
+      {
+        id: 9473807,
+        image: 'memoryator-game/ace1e55a-629f-4c5a-9f0e-e82a129087e7.png',
+        description: 'Flowers',
+        width: 1780,
+        height: 1000
+      },
+      {
+        id: 8809368,
+        image: 'memoryator-game/c2f8913a-cdb3-4979-b96a-312f5b8898c3.png',
+        description: 'Spruces',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 4123338,
+        image: 'memoryator-game/5ec03f87-42b0-48ee-b396-bf756086756a.png',
+        description: 'Totems',
+        width: 1920,
+        height: 1080
       }
     ]
   },
@@ -522,7 +665,7 @@ export const PORTFOLIO = [
       },
       {
         id: 3750904,
-        image: 'illustrations-for-dogg-dog/b09c63b2-7fa7-4a61-9758-2de6a325f776.jpg',
+        image: 'illustrations-for-dogg-dog/3f12d910-e619-4b0f-be34-67720dfcf44f.jpg',
         description: 'Page 404',
         width: 900,
         height: 600
@@ -540,71 +683,6 @@ export const PORTFOLIO = [
         description: 'Congratulations!',
         width: 850,
         height: 880
-      }
-    ]
-  },
-  {
-    id: 5019519,
-    title: 'Memoryator Game',
-    image: 'memoryator-game.png',
-    description: 'Visual development for the indie game project.',
-    category: 'Concept',
-    items: [
-      {
-        id: 7997429,
-        image: 'memoryator-game/f760ed1c-c92e-451b-b999-2f3adc3bff89.png',
-        description: 'Main character design research',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 5585575,
-        image: 'memoryator-game/678c6226-b1e2-41b9-8759-1a0ab804f20b.png',
-        description: 'Main character pose sheet',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 6375686,
-        image: 'memoryator-game/26fabb9d-2a18-4638-9700-ffbbcc2e2de6.png',
-        description: 'Nightmares of different levels',
-        width: 1440,
-        height: 426
-      },
-      {
-        id: 3517206,
-        image: 'memoryator-game/8bd6ca5f-6dcf-4d3b-9c61-f0667139651b.png',
-        description: 'First-level Nightmare concept',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 3810926,
-        image: 'memoryator-game/d1f975fc-e67b-4bd5-b43d-9cd620dc44be.png',
-        description: 'Fourth-level Nightmare concept',
-        width: 2630,
-        height: 1080
-      },
-      {
-        id: 1780418,
-        image: 'memoryator-game/4c59f750-8f21-476b-ad8b-fea0df91d8fa.png',
-        description: 'Nightmare character design process',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 4407856,
-        image: 'memoryator-game/eec0fe3b-285f-4711-8adb-40363bfd4431.png',
-        description: 'Some researches for the Nightmare character',
-        width: 2400,
-        height: 1350
-      },
-      {
-        id: 4087888,
-        image: 'memoryator-game/786822bb-ef47-438f-b934-d9eed6dd58a6.png',
-        description: 'Forest animals: hare, owl and deer',
-        width: 1920,
-        height: 1729
       }
     ]
   },
@@ -815,18 +893,18 @@ export const PORTFOLIO = [
         height: 960
       },
       {
-        id: 8144322,
-        image: 'illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
-        description: 'Magic hut by the Rainy River',
-        width: 1920,
-        height: 1080
-      },
-      {
         id: 6776108,
         image: 'illustrations/de2515c7-2f15-4d0b-af0f-230a5a683fac.jpg',
         description: 'Domestic Christmas',
         width: 1440,
         height: 960
+      },
+      {
+        id: 8144322,
+        image: 'illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
+        description: 'Magic hut by the Rainy River',
+        width: 1920,
+        height: 1080
       },
       {
         id: 7449827,
