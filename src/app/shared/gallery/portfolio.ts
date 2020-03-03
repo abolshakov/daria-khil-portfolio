@@ -213,7 +213,7 @@ export const PORTFOLIO = [
     title: 'Character Designs for MyRide',
     image: 'character-designs-for-my-ride.png',
     description: 'Illustrations of the characters for the animated series, explaining MyRide\'s services.',
-    category: 'Concept',
+    category: 'Illustration',
     items: [
       {
         id: 9933808,
@@ -613,7 +613,7 @@ export const PORTFOLIO = [
     title: 'CryptoSoul Game',
     image: 'crypto-soul-game.png',
     description: 'Indie game project that I art directed.',
-    category: 'Illustration',
+    category: 'Concept',
     items: [
       {
         id: 7155101,
@@ -772,6 +772,13 @@ export const PORTFOLIO = [
         height: 960
       },
       {
+        id: 6572595,
+        image: 'illustrations/62885e58-6247-4d5f-aee6-a7143016e526.jpg',
+        description: 'Dr Folsbuben\'s Adventure',
+        width: 1173,
+        height: 960
+      },
+      {
         id: 9686021,
         image: 'illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
         description: '"A Bug\'s Life" fanart',
@@ -779,11 +786,40 @@ export const PORTFOLIO = [
         height: 810
       },
       {
-        id: 6572595,
-        image: 'illustrations/62885e58-6247-4d5f-aee6-a7143016e526.jpg',
-        description: 'Dr Folsbuben\'s Adventure',
+        id: 5680773,
+        image: 'illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
+        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
+        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
+        width: 3840,
+        height: 2160
+      },
+      {
+        id: 4364081,
+        image: 'illustrations/ef5ecb31-192a-4ec7-b5b0-bec278bb1db1.png',
+        description: 'Illustrations for the Merge Cats game',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 8714748,
+        image: 'illustrations/a5372f07-cc5e-4960-a442-dc0a6c7204b8.png',
+        description: 'Sights illustrations',
+        width: 1920,
+        height: 1280
+      },
+      {
+        id: 1057522,
+        image: 'illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
+        description: 'Blizzard Paladin fanars',
         width: 1173,
         height: 960
+      },
+      {
+        id: 8144322,
+        image: 'illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
+        description: 'Magic hut by the Rainy River',
+        width: 1920,
+        height: 1080
       },
       {
         id: 6776108,
@@ -805,26 +841,21 @@ export const PORTFOLIO = [
         description: 'Snowball',
         width: 719,
         height: 960
-      },
+      }
+    ]
+  },
+  {
+    id: 1218434,
+    title: 'Showreel 2018',
+    image: 'showreel-2018.png',
+    description: 'Some animations of the year 2018',
+    category: 'Animation',
+    items: [
       {
-        id: 1057522,
-        image: 'illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
-        description: 'Blizzard Paladin fanars',
-        width: 1173,
-        height: 960
-      },
-      {
-        id: 5680773,
-        image: 'illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
-        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
-        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
-        width: 3840,
-        height: 2160
-      },
-      {
-        id: 4364081,
-        image: 'illustrations/87e29771-c8fb-4d33-99b5-5769d8ae84d6.png',
-        description: 'Illustrations for the',
+        id: 8920078,
+        image: 'showreel-2018/6085d2fb-c345-40f4-a5aa-2c07ff05ea2a.png',
+        description: 'Some animations of the year 2018',
+        video: 'https://vimeo.com/338517704',
         width: 1920,
         height: 1080
       }
