@@ -8,57 +8,44 @@ export const PORTFOLIO = [
     items: [
       {
         id: 9705362,
-        image: 'animation-for-boost-vr/38d5e070-44b3-4b5f-9063-8a26a529f8a9.png',
-        description: 'Boost VR Animation',
+        image: 'animation-for-boost-vr/534be64a-8b3a-4557-bd40-6509e31c209e.png',
+        description: 'Animation for Boost VR',
         video: 'https://vimeo.com/330015242',
         width: 1440,
         height: 810
       },
       {
         id: 4178754,
-        image: 'animation-for-boost-vr/9398dab4-6503-49e0-af5a-6d087d99753b.jpg',
+        image: 'animation-for-boost-vr/98bf0200-413b-4383-a6a5-aa23b3909371.jpg',
+        description: 'Visual development',
         width: 1440,
         height: 728
       },
       {
-        id: 3455442,
-        image: 'animation-for-boost-vr/character-intro.gif',
-        description: 'Character intro',
-        width: 800,
-        height: 450
-      },
-      {
         id: 2997691,
-        image: 'animation-for-boost-vr/putting-on-a-helmet.gif',
-        description: 'Putting on a helmet',
+        image: 'animation-for-boost-vr/e8a37258-ea92-474a-abdb-7f3fab717f16.gif',
+        description: 'World of VR',
         width: 800,
         height: 450
       },
       {
         id: 1264676,
-        image: 'animation-for-boost-vr/ee75b06c-7775-4993-bb9a-5576cc2ebb1d.gif',
-        description: 'Interaction with car models in VR',
-        width: 800,
-        height: 450
-      },
-      {
-        id: 3863530,
-        image: 'animation-for-boost-vr/car-transformations.gif',
-        description: 'Car transformations',
+        image: 'animation-for-boost-vr/3558f361-166b-4125-855a-e54a73c7d4f7.gif',
+        description: 'Car morphings',
         width: 800,
         height: 450
       },
       {
         id: 6962434,
-        image: 'animation-for-boost-vr/interaction-with-car-models-in-vr.gif',
-        description: 'Swipe!',
+        image: 'animation-for-boost-vr/05fea726-a0d5-4119-b824-dd4f9785db9c.gif',
+        description: 'Swipe',
         width: 800,
         height: 450
       },
       {
         id: 4929330,
-        image: 'animation-for-boost-vr/interriors-and-games-in-vr.gif',
-        description: 'Interriors and games in VR',
+        image: 'animation-for-boost-vr/5d0ee4c2-5c23-4c4c-a38f-160e55571fe0.gif',
+        description: 'Into the space!',
         width: 800,
         height: 450
       },
@@ -78,125 +65,146 @@ export const PORTFOLIO = [
         height: 259
       },
       {
-        id: 1587683,
-        image: 'animation-for-boost-vr/storyboard-1.png',
-        description: 'Storyboard 1',
-        width: 960,
-        height: 540
-      },
-      {
-        id: 1748714,
-        image: 'animation-for-boost-vr/storyboard-2.png',
-        description: 'Storyboard 2',
-        width: 960,
-        height: 540
-      },
-      {
         id: 9954587,
-        image: 'animation-for-boost-vr/storyboard-3.png',
-        description: 'Storyboard 3',
-        width: 960,
-        height: 540
-      },
-      {
-        id: 5084181,
-        image: 'animation-for-boost-vr/storyboard-4.png',
-        description: 'Storyboard 4',
+        image: 'animation-for-boost-vr/c3ab3dc7-5479-4a8f-a5af-90e284233b40.png',
+        description: 'Storyboard',
         width: 960,
         height: 540
       },
       {
         id: 9039756,
-        image: 'animation-for-boost-vr/logo-animation.gif',
-        description: 'Logo animation',
+        image: 'animation-for-boost-vr/98cb9aac-9858-4e9e-a56e-82e5dd521c02.gif',
+        description: 'The end',
         width: 800,
         height: 450
       }
     ]
   },
   {
-    id: 9915406,
-    title: 'Illustartions for Snapparazzi',
-    image: 'illustartions-for-snapparazzi.png',
-    description: 'Website illustrations, describing the idea of the crypto-project "Snapparazzi".',
-    category: 'Illustration',
+    id: 8573708,
+    title: 'Character Design',
+    image: 'character-design.jpg',
+    description: 'Character development and illustrations for multiple projects.',
+    category: 'Concept',
     items: [
       {
-        id: 4427252,
-        image: 'illustartions-for-snapparazzi/content-creator.png',
-        description: 'Content creator',
+        id: 1635186,
+        image: 'character-design/1b97c1d6-3e03-4105-be33-98037bb67282.png',
+        description: 'Few gnomes',
+        width: 1280,
+        height: 940
+      },
+      {
+        id: 7422815,
+        image: 'character-design/e9e38b2d-4ff5-4417-9fd5-62949f199ff9.png',
+        description: 'Minika',
+        width: 1600,
+        height: 1200
+      },
+      {
+        id: 2152244,
+        image: 'character-design/5c40b58d-e233-4a80-9aba-0f2becdc2750.png',
+        description: 'Miniko',
+        width: 1600,
+        height: 1200
+      },
+      {
+        id: 9040588,
+        image: 'character-design/5bc2ee72-6e0d-4cbb-8d21-ed8c6dd5a3dd.png',
+        description: 'Mr Black Cat',
+        width: 1683,
+        height: 1334
+      },
+      {
+        id: 8270078,
+        image: 'character-design/f03bf261-7078-4eca-93df-32324a2bfb8d.png',
+        description: 'Elderly warriors',
+        width: 1160,
+        height: 850
+      },
+      {
+        id: 7533912,
+        image: 'character-design/5c3e9f70-a6cb-48ef-8e8a-efc0863fae89.png',
+        description: 'Dog Izzya',
+        width: 1855,
+        height: 1048
+      },
+      {
+        id: 5707173,
+        image: 'character-design/76b8a385-2e40-4838-b5a9-2ca514e05373.png',
+        description: 'Tan',
+        width: 1720,
+        height: 1080
+      },
+      {
+        id: 1326179,
+        image: 'character-design/404b9c0e-2602-4ddd-8dff-ad0cd3fe5bd0.gif',
+        description: 'Roller skater',
+        width: 600,
+        height: 417
+      },
+      {
+        id: 7154325,
+        image: 'character-design/9721893b-6bd5-4946-ae99-8b88e599dc29.png',
+        description: 'Tiny birds from "For the Birds"',
+        width: 1600,
+        height: 1120
+      },
+      {
+        id: 1865047,
+        image: 'character-design/1f319764-40c9-471e-b151-a2d088374dad.png',
+        description: 'Mr. Wimpenny',
+        width: 2000,
+        height: 2000
+      },
+      {
+        id: 5861736,
+        image: 'character-design/f8c39899-ccfc-4092-8fea-d46e831da9b9.jpg',
+        description: 'Hound Dog',
         width: 960,
         height: 960
       },
       {
-        id: 8521099,
-        image: 'illustartions-for-snapparazzi/content-creator-verion-2.png',
-        description: 'Content creator, verion 2',
+        id: 8395576,
+        image: 'character-design/a4004611-2d0e-4c75-8db5-b52fe3f995b8.gif',
+        description: 'Hound Studio logo animation',
+        width: 600,
+        height: 600
+      },
+      {
+        id: 3403040,
+        image: 'character-design/a0c00455-f240-4c7b-bc3e-309f08fda9ff.jpg',
+        description: 'Alice and the White Rabbit',
         width: 960,
         height: 960
       },
       {
-        id: 3843563,
-        image: 'illustartions-for-snapparazzi/content-viewer.png',
-        description: 'Content viewer',
+        id: 6373512,
+        image: 'character-design/978d0070-1087-468f-a7e8-9af4842d4da5.jpg',
+        description: 'Lovely mermaid',
         width: 960,
         height: 960
       },
       {
-        id: 4440141,
-        image: 'illustartions-for-snapparazzi/moderators.png',
-        description: 'Moderators',
+        id: 7908774,
+        image: 'character-design/724dc704-0631-4f3d-9b34-9ac17e56c2b4.jpg',
+        description: 'Creative mermaid',
         width: 960,
         height: 960
       },
       {
-        id: 4723166,
-        image: 'illustartions-for-snapparazzi/target-audience.png',
-        description: 'Target audience',
-        width: 960,
-        height: 960
+        id: 3776131,
+        image: 'character-design/d66a47a4-af71-4d96-b3af-3e720f32b1d2.png',
+        description: 'Uncake',
+        width: 1436,
+        height: 1436
       },
       {
-        id: 2130512,
-        image: 'illustartions-for-snapparazzi/style-test.png',
-        description: 'Style test',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 4836051,
-        image: 'illustartions-for-snapparazzi/just-a-guy.png',
-        description: 'Just a guy :)',
-        width: 800,
-        height: 960
-      },
-      {
-        id: 8486568,
-        image: 'illustartions-for-snapparazzi/process.png',
-        description: 'Process',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 1790291,
-        image: 'illustartions-for-snapparazzi/0744802c-4a1e-4e5b-9464-5f352f8aa2f5.jpg',
-        description: 'Sketch',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 2775597,
-        image: 'illustartions-for-snapparazzi/c3fbef4a-425c-4dcf-b3c3-194b27728e16.jpg',
-        description: 'Sketch',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 1978030,
-        image: 'illustartions-for-snapparazzi/sketch.jpg',
-        description: 'Sketch',
-        width: 960,
-        height: 960
+        id: 4631899,
+        image: 'character-design/31ab1dc2-a433-4010-b118-dcebe1f5b9f9.png',
+        description: 'Strangimals',
+        width: 1700,
+        height: 1700
       }
     ]
   },
@@ -204,7 +212,7 @@ export const PORTFOLIO = [
     id: 7521358,
     title: 'Character Designs for MyRide',
     image: 'character-designs-for-my-ride.png',
-    description: 'Designs and illustrations of the characters for the animated series, explaining MyRide\'s services.',
+    description: 'Illustrations of the characters for the animated series, explaining MyRide\'s services.',
     category: 'Concept',
     items: [
       {
@@ -315,6 +323,92 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 9915406,
+    title: 'Illustartions for Snapparazzi',
+    image: 'illustartions-for-snapparazzi.png',
+    description: 'Website illustrations, describing the idea of the crypto-project "Snapparazzi".',
+    category: 'Illustration',
+    items: [
+      {
+        id: 4427252,
+        image: 'illustartions-for-snapparazzi/4b76c3f7-0729-4e56-94ca-77692535aee4.png',
+        description: 'Content creator',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 8521099,
+        image: 'illustartions-for-snapparazzi/1553b259-f199-4191-8b05-f9c071168380.png',
+        description: 'Another content creator',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 3843563,
+        image: 'illustartions-for-snapparazzi/ae04e7d0-e83c-4181-b99f-4c42147da147.png',
+        description: 'Content viewer',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 4440141,
+        image: 'illustartions-for-snapparazzi/446a0fed-d94a-4a6a-b754-fbf37c0b3358.png',
+        description: 'Moderators',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 4723166,
+        image: 'illustartions-for-snapparazzi/6e03d07e-a041-4915-9b29-d6673843fd5d.png',
+        description: 'Target audience',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 2130512,
+        image: 'illustartions-for-snapparazzi/5a43d8d7-9847-4fbe-85a3-6570158b4dff.png',
+        description: 'Style test',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 4836051,
+        image: 'illustartions-for-snapparazzi/9387951e-9e99-4a14-ac82-c9e03a69eb60.png',
+        description: 'Just a guy :)',
+        width: 800,
+        height: 960
+      },
+      {
+        id: 8486568,
+        image: 'illustartions-for-snapparazzi/2555aac1-6cbb-4cfb-a32a-6dc32760b484.png',
+        description: 'Some process',
+        width: 1440,
+        height: 810
+      },
+      {
+        id: 1790291,
+        image: 'illustartions-for-snapparazzi/0744802c-4a1e-4e5b-9464-5f352f8aa2f5.jpg',
+        description: 'Sketch',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 2775597,
+        image: 'illustartions-for-snapparazzi/1bcbbcb4-6abc-403f-8120-e058a91709fa.jpg',
+        description: 'Sketch',
+        width: 960,
+        height: 960
+      },
+      {
+        id: 1978030,
+        image: 'illustartions-for-snapparazzi/f012fe72-f165-4dda-af8d-c3ebb2d2fc31.jpg',
+        description: 'Sketch',
+        width: 960,
+        height: 960
+      }
+    ]
+  },
+  {
     id: 7296578,
     title: 'Illustrations for Dogg.Dog',
     image: 'illustrations-for-dogg-dog.jpg',
@@ -323,22 +417,22 @@ export const PORTFOLIO = [
     items: [
       {
         id: 6450583,
-        image: 'illustrations-for-dogg-dog/illustration-on-the-website-page.jpg',
-        description: 'Illustration on the website page',
+        image: 'illustrations-for-dogg-dog/01f74ba4-4e46-42e8-9ddb-80c66eeb1ae2.jpg',
+        description: 'Dogg.dog website layout',
         width: 1440,
         height: 810
       },
       {
         id: 3936608,
-        image: 'illustrations-for-dogg-dog/icons-for-the-types-of-the-website-members.jpg',
-        description: 'Icons for the types of the website members.',
+        image: 'illustrations-for-dogg-dog/a28acdf5-2bae-44c9-adab-bdbd1f127d22.jpg',
+        description: 'Types of the website members.',
         width: 1138,
         height: 960
       },
       {
         id: 2444781,
-        image: 'illustrations-for-dogg-dog/404-page-illustration.jpg',
-        description: '404 page illustration.',
+        image: 'illustrations-for-dogg-dog/91e58cb9-8de2-41ac-bd6f-0f05d3f5bf9c.jpg',
+        description: 'Page 404',
         width: 600,
         height: 503
       },
@@ -351,57 +445,57 @@ export const PORTFOLIO = [
       },
       {
         id: 1601886,
-        image: 'illustrations-for-dogg-dog/ca76d0b2-c11b-41f4-bedf-e84270339540.jpg',
-        description: 'Access denied.',
+        image: 'illustrations-for-dogg-dog/00fc7bcc-5e63-4b78-a4ff-ce5903a4133d.jpg',
+        description: 'Access denied',
         width: 600,
         height: 503
       },
       {
         id: 3277353,
-        image: 'illustrations-for-dogg-dog/a-dog-owner-using-the-application.jpg',
-        description: 'A dog owner, using the application.',
+        image: 'illustrations-for-dogg-dog/2536c9d3-ba25-4c36-a120-3f89257cfd6c.jpg',
+        description: 'Dog owner',
         width: 1200,
         height: 900
       },
       {
         id: 2857787,
-        image: 'illustrations-for-dogg-dog/a-dog-show-judge-and-his-profile.jpg',
-        description: 'A dog show judge and his profile.',
+        image: 'illustrations-for-dogg-dog/3c80e7fe-d12d-423a-85ea-9e4a6457dc8d.jpg',
+        description: 'Dog show judge',
         width: 1000,
         height: 900
       },
       {
         id: 8480792,
-        image: 'illustrations-for-dogg-dog/icons-set-for-the-mobile-application.gif',
-        description: 'Icons set for the mobile application',
+        image: 'illustrations-for-dogg-dog/d29b7724-3775-4bf0-9270-2ff2058f4cd8.gif',
+        description: 'Icons set for the mobile app',
         width: 1080,
         height: 501
       },
       {
         id: 8056279,
-        image: 'illustrations-for-dogg-dog/app-features-for-a-club-manager.jpg',
-        description: 'App features for a club manager.',
+        image: 'illustrations-for-dogg-dog/0cc22a28-a2f0-4390-b54c-9e3327331978.jpg',
+        description: 'Club manager',
         width: 1200,
         height: 900
       },
       {
         id: 1610227,
-        image: 'illustrations-for-dogg-dog/a-dog-breeder-and-his-connections-via-the-app.jpg',
-        description: 'A dog breeder and his connections via the app.',
+        image: 'illustrations-for-dogg-dog/1c0b0538-c260-4de2-8edd-36c8605f5a05.jpg',
+        description: 'Dog breeder',
         width: 1000,
         height: 900
       },
       {
         id: 6729923,
-        image: 'illustrations-for-dogg-dog/icons-for-the-adding-new-dog-page.gif',
-        description: 'Icons for the "Adding new dog" page',
+        image: 'illustrations-for-dogg-dog/15c89ed7-28dd-4473-ab16-55150023df7f.gif',
+        description: 'Another set of icons',
         width: 700,
         height: 700
       },
       {
         id: 6966705,
-        image: 'illustrations-for-dogg-dog/home-page-illustration.jpg',
-        description: 'Home page illustration.',
+        image: 'illustrations-for-dogg-dog/7f5efeb6-4bb6-42db-b5ac-14fcb246dc13.jpg',
+        description: 'Home page illustration',
         width: 1440,
         height: 701
       },
@@ -421,15 +515,15 @@ export const PORTFOLIO = [
       },
       {
         id: 8013736,
-        image: 'illustrations-for-dogg-dog/9d01d892-a923-4163-893d-73a95f2fcf24.jpg',
-        description: 'Magic link sent via emai',
+        image: 'illustrations-for-dogg-dog/3020f891-e9e2-443f-86ba-a4c4fc776531.jpg',
+        description: 'Magic link',
         width: 850,
         height: 850
       },
       {
         id: 3750904,
-        image: 'illustrations-for-dogg-dog/21c6a895-3efd-4da3-981a-aec7b3161538.jpg',
-        description: '404 page',
+        image: 'illustrations-for-dogg-dog/b09c63b2-7fa7-4a61-9758-2de6a325f776.jpg',
+        description: 'Page 404',
         width: 900,
         height: 600
       },
@@ -450,173 +544,10 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 8573708,
-    title: 'Character Design',
-    image: 'character-design.jpg',
-    description: 'Character concepts and illustrations for multiple projects.',
-    category: 'Concept',
-    items: [
-      {
-        id: 1635186,
-        image: 'character-design/few-gnomes.jpg',
-        description: 'Few gnomes',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 3403040,
-        image: 'character-design/alice-and-the-white-rabbit.jpg',
-        description: 'Alice and the White Rabbit',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 5116320,
-        image: 'character-design/granny-bomber.jpg',
-        description: 'Granny - bomber',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 8270078,
-        image: 'character-design/elderly-warrior.jpg',
-        description: 'Elderly warrior',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 7422815,
-        image: 'character-design/minika.jpg',
-        description: 'Minika',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 3118442,
-        image: 'character-design/sketches-of-minika.png',
-        description: 'Sketches of Minika',
-        width: 1143,
-        height: 958
-      },
-      {
-        id: 2846651,
-        image: 'character-design/turnarounds-of-minika.png',
-        description: 'Turnarounds of Minika',
-        width: 1440,
-        height: 889
-      },
-      {
-        id: 2152244,
-        image: 'character-design/miniko.jpg',
-        description: 'Miniko',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 3340535,
-        image: 'character-design/sketches-of-miniko.png',
-        description: 'Sketches of Miniko',
-        width: 1143,
-        height: 958
-      },
-      {
-        id: 9813152,
-        image: 'character-design/turnarounds-of-miniko.png',
-        description: 'Turnarounds of Miniko',
-        width: 1440,
-        height: 889
-      },
-      {
-        id: 9040588,
-        image: 'character-design/mr-black-cat.jpg',
-        description: 'Mr Black Cat',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 8633979,
-        image: 'character-design/sketches-of-mr-black-cat.png',
-        description: 'Sketches of Mr Black Cat',
-        width: 1143,
-        height: 958
-      },
-      {
-        id: 6592607,
-        image: 'character-design/turnarounds-of-mr-black-cat.png',
-        description: 'Turnarounds of Mr Black Cat',
-        width: 1440,
-        height: 889
-      },
-      {
-        id: 7154325,
-        image: 'character-design/for-the-birds-short-s-fanart.jpg',
-        description: '"For the Birds" fanart',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 3689557,
-        image: 'character-design/emotions-chart-of-the-bird-from-the-for-the-birds-film.jpg',
-        description: 'Emotions chart of the bird from the "For the birds" film',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 7435974,
-        image: 'character-design/turnarounds-and-mouth-expressions-of-the-bird-from-the-for-the-birds-film.jpg',
-        description: 'Turnarounds and mouth expressions of the bird from the "For the birds" film',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 1590786,
-        image: 'character-design/wing-movement-of-the-bird-from-the-for-the-birds-film.jpg',
-        description: 'Wing movement of the bird from the "For the birds" film',
-        width: 1440,
-        height: 810
-      },
-      {
-        id: 1818235,
-        image: 'character-design/character-sketches-of-e-shroomy-for-electronic-mushroom.png',
-        description: 'Character sketches of eShroomy for Electronic Mushroom',
-        width: 1440,
-        height: 642
-      },
-      {
-        id: 5861736,
-        image: 'character-design/hound-dog-design.jpg',
-        description: 'Hound Dog Design',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 8395576,
-        image: 'character-design/character-illustrations.jpg',
-        description: 'Character illustrations',
-        width: 1440,
-        height: 592
-      },
-      {
-        id: 6373512,
-        image: 'character-design/lovely-mermaid.jpg',
-        description: 'Lovely mermaid',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 7908774,
-        image: 'character-design/creative-mermaid.jpg',
-        description: 'Creative mermaid',
-        width: 960,
-        height: 960
-      }
-    ]
-  },
-  {
     id: 5019519,
     title: 'Memoryator Game',
     image: 'memoryator-game.png',
-    description: 'Chaarcter development',
+    description: 'Visual development for the indie game project.',
     category: 'Concept',
     items: [
       {
@@ -635,8 +566,8 @@ export const PORTFOLIO = [
       },
       {
         id: 6375686,
-        image: 'memoryator-game/9cf0ff3a-5295-480a-a995-db0d1d730894.png',
-        description: 'Nightmares of different levels comparing to the main character',
+        image: 'memoryator-game/26fabb9d-2a18-4638-9700-ffbbcc2e2de6.png',
+        description: 'Nightmares of different levels',
         width: 1440,
         height: 426
       },
@@ -681,50 +612,127 @@ export const PORTFOLIO = [
     id: 9730411,
     title: 'CryptoSoul Game',
     image: 'crypto-soul-game.png',
-    description: 'Digital paintings, promotional illustrations and backgrounds for the CryptoSoul game.',
+    description: 'Indie game project that I art directed.',
     category: 'Illustration',
     items: [
       {
         id: 7155101,
-        image: 'crypto-soul-game/witch-raid.png',
+        image: 'crypto-soul-game/f44d495d-38c5-4905-960e-722e0fa562af.png',
         description: 'Witch raid',
         width: 1440,
         height: 810
       },
       {
-        id: 7837752,
-        image: 'crypto-soul-game/heroes.png',
-        description: 'Heroes',
-        width: 1440,
-        height: 801
-      },
-      {
         id: 7667012,
-        image: 'crypto-soul-game/canyon.png',
-        description: 'Canyon',
+        image: 'crypto-soul-game/a1ce42ad-d0da-44dc-ad78-7d13b785fd9a.png',
+        description: 'Souls Canyon',
         width: 1440,
         height: 758
       },
       {
         id: 4527085,
-        image: 'crypto-soul-game/king-s-cave.png',
+        image: 'crypto-soul-game/278836aa-3911-4fe2-b104-df5a7ad648c0.png',
         description: 'King\'s Cave',
         width: 1440,
         height: 810
       },
       {
         id: 4850355,
-        image: 'crypto-soul-game/outbreak.png',
-        description: 'Outbreak',
+        image: 'crypto-soul-game/7a523e64-ea63-40c9-88c9-8ead3601d341.png',
+        description: 'The Outbreak',
         width: 1440,
         height: 810
       },
       {
         id: 7574848,
-        image: 'crypto-soul-game/source-of-life.jpg',
+        image: 'crypto-soul-game/d12652e2-baf9-41ac-b097-1bcb5ab36db6.jpg',
         description: 'Source of Life',
         width: 1440,
         height: 810
+      },
+      {
+        id: 7837752,
+        image: 'crypto-soul-game/bbdb438b-bc54-4fc3-8aae-1317c8a3c8e2.png',
+        description: 'Heroes',
+        width: 1900,
+        height: 815
+      },
+      {
+        id: 4247294,
+        image: 'crypto-soul-game/956d0398-e9f3-4db6-a853-d92c33aef687.png',
+        description: 'Hand-painted textures for 3D models',
+        width: 1555,
+        height: 900
+      },
+      {
+        id: 4069858,
+        image: 'crypto-soul-game/b6a31f7d-38d9-49d3-938f-2f35be2add8e.png',
+        description: 'Character development',
+        width: 1660,
+        height: 1120
+      },
+      {
+        id: 2558974,
+        image: 'crypto-soul-game/e87b143d-bf6a-4250-8e96-23d87b35f1be.png',
+        description: 'Design of Shaman',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 4092051,
+        image: 'crypto-soul-game/f75268b7-b8d2-4bbc-a080-c3f4e17d007e.png',
+        description: 'Design of Guardian',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 6404023,
+        image: 'crypto-soul-game/88192460-b733-4e05-b620-f404b674a59c.png',
+        description: 'Design of Crystalline',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7412912,
+        image: 'crypto-soul-game/5237df73-9a1d-46cc-a4b6-c3369087ff95.png',
+        description: 'Design of Warlock',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 9875121,
+        image: 'crypto-soul-game/f15334c8-bfd2-4be7-8bdd-fdf7a469e951.png',
+        description: 'Design of the Crystal Elemental',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 1990544,
+        image: 'crypto-soul-game/c717c505-97d4-45e1-8c1a-259025fc0cb2.png',
+        description: 'Centre area of the game map',
+        width: 1280,
+        height: 1047
+      },
+      {
+        id: 4662722,
+        image: 'crypto-soul-game/27e5c1e9-2fca-41c8-ba0e-77b8bfd5945c.png',
+        description: 'Magic Lakes',
+        width: 1280,
+        height: 1047
+      },
+      {
+        id: 7794453,
+        image: 'crypto-soul-game/f3097b45-2c40-4fe0-98ef-7422a181ca7a.png',
+        description: 'Northern Rocks',
+        width: 1280,
+        height: 1047
+      },
+      {
+        id: 2292665,
+        image: 'crypto-soul-game/ae4911ff-70e1-4d3d-a3cd-9312172eb8fa.png',
+        description: 'River Cave',
+        width: 1280,
+        height: 1047
       }
     ]
   },
@@ -736,6 +744,20 @@ export const PORTFOLIO = [
     category: 'Illustration',
     items: [
       {
+        id: 3394105,
+        image: 'illustrations/b3b6653b-0bac-44be-894b-70abdc592915.jpg',
+        description: 'Mash-Up World, part 1',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 1829562,
+        image: 'illustrations/9676e8ad-da72-416e-a83b-3a5be00c4d4a.jpg',
+        description: 'Mash-Up World, part 2',
+        width: 1920,
+        height: 1080
+      },
+      {
         id: 4729792,
         image: 'illustrations/7f61f99d-d2bb-4302-93ad-b4ac0a3abdd1.png',
         description: 'Two Beasts',
@@ -744,7 +766,7 @@ export const PORTFOLIO = [
       },
       {
         id: 6532804,
-        image: 'illustrations/owl-rider.jpg',
+        image: 'illustrations/29dcc536-abfc-4939-a111-f9b4815d8095.jpg',
         description: 'Owl rider',
         width: 1098,
         height: 960
@@ -758,45 +780,38 @@ export const PORTFOLIO = [
       },
       {
         id: 6572595,
-        image: 'illustrations/dr-folsbuben-s-adventure.jpg',
+        image: 'illustrations/62885e58-6247-4d5f-aee6-a7143016e526.jpg',
         description: 'Dr Folsbuben\'s Adventure',
         width: 1173,
         height: 960
       },
       {
         id: 6776108,
-        image: 'illustrations/domestic-christmas.jpg',
+        image: 'illustrations/de2515c7-2f15-4d0b-af0f-230a5a683fac.jpg',
         description: 'Domestic Christmas',
         width: 1440,
         height: 960
       },
       {
         id: 7449827,
-        image: 'illustrations/through-the-forest.jpg',
+        image: 'illustrations/cc26c79f-79b3-4250-905f-7a29f9902cb6.jpg',
         description: 'Through the Forest',
         width: 711,
         height: 960
       },
       {
         id: 6569582,
-        image: 'illustrations/snowball.png',
+        image: 'illustrations/c15e28b0-ccc1-4699-96a0-50af9eb530aa.png',
         description: 'Snowball',
         width: 719,
         height: 960
       },
       {
         id: 1057522,
-        image: 'illustrations/blizzard-s-paladin-fanart.png',
-        description: 'Blizzard\'s Paladin fanart',
+        image: 'illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
+        description: 'Blizzard Paladin fanars',
         width: 1173,
         height: 960
-      },
-      {
-        id: 9526088,
-        image: 'illustrations/style-test-for-abbax-animation-made-with-hound-studio.jpg',
-        description: 'Style test for Abbax animation, made with Hound Studio',
-        width: 1440,
-        height: 810
       },
       {
         id: 5680773,
@@ -805,6 +820,13 @@ export const PORTFOLIO = [
         url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
         width: 3840,
         height: 2160
+      },
+      {
+        id: 4364081,
+        image: 'illustrations/87e29771-c8fb-4d33-99b5-5769d8ae84d6.png',
+        description: 'Illustrations for the',
+        width: 1920,
+        height: 1080
       }
     ]
   }
