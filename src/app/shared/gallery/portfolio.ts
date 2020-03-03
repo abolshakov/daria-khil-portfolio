@@ -16,10 +16,10 @@ export const PORTFOLIO = [
       },
       {
         id: 4178754,
-        image: 'animation-for-boost-vr/98bf0200-413b-4383-a6a5-aa23b3909371.jpg',
+        image: 'animation-for-boost-vr/c0945c63-bc6f-45d1-9cdf-b364e286d98b.png',
         description: 'Visual development',
-        width: 1440,
-        height: 728
+        width: 1920,
+        height: 971
       },
       {
         id: 2997691,
@@ -159,10 +159,10 @@ export const PORTFOLIO = [
       },
       {
         id: 5861736,
-        image: 'character-design/f8c39899-ccfc-4092-8fea-d46e831da9b9.jpg',
+        image: 'character-design/fd295df1-5c10-4ca3-881f-3053618e188b.png',
         description: 'Hound Dog',
-        width: 960,
-        height: 960
+        width: 2048,
+        height: 2048
       },
       {
         id: 8395576,
@@ -173,24 +173,24 @@ export const PORTFOLIO = [
       },
       {
         id: 3403040,
-        image: 'character-design/a0c00455-f240-4c7b-bc3e-309f08fda9ff.jpg',
+        image: 'character-design/c99cbf8d-49c5-4384-ae3d-d4137f3b4735.png',
         description: 'Alice and the White Rabbit',
-        width: 960,
-        height: 960
+        width: 1800,
+        height: 1800
       },
       {
         id: 6373512,
-        image: 'character-design/978d0070-1087-468f-a7e8-9af4842d4da5.jpg',
+        image: 'character-design/156c3006-4917-4fb2-b4e6-f096096948e9.png',
         description: 'Lovely mermaid',
-        width: 960,
-        height: 960
+        width: 1800,
+        height: 1800
       },
       {
         id: 7908774,
-        image: 'character-design/724dc704-0631-4f3d-9b34-9ac17e56c2b4.jpg',
+        image: 'character-design/c6e51134-8734-4506-99fb-aade469b1113.png',
         description: 'Creative mermaid',
-        width: 960,
-        height: 960
+        width: 2048,
+        height: 2048
       },
       {
         id: 3776131,
@@ -367,10 +367,10 @@ export const PORTFOLIO = [
       },
       {
         id: 7900386,
-        image: 'character-designs-for-my-ride/083bfe04-f6c0-4322-a92d-042a2dac056e.jpg',
+        image: 'character-designs-for-my-ride/93cc26ec-7d96-44cd-90a8-9d633026c8c1.png',
         description: 'Barefoot sketches',
-        width: 960,
-        height: 960
+        width: 800,
+        height: 800
       },
       {
         id: 9728258,
@@ -388,10 +388,10 @@ export const PORTFOLIO = [
       },
       {
         id: 3854357,
-        image: 'character-designs-for-my-ride/61ad69a5-8b04-477b-8d1c-6e10dbe662ec.png',
+        image: 'character-designs-for-my-ride/16c34eba-38a7-488d-af32-0981330461f2.png',
         description: 'Beatrice sketches',
-        width: 960,
-        height: 960
+        width: 800,
+        height: 800
       },
       {
         id: 3315712,
@@ -423,10 +423,10 @@ export const PORTFOLIO = [
       },
       {
         id: 3875462,
-        image: 'character-designs-for-my-ride/8313ac54-25c1-42b6-b55a-0f1dea3f9a18.jpg',
+        image: 'character-designs-for-my-ride/e9ad2503-d564-4b1d-9659-64eb2bb52a1d.png',
         description: 'Gloria Potts sketches',
-        width: 1440,
-        height: 810
+        width: 1400,
+        height: 788
       },
       {
         id: 8706501,
@@ -451,17 +451,17 @@ export const PORTFOLIO = [
       },
       {
         id: 8734492,
-        image: 'character-designs-for-my-ride/e5359921-b441-487c-a69d-752abce9b04c.jpg',
+        image: 'character-designs-for-my-ride/2d5b0983-64ef-4d33-a7bd-c2e513b1c289.png',
         description: 'Charles sketches',
-        width: 960,
-        height: 960
+        width: 800,
+        height: 800
       },
       {
         id: 6157237,
-        image: 'character-designs-for-my-ride/84b4941e-5af8-4114-a1f0-0de9871ac3ae.jpg',
+        image: 'character-designs-for-my-ride/6c60ef65-bf36-4dd0-8328-e8357622d658.png',
         description: 'Character sketches',
-        width: 1440,
-        height: 638
+        width: 1800,
+        height: 701
       }
     ]
   },
@@ -530,79 +530,65 @@ export const PORTFOLIO = [
       },
       {
         id: 1790291,
-        image: 'illustartions-for-snapparazzi/0744802c-4a1e-4e5b-9464-5f352f8aa2f5.jpg',
-        description: 'Sketch',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 2775597,
-        image: 'illustartions-for-snapparazzi/1bcbbcb4-6abc-403f-8120-e058a91709fa.jpg',
-        description: 'Sketch',
-        width: 960,
-        height: 960
-      },
-      {
-        id: 1978030,
-        image: 'illustartions-for-snapparazzi/f012fe72-f165-4dda-af8d-c3ebb2d2fc31.jpg',
-        description: 'Sketch',
-        width: 960,
-        height: 960
+        image: 'illustartions-for-snapparazzi/709e2a95-63e8-47ca-8cb6-0178aaaca56d.png',
+        description: 'Sketches',
+        width: 1400,
+        height: 602
       }
     ]
   },
   {
     id: 7296578,
     title: 'Illustrations for Dogg.Dog',
-    image: 'illustrations-for-dogg-dog.jpg',
+    image: 'illustrations-for-dogg-dog.png',
     description: 'Illustrations for the Dogg.Dog project\'s website and application.',
     category: 'Illustration',
     items: [
       {
         id: 6450583,
-        image: 'illustrations-for-dogg-dog/01f74ba4-4e46-42e8-9ddb-80c66eeb1ae2.jpg',
+        image: 'illustrations-for-dogg-dog/2fa6db4a-36d6-4f11-bf2f-c94ff35267d2.png',
         description: 'Dogg.dog website layout',
-        width: 1440,
-        height: 810
+        width: 1920,
+        height: 1080
       },
       {
         id: 3936608,
-        image: 'illustrations-for-dogg-dog/a28acdf5-2bae-44c9-adab-bdbd1f127d22.jpg',
+        image: 'illustrations-for-dogg-dog/3cac8d9d-76ad-4553-b174-ca1678395541.png',
         description: 'Types of the website members.',
-        width: 1138,
-        height: 960
+        width: 760,
+        height: 641
       },
       {
         id: 2444781,
-        image: 'illustrations-for-dogg-dog/91e58cb9-8de2-41ac-bd6f-0f05d3f5bf9c.jpg',
+        image: 'illustrations-for-dogg-dog/bf4c34f0-be0d-43cc-a434-44367299e32a.png',
         description: 'Page 404',
-        width: 600,
-        height: 503
+        width: 870,
+        height: 730
       },
       {
         id: 5381626,
-        image: 'illustrations-for-dogg-dog/61440a39-b89c-4f2f-bfa3-f324af30b3fb.jpg',
+        image: 'illustrations-for-dogg-dog/d508a100-9ec8-4afe-a8b0-a9c577963188.png',
         description: 'Preparing for the dogs show',
-        width: 600,
-        height: 503
+        width: 870,
+        height: 730
       },
       {
         id: 1601886,
-        image: 'illustrations-for-dogg-dog/00fc7bcc-5e63-4b78-a4ff-ce5903a4133d.jpg',
+        image: 'illustrations-for-dogg-dog/6d546efe-3880-4304-b7ac-224bb25cdd4c.png',
         description: 'Access denied',
-        width: 600,
-        height: 503
+        width: 870,
+        height: 730
       },
       {
         id: 3277353,
-        image: 'illustrations-for-dogg-dog/2536c9d3-ba25-4c36-a120-3f89257cfd6c.jpg',
+        image: 'illustrations-for-dogg-dog/22937d49-3634-41e8-a49b-8d49b4ba2441.png',
         description: 'Dog owner',
         width: 1200,
         height: 900
       },
       {
         id: 2857787,
-        image: 'illustrations-for-dogg-dog/3c80e7fe-d12d-423a-85ea-9e4a6457dc8d.jpg',
+        image: 'illustrations-for-dogg-dog/05145716-d838-49d2-8d25-fce6e2fc2364.png',
         description: 'Dog show judge',
         width: 1000,
         height: 900
@@ -616,14 +602,14 @@ export const PORTFOLIO = [
       },
       {
         id: 8056279,
-        image: 'illustrations-for-dogg-dog/0cc22a28-a2f0-4390-b54c-9e3327331978.jpg',
+        image: 'illustrations-for-dogg-dog/940be7ab-2995-4332-8631-20793f780432.png',
         description: 'Club manager',
         width: 1200,
         height: 900
       },
       {
         id: 1610227,
-        image: 'illustrations-for-dogg-dog/1c0b0538-c260-4de2-8edd-36c8605f5a05.jpg',
+        image: 'illustrations-for-dogg-dog/a703d762-c846-4654-ac5e-ec02d855d274.png',
         description: 'Dog breeder',
         width: 1000,
         height: 900
@@ -637,49 +623,49 @@ export const PORTFOLIO = [
       },
       {
         id: 6966705,
-        image: 'illustrations-for-dogg-dog/7f5efeb6-4bb6-42db-b5ac-14fcb246dc13.jpg',
+        image: 'illustrations-for-dogg-dog/dc577e74-bdbe-4fb2-99a2-24e0020463b8.png',
         description: 'Home page illustration',
-        width: 1440,
-        height: 701
+        width: 1850,
+        height: 900
       },
       {
         id: 4530197,
-        image: 'illustrations-for-dogg-dog/ac4165ab-c6ae-43c1-bbbd-8a63efd39181.jpg',
+        image: 'illustrations-for-dogg-dog/5b8f7600-bc88-40f7-8900-7ffb5cd0ca95.png',
         description: 'Phone confirmation',
         width: 800,
         height: 800
       },
       {
         id: 1181051,
-        image: 'illustrations-for-dogg-dog/58ebf2ee-b04d-4f5f-be90-eb4941ff5fc6.jpg',
+        image: 'illustrations-for-dogg-dog/491ae55a-16ea-4c9a-b873-7e4d97164675.png',
         description: 'E-mail confimation',
-        width: 900,
-        height: 900
+        width: 800,
+        height: 800
       },
       {
         id: 8013736,
-        image: 'illustrations-for-dogg-dog/3020f891-e9e2-443f-86ba-a4c4fc776531.jpg',
+        image: 'illustrations-for-dogg-dog/ef30d6a1-6a6d-4664-8410-97e17e4606b6.png',
         description: 'Magic link',
-        width: 850,
-        height: 850
+        width: 800,
+        height: 800
       },
       {
         id: 3750904,
-        image: 'illustrations-for-dogg-dog/3f12d910-e619-4b0f-be34-67720dfcf44f.jpg',
+        image: 'illustrations-for-dogg-dog/c6a26576-56ec-4bfd-92b5-b8c2bc863c6f.png',
         description: 'Page 404',
         width: 900,
         height: 600
       },
       {
         id: 4064508,
-        image: 'illustrations-for-dogg-dog/b10d94c3-2b57-48c0-8f27-be5e6507ff03.jpg',
-        description: 'Page under development',
+        image: 'illustrations-for-dogg-dog/a095fd9f-b3c7-4032-a14b-cd7f0dfbec39.png',
+        description: 'Comming soon',
         width: 1040,
         height: 880
       },
       {
         id: 7570114,
-        image: 'illustrations-for-dogg-dog/11ab9b06-c133-4937-9702-ef001581d525.jpg',
+        image: 'illustrations-for-dogg-dog/9b5381a7-e097-4739-930f-d44727d13bf6.png',
         description: 'Congratulations!',
         width: 850,
         height: 880
@@ -695,38 +681,38 @@ export const PORTFOLIO = [
     items: [
       {
         id: 7155101,
-        image: 'crypto-soul-game/f44d495d-38c5-4905-960e-722e0fa562af.png',
+        image: 'crypto-soul-game/1f788e38-144c-41de-a136-2ed3f83d9f50.png',
         description: 'Witch raid',
-        width: 1440,
-        height: 810
+        width: 1920,
+        height: 1080
       },
       {
         id: 7667012,
-        image: 'crypto-soul-game/a1ce42ad-d0da-44dc-ad78-7d13b785fd9a.png',
+        image: 'crypto-soul-game/673c2b07-9286-48db-b80a-5ccbbcdcf336.png',
         description: 'Souls Canyon',
-        width: 1440,
-        height: 758
+        width: 1920,
+        height: 1010
       },
       {
         id: 4527085,
-        image: 'crypto-soul-game/278836aa-3911-4fe2-b104-df5a7ad648c0.png',
+        image: 'crypto-soul-game/a02c8c52-7219-4c94-b2f5-054500fc4ce5.png',
         description: 'King\'s Cave',
-        width: 1440,
-        height: 810
+        width: 1920,
+        height: 1080
       },
       {
         id: 4850355,
-        image: 'crypto-soul-game/7a523e64-ea63-40c9-88c9-8ead3601d341.png',
+        image: 'crypto-soul-game/41e65956-4db3-4541-814a-68a50adf7c3f.png',
         description: 'The Outbreak',
-        width: 1440,
-        height: 810
+        width: 1920,
+        height: 1080
       },
       {
         id: 7574848,
-        image: 'crypto-soul-game/d12652e2-baf9-41ac-b097-1bcb5ab36db6.jpg',
+        image: 'crypto-soul-game/c9b09ce2-a350-4107-855b-12dc0dc925b7.png',
         description: 'Source of Life',
-        width: 1440,
-        height: 810
+        width: 1920,
+        height: 1080
       },
       {
         id: 7837752,
@@ -823,17 +809,17 @@ export const PORTFOLIO = [
     items: [
       {
         id: 3394105,
-        image: 'illustrations/b3b6653b-0bac-44be-894b-70abdc592915.jpg',
+        image: 'illustrations/84945380-4501-4f08-914e-6f971cda7c08.png',
         description: 'Mash-Up World, part 1',
-        width: 1920,
-        height: 1080
+        width: 1400,
+        height: 788
       },
       {
         id: 1829562,
-        image: 'illustrations/9676e8ad-da72-416e-a83b-3a5be00c4d4a.jpg',
+        image: 'illustrations/993d7d02-1c04-4531-9966-13ad373114fe.png',
         description: 'Mash-Up World, part 2',
-        width: 1920,
-        height: 1080
+        width: 1400,
+        height: 788
       },
       {
         id: 4729792,
@@ -844,24 +830,24 @@ export const PORTFOLIO = [
       },
       {
         id: 6532804,
-        image: 'illustrations/29dcc536-abfc-4939-a111-f9b4815d8095.jpg',
+        image: 'illustrations/46e497c7-9f02-4d7e-93e5-8dadd3062c90.png',
         description: 'Owl rider',
-        width: 1098,
-        height: 960
+        width: 1400,
+        height: 1225
       },
       {
         id: 6572595,
-        image: 'illustrations/62885e58-6247-4d5f-aee6-a7143016e526.jpg',
+        image: 'illustrations/f3d07863-2d9b-403d-ace0-c0e1a4b6bdbb.png',
         description: 'Dr Folsbuben\'s Adventure',
-        width: 1173,
-        height: 960
+        width: 1400,
+        height: 1145
       },
       {
         id: 9686021,
-        image: 'illustrations/398c3b1a-cb66-494a-aecb-63c105b31b25.jpg',
+        image: 'illustrations/903887fd-5761-4806-a845-37b199019ec2.png',
         description: '"A Bug\'s Life" fanart',
-        width: 1440,
-        height: 810
+        width: 1400,
+        height: 788
       },
       {
         id: 5680773,
@@ -894,10 +880,10 @@ export const PORTFOLIO = [
       },
       {
         id: 6776108,
-        image: 'illustrations/de2515c7-2f15-4d0b-af0f-230a5a683fac.jpg',
+        image: 'illustrations/9db4823b-5cc1-4baa-888a-47251ecdff20.png',
         description: 'Domestic Christmas',
-        width: 1440,
-        height: 960
+        width: 1400,
+        height: 933
       },
       {
         id: 8144322,
@@ -908,10 +894,10 @@ export const PORTFOLIO = [
       },
       {
         id: 7449827,
-        image: 'illustrations/cc26c79f-79b3-4250-905f-7a29f9902cb6.jpg',
+        image: 'illustrations/6d4ee211-6c86-4a12-b32f-3acfe7e4be1c.png',
         description: 'Through the Forest',
-        width: 711,
-        height: 960
+        width: 1037,
+        height: 1400
       },
       {
         id: 6569582,
