@@ -81,130 +81,238 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 8573708,
-    title: 'Character Design',
-    image: 'character-design.png',
-    description: 'Character development and illustrations for multiple projects.',
+    id: 9730411,
+    title: 'CryptoSoul Game',
+    image: 'crypto-soul-game.png',
+    description: 'Indie game project that I art directed.',
     category: 'Concept',
     items: [
       {
-        id: 1635186,
-        image: 'character-design/1b97c1d6-3e03-4105-be33-98037bb67282.png',
-        description: 'Few gnomes',
-        width: 1280,
-        height: 940
-      },
-      {
-        id: 7422815,
-        image: 'character-design/e9e38b2d-4ff5-4417-9fd5-62949f199ff9.png',
-        description: 'Minika',
-        width: 1600,
-        height: 1200
-      },
-      {
-        id: 2152244,
-        image: 'character-design/5c40b58d-e233-4a80-9aba-0f2becdc2750.png',
-        description: 'Miniko',
-        width: 1600,
-        height: 1200
-      },
-      {
-        id: 9040588,
-        image: 'character-design/5bc2ee72-6e0d-4cbb-8d21-ed8c6dd5a3dd.png',
-        description: 'Mr Black Cat',
-        width: 1683,
-        height: 1334
-      },
-      {
-        id: 8270078,
-        image: 'character-design/f03bf261-7078-4eca-93df-32324a2bfb8d.png',
-        description: 'Elderly warriors',
-        width: 1160,
-        height: 850
-      },
-      {
-        id: 7533912,
-        image: 'character-design/5c3e9f70-a6cb-48ef-8e8a-efc0863fae89.png',
-        description: 'Dog Izzya',
-        width: 1855,
-        height: 1048
-      },
-      {
-        id: 5707173,
-        image: 'character-design/76b8a385-2e40-4838-b5a9-2ca514e05373.png',
-        description: 'Tan',
-        width: 1720,
+        id: 7155101,
+        image: 'crypto-soul-game/1f788e38-144c-41de-a136-2ed3f83d9f50.png',
+        description: 'Witch raid',
+        width: 1920,
         height: 1080
       },
       {
-        id: 1326179,
-        image: 'character-design/404b9c0e-2602-4ddd-8dff-ad0cd3fe5bd0.gif',
-        description: 'Roller skater',
-        width: 600,
-        height: 417
+        id: 7667012,
+        image: 'crypto-soul-game/673c2b07-9286-48db-b80a-5ccbbcdcf336.png',
+        description: 'Souls Canyon',
+        width: 1920,
+        height: 1010
       },
       {
-        id: 7154325,
-        image: 'character-design/9721893b-6bd5-4946-ae99-8b88e599dc29.png',
-        description: 'Tiny birds from "For the Birds"',
-        width: 1600,
+        id: 4527085,
+        image: 'crypto-soul-game/a02c8c52-7219-4c94-b2f5-054500fc4ce5.png',
+        description: 'King\'s Cave',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 4850355,
+        image: 'crypto-soul-game/41e65956-4db3-4541-814a-68a50adf7c3f.png',
+        description: 'The Outbreak',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7574848,
+        image: 'crypto-soul-game/c9b09ce2-a350-4107-855b-12dc0dc925b7.png',
+        description: 'Source of Life',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7837752,
+        image: 'crypto-soul-game/bbdb438b-bc54-4fc3-8aae-1317c8a3c8e2.png',
+        description: 'Heroes',
+        width: 1900,
+        height: 815
+      },
+      {
+        id: 4247294,
+        image: 'crypto-soul-game/956d0398-e9f3-4db6-a853-d92c33aef687.png',
+        description: 'Hand-painted textures for 3D models',
+        width: 1555,
+        height: 900
+      },
+      {
+        id: 4069858,
+        image: 'crypto-soul-game/b6a31f7d-38d9-49d3-938f-2f35be2add8e.png',
+        description: 'Character development',
+        width: 1660,
         height: 1120
       },
       {
-        id: 1865047,
-        image: 'character-design/1f319764-40c9-471e-b151-a2d088374dad.png',
-        description: 'Mr. Wimpenny',
-        width: 2000,
-        height: 2000
+        id: 2558974,
+        image: 'crypto-soul-game/e87b143d-bf6a-4250-8e96-23d87b35f1be.png',
+        description: 'Design of Shaman',
+        width: 1920,
+        height: 1080
       },
       {
-        id: 5861736,
-        image: 'character-design/fd295df1-5c10-4ca3-881f-3053618e188b.png',
-        description: 'Hound Dog',
-        width: 2048,
-        height: 2048
+        id: 4092051,
+        image: 'crypto-soul-game/f75268b7-b8d2-4bbc-a080-c3f4e17d007e.png',
+        description: 'Design of Guardian',
+        width: 1920,
+        height: 1080
       },
       {
-        id: 8395576,
-        image: 'character-design/a4004611-2d0e-4c75-8db5-b52fe3f995b8.gif',
-        description: 'Hound Studio logo animation',
-        width: 600,
-        height: 600
+        id: 6404023,
+        image: 'crypto-soul-game/88192460-b733-4e05-b620-f404b674a59c.png',
+        description: 'Design of Crystalline',
+        width: 1920,
+        height: 1080
       },
       {
-        id: 3403040,
-        image: 'character-design/c99cbf8d-49c5-4384-ae3d-d4137f3b4735.png',
-        description: 'Alice and the White Rabbit',
+        id: 7412912,
+        image: 'crypto-soul-game/5237df73-9a1d-46cc-a4b6-c3369087ff95.png',
+        description: 'Design of Warlock',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 9875121,
+        image: 'crypto-soul-game/f15334c8-bfd2-4be7-8bdd-fdf7a469e951.png',
+        description: 'Design of the Crystal Elemental',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 1990544,
+        image: 'crypto-soul-game/c717c505-97d4-45e1-8c1a-259025fc0cb2.png',
+        description: 'Centre area of the game map',
+        width: 1280,
+        height: 1047
+      },
+      {
+        id: 4662722,
+        image: 'crypto-soul-game/27e5c1e9-2fca-41c8-ba0e-77b8bfd5945c.png',
+        description: 'Magic Lakes',
+        width: 1280,
+        height: 1047
+      },
+      {
+        id: 7794453,
+        image: 'crypto-soul-game/f3097b45-2c40-4fe0-98ef-7422a181ca7a.png',
+        description: 'Northern Rocks',
+        width: 1280,
+        height: 1047
+      },
+      {
+        id: 2292665,
+        image: 'crypto-soul-game/ae4911ff-70e1-4d3d-a3cd-9312172eb8fa.png',
+        description: 'River Cave',
+        width: 1280,
+        height: 1047
+      }
+    ]
+  },
+  {
+    id: 6614815,
+    title: 'Illustrations',
+    image: 'illustrations.png',
+    description: 'Collection of digital illustrations.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 3394105,
+        image: 'illustrations/84945380-4501-4f08-914e-6f971cda7c08.png',
+        description: 'Mash-Up World, part 1',
+        width: 1400,
+        height: 788
+      },
+      {
+        id: 1829562,
+        image: 'illustrations/993d7d02-1c04-4531-9966-13ad373114fe.png',
+        description: 'Mash-Up World, part 2',
+        width: 1400,
+        height: 788
+      },
+      {
+        id: 4729792,
+        image: 'illustrations/7f61f99d-d2bb-4302-93ad-b4ac0a3abdd1.png',
+        description: 'Two Beasts',
         width: 1800,
         height: 1800
       },
       {
-        id: 6373512,
-        image: 'character-design/156c3006-4917-4fb2-b4e6-f096096948e9.png',
-        description: 'Lovely mermaid',
-        width: 1800,
-        height: 1800
+        id: 6532804,
+        image: 'illustrations/46e497c7-9f02-4d7e-93e5-8dadd3062c90.png',
+        description: 'Owl rider',
+        width: 1400,
+        height: 1225
       },
       {
-        id: 7908774,
-        image: 'character-design/c6e51134-8734-4506-99fb-aade469b1113.png',
-        description: 'Creative mermaid',
-        width: 2048,
-        height: 2048
+        id: 6572595,
+        image: 'illustrations/f3d07863-2d9b-403d-ace0-c0e1a4b6bdbb.png',
+        description: 'Dr Folsbuben\'s Adventure',
+        width: 1400,
+        height: 1145
       },
       {
-        id: 3776131,
-        image: 'character-design/d66a47a4-af71-4d96-b3af-3e720f32b1d2.png',
-        description: 'Uncake',
-        width: 1436,
-        height: 1436
+        id: 9686021,
+        image: 'illustrations/903887fd-5761-4806-a845-37b199019ec2.png',
+        description: '"A Bug\'s Life" fanart',
+        width: 1400,
+        height: 788
       },
       {
-        id: 4631899,
-        image: 'character-design/31ab1dc2-a433-4010-b118-dcebe1f5b9f9.png',
-        description: 'Strangimals',
-        width: 1700,
-        height: 1700
+        id: 5680773,
+        image: 'illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
+        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
+        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
+        width: 3840,
+        height: 2160
+      },
+      {
+        id: 4364081,
+        image: 'illustrations/ef5ecb31-192a-4ec7-b5b0-bec278bb1db1.png',
+        description: 'Illustrations for the Merge Cats game',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 8714748,
+        image: 'illustrations/a5372f07-cc5e-4960-a442-dc0a6c7204b8.png',
+        description: 'Sights illustrations',
+        width: 1920,
+        height: 1280
+      },
+      {
+        id: 1057522,
+        image: 'illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
+        description: 'Blizzard Paladin fanars',
+        width: 1173,
+        height: 960
+      },
+      {
+        id: 6776108,
+        image: 'illustrations/9db4823b-5cc1-4baa-888a-47251ecdff20.png',
+        description: 'Domestic Christmas',
+        width: 1400,
+        height: 933
+      },
+      {
+        id: 8144322,
+        image: 'illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
+        description: 'Magic hut by the Rainy River',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7449827,
+        image: 'illustrations/6d4ee211-6c86-4a12-b32f-3acfe7e4be1c.png',
+        description: 'Through the Forest',
+        width: 1037,
+        height: 1400
+      },
+      {
+        id: 6569582,
+        image: 'illustrations/c15e28b0-ccc1-4699-96a0-50af9eb530aa.png',
+        description: 'Snowball',
+        width: 719,
+        height: 960
       }
     ]
   },
@@ -346,6 +454,172 @@ export const PORTFOLIO = [
         id: 4123338,
         image: 'memoryator-game/5ec03f87-42b0-48ee-b396-bf756086756a.png',
         description: 'Totems',
+        width: 1920,
+        height: 1080
+      }
+    ]
+  },
+  {
+    id: 8573708,
+    title: 'Character Design',
+    image: 'character-design.png',
+    description: 'Character development and illustrations for multiple projects.',
+    category: 'Concept',
+    items: [
+      {
+        id: 1635186,
+        image: 'character-design/1b97c1d6-3e03-4105-be33-98037bb67282.png',
+        description: 'Few gnomes',
+        width: 1280,
+        height: 940
+      },
+      {
+        id: 7422815,
+        image: 'character-design/e9e38b2d-4ff5-4417-9fd5-62949f199ff9.png',
+        description: 'Minika',
+        width: 1600,
+        height: 1200
+      },
+      {
+        id: 2152244,
+        image: 'character-design/5c40b58d-e233-4a80-9aba-0f2becdc2750.png',
+        description: 'Miniko',
+        width: 1600,
+        height: 1200
+      },
+      {
+        id: 9040588,
+        image: 'character-design/5bc2ee72-6e0d-4cbb-8d21-ed8c6dd5a3dd.png',
+        description: 'Mr Black Cat',
+        width: 1683,
+        height: 1334
+      },
+      {
+        id: 8270078,
+        image: 'character-design/f03bf261-7078-4eca-93df-32324a2bfb8d.png',
+        description: 'Elderly warriors',
+        width: 1160,
+        height: 850
+      },
+      {
+        id: 7533912,
+        image: 'character-design/5c3e9f70-a6cb-48ef-8e8a-efc0863fae89.png',
+        description: 'Dog Izzya',
+        width: 1855,
+        height: 1048
+      },
+      {
+        id: 5707173,
+        image: 'character-design/76b8a385-2e40-4838-b5a9-2ca514e05373.png',
+        description: 'Tan',
+        width: 1720,
+        height: 1080
+      },
+      {
+        id: 1326179,
+        image: 'character-design/404b9c0e-2602-4ddd-8dff-ad0cd3fe5bd0.gif',
+        description: 'Roller skater',
+        width: 600,
+        height: 417
+      },
+      {
+        id: 7154325,
+        image: 'character-design/9721893b-6bd5-4946-ae99-8b88e599dc29.png',
+        description: 'Tiny birds from "For the Birds"',
+        width: 1600,
+        height: 1120
+      },
+      {
+        id: 1865047,
+        image: 'character-design/1f319764-40c9-471e-b151-a2d088374dad.png',
+        description: 'Mr. Wimpenny',
+        width: 2000,
+        height: 2000
+      },
+      {
+        id: 5861736,
+        image: 'character-design/fd295df1-5c10-4ca3-881f-3053618e188b.png',
+        description: 'Hound Dog',
+        width: 2048,
+        height: 2048
+      },
+      {
+        id: 8395576,
+        image: 'character-design/a4004611-2d0e-4c75-8db5-b52fe3f995b8.gif',
+        description: 'Hound Studio logo animation',
+        width: 600,
+        height: 600
+      },
+      {
+        id: 3403040,
+        image: 'character-design/c99cbf8d-49c5-4384-ae3d-d4137f3b4735.png',
+        description: 'Alice and the White Rabbit',
+        width: 1800,
+        height: 1800
+      },
+      {
+        id: 6373512,
+        image: 'character-design/156c3006-4917-4fb2-b4e6-f096096948e9.png',
+        description: 'Lovely mermaid',
+        width: 1800,
+        height: 1800
+      },
+      {
+        id: 7908774,
+        image: 'character-design/c6e51134-8734-4506-99fb-aade469b1113.png',
+        description: 'Creative mermaid',
+        width: 2048,
+        height: 2048
+      },
+      {
+        id: 3776131,
+        image: 'character-design/d66a47a4-af71-4d96-b3af-3e720f32b1d2.png',
+        description: 'Uncake',
+        width: 1436,
+        height: 1436
+      },
+      {
+        id: 4631899,
+        image: 'character-design/31ab1dc2-a433-4010-b118-dcebe1f5b9f9.png',
+        description: 'Strangimals',
+        width: 1700,
+        height: 1700
+      }
+    ]
+  },
+  {
+    id: 6793163,
+    title: '3D Characters',
+    image: '3-d-characters.png',
+    description: 'Design, modelling, texturing and animation.',
+    items: [
+      {
+        id: 6914591,
+        image: '3-d-characters/b7b7b1bf-38ce-4e78-a38c-252360afd432.png',
+        description: 'Animated actions',
+        video: 'https://vimeo.com/384652126',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 3518837,
+        image: '3-d-characters/d814f99a-35ac-428e-b4e2-ab18e70f101f.png',
+        description: 'Character design',
+        width: 1720,
+        height: 1080
+      },
+      {
+        id: 8387423,
+        image: '3-d-characters/af1c84aa-bf6e-4628-b224-9e2bd4e82d09.png',
+        description: 'Turnaround',
+        width: 1650,
+        height: 1020
+      },
+      {
+        id: 5535174,
+        image: '3-d-characters/d0984b97-355c-412f-8fcf-66b91593cd4a.png',
+        description: 'Super Potato',
+        video: 'https://vimeo.com/405353777',
         width: 1920,
         height: 1080
       }
@@ -673,242 +947,6 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 9730411,
-    title: 'CryptoSoul Game',
-    image: 'crypto-soul-game.png',
-    description: 'Indie game project that I art directed.',
-    category: 'Concept',
-    items: [
-      {
-        id: 7155101,
-        image: 'crypto-soul-game/1f788e38-144c-41de-a136-2ed3f83d9f50.png',
-        description: 'Witch raid',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 7667012,
-        image: 'crypto-soul-game/673c2b07-9286-48db-b80a-5ccbbcdcf336.png',
-        description: 'Souls Canyon',
-        width: 1920,
-        height: 1010
-      },
-      {
-        id: 4527085,
-        image: 'crypto-soul-game/a02c8c52-7219-4c94-b2f5-054500fc4ce5.png',
-        description: 'King\'s Cave',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 4850355,
-        image: 'crypto-soul-game/41e65956-4db3-4541-814a-68a50adf7c3f.png',
-        description: 'The Outbreak',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 7574848,
-        image: 'crypto-soul-game/c9b09ce2-a350-4107-855b-12dc0dc925b7.png',
-        description: 'Source of Life',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 7837752,
-        image: 'crypto-soul-game/bbdb438b-bc54-4fc3-8aae-1317c8a3c8e2.png',
-        description: 'Heroes',
-        width: 1900,
-        height: 815
-      },
-      {
-        id: 4247294,
-        image: 'crypto-soul-game/956d0398-e9f3-4db6-a853-d92c33aef687.png',
-        description: 'Hand-painted textures for 3D models',
-        width: 1555,
-        height: 900
-      },
-      {
-        id: 4069858,
-        image: 'crypto-soul-game/b6a31f7d-38d9-49d3-938f-2f35be2add8e.png',
-        description: 'Character development',
-        width: 1660,
-        height: 1120
-      },
-      {
-        id: 2558974,
-        image: 'crypto-soul-game/e87b143d-bf6a-4250-8e96-23d87b35f1be.png',
-        description: 'Design of Shaman',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 4092051,
-        image: 'crypto-soul-game/f75268b7-b8d2-4bbc-a080-c3f4e17d007e.png',
-        description: 'Design of Guardian',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 6404023,
-        image: 'crypto-soul-game/88192460-b733-4e05-b620-f404b674a59c.png',
-        description: 'Design of Crystalline',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 7412912,
-        image: 'crypto-soul-game/5237df73-9a1d-46cc-a4b6-c3369087ff95.png',
-        description: 'Design of Warlock',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 9875121,
-        image: 'crypto-soul-game/f15334c8-bfd2-4be7-8bdd-fdf7a469e951.png',
-        description: 'Design of the Crystal Elemental',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 1990544,
-        image: 'crypto-soul-game/c717c505-97d4-45e1-8c1a-259025fc0cb2.png',
-        description: 'Centre area of the game map',
-        width: 1280,
-        height: 1047
-      },
-      {
-        id: 4662722,
-        image: 'crypto-soul-game/27e5c1e9-2fca-41c8-ba0e-77b8bfd5945c.png',
-        description: 'Magic Lakes',
-        width: 1280,
-        height: 1047
-      },
-      {
-        id: 7794453,
-        image: 'crypto-soul-game/f3097b45-2c40-4fe0-98ef-7422a181ca7a.png',
-        description: 'Northern Rocks',
-        width: 1280,
-        height: 1047
-      },
-      {
-        id: 2292665,
-        image: 'crypto-soul-game/ae4911ff-70e1-4d3d-a3cd-9312172eb8fa.png',
-        description: 'River Cave',
-        width: 1280,
-        height: 1047
-      }
-    ]
-  },
-  {
-    id: 6614815,
-    title: 'Illustrations',
-    image: 'illustrations.png',
-    description: 'Collection of digital illustrations.',
-    category: 'Illustration',
-    items: [
-      {
-        id: 3394105,
-        image: 'illustrations/84945380-4501-4f08-914e-6f971cda7c08.png',
-        description: 'Mash-Up World, part 1',
-        width: 1400,
-        height: 788
-      },
-      {
-        id: 1829562,
-        image: 'illustrations/993d7d02-1c04-4531-9966-13ad373114fe.png',
-        description: 'Mash-Up World, part 2',
-        width: 1400,
-        height: 788
-      },
-      {
-        id: 4729792,
-        image: 'illustrations/7f61f99d-d2bb-4302-93ad-b4ac0a3abdd1.png',
-        description: 'Two Beasts',
-        width: 1800,
-        height: 1800
-      },
-      {
-        id: 6532804,
-        image: 'illustrations/46e497c7-9f02-4d7e-93e5-8dadd3062c90.png',
-        description: 'Owl rider',
-        width: 1400,
-        height: 1225
-      },
-      {
-        id: 6572595,
-        image: 'illustrations/f3d07863-2d9b-403d-ace0-c0e1a4b6bdbb.png',
-        description: 'Dr Folsbuben\'s Adventure',
-        width: 1400,
-        height: 1145
-      },
-      {
-        id: 9686021,
-        image: 'illustrations/903887fd-5761-4806-a845-37b199019ec2.png',
-        description: '"A Bug\'s Life" fanart',
-        width: 1400,
-        height: 788
-      },
-      {
-        id: 5680773,
-        image: 'illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
-        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
-        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
-        width: 3840,
-        height: 2160
-      },
-      {
-        id: 4364081,
-        image: 'illustrations/ef5ecb31-192a-4ec7-b5b0-bec278bb1db1.png',
-        description: 'Illustrations for the Merge Cats game',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 8714748,
-        image: 'illustrations/a5372f07-cc5e-4960-a442-dc0a6c7204b8.png',
-        description: 'Sights illustrations',
-        width: 1920,
-        height: 1280
-      },
-      {
-        id: 1057522,
-        image: 'illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
-        description: 'Blizzard Paladin fanars',
-        width: 1173,
-        height: 960
-      },
-      {
-        id: 6776108,
-        image: 'illustrations/9db4823b-5cc1-4baa-888a-47251ecdff20.png',
-        description: 'Domestic Christmas',
-        width: 1400,
-        height: 933
-      },
-      {
-        id: 8144322,
-        image: 'illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
-        description: 'Magic hut by the Rainy River',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 7449827,
-        image: 'illustrations/6d4ee211-6c86-4a12-b32f-3acfe7e4be1c.png',
-        description: 'Through the Forest',
-        width: 1037,
-        height: 1400
-      },
-      {
-        id: 6569582,
-        image: 'illustrations/c15e28b0-ccc1-4699-96a0-50af9eb530aa.png',
-        description: 'Snowball',
-        width: 719,
-        height: 960
-      }
-    ]
-  },
-  {
     id: 1218434,
     title: 'Showreel 2018',
     image: 'showreel-2018.png',
@@ -922,6 +960,70 @@ export const PORTFOLIO = [
         video: 'https://vimeo.com/338517704',
         width: 1920,
         height: 1080
+      }
+    ]
+  },
+  {
+    id: 5535427,
+    title: 'Traditional Art',
+    image: 'traditional-art.png',
+    description: 'Drawings, paintings and studies, created using traditional tools.',
+    items: [
+      {
+        id: 3213988,
+        image: 'traditional-art/a657b101-ea4b-462f-859b-5199eae45d67.png',
+        description: 'Still life - pencil',
+        width: 800,
+        height: 1100
+      },
+      {
+        id: 3233232,
+        image: 'traditional-art/2c4c7c11-4585-4d0a-a743-9f5ba9690eb8.png',
+        description: 'Still life - gouache',
+        width: 1100,
+        height: 1000
+      },
+      {
+        id: 8233473,
+        image: 'traditional-art/3315abe3-899a-4a83-876c-c2c3cce31315.png',
+        description: 'Portrait - watercolour',
+        width: 1000,
+        height: 1100
+      },
+      {
+        id: 7463986,
+        image: 'traditional-art/62d18625-8f9c-4813-935a-a566728b37c1.png',
+        description: 'Portrait - pencil',
+        width: 1000,
+        height: 1100
+      },
+      {
+        id: 7076640,
+        image: 'traditional-art/8e50f164-b8bf-40e0-b393-1d3e1ec343f8.png',
+        description: 'Portrait - pencil',
+        width: 1000,
+        height: 1100
+      },
+      {
+        id: 4365382,
+        image: 'traditional-art/e7086fab-198a-44c4-b1fc-b3ee1e86b64a.png',
+        description: 'Apollo',
+        width: 1000,
+        height: 1100
+      },
+      {
+        id: 7596445,
+        image: 'traditional-art/3109e046-0e88-49be-bc27-f51a565eab93.png',
+        description: 'Lucius Verus',
+        width: 1000,
+        height: 1100
+      },
+      {
+        id: 4005090,
+        image: 'traditional-art/898d32c2-8ee6-4588-bbf2-e07249171cb1.png',
+        description: 'Socrates',
+        width: 1000,
+        height: 1100
       }
     ]
   }
