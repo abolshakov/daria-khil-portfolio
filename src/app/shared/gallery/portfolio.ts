@@ -124,6 +124,171 @@ export const PORTFOLIO = [
     ]
   },
   {
+    id: 7573625,
+    title: 'Animation for Memoryator Game',
+    image: 'animation-for-memoryator-game.png',
+    description: 'Character animations, gameplay videos and game trailer.',
+    category: 'Animation',
+    items: [
+      {
+        id: 7584352,
+        image: 'animation-for-memoryator-game/a74b44e2-446d-4da7-9fa5-f11ab927557f.png',
+        description: 'Game trailer.',
+        video: 'https://vimeo.com/429301915',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 8152355,
+        image: 'animation-for-memoryator-game/e78d4367-379d-48e8-868e-931d9947427c.png',
+        description: 'Main hero animations.',
+        video: 'https://vimeo.com/429301851',
+        width: 1280,
+        height: 720
+      },
+      {
+        id: 5496913,
+        image: 'animation-for-memoryator-game/e4f186fa-2839-4753-9025-d31ff2bb3feb.png',
+        description: 'Animals animations.',
+        video: 'https://vimeo.com/405614119',
+        width: 1280,
+        height: 720
+      },
+      {
+        id: 7536384,
+        image: 'animation-for-memoryator-game/96642e0f-9bb6-4ae6-a1c7-cf223cfadeaf.png',
+        description: 'Enemies animations.',
+        video: 'https://vimeo.com/429301663',
+        width: 1280,
+        height: 720
+      },
+      {
+        id: 2932254,
+        image: 'animation-for-memoryator-game/b11c7d85-646b-4505-b1a4-53131cc18b7f.png',
+        description: 'Animation process of a run cycle.',
+        video: 'https://vimeo.com/394376349',
+        width: 1280,
+        height: 720
+      },
+      {
+        id: 7622000,
+        image: 'animation-for-memoryator-game/b8c6dd3b-7639-45eb-b955-def2ba0a0fd3.png',
+        description: 'Gameplay',
+        video: 'https://vimeo.com/429301992',
+        width: 1280,
+        height: 720
+      }
+    ]
+  },
+  {
+    id: 6614815,
+    title: 'Raster Illustrations',
+    image: 'raster-illustrations.png',
+    description: 'Collection of digital illustrations.',
+    category: 'Illustration',
+    items: [
+      {
+        id: 3394105,
+        image: 'raster-illustrations/84945380-4501-4f08-914e-6f971cda7c08.png',
+        description: 'Mash-Up World, part 1',
+        width: 1400,
+        height: 788
+      },
+      {
+        id: 1829562,
+        image: 'raster-illustrations/993d7d02-1c04-4531-9966-13ad373114fe.png',
+        description: 'Mash-Up World, part 2',
+        width: 1400,
+        height: 788
+      },
+      {
+        id: 4729792,
+        image: 'raster-illustrations/7f61f99d-d2bb-4302-93ad-b4ac0a3abdd1.png',
+        description: 'Two Beasts',
+        width: 1800,
+        height: 1800
+      },
+      {
+        id: 6532804,
+        image: 'raster-illustrations/46e497c7-9f02-4d7e-93e5-8dadd3062c90.png',
+        description: 'Owl rider',
+        width: 1400,
+        height: 1225
+      },
+      {
+        id: 6572595,
+        image: 'raster-illustrations/f3d07863-2d9b-403d-ace0-c0e1a4b6bdbb.png',
+        description: 'Dr Folsbuben\'s Adventure',
+        width: 1400,
+        height: 1145
+      },
+      {
+        id: 9686021,
+        image: 'raster-illustrations/903887fd-5761-4806-a845-37b199019ec2.png',
+        description: '"A Bug\'s Life" fanart',
+        width: 1400,
+        height: 788
+      },
+      {
+        id: 5680773,
+        image: 'raster-illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
+        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
+        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
+        width: 3840,
+        height: 2160
+      },
+      {
+        id: 4364081,
+        image: 'raster-illustrations/ef5ecb31-192a-4ec7-b5b0-bec278bb1db1.png',
+        description: 'Illustrations for the Merge Cats game',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 8714748,
+        image: 'raster-illustrations/a5372f07-cc5e-4960-a442-dc0a6c7204b8.png',
+        description: 'Sights illustrations',
+        width: 1920,
+        height: 1280
+      },
+      {
+        id: 1057522,
+        image: 'raster-illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
+        description: 'Blizzard Paladin fanars',
+        width: 1173,
+        height: 960
+      },
+      {
+        id: 6776108,
+        image: 'raster-illustrations/9db4823b-5cc1-4baa-888a-47251ecdff20.png',
+        description: 'Domestic Christmas',
+        width: 1400,
+        height: 933
+      },
+      {
+        id: 8144322,
+        image: 'raster-illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
+        description: 'Magic hut by the Rainy River',
+        width: 1920,
+        height: 1080
+      },
+      {
+        id: 7449827,
+        image: 'raster-illustrations/6d4ee211-6c86-4a12-b32f-3acfe7e4be1c.png',
+        description: 'Through the Forest',
+        width: 1037,
+        height: 1400
+      },
+      {
+        id: 6569582,
+        image: 'raster-illustrations/c15e28b0-ccc1-4699-96a0-50af9eb530aa.png',
+        description: 'Snowball',
+        width: 719,
+        height: 960
+      }
+    ]
+  },
+  {
     id: 9730411,
     title: 'CryptoSoul Game',
     image: 'crypto-soul-game.png',
@@ -333,114 +498,6 @@ export const PORTFOLIO = [
     ]
   },
   {
-    id: 6614815,
-    title: 'Raster Illustrations',
-    image: 'raster-illustrations.png',
-    description: 'Collection of digital illustrations.',
-    category: 'Illustration',
-    items: [
-      {
-        id: 3394105,
-        image: 'raster-illustrations/84945380-4501-4f08-914e-6f971cda7c08.png',
-        description: 'Mash-Up World, part 1',
-        width: 1400,
-        height: 788
-      },
-      {
-        id: 1829562,
-        image: 'raster-illustrations/993d7d02-1c04-4531-9966-13ad373114fe.png',
-        description: 'Mash-Up World, part 2',
-        width: 1400,
-        height: 788
-      },
-      {
-        id: 4729792,
-        image: 'raster-illustrations/7f61f99d-d2bb-4302-93ad-b4ac0a3abdd1.png',
-        description: 'Two Beasts',
-        width: 1800,
-        height: 1800
-      },
-      {
-        id: 6532804,
-        image: 'raster-illustrations/46e497c7-9f02-4d7e-93e5-8dadd3062c90.png',
-        description: 'Owl rider',
-        width: 1400,
-        height: 1225
-      },
-      {
-        id: 6572595,
-        image: 'raster-illustrations/f3d07863-2d9b-403d-ace0-c0e1a4b6bdbb.png',
-        description: 'Dr Folsbuben\'s Adventure',
-        width: 1400,
-        height: 1145
-      },
-      {
-        id: 9686021,
-        image: 'raster-illustrations/903887fd-5761-4806-a845-37b199019ec2.png',
-        description: '"A Bug\'s Life" fanart',
-        width: 1400,
-        height: 788
-      },
-      {
-        id: 5680773,
-        image: 'raster-illustrations/c1affbbe-882e-4ac1-b472-0494fba7d26c.png',
-        description: 'Illustration for the CastleLab\'s blog post about the Ux design in Japan',
-        url: 'https://www.castlelab.ca/blog/seeing-the-world-in-ux-japan',
-        width: 3840,
-        height: 2160
-      },
-      {
-        id: 4364081,
-        image: 'raster-illustrations/ef5ecb31-192a-4ec7-b5b0-bec278bb1db1.png',
-        description: 'Illustrations for the Merge Cats game',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 8714748,
-        image: 'raster-illustrations/a5372f07-cc5e-4960-a442-dc0a6c7204b8.png',
-        description: 'Sights illustrations',
-        width: 1920,
-        height: 1280
-      },
-      {
-        id: 1057522,
-        image: 'raster-illustrations/595b3397-8b5e-45a6-9e3c-9554835924e5.png',
-        description: 'Blizzard Paladin fanars',
-        width: 1173,
-        height: 960
-      },
-      {
-        id: 6776108,
-        image: 'raster-illustrations/9db4823b-5cc1-4baa-888a-47251ecdff20.png',
-        description: 'Domestic Christmas',
-        width: 1400,
-        height: 933
-      },
-      {
-        id: 8144322,
-        image: 'raster-illustrations/3f8a7d0d-668d-44c2-9b30-d4724955968f.png',
-        description: 'Magic hut by the Rainy River',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 7449827,
-        image: 'raster-illustrations/6d4ee211-6c86-4a12-b32f-3acfe7e4be1c.png',
-        description: 'Through the Forest',
-        width: 1037,
-        height: 1400
-      },
-      {
-        id: 6569582,
-        image: 'raster-illustrations/c15e28b0-ccc1-4699-96a0-50af9eb530aa.png',
-        description: 'Snowball',
-        width: 719,
-        height: 960
-      }
-    ]
-  },
-  {
     id: 5019519,
     title: 'Memoryator Game Art',
     image: 'memoryator-game-art.png',
@@ -588,63 +645,6 @@ export const PORTFOLIO = [
         description: 'Totems',
         width: 1920,
         height: 1080
-      }
-    ]
-  },
-  {
-    id: 7573625,
-    title: 'Animation for Memoryator Game',
-    image: 'animation-for-memoryator-game.png',
-    description: 'Character animations, gameplay videos and game trailer.',
-    category: 'Animation',
-    items: [
-      {
-        id: 7584352,
-        image: 'animation-for-memoryator-game/a74b44e2-446d-4da7-9fa5-f11ab927557f.png',
-        description: 'Game trailer.',
-        video: 'https://vimeo.com/429301915',
-        width: 1920,
-        height: 1080
-      },
-      {
-        id: 8152355,
-        image: 'animation-for-memoryator-game/e78d4367-379d-48e8-868e-931d9947427c.png',
-        description: 'Main hero animations.',
-        video: 'https://vimeo.com/429301851',
-        width: 1280,
-        height: 720
-      },
-      {
-        id: 5496913,
-        image: 'animation-for-memoryator-game/e4f186fa-2839-4753-9025-d31ff2bb3feb.png',
-        description: 'Animals animations.',
-        video: 'https://vimeo.com/405614119',
-        width: 1280,
-        height: 720
-      },
-      {
-        id: 7536384,
-        image: 'animation-for-memoryator-game/96642e0f-9bb6-4ae6-a1c7-cf223cfadeaf.png',
-        description: 'Enemies animations.',
-        video: 'https://vimeo.com/429301663',
-        width: 1280,
-        height: 720
-      },
-      {
-        id: 2932254,
-        image: 'animation-for-memoryator-game/b11c7d85-646b-4505-b1a4-53131cc18b7f.png',
-        description: 'Animation process of a run cycle.',
-        video: 'https://vimeo.com/394376349',
-        width: 1280,
-        height: 720
-      },
-      {
-        id: 7622000,
-        image: 'animation-for-memoryator-game/b8c6dd3b-7639-45eb-b955-def2ba0a0fd3.png',
-        description: 'Gameplay',
-        video: 'https://vimeo.com/429301992',
-        width: 1280,
-        height: 720
       }
     ]
   },
